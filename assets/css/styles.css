@@ -1,0 +1,17 @@
+.header-blue {
+}
+
+htmlinput::-moz-focus-inner {
+  border: 0;
+  outline: none;
+}
+
+a:active {
+  outline: none;
+  border: 0;
+}
+
+a {
+  outline: medium none !important;
+}
+
