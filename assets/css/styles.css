@@ -1,4 +1,6 @@
-.header-blue {
+@media (min-width: 562px) and (max-width: 768) {
+  .header-blue {
+  }
 }
 
 htmlinput::-moz-focus-inner {
@@ -13,5 +15,8 @@ a:active {
 
 a {
   outline: medium none !important;
+}
+
+:root {
 }
 

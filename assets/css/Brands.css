@@ -1,6 +1,6 @@
 .brands {
   color: #313437;
-  background-color: #fff;
+  background-color: #eef4f7;
 }
 
 .brands a {
@@ -19,5 +19,17 @@
   display: inline-block;
   margin: 10px 20px;
   vertical-align: middle;
+}
+
+@media (max-width: 769px) {
+  .header-blue {
+    min-height: 1000px;
+  }
+}
+
+@media (min-width: 576px) {
+  .test-img {
+    width: 1%;
+  }
 }
 
