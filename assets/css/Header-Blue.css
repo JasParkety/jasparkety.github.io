@@ -1,5 +1,5 @@
 .header-blue {
-  background: linear-gradient(80deg, #1d2937, #1a9ad0);
+  background: linear-gradient(135deg, #1d2937, #1a9ad0);
   background-color: #184e8e;
   padding-bottom: 80px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -216,5 +216,23 @@
   right: -60%;
   transform: rotate(-19deg);
   opacity: 0.2;
+}
+
+.imageReference:hover {
+  -webkit-filter: brightness(49%);
+  -moz-filter: brightness(50%);
+  -o-filter: brightness(50%);
+  -ms-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+.imageReference {
+  -webkit-transition: all 2s ease;
+  transition: all 0.5s ease;
+  -webkit-filter: brightness(90%);
+  -moz-filter: brightness(90%);
+  -o-filter: brightness(100%);
+  -ms-filter: brightness(90%);
+  filter: brightness(90%);
 }
 
