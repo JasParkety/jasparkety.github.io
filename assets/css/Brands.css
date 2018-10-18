@@ -96,6 +96,8 @@
 }
 
 .TeaserHeaderText {
+  text-align: center;
+  width: 100%;
   color: #f7941e;
   font-weight: 600;
   padding-left: 10px;
