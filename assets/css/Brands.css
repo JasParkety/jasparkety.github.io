@@ -101,6 +101,8 @@
   padding-left: 10px;
 }
 
-.IntactExcels {
+.IntactExcels:hover {
+  opacity: 0.3;
+  transition: all 1s ease;
 }
 
