@@ -55,21 +55,39 @@
   }
 }
 
+.imageReferenceUK:hover {
+  -webkit-filter: brightness(80%);
+  -moz-filter: brightness(80%);
+  -o-filter: brightness(50%);
+  -ms-filter: brightness(80%);
+  filter: brightness(80%);
+}
+
 .imageReference:hover {
-  -webkit-filter: brightness(70%);
-  -moz-filter: brightness(70%);
-  -o-filter: brightness(70%);
-  -ms-filter: brightness(70%);
-  filter: brightness(70%);
+  -webkit-filter: brightness(49%);
+  -moz-filter: brightness(50%);
+  -o-filter: brightness(50%);
+  -ms-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+.imageReferenceUK {
+  -webkit-transition: all 2s ease;
+  transition: all 0.5s ease;
+  -webkit-filter: brightness(90%);
+  -moz-filter: brightness(90%);
+  -o-filter: brightness(100%);
+  -ms-filter: brightness(90%);
+  filter: brightness(90%);
 }
 
 .imageReference {
-  -webkit-transition: all 1s ease;
+  -webkit-transition: all 2s ease;
   transition: all 0.5s ease;
-  -webkit-filter: brightness(100%);
-  -moz-filter: brightness(100%);
+  -webkit-filter: brightness(90%);
+  -moz-filter: brightness(90%);
   -o-filter: brightness(100%);
-  -ms-filter: brightness(100%);
-  filter: brightness(100%);
+  -ms-filter: brightness(90%);
+  filter: brightness(90%);
 }
 
