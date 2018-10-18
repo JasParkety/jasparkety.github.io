@@ -91,3 +91,13 @@
   filter: brightness(90%);
 }
 
+.IntactExcels {
+  width: 110%;
+}
+
+.TeaserHeaderText {
+  color: #f7941e;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
