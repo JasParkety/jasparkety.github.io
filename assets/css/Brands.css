@@ -2,10 +2,11 @@
   color: #313437;
   background-image: url("../../assets/img/00_Skyline.svg");
   background-color: #fff;
-  background-size: contain;
+  background-size: 60%;
   background-position: center bottom;
   background-repeat: no-repeat;
   padding-bottom: 300px;
+  min-height: 600px;
 }
 
 .brands a {
@@ -43,12 +44,32 @@
     background-color: white;
     background-image: none;
     padding-bottom: 50px;
+    min-height: 400px;
   }
 }
 
 @media (max-width: 360px) {
   .brands a img {
     padding-bottom: 20px;
+    transition: 1s;
   }
+}
+
+.imageReference:hover {
+  -webkit-filter: brightness(70%);
+  -moz-filter: brightness(70%);
+  -o-filter: brightness(70%);
+  -ms-filter: brightness(70%);
+  filter: brightness(70%);
+}
+
+.imageReference {
+  -webkit-transition: all 1s ease;
+  transition: all 0.5s ease;
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%);
+  -o-filter: brightness(100%);
+  -ms-filter: brightness(100%);
+  filter: brightness(100%);
 }
 
