@@ -1,6 +1,11 @@
 .brands {
   color: #313437;
-  background-color: #eef4f7;
+  background-image: url("../../assets/img/00_Skyline.svg");
+  background-color: #fff;
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 300px;
 }
 
 .brands a {
@@ -30,6 +35,20 @@
 @media (min-width: 576px) {
   .test-img {
     width: 1%;
+  }
+}
+
+@media (max-width: 576px) {
+  .brands {
+    background-color: white;
+    background-image: none;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .brands a img {
+    padding-bottom: 20px;
   }
 }
 
