@@ -98,7 +98,7 @@
 .TeaserHeaderText {
   text-align: center;
   width: 100%;
-  color: #f7941e;
+  color: #000000;
   font-weight: 600;
   padding-left: 10px;
 }
@@ -106,5 +106,33 @@
 .IntactExcels:hover {
   opacity: 0.3;
   transition: all 1s ease;
+}
+
+.container.productsFrontView {
+  background-color: white !important;
+}
+
+.features-clean.productsFrontView {
+  background-color: white !important;
+}
+
+.teaserText {
+  color: black !important;
+}
+
+.navbar-expand-md .navbar-nav {
+  color: black !important;
+}
+
+.container {
+  color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+  color: black;
 }
 
