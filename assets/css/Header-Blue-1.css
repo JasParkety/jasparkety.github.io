@@ -1,12 +1,11 @@
 .header-blue {
-  background: radial-gradient(farthest-side at 55% 1%, #ffe5d1, #f7941e);
-  radial-gradient(farthest-side at 55% 1%, #ffe5d1, #f7941e);: 80px;
+  padding-bottom: 80px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media (min-width:768px) {
   .header-blue {
-    padding-bottom: 50px;
+    padding-bottom: 120px;
   }
 }
 
@@ -14,7 +13,7 @@
   background: transparent;
   padding-top: .75rem;
   padding-bottom: .75rem;
-  color: #000000;
+  color: #fff;
   border-radius: 0;
   box-shadow: none;
   border: none;
@@ -154,26 +153,24 @@
   color: #fff;
   font-size: 40px;
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
   font-weight: 300;
   line-height: 1.4;
 }
 
 @media (min-width:992px) {
   .header-blue .hero h1 {
-    margin-top: 10px;
-    margin-bottom: 0px;
+    margin-top: 190px;
+    margin-bottom: 24px;
     line-height: 1.2;
   }
 }
 
 .header-blue .hero p {
-  color: #000000;
-  font-size: 17px;
-  margin-bottom: 5px;
-  font-weight: 500;
-  padding-left: 19px;
-  padding-top: 10px;
+  color: rgba(255,255,255,0.8);
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 300;
 }
 
 .header-blue .phone-holder {
@@ -217,23 +214,5 @@
   right: -60%;
   transform: rotate(-19deg);
   opacity: 0.2;
-}
-
-.imageReference:hover {
-  -webkit-filter: brightness(49%);
-  -moz-filter: brightness(50%);
-  -o-filter: brightness(50%);
-  -ms-filter: brightness(50%);
-  filter: brightness(50%);
-}
-
-.imageReference {
-  -webkit-transition: all 2s ease;
-  transition: all 0.5s ease;
-  -webkit-filter: brightness(90%);
-  -moz-filter: brightness(90%);
-  -o-filter: brightness(100%);
-  -ms-filter: brightness(90%);
-  filter: brightness(90%);
 }
 
