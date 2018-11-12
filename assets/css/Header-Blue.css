@@ -1,5 +1,5 @@
 .header-blue {
-  background-color: white;
+  background-color: #ebeceb;
   padding-bottom: 80px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -14,7 +14,7 @@
   background: transparent;
   padding-top: .75rem;
   padding-bottom: .75rem;
-  color: #fff;
+  color: #000000;
   border-radius: 0;
   box-shadow: none;
   border: none;
