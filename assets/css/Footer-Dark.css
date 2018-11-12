@@ -5,6 +5,7 @@
 }
 
 .footer-dark h3 {
+  color: white;
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: bold;
@@ -12,6 +13,7 @@
 }
 
 .footer-dark ul {
+  color: white;
   padding: 0;
   list-style: none;
   line-height: 1.6;
@@ -85,6 +87,7 @@
   padding-top: 24px;
   opacity: 0.3;
   font-size: 13px;
+  color: white;
   margin-bottom: 0;
 }
 
