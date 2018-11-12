@@ -119,6 +119,7 @@
 .teaserText {
   color: black !important;
   font-size: 20px !important;
+  font-weight: 300 !important;
 }
 
 .navbar-expand-md .navbar-nav {
