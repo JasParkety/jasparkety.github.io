@@ -1,5 +1,5 @@
 @media (min-width: 362px) and (max-height: 576) {
-  .col-md-3, img {
+  .col-md-3, .img {
     width: 20%;
   }
 }

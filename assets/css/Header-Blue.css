@@ -1,6 +1,6 @@
 .header-blue {
-  background: radial-gradient(farthest-side at 55% 1%, #ffe5d1, #f7941e);
-  radial-gradient(farthest-side at 55% 1%, #ffe5d1, #f7941e);: 80px;
+  background-color: #ebeceb;
+  padding-bottom: 80px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -29,6 +29,7 @@
 
 .header-blue .navbar .navbar-brand {
   font-weight: bold;
+  width: 100px;
   color: inherit;
 }
 
@@ -202,7 +203,7 @@
   border: 1px solid #444;
   background-color: #aaa;
   overflow: hidden;
-  background: url(../../assets/img/screen-content-iphone-6.jpg);
+  background: url(screen-content-iphone-6.jpg);
   background-size: cover;
   background-position: center;
 }
