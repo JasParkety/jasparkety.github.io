@@ -1,7 +1,0 @@
-philosophy:
-    title: Our Principles
-    subtitle: At QiTASC, we believe in test-driven development and continuous delivery. Our core product, <span class="orange">IN</span>TACT<sup>®</sup>, has been developed accomplish testing and process optimization the best way possible. 
-
-    links:
-      - text: 'Read more about our principles and the philosophy that <span class="orange">IN</span>TACT<sup>®</sup> was developed upon.'
-        url: '/about/philosophy/'
