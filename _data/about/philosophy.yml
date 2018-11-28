@@ -1,0 +1,27 @@
+innovation:
+    title: Be Market-Ready Faster with <span class="orange">IN</span>TACT<sup>®</sup>
+    subtitle: Here at QiTASC, we have made it our responsibility to help you reach your testing goals faster by providing you with a tool developed according to our principles and philosophy.<br>
+
+quality:
+    title: High-Quality <erformance
+    subtitle: <span class="orange">IN</span>TACT<sup>®</sup> supports testers in their work, just like a vacuum cleaner facilitates housework.
+
+solutionDriven:
+    title: Solution-Oriented Approaches
+    subtitle: Our team of experts provides a solution that is tailored to your specific automated testing needs.
+    links:
+      - text: 'Meet the team behind the test automation'
+        url: '/about/team/'
+
+testIt:
+    title: Immediate Results
+    subtitle: Discover the immediate difference that <span class="orange">IN</span>TACT<sup>®</sup> makes to your project's quality when you start testing with us.
+    links:
+
+
+complexity:
+    title: Versatile, Customizable, Straightforward
+    subtitle: Despite its many features, <span class="orange">IN</span>TACT<sup>®</sup> is easy to use, adaptable, and supports cooperation within and across departments.
+    links:
+      - text: 'more about our tool'
+        url: '/products-and-services/'

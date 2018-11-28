@@ -1,0 +1,348 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/js/article.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="qitasc-light p-y-4 qitasc-article-header">
+    <div class="row">
+          <h1>Take a Quick Tour of <span class="orange">IN</span>TACT<sup>®</sup> Studio</h1>
+          <div id="article-subheader">
+              <h4>What does an INTACT test case look like? We'll take you on a tour through INTACT Studio and show you how different components, including Feature Files, Stepdefs and configurations look.<h4>
+
+              
+              
+              
+
+              
+
+
+          </div>
+    </div>
+  </br>
+</div>
+
+
+
+
+
+
+
+</br>
+
+
+<div class="qitasc-articles-header-img-container">
+    <div class="qitasc-articles-header-img-container-content">
+          <img class="qitasc-articles-header-img" src="/img/newsroom/IntactStudioMain.jpg">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="floating-container">
+          
+          
+          
+                <div class="floating-box">
+                  <a href="#directories"><center>Project Directories</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#featurefiles"><center>Feature Files</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#scenarios"><center>Scenarios and Scenario Outlines</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#custom"><center>Creating Custom Steps</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#configurations"><center>Configurations</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#execution"><center>Executing the Test Case</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#evaluation"><center>Evaluating Results</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#conclusion"><center>Conclusion</center></a></br>
+                </div>
+          
+</div>
+
+
+
+
+
+<div class="floating-container-mobile">
+  <input id="collapsible-01" class="toggle-floating-mobile" type="checkbox">
+  <label for="collapsible-01" class="lbl-toggle-floating-mobile">Table of Contents</label>
+      <div class="collapsible-content-floating-mobile">
+        <div class="floating-mobile-spacer"></div>
+        
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-1" href="#directories"><center>Project Directories</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-2" href="#featurefiles"><center>Feature Files</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-3" href="#scenarios"><center>Scenarios and Scenario Outlines</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-4" href="#custom"><center>Creating Custom Steps</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-5" href="#configurations"><center>Configurations</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-6" href="#execution"><center>Executing the Test Case</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-7" href="#evaluation"><center>Evaluating Results</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-8" href="#conclusion"><center>Conclusion</center></a></br>
+        
+      </div>
+
+</div>
+
+
+
+
+<div class="qitasc-white qitasc-article-content">
+  
+<p>INTACT Studio is our integrated development environment (IDE) that allows users to write and execute test case, and manage projects. The application is based on Intellij IDEA, so if you’ve used the platform, INTACT Studio will seem familiar to you.</p>
+
+<p>This article will demonstrate the concepts used to build a basic suite of test cases, and how they look inside INTACT Studio. If you would like to try out the activities, an <a href="https://docs.qitasc.com/tutorials/GettingStarted/FirstTestCase/">INTACT Tutorial</a> is available with step-by-step instructions to create the files illustrated in this article. At the end of the article, you should have a better understanding of the components used to construct projects and their test cases.</p>
+
+<h2 id="project-directories-">Project Directories <a name="directories"></a></h2>
+<p>Although not necessary, creating directories to hold files is a good practice to keep your projects manageable. In a small project, a the directory might look similar to the one below:</p>
+
+<p><img src="../../img/newsroom/FirstProjectDirectory.png" alt="alt text" /></p>
+
+<p>This project contains all the most important, frequently-used INTACT files and is structured according to each file type:</p>
+<ul>
+  <li><code class="highlighter-rouge">features</code> directory: Feature Files, which contain Scenarios or Scenario Outlines</li>
+  <li><code class="highlighter-rouge">lib</code> directory: Step Definitions</li>
+  <li>Root project directory (<code class="highlighter-rouge">MySecondProject</code>): Configurations</li>
+</ul>
+
+<h2 id="feature-files-">Feature Files <a name="featurefiles"></a></h2>
+<p>The most basic INTACT test cases consist of a single Feature File that defines the steps you want to execute. Many new users start by familiarizing themselves with constructing Feature Files before moving on to Step Definitions and configurations. A Feature File contains one or more Scenarios or Scenario Outlines, which define desired outcomes and the steps used to reach them.</p>
+
+<p>INTACT Studio includes an auto-complete feature to help you write your test cases and find INTACT’s built-in <em>and</em> your custom-defined steps more easily. When you start typing your first step, you’ll probably see some suggestions pop up:</p>
+
+<p><img src="../../img/newsroom/AutoComplete.png" alt="alt text" /></p>
+
+<p>The <code class="highlighter-rouge">{}</code> curly braces indicate parameters that you can fill in with values specific to the test. For example, a number to indicate how many seconds to wait.</p>
+
+<h2 id="scenarios-and-scenario-outlines-">Scenarios and Scenario Outlines <a name="scenarios"></a></h2>
+<p>Feature files may contain Scenarios or Scenario Outlines. A <strong>Scenario</strong> defines all the steps in a Feature File, line-by-line, that will be executed in a Feature File. For example:</p>
+
+<p><strong>Scenario Example</strong></p>
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Feature</span><span class="o">:</span><span class="x"> </span><span class="n">Phones</span><span class="x">
+
+  </span><span class="n">Scenario</span><span class="o">:</span><span class="x"> </span><span class="n">Select</span><span class="x"> </span><span class="n">specific</span><span class="x"> </span><span class="n">phones</span><span class="x">
+
+    </span><span class="n">Given</span><span class="x"> </span><span class="n">an</span><span class="x"> </span><span class="n">Android</span><span class="x"> </span><span class="n">phone</span><span class="x"> </span><span class="n">as</span><span class="x"> </span><span class="n">A</span><span class="x"> </span><span class="n">where</span><span class="x"> </span><span class="n">network</span><span class="x"> </span><span class="o">==</span><span class="x"> </span><span class="s">"3G"</span><span class="x">
+    </span><span class="n">Given</span><span class="x"> </span><span class="n">an</span><span class="x"> </span><span class="n">Android</span><span class="x"> </span><span class="n">phone</span><span class="x"> </span><span class="n">as</span><span class="x"> </span><span class="n">B</span><span class="x"> </span><span class="n">where</span><span class="x"> </span><span class="n">network</span><span class="x"> </span><span class="o">==</span><span class="x"> </span><span class="s">"4G"</span><span class="x">
+</span></code></pre></div></div>
+
+<p>A <strong>Scenario Outline</strong> enables running a test case with values for each iteration. For example, if you have a series of test cases that all perform the same activities, and the only difference is each test case has phones registered to a network, a Scenario Outline can greatly reduce the amount of time and effort required to write and maintain the tests.</p>
+
+<p><strong>Scenario Outline Example</strong></p>
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Feature</span><span class="o">:</span><span class="x"> </span><span class="n">Phones</span><span class="x">
+
+  </span><span class="n">Scenario</span><span class="x"> </span><span class="n">Outline</span><span class="o">:</span><span class="x"> </span><span class="n">Selecting</span><span class="x"> </span><span class="n">specific</span><span class="x"> </span><span class="n">phones</span><span class="x"> </span><span class="n">with</span><span class="x"> </span><span class="n">Scenario</span><span class="x"> </span><span class="n">Outline</span><span class="x">
+
+  </span><span class="n">Given</span><span class="x"> </span><span class="n">an</span><span class="x"> </span><span class="n">Android</span><span class="x"> </span><span class="n">phone</span><span class="x"> </span><span class="n">as</span><span class="x"> </span><span class="n">A</span><span class="x"> </span><span class="n">where</span><span class="x"> </span><span class="n">network</span><span class="x"> </span><span class="o">==</span><span class="x"> </span><span class="o">&lt;</span><span class="n">network1</span><span class="o">&gt;</span><span class="x">
+  </span><span class="n">Given</span><span class="x"> </span><span class="n">an</span><span class="x"> </span><span class="n">Android</span><span class="x"> </span><span class="n">phone</span><span class="x"> </span><span class="n">as</span><span class="x"> </span><span class="n">B</span><span class="x"> </span><span class="n">where</span><span class="x"> </span><span class="n">network</span><span class="x"> </span><span class="o">==</span><span class="x"> </span><span class="o">&lt;</span><span class="n">network2</span><span class="o">&gt;</span><span class="x">
+
+  </span><span class="n">Examples</span><span class="o">:</span><span class="x">
+    </span><span class="o">|</span><span class="x"> </span><span class="n">network1</span><span class="x"> </span><span class="o">|</span><span class="x"> </span><span class="n">network2</span><span class="x"> </span><span class="o">|</span><span class="x">
+    </span><span class="o">|</span><span class="x"> </span><span class="s">"3G"</span><span class="x">     </span><span class="o">|</span><span class="x"> </span><span class="s">"2G"</span><span class="x">     </span><span class="o">|</span><span class="x">
+    </span><span class="o">|</span><span class="x"> </span><span class="s">"4G"</span><span class="x">     </span><span class="o">|</span><span class="x"> </span><span class="s">"3G"</span><span class="x">     </span><span class="o">|</span><span class="x">
+</span></code></pre></div></div>
+
+<h2 id="creating-custom-steps-">Creating Custom Steps <a name="custom"></a></h2>
+<p>Although INTACT contains many built-in steps that are used to construct test cases, <strong>Step Definitions</strong> are often created to automate additional functionality. These are written in <code class="highlighter-rouge">.soaptest</code> or <code class="highlighter-rouge">.webtest</code> files, and are called from Feature Files.</p>
+
+<p>Step definitions may contain functions and models for:</p>
+<ul>
+  <li>Integrating backend systems such as HTTP/REST interfaces, SSH or SCP via INTACT’s <a href="https://docs.qitasc.com/builtins/introduction/">Built-ins</a></li>
+  <li><a href="https://docs.qitasc.com/intactsteps/webtestintro/">Webtest</a> <strong>Views</strong> that define the elements of webpages or apps, as well as the actions to be performed on them</li>
+  <li><a href="https://docs.qitasc.com/tutorials/VirtualPhones/virtualphoneintro/">Creating Virtual Phones</a> for switching between real and simulated devices</li>
+  <li>Creating custom messages that parse test case results or print information to the INTACT log</li>
+</ul>
+
+<p><strong>Custom Stepdef Example</strong></p>
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">stepdef</span><span class="x"> </span><span class="s">"execute simple get request"</span><span class="x">
+    </span><span class="n">request</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">Http</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"https://httpbin.org/get"</span><span class="p">)</span><span class="x">
+        </span><span class="o">.</span><span class="n">addHeader</span><span class="p">(</span><span class="s">"Content-Type"</span><span class="p">,</span><span class="x"> </span><span class="s">"text/plain"</span><span class="p">)</span><span class="x">
+        </span><span class="o">.</span><span class="n">build</span><span class="p">()</span><span class="x">
+    </span><span class="n">response</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">Http</span><span class="o">.</span><span class="n">executeHttpRequest</span><span class="p">(</span><span class="n">request</span><span class="p">)</span><span class="x">
+    </span><span class="n">response</span><span class="o">.</span><span class="n">writeToFile</span><span class="p">(</span><span class="n">File</span><span class="o">.</span><span class="n">fromProject</span><span class="p">(</span><span class="s">"simple-get-response.txt"</span><span class="p">))</span><span class="x">
+</span><span class="n">end</span><span class="x">
+</span></code></pre></div></div>
+
+<p>The example above shows a custom <strong>Stepdef</strong> that executes an HTTP request. The associated Feature File will contain a step that matches the text following the <code class="highlighter-rouge">stepdef</code> keyword. We saved our Stepdef file into a project subdirectory called <code class="highlighter-rouge">lib</code>, which is a recommended practice for keeping files organized and easy to find.</p>
+
+<p><strong>Custom Feature File Step Example</strong></p>
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Feature</span><span class="o">:</span><span class="x"> </span><span class="n">SimpleGetRequest</span><span class="x">
+  </span><span class="n">Scenario</span><span class="o">:</span><span class="x"> </span><span class="n">Simple</span><span class="x"> </span><span class="n">Get</span><span class="x"> </span><span class="n">Request</span><span class="x">
+    </span><span class="err">#</span><span class="x"> </span><span class="n">Execution</span><span class="x">
+    </span><span class="n">And</span><span class="x"> </span><span class="n">execute</span><span class="x"> </span><span class="n">simple</span><span class="x"> </span><span class="n">get</span><span class="x"> </span><span class="n">request</span><span class="x">
+</span></code></pre></div></div>
+
+<p>If you the execute Feature File above, the test case will fail. This is because one final component is required: a configuration file that tells INTACT where to find the custom steps that the Feature File calls.</p>
+
+<h2 id="configurations-">Configurations <a name="configurations"></a></h2>
+<p>INTACT enables further test case customization through its flexible configurations. These configurations manage issues such as:</p>
+<ul>
+  <li>Phone and subscriber properties, e.g., creating customers with different Tariffs, phone numbers or network preferences</li>
+  <li>Backend system integrations into INTACT, e.g., configuration and SSH access so that tests can access external customer databases</li>
+  <li>Reporting services, E-mail preferences and user access</li>
+  <li>Browser preferences for web and apptests</li>
+</ul>
+
+<p>One of the most commonly-used configurations is the <code class="highlighter-rouge">Glue</code> path. This is a one-line configuration that tells INTACT where to find custom Stepdefs. Because <code class="highlighter-rouge">Glue</code> path is relative, saved at the root project directory, it is quite simple:</p>
+
+<p><strong>Glue Configuration Example</strong></p>
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Glue</span><span class="o">.</span><span class="n">path</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="p">[</span><span class="s">"lib"</span><span class="p">]</span><span class="x">
+</span></code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">lib</code> is the folder define in the example project about, where custom Stepdefs are saved. Its path is relative to the project root folder.</p>
+
+<h2 id="executing-the-test-">Executing the Test <a name="execution"></a></h2>
+<p>To Execute a test case, you can click on the green <code class="highlighter-rouge">Run</code> button in INTACT Studio, or right-click on your feature file and select <code class="highlighter-rouge">Run</code> from the drop-down menu. For power users, plenty of shortcuts are also available.</p>
+
+<p><img src="../../img/newsroom/Runtest.png" alt="alt text" /></p>
+
+<p>When you execute a test case, INTACT Studio shows test output at the bottom of the window. Users can toggle between a Protocol log, a Trace log or an INTACT Server log, depending on what information they would like to see. The example below shows Protocol log output for our HTTP test:</p>
+
+<p><strong>Test Case Output Example</strong>
+<img src="../../img/newsroom/HttpOutput.png" alt="alt text" /></p>
+
+<h2 id="evaluating-the-results-">Evaluating the Results <a name="evaluation"></a></h2>
+<p>Besides the INTACT Studio test output windows, two additional features allow users to further evaluate the results of a test case execution in greater detail:</p>
+<ul>
+  <li>INTACT Reports</li>
+  <li>ConQlude Reporting Service</li>
+</ul>
+
+<h3 id="intact-reports">INTACT Reports</h3>
+<p>Every time a test case is executed, the INTACT Server stores a report of the test execution under the <code class="highlighter-rouge">reports</code> folder. This folder contains a set of logs outputs, configurations, reports and other artifacts created by the test execution. By default, this folder is in the INTACT Server installation directory.</p>
+
+<p><strong>Report Folder Example</strong>
+<img src="../../img/newsroom/ReportFolder.png" alt="alt text" /></p>
+
+<p>Our reports folder only contains a few files. Test cases with a lot of custom steps, or that use features such as the INTACT Audio Plugin, may generate many more files within each reports folder.</p>
+
+<h3 id="qitasc-conqlude-reporting-service">QiTASC ConQlude Reporting Service</h3>
+<p>Users who have a <a href="https://docs.qitasc.com/conqlude/introduction/">QiTASC ConQlude</a> license can also access test execution reports and artifacts. The ConQlude reporting service is a web interface that contains a centralized storage of all test execution reports created by members of a project. It also enables users to filter for test results and perform actions such as verifying, exporting to external project management systems, and assigning error categories.</p>
+
+<p><img src="../../img/newsroom/Conqlude.png" alt="alt text" /></p>
+
+<p>Each test execution has its own unique report in ConQlude. In ConQlude, the icons next to steps indicate attachments types (which contain, e.g., images, text, audio or metadata). These attachments are particularly helpful when troubleshooting failed test cases or identifying defects:</p>
+
+<p><strong>ConQlude Test Output Example</strong>
+<img src="../../img/newsroom/Conqlude2.png" alt="alt text" /></p>
+
+<h2 id="conclusion-">Conclusion <a name="conclusion"></a></h2>
+<p>There are several file types available to create and customize INTACT test cases using INTACT Studio. First we introduced Feature Files, which contain a set of steps that define the test objective and the actions that will achieve the objective.</p>
+
+<p>Second, we demonstrated the difference between Scenarios and Scenario Outlines, the latter of which help users to iterate over the same steps multiple times while providing input parameters each time. These Scenario Outlines are quite useful when you have tests that have the same steps and parameters, but require parameter values, such a different network ID for each test. Scenarios, on the other hand, define all the steps, parameters and values for a single test execution.</p>
+
+<p>We also showed what a custom Stepdef could look like that links an HTTP <code class="highlighter-rouge">get</code> request to a Feature File. Then we showed how to configure your <code class="highlighter-rouge">Glue</code> path so that INTACT knows where to find custom steps. Finally, we showed a few different ways to evaluate test execution output. After reading this article, you should have a better understanding of how the different components of INTACT used to construct your test projects.</p>
+
+<p><em>Want to see more examples about getting started with INTACT?</em> Visit <a href="https://docs.qitasc.com/tutorials/README/">INTACT Tutorials</a> to learn more!</p>
+
+</div>
+
+
+
+
+
+</br>
+</br>
+</br>
+</br>
+
+<div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Testing Services</div>
+                        <ul>
+                            <li><a href="/">Project-Based Services</a></li>
+                            <li><a href="/">Corporate Testing</a></li>
+                            <li><a href="/">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Products</div>
+                        <ul>
+                            <li><a href="/">conQlude</a></li>
+                            <li><a href="/">cheQ</a></li>
+                            <li><a href="/">intaQt</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">About Us</div>
+                        <ul>
+                            <li><a href="/about/philosophy#contact">Impressum</a></li>
+                            <li><a href="/about/philosophy#contact">Contact</a></li>
+                            <li><a href="/about/career">Careers</a></li>
+                            <li><a href="/about/privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Resources</div>
+                        <ul>
+                            <li><a target="_blank" href="https://docs.qitasc.com">Documentation</a></li>
+                            <li><a href="/newsroom">Newsroom</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">QiTASC © 2019</p>
+            </div>
+        </footer>
+    </div>
+

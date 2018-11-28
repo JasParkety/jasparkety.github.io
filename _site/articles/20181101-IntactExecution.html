@@ -1,0 +1,276 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/js/article.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="qitasc-light p-y-4 qitasc-article-header">
+    <div class="row">
+          <h1>How to Customize your <span class="orange">IN</span>TACT<sup>®</sup> Test Case Execution Experience</h1>
+          <div id="article-subheader">
+              <h4>When executing several tests within the same project, it's often necessary to adapt them to changes that arise so that all tests are compatible with each other. INTACT Studio allows you to configure individual scenarios to prioritize test cases, ignore unwanted Scenarios and add custom Context Objects to make sure your tests run smoothly.<h4>
+
+              
+              
+              
+
+              
+
+
+          </div>
+    </div>
+  </br>
+</div>
+
+
+
+
+
+
+
+</br>
+
+
+<div class="qitasc-articles-header-img-container">
+    <div class="qitasc-articles-header-img-container-content">
+          <img class="qitasc-articles-header-img" src="../img/newsroom/IntactExecution.png">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="floating-container">
+          
+          
+          
+                <div class="floating-box">
+                  <a href="#featureFiles"><center>INTACT Feature Files </center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#multipleFeatures"><center>Executing Multiple Feature Files</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#runConfiguration"><center>Editing the Run Configuration</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#annotations"><center>Using Annotations</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#contextObjects"><center>Creating Context Objects</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#conclusion"><center>Conclusion</center></a></br>
+                </div>
+          
+</div>
+
+
+
+
+
+<div class="floating-container-mobile">
+  <input id="collapsible-01" class="toggle-floating-mobile" type="checkbox">
+  <label for="collapsible-01" class="lbl-toggle-floating-mobile">Table of Contents</label>
+      <div class="collapsible-content-floating-mobile">
+        <div class="floating-mobile-spacer"></div>
+        
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-1" href="#featureFiles"><center>INTACT Feature Files </center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-2" href="#multipleFeatures"><center>Executing Multiple Feature Files</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-3" href="#runConfiguration"><center>Editing the Run Configuration</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-4" href="#annotations"><center>Using Annotations</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-5" href="#contextObjects"><center>Creating Context Objects</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-6" href="#conclusion"><center>Conclusion</center></a></br>
+        
+      </div>
+
+</div>
+
+
+
+
+<div class="qitasc-white qitasc-article-content">
+  
+<p>To illustrate how you can customize your INTACT test cases executions, we’ll use two Feature Files from a small project, which you might recognize from <a href="http://www.qitasc.com/articles/20181008-StudioTricks">INTACT Studio Tips and Tricks</a>:
+<img src="/img/articles/IntactExecution/testProject.png" alt="alt text" /></p>
+
+<h2 id="intact-feature-files-">INTACT Feature Files <a name="featureFiles"></a></h2>
+<p>The first Feature File is a Webtest that performs a simple Google search and checks that the first search result matches a text that we want:
+<img src="/img/articles/IntactExecution/googleFeatureFile.png" alt="alt text" /></p>
+
+<p>The second Feature File tests a Smart Home interface, which reads the temperature from a thermostat display and compares against an expected value:
+<img src="/img/articles/IntactExecution/thermostatFeatureFile.png" alt="alt text" /></p>
+
+<p>This Feature File includes two <strong>Examples</strong> we read the values from. We check the values from <code class="highlighter-rouge">display1.jpg</code> and check that it is 20 degrees Celsius. Then and we check that <code class="highlighter-rouge">display2.jpg</code> shows a temperature of 10.5 degrees Celsius.</p>
+
+<p><img src="/img/articles/IntactExecution/thermoDisplays.png" alt="alt text" /></p>
+
+<p>We’ll execute the Temperature Feature File by right-clicking inside the INTACT Studio editor window and choosing the <code class="highlighter-rouge">Run</code> feature:</p>
+
+<p><img src="/img/articles/IntactExecution/runTemperature.png" alt="alt text" /></p>
+
+<p>We see all tests have passed, but we also want to see which scenarios and steps were executed. Therefore, we’ll click the Show Passed Test button:</p>
+
+<p><img src="/img/articles/IntactExecution/testsPassed.png" alt="alt text" /></p>
+
+<p>As expected, the two scenarios showing the different thermostat display values that were defined for our test case. We can further expand these by clicking on the arrow buttons to reveal the results from each Step executed by INTACT:</p>
+
+<p><img src="/img/articles/IntactExecution/testsPassed2.png" alt="alt text" /></p>
+
+<h2 id="executing-multiple-feature-files-">Executing Multiple Feature Files <a name="multipleFeatures"></a></h2>
+<p>INTACT can also execute <em>multiple</em> Feature Files. We can do this by choosing the directory in which we wish to execute the Feature Files, then right-click the directory it and then we can run all Feature Files inside the directory. This will execute three Scenarios – one Scenario from our Webtest, and the two temperature reading Scenarios:
+<img src="/img/articles/IntactExecution/runFeatures.png" alt="alt text" /></p>
+
+<p>As you can see, the Webtest Scenario failed on the <code class="highlighter-rouge">on browser, search for query</code> Step. When a Step fails, all subsequent steps are skipped:</p>
+
+<p><img src="/img/articles/IntactExecution/runFeaturesResult.png" alt="alt text" /></p>
+
+<h2 id="editing-the-run-configuration-">Editing the Run Configuration <a name="runConfiguration"></a></h2>
+<p>When executing multiple test cases in this manner, that INTACT Studio creates a default Run Configuration. In <em>most</em> cases, the default Run Configuration is sufficient, but under some circumstances, we might want to customize the test run according to our needs.</p>
+
+<p>We can do this by going to the Run Configurations menu and selecting <code class="highlighter-rouge">Edit Configurations...</code>, which will bring up a new window:</p>
+
+<p><img src="/img/articles/IntactExecution/editConfigurations.png" alt="alt text" /></p>
+
+<p>We had two test runs and for each of those INTACT Studio created default Run Configurations, that look something like this. We’ll go through each item within the configurations and explain how they work:</p>
+
+<p><img src="/img/articles/IntactExecution/defaultRunConfigurations.png" alt="alt text" /></p>
+
+<ul>
+  <li>The <strong>Run Configuration <code class="highlighter-rouge">Name</code></strong> can be chosen freely, but it must be unique, otherwise it may conflict with other configurations.</li>
+  <li>The <strong>Feature file or directory</strong> is the relative path starting from the project root that points to the Feature File or to the directory that we want INTACT to execute.</li>
+  <li>The <strong>hostname and port</strong> for the INTACT Server that we want our tests to run on. If you have a custom INTACT installation, you may choose a different hostname and the port.</li>
+  <li>The <strong>Tags</strong> configuration is <strong>very important</strong>. By default, you will see <code class="highlighter-rouge">~ignored</code>, which means INTACT will always execute tests that are <em>not tagged with</em> the <code class="highlighter-rouge">@ignored</code> annotations.</li>
+</ul>
+
+<h2 id="using-annotations-">Using Annotations <a name="annotations"></a></h2>
+
+<p>Let’s see how these annotations work by returning to our Google search Feature File. We might choose to ignore a Feature because it always fails. We can annotate it with <code class="highlighter-rouge">@ignored</code> and next time we run our entire <code class="highlighter-rouge">features</code> directory, we see that this scenario is no longer executed:</p>
+
+<p><img src="/img/articles/IntactExecution/runIgnored.png" alt="alt text" /></p>
+
+<p>On the other hand, we might want to execute a test based on annotations. For example, we might have a scenario where we want to execute all the ignored files inside our project. We’ll select <code class="highlighter-rouge">Edit Configurations...</code> again, and delete the tilde (<code class="highlighter-rouge">~</code>) before <code class="highlighter-rouge">ignored</code>, and then save the configuration:</p>
+
+<p><img src="/img/articles/IntactExecution/removeTilde.png" alt="alt text" /></p>
+
+<p>When we run the project again, now it <em>only</em> runs the annotated test as we expected. Of course, this test fails but it’s interesting for us to see <em>why</em> it fails:</p>
+
+<p><img src="/img/articles/IntactExecution/runIgnored2.png" alt="alt text" /></p>
+
+<h2 id="creating-context-objects-">Creating Context Objects <a name="contextObjects"></a></h2>
+<p>The Google Feature File has two <strong>arguments</strong>: the <code class="highlighter-rouge">search for query</code>, and the <code class="highlighter-rouge">expectedFirstResultName</code>. We expected both arguments be references inside of <strong>Context Objects</strong> for our test run. By clicking on failed step, we can see an excerpt of the INTACT log, which contains an error message:</p>
+
+<p><img src="/img/articles/IntactExecution/unresolved.png" alt="alt text" /></p>
+
+<p>The problem, as you can see above, is that <code class="highlighter-rouge">query</code> and the <code class="highlighter-rouge">‘expectedFirstResultName’</code> are not yet defined inside our project. That’s why we cannot resolve those properties. One approach to fixing this problem is to define <code class="highlighter-rouge">query</code> and <code class="highlighter-rouge">expectedFirstResultName</code> as Context Objects inside our project configuration (<code class="highlighter-rouge">project.conf</code>):</p>
+
+<p><img src="/img/articles/IntactExecution/editProjectConf.png" alt="alt text" /></p>
+
+<p>In our project configuration file, we’ll define two Context Objects:</p>
+<ul>
+  <li>For <code class="highlighter-rouge">query</code>, we specify <code class="highlighter-rouge">"qitasc"</code>.</li>
+  <li>For <code class="highlighter-rouge">expectedFirstResultName</code>, we expect the first search result to be the QiTASC website, which has the title <code class="highlighter-rouge">"QiTASC - the magic of testing"</code>.</li>
+</ul>
+
+<p>When we run the Google Webtest again, we’ll see a browser window open and the word <code class="highlighter-rouge">qitasc</code> are typed into the Google search bar. The first search result was what we wanted:
+<img src="/img/articles/IntactExecution/webtestChrome.png" alt="alt text" /></p>
+
+<h2 id="conclusion-">Conclusion <a name="conclusion"></a></h2>
+<p>This article showed a few of the many ways that you can customize your test case execution experience with INTACT. This includes editing Run Configurations so that they ignore (or don’t ignore) certain files, creating Context Objects and executing multiple feature files. For more ideas about managing your test cases, check out <a href="http://www.qitasc.com/articles/20181008-StudioTricks">INTACT Studio Tips and Tricks</a>:
+<img src="/img/articles/IntactExecution/testProject.png" alt="alt text" />.</p>
+
+<p><em>Would you like more instructions about creating and executing test cases?</em> Visit <a href="https://docs.qitasc.com/tutorials/">INTACT Tutorials</a> on the QiTASC Resource Center for out-of-the box test case examples!</p>
+
+</div>
+
+
+
+
+
+</br>
+</br>
+</br>
+</br>
+
+<div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Testing Services</div>
+                        <ul>
+                            <li><a href="/">Project-Based Services</a></li>
+                            <li><a href="/">Corporate Testing</a></li>
+                            <li><a href="/">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Products</div>
+                        <ul>
+                            <li><a href="/">conQlude</a></li>
+                            <li><a href="/">cheQ</a></li>
+                            <li><a href="/">intaQt</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">About Us</div>
+                        <ul>
+                            <li><a href="/about/philosophy#contact">Impressum</a></li>
+                            <li><a href="/about/philosophy#contact">Contact</a></li>
+                            <li><a href="/about/career">Careers</a></li>
+                            <li><a href="/about/privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Resources</div>
+                        <ul>
+                            <li><a target="_blank" href="https://docs.qitasc.com">Documentation</a></li>
+                            <li><a href="/newsroom">Newsroom</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">QiTASC © 2019</p>
+            </div>
+        </footer>
+    </div>
+

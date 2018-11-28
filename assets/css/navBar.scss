@@ -1,0 +1,133 @@
+---
+---
+
+input::-moz-focus-inner {
+  border: 0;
+	outline: none;
+}
+a:active {
+    outline: none;
+		border: 0;
+}
+a {
+outline: medium none !important;
+}
+
+$XS: 360px;
+$SM: 576px;
+$MD: 768px;
+$LG: 992px;
+$XL: 1200px;
+
+// Lets control the NavBar Qitasc Logo width here:
+$bgPage         : #bfc2c9;
+$bgContainer    : white;
+
+$bgLight      : #ebeceb;
+$colLight     : #32323c;
+
+$bgHighlight    : #bfc2c9;
+$colHighlight   : #0094ac;
+
+$bgDark   : #64646a;
+$colDark  : white;
+
+$bgWhite  : white;
+$colWhite : #4a4a4a;
+
+$colOrange : #f7941e;
+$colRed: #c92600;
+
+// We need to define the hover, fontweight etc. for the Header, dont want to change everything manually
+
+$navFontWeight: bold;
+$navColor: black;
+
+$hoverValueOpacity: 0.8;
+$hoverValueColo: blue;
+
+$activeColor: $colOrange;
+
+
+#liNavBarDropDown, #navListItem, #navbarDropdown, .nav-link { font-weight: $navFontWeight !important; color: $navColor !important; list-style: none !important; font-family: 'AvenirLT', 'Avenir';}
+#navListItem:hover, .nav-link:hover, #navbarDropdown:hover { opacity: $hoverValueOpacity; color: $colOrange !important;}
+#liNavBarDropDown:active, #navListItem:active, #navbarDropdown:active, .nav-link:active { color: orange;}
+
+// Import our main responsive functions here
+
+
+@mixin XS_Screen {
+  @media (max-width: $XS) { @content; }
+}
+@mixin SM_Screen {
+  @media (min-width: $SM) { @content; }
+}
+@mixin MD_Screen {
+  @media (min-width: $MD) { @content; }
+}
+@mixin MD_Screen_max {
+  @media (max-width: $MD) { @content; }
+}
+
+@mixin LG_Screen {
+  @media (min-width: $LG) { @content; }
+}
+@mixin LG_Screen_max {
+  @media (min-width: $LG) { @content; }
+}
+@mixin XL_Screen {
+  @media (min-width: $XL) { @content; }
+}
+
+.navImgBrand {
+  width: 50px !important;
+
+}
+
+#dropdownMenuButton {
+   color: black !important;
+   background-color: white !important;
+   border: none !important;
+   //@include MD_Screen {display: none !important;}
+}
+#dropdownMenuButton:hover {
+  border: none !important;
+}
+#dropdownMenuButton:active {
+  border:  none !important;
+  outline: none !important;
+}
+
+.companyLogo {
+  height: 50px;
+  //padding: 10px;
+  transition:all 0.4s ease-in-out;
+  -webkit-transition:all 0.4s ease-in-out;
+  -moz-transition:all 0.4s ease-in-out;
+  -ms-transition:all 0.4s ease-in-out;
+  -o-transition:all 0.4s ease-in-out;
+}
+
+.companyLogo:hover {
+opacity: 0.8 !important;
+}
+.companyLogo:active {
+
+opacity: 0.8 !important;
+}
+
+.dropdown-item {
+  transition:all 0.4s ease-in-out;
+  -webkit-transition:all 0.4s ease-in-out;
+  -moz-transition:all 0.4s ease-in-out;
+  -ms-transition:all 0.4s ease-in-out;
+  -o-transition:all 0.4s ease-in-out;
+}
+
+.dropdown-item:hover {
+  background-color: $colOrange;
+  opacity: 0.8 !important;
+}
+#navUlItem {
+    @include MD_Screen {margin-left: 20px !important;}
+}

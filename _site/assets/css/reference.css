@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+  .onlyMobile {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .onlyBigScreen {
+    display: none; } }
+
+.brands {
+  color: #313437;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .brands {
+      background-image: url("https://jasparkety.github.io/assets/img/00_Skyline.svg") !important;
+      background-size: 700px;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      padding-bottom: 200px; } }
+
+.brands .referencesImagesContainer {
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding: 40px 0; }
+
+@media (max-width: 767px) {
+  .brands .referencesImagesContainer {
+    padding: 30px 0; } }
+.brands .referencesImagesContainer img {
+  transform: scale(0.75);
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  -o-transform: scale(0.75);
+  display: inline-block;
+  margin: 10px 20px;
+  vertical-align: middle; }
+
+.referencesImagesMobile {
+  width: 150px; }
+  @media (max-width: 490px) {
+    .referencesImagesMobile {
+      width: 75px; } }

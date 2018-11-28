@@ -1,0 +1,542 @@
+---
+---
+
+input::-moz-focus-inner {
+  border: 0;
+	outline: none;
+}
+a:active {
+    outline: none;
+		border: 0;
+}
+a {
+outline: medium none !important;
+}
+//
+
+$bgPage         : #bfc2c9;
+$bgContainer    : white;
+
+$bgLight      : #ebeceb;
+$colLight     : #32323c;
+
+$bgHighlight    : #bfc2c9;
+$colHighlight   : #0094ac;
+
+$bgDark   : #64646a;
+$colDark  : white;
+
+$bgWhite  : white;
+$colWhite : #4a4a4a;
+
+$colOrange : #f7941e;
+$colRed: #c92600;
+
+$widthXSmall: 544px;
+$widthSmall: 768px;
+$widthMedium: 992px;
+$widthLarge: 1200px;
+
+@mixin for-small-phone {
+  @media (max-width: $widthXSmall) { @content; }
+}
+
+// #############################################################
+// #############################################################
+// #############################################################
+// #############################################################
+// #############################################################
+// #############################################################
+// #############################################################
+// #############################################################
+// #############################################################
+
+// Newsroom/ Stylez
+// <div class="gap"></div>
+@media only screen and (min-width: 541px) {
+.gap{display:none;}
+
+}
+
+@media only screen and (max-width: 540px) {
+	.gap{clear:both;display:block;}
+}
+
+// $widthXSmall: 544px;
+// $widthSmall: 768px;
+// $widthMedium: 992px;
+// $widthLarge: 1200px;
+
+@mixin background($imgpath, $repeat: no-repeat) {
+  background: {
+    image: url($imgpath);
+    repeat: $repeat;
+  }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 992px) { @content; }
+}
+@mixin not-a-phone {
+  @media (min-width: 993px) { @content; }
+}
+@mixin for-tablet-only {
+  @media (max-width: $widthMedium) { @content; }
+}
+
+.qitasc-newsroom-introduction-header{
+	width: 100%;
+  @include background('../img/newsroom/Title_Header.svg');
+  background-position: bottom left;
+  background-size: auto 80%;
+  min-height: 5em;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  display: inline-block;
+  @include for-phone-only {
+    padding-bottom: 1.5em;
+    background-image: none;
+  }
+}
+
+.qitasc-message-newsroom h1, h2, h3, h4, h5, h6 {
+
+  font-family: 'AvenirLT', 'Avenir';
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+
+}
+
+.qitasc-message-newsroom h1 {
+	@include for-phone-only {
+		font-size: 20px;
+	}
+}
+.qitasc-message-newsroom h2 {
+	@include for-phone-only {
+		font-size: 15px;
+	}
+}
+
+.qitasc-message-newsroom p {
+
+  font-family: 'AvenirLT', 'Avenir';
+  font-weight: normal;
+  font-style: normal;
+	@include for-phone-only{
+		font-size: 12px;
+	}
+
+}
+
+.qitasc-message-newsroom li {
+
+  font-family: 'AvenirLT', 'Avenir';
+  list-style: disc outside none;
+
+}
+
+.font-weight-bold-Newsroom {
+	font-weight: bold;
+}
+
+.qitasc-automation-header-index {
+  @include background('../img/products-and-services/index/ProdServ_INTACT_mobile.svg');
+  background-position: bottom right;
+  background-size: auto 40%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  overflow: hidden;
+  height:auto;
+  @include for-phone-only {
+		background-image: none;
+    padding-bottom: 1.5em;
+    background-size: auto 25%;
+  }
+}
+
+.qitasc-automation-header-desktop {
+    display: inline-block;
+  @include for-phone-only {
+    display: none;
+  }
+}
+
+.qitasc-automation-header-phone {
+  display: none;
+  @include for-phone-only {
+    display: inline-block;
+  }
+}
+
+#wrap-centered-container {
+	margin-right:auto;
+	margin-left:auto;
+	background-color: black;
+}
+
+#wrap:after {
+      height: 0px;
+      clear: both;
+      float: none;
+    }
+    #each {
+			float: left;
+			width: 33.33333%;
+
+			&:nth-child(n+1){background-color: none;}
+			&:nth-child(n+2){background-color: none;}
+			&:nth-child(n+3){background-color: none;}
+    }
+
+.qitasc-newsroom-container-entry {
+	width: 90%;
+	margin-right:auto;
+	margin-left:auto;
+	@include not-a-phone {
+		padding-top: 2rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		padding-bottom: 2rem;
+		margin-top: 4rem;
+		margin-bottom: 2rem;
+
+	}
+	@include for-phone-only {
+		width: 95%;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding-top: 1rem;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $bgLight;
+  text-decoration: none !important;
+  img{
+    width: 100%;
+		opacity: 1;
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+	img:hover {
+		opacity: 0.5;
+	}
+}
+
+
+.newsroom-entry-title {
+	color: black;
+	font-size: 2.2rem;
+	@include for-phone-only {
+		font-size: 1rem;
+		font-weight: bolder !important;
+	}
+}
+
+.subtitleNewsroom {
+	color: black;
+	font-style:oblique;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	@include for-phone-only {
+		font-size: 0.8rem;
+		font-style: normal;
+		font-weight: normal;
+	}
+	margin: 1.2em 0 0.4em 0;
+}
+
+.newsroom-entry-date {
+	font-style:oblique;
+  font-size: 1em;
+  margin: 1.2em 0 0.4em 0;
+	color: black;
+  @include for-phone-only {
+		font-size: 0.8rem;
+		font-style: normal;
+	}
+}
+
+.newsroom-entry-description {
+	font-size: 1.1em;
+	padding-bottom: 1rem;
+	@include for-phone-only {
+		max-height: 0rem;
+		font-size: 0rem;
+	}
+
+}
+
+a.newsroom-entry-ReadMore-Jobs:before{
+  content: '> ';
+}
+
+a.newsroom-entry-ReadMore:before{
+  content: '> ';
+}
+.newsroom-entry-ReadMore-Jobs {
+	color: #8c8c8e !important;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+  font-size: 1em;
+  margin: 1.2em 0 0.4em 0;
+	padding-bottom: 1rem;
+	text-decoration: underline;
+
+	@include for-phone-only {
+		font-size: 0.8rem;
+		font-weight: bolder;
+	}
+ 	@include not-a-phone {min-height:3rem;}
+}
+
+.newsroom-entry-ReadMore-Jobs:hover {
+	color: #bfc2c9 !important;
+}
+
+.newsroom-entry-ReadMore {
+	color: orange !important;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+  font-size: 17.5px;
+  margin: 1.2em 0 0.4em 0;
+	padding-bottom: 1rem;
+	text-decoration: underline;
+
+	@include for-phone-only {
+		font-size: 15px;
+	}
+	@include for-small-phone {
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+ 	@include not-a-phone {min-height:3rem;}
+}
+
+.newsroom-entry-ReadMore:hover {
+	color: #8c8c8e !important;
+}
+// #############################################################
+// #############################################################
+// #############################################################
+// #############################################################
+// #############################################################
+// #############################################################
+// #############################################################
+// #############################################################
+// #############################################################
+/* Newsroom index */
+
+.newsroom-entry-title-index {
+	color: black;
+	font-size: 1.8rem;
+	@media only screen and (max-width : 1000px) {
+	   font-size: 1.2rem;
+	}
+  @media only screen and (max-width : 700px) {
+     font-size: 0.8em;
+  }
+}
+
+// Only show one article when width under 620px
+.subtitleNewsroom-index {
+	font-style:oblique;
+	font-size: 1em;
+	margin: 1.2em 0 0.4em 0;
+	color: black;
+	@media only screen and (max-width : 1000px) {
+	   font-size: 0.8em;
+  }
+  @media only screen and (max-width : 700px) {
+    font-size: 0.5em;
+  }
+}
+
+.qitasc-newsroom-introduction-header-index {
+
+  background-image: url();
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size:50% auto;
+  min-height: 10em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+
+  @media (min-width: $widthMedium) {
+    background-image: url(../img/newsroom/Title_Header.svg);
+    background-size: auto 50%;
+    padding-top: 2em;
+    padding-bottom: 3.5em;
+    min-height: 32em;
+  }
+}
+
+.qitasc-newsroom-container-index {
+ float: center;
+   text-align:center;
+}
+.qitasc-newsroom-container-entry-index {
+
+  display: inline-block;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $bgLight;
+	vertical-align: top;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  float: center;
+  text-decoration: none !important;
+  text-align:center;
+  width: 200px;
+  @media only screen and (max-width : 990px) {
+    margin-top: 1.5rem;
+  }
+  img{
+    width: 80%;
+    display: inline-block;
+     margin: 0 auto;
+     float: center;
+  }
+
+	// Show two Article when width under 1082
+
+}
+
+.qitasc-newsroom-container-entry-index-spacer {
+  display: inline-block;
+  min-width: 5px;
+}
+
+
+/* ############################################################################################################################################
+First we set the checkbox element to display: none. The checkbox will be invisible and its label will be used instead to check or uncheck it.
+Later, you’ll see that we’ll use the CSS :checked pseudo-selector to style things differently when the hidden checkbox is checked:
+############################################################################################################################################ */
+
+
+input[type='checkbox'] {
+  display: none;
+}
+
+/* ############################################################################################################################################
+Next, we style our default label. Here nothing really special is going on, except for the fact that we make our label display as a block element with display: block:
+############################################################################################################################################ */
+
+.lbl-toggle {
+	  display: block;
+		cursor: pointer;
+		transition: all 0.25s ease-out;
+
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+		@include for-phone-only {
+			font-size: 10px;
+			padding: 10px;
+		}
+}
+
+.lbl-toggle:hover {
+    background-color: #e2e2e2;
+}
+
+
+
+/* ############################################################################################################################################
+For the small arrow, some clever use of borders makes it easy to create the triangle shape:
+############################################################################################################################################ */
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+/* ############################################################################################################################################
+Let’s also give some basic styles to the inner content:
+############################################################################################################################################ */
+
+.collapsible-content .content-inner {
+  background: rgba(250, 224, 66, .2);
+  border-bottom: 1px solid rgba(250, 224, 66, .45);
+
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+}
+
+/* ############################################################################################################################################
+Now we can start with the interesting part. By default, the collapsible-content div will have a max-height value of 0px, making it completely hidden:
+############################################################################################################################################ */
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+	@include for-phone-only {
+		font-size: 10px;
+	}
+
+}
+
+/* ############################################################################################################################################
+When a collapsible’s checkbox gets checked behind the scenes by clicking its label, we’ll set the content div to a high-enough max-height
+ value so that it can grow to display all its internal content.
+We make use of the adjacent sibling selector (+) to select our content div when the checkbox is checked:
+############################################################################################################################################ */
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 350px;
+}
+/* ############################################################################################################################################
+We use max-height instead of height because we want to avoid using a hard-coded height and want to be able to place content of arbitrary height into our collapsibles.
+And now we do something really similar using the adjacent sibling selector to rotate our little triangle shape when the collapsible is expanded
+and to adjust the bottom right and border left radius of our label:
+############################################################################################################################################ */
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/*
+############################################################################################################################################
+############################################################################################################################################
+############################################################################################################################################
+############################################################################################################################################
+############################################################################################################################################
+############################################################################################################################################
+*/

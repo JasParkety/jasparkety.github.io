@@ -1,0 +1,67 @@
+input::-moz-focus-inner {
+  border: 0;
+  outline: none; }
+
+a:active {
+  outline: none;
+  border: 0; }
+
+a {
+  outline: medium none !important; }
+
+#liNavBarDropDown, #navListItem, #navbarDropdown, .nav-link {
+  font-weight: bold !important;
+  color: black !important;
+  list-style: none !important;
+  font-family: 'AvenirLT', 'Avenir'; }
+
+#navListItem:hover, .nav-link:hover, #navbarDropdown:hover {
+  opacity: 0.8;
+  color: #f7941e !important; }
+
+#liNavBarDropDown:active, #navListItem:active, #navbarDropdown:active, .nav-link:active {
+  color: orange; }
+
+.navImgBrand {
+  width: 50px !important; }
+
+#dropdownMenuButton {
+  color: black !important;
+  background-color: white !important;
+  border: none !important; }
+
+#dropdownMenuButton:hover {
+  border: none !important; }
+
+#dropdownMenuButton:active {
+  border: none !important;
+  outline: none !important; }
+
+.companyLogo {
+  height: 50px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out; }
+
+.companyLogo:hover {
+  opacity: 0.8 !important; }
+
+.companyLogo:active {
+  opacity: 0.8 !important; }
+
+.dropdown-item {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out; }
+
+.dropdown-item:hover {
+  background-color: #f7941e;
+  opacity: 0.8 !important; }
+
+@media (min-width: 768px) {
+  #navUlItem {
+    margin-left: 20px !important; } }

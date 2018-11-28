@@ -1,0 +1,20 @@
+header:
+    title: Reusability
+    subtitle: We designed <span class="orange">IN</span>TACT<sup>®</sup> in a way that enables reusability in different test environments, including ones with simulated elements. <br><br>Our emphasis on reusability helps you realize the maximum benefits of automated testing by the time and effort required to write, re-write, and adjust configurations for test cases that need to be run at different stages of development and under different technical conditions.
+
+    links:
+    - text: 'Read our Newsroom feature about using reusable Compound Steps.'
+      url: '/articles/20180515-CompoundSteps'
+
+gettingstarted:
+    title: Getting Started
+    subtitle: Before a software module is developed, the user creates a test case with <span class="orange">IN</span>TACT<sup>®</sup>. Here, the necessary resources and actions are described, while the required results are defined. Afterwards, the test case can be used as guidance for implementing software to achieve those results.
+
+integration:
+    title: Integration
+    subtitle: Next, the software module co-exists with its respective test case. This means the software tester simply has to adjust the test case to the corresponding test environment. Resources are assigned and relevant scenarios are described within the test case. Next, <span class="orange">IN</span>TACT<sup>®</sup> will run the test cases automatically while incorporating parameters that can influence the outcome. <span class="orange">IN</span>TACT<sup>®</sup> is integrated into the test environment in such a way that your test scenario’s result can be automatically checked.
+    image: Reusability_4.svg
+
+testcases:
+    title: Reusable Test Cases
+    subtitle: After your software module has been integrated into the product, test cases can be run anytime in the system’s live environment. This enables the faster error detection as well as the safe integration of subsequent software modules.

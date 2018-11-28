@@ -1,0 +1,42 @@
+- mainService: Testing Services
+  mainHeader: Testing Services
+  mainText: 'Handing over QA testing to an external partner can be a better choice than investing in test automation software, depending on your project requirements. When the costs of adopting software, associated infrastructure, training as well as test case development time and costs might outweigh the potential benefits of in-house testing, QiTASC`s test experts provide a high-quality solution that can be adapted to test projects of all sizes, scopes and duration.'
+  group: main
+  imgURL: services/Magier_Testcase_Staple.png
+
+
+- serviceType: Project-Based Testing
+  header: Project-Based Testing
+  text: 'When you order managed testing services through QiTASC, our in-house team of experts develops, executes and manages your test project. QiTASC`s project-based testing provides you with:'
+  group: secondary
+  enumeration:
+    - 'QiTASC software licenses'
+    - 'A testing team, including a test project manager'
+    - 'Support for software integration and configuration'
+    - 'Develop test cases'
+    - 'Execute test cases'
+    - 'Reporting and defect management (Optional add-on)'
+    - 'Verification services (Optional add-on)'
+
+- serviceType: Corporate Testing
+  header: Corporate Testing
+  text: 'We implement corporate automated testing environment for all of your testing projects, products and services.'
+  group: secondary
+  enumeration:
+    - 'Setting up a testing center of excellence'
+    - 'Developing your test strategy and test management process'
+    - 'Arranging licenses and full lab/production environment integration'
+    - 'Overseeing project management activities'
+    - 'Developing and executing test cases for all testing areas including end-to-end, integration, sanity, services, regression, verification and lead & stress'
+    - 'Looking after reporting and defect management'
+
+- serviceType: Consulting
+  header: Consulting
+  text: 'QiTASC supports you as consultant in the following areas:'
+  group: secondary
+  enumeration:
+    - 'Automated testing/ Process automation'
+    - 'Test case development'
+    - 'Automated test case verification'
+    - 'Reporting and defect management'
+    - 'Test strategy'

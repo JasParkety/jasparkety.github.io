@@ -1,0 +1,14 @@
+jobs:
+    title: Jobs
+    subtitle: Join our team of great minds in continually <span class="orange">IN</span>TACT<sup>®</sup> an even better tool and supporting test projects around the world. Let our current opening be your future job. <br> <br> Want to know what it's like to work at QiTASC? Check out a few of our Newsroom features.
+    links:
+      - text: 'The People of QiTASC'
+        url: 'http://www.qitasc.com/articles/20180430-peopleOfQitasc'
+      - text: 'Costas Joins the Development Team'
+        url: 'http://www.qitasc.com/articles/20180514-NewAtQitasc'
+      - text: 'Mixing Work with Fun - QiTASC in Styria'
+        url: 'http://www.qitasc.com/articles/20180717-Workshop'
+
+
+jobpostings:
+    -

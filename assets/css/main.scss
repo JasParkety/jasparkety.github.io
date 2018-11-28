@@ -1,0 +1,70 @@
+---
+---
+
+// Just removing annoying dotted lines here.
+
+input::-moz-focus-inner {
+  border: 0;
+	outline: none;
+}
+a:active {
+    outline: none;
+		border: 0;
+}
+a {
+outline: medium none !important;
+}
+
+// lets go for the Bootstrap Naming here
+// and set the width we want to have control of
+
+$XS: 360px;
+$SM: 576px;
+$MD: 768px;
+$LG: 992px;
+$XL: 1200px;
+
+// Set the function we want to include in other .scss files here
+
+@mixin XS_Screen {
+  @media (max-width: $XS) { @content; }
+}
+@mixin SM_Screen {
+  @media (min-width: $SM) { @content; }
+}
+@mixin MD_Screen {
+  @media (min-width: $MD) { @content; }
+}
+@mixin LG_Screen {
+  @media (min-width: $LG) { @content; }
+}
+@mixin XL_Screen {
+  @media (min-width: $XL) { @content; }
+}
+
+// If we ever need some in between stuff this is the place to be
+@mixin between_XS_and_SM {
+  @media (min-width:$XS) and (max-width:$SM) {
+    @content;
+  }
+}
+
+// Why dont we also put the brand colors here
+
+$bgPage         : #bfc2c9;
+$bgContainer    : white;
+
+$bgLight      : #ebeceb;
+$colLight     : #32323c;
+
+$bgHighlight    : #bfc2c9;
+$colHighlight   : #0094ac;
+
+$bgDark   : #64646a;
+$colDark  : white;
+
+$bgWhite  : white;
+$colWhite : #4a4a4a;
+
+$colOrange : #f7941e;
+$colRed: #c92600;

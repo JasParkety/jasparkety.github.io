@@ -1,0 +1,60 @@
+<nav class="navbar navbar-qitasc navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#the-menu" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      {% if page.homepage %}
+        <a href="{{ site.baseurl }}/" class="pull-left navbar-brand navbar-brand-home">
+          <img src="/img/menu-magician.svg" alt="QiTASC - the magic of testing (home page)">
+        </a>
+      {% else %}
+        <a href="{{ site.baseurl }}/" class="pull-left navbar-brand" title="to homepage">
+          <img src="/img/qitasc-logo-slogan.svg" alt="QiTASC - the magic of testing (Logo, to homepage)">
+        </a>
+      {% endif %}
+
+    </div>
+    <div id="the-menu" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-nav-primary navbar-right">
+        {% assign sortedpages = (site.pages | sort: 'priority', 'first') %}
+        {% for menupage in sortedpages reversed %}
+          {% if menupage.main %}
+          <li {% if page.url contains menupage.url %}class="active"{% endif %}>
+            <a href="{{ menupage.url | prepend: site.baseurl }}" data-title="{{ menupage.title }}" class="font-weight-bold-Newsroom">{{ menupage.title }}</a>
+
+            {% assign url_parts = menupage.url | split: '/' %}
+            {% assign url_parts_size = url_parts | size %}
+            {% assign url_parts_size_select = url_parts_size | plus: 1 %}
+            {% assign rm = url_parts | last %}
+            {% assign base_url = menupage.url %}
+      <!--
+Secondary Header DIsabled for Newsroom
+
+      div class="navbar-nav-secondary-container">
+      div class="navbar-nav-secondary-container">
+              <ul class="navbar-nav-secondary">
+                {% for node in sortedpages %}
+                  {% if node.url contains base_url %}
+                    {% assign node_url_parts = node.url | split: '/' %}
+                    {% assign node_url_parts_size = node_url_parts | size %}
+                    {% assign filename = node_url_parts | last %}
+                    {% if url_parts_size_select == node_url_parts_size %}
+                      <li {% if page.url == node.url %}class="active"{% endif %}><a data-title="{{node.title}}" href="{{node.url}}">{{node.title}}</a></li>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div> -->
+
+            </li>
+
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

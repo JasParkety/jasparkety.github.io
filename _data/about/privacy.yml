@@ -1,0 +1,25 @@
+policy:
+    title: <span class="orange">Privacy Policy</span>
+    subtitle: To increase user experience QiTASC uses Google Analytics on qitasc.com and docs.qitasc.com without including personally identifying data in this type of reporting.<br>
+
+google:
+    title: What does Google Analytics record?
+    subtitle: What website you came from to get here.<br>How long you stay for.<br> What kind of computer you’re using.<br>Which pages have been visited.
+
+data:
+    title: What does QiTASC do with your data?
+    subtitle: The tracking information allows us to better understand the kind of people who come to this site and what content they’re reading. This allows QiTASC to make better decisions about design and writing.<br><br>All of QiTASC's activity falls within the bounds of the
+    links:
+      - text: 'Google Analytics Terms of Service'
+        url: 'www.marketingplatform.google.com/about/'
+      - text: 'EU General Data Protection Regulation'
+        url: 'www.eugdpr.org/'
+
+opt:
+    title: Want to opt out of tracking?
+    subtitle: You can either opt out of Google’s advertising tracking cookie or use a browser plugin to opt out of all Google Analytics tracking software.
+    links:
+      - text: 'Google Analytics Tracking Cookie'
+        url: 'https://policies.google.com/technologies/ads'
+      - text: 'Use a browser Plugin'
+        url: 'https://tools.google.com/dlpage/gaoptout?hl=en'

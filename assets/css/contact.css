@@ -1,0 +1,10 @@
+.contacts {
+  color: black;
+  background-color: #ebeceb;
+  padding-top: 50px;
+  overflow: hidden;
+  width:110%;
+  top:-5%;
+  left:-5%;
+  /* transform:rotate(0.5deg); */
+}
