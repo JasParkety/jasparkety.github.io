@@ -1,0 +1,118 @@
+.stickyNavContainer {
+  position: fixed;
+  background-color: rgba(255,255,255,0.8);
+  height: 100px;
+
+}
+
+
+.transparentOverlayOfContent {
+  position: fixed;
+  width: 100%;
+  margin-top: 300px;
+  background-color: black;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: opacity .3s linear 1s;
+  transition: opacity .3s linear 1s;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0);
+ }
+
+.transparentOverlayOfContent.add {
+  z-index: 9998;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+#secondaryNavContainer{
+  position: fixed;
+  color: black;
+  margin-top: 100px;
+  width: 100%;
+  height: 0px;
+  background-color: rgba(255,255,255,1);
+  -webkit-transition: all .3s linear 0s;
+  transition: all .3s linear 0s;
+}
+
+#secondaryNavContainer.on {
+	height: 200px;
+}
+
+
+
+.wrapper {
+  z-index: 9999;
+  width: 110%;
+  position: absolute;
+}
+
+.displayedContent {
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+
+.displayedContent.add {
+  display: inline;
+}
+
+
+.Logo {
+  width: 50px;
+}
+
+
+.heroImage {
+  width: 350px;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 3px;
+}
+
+.down:hover {
+  color: rgba(0,0,0,0.5);
+}
+
+
+#toggle {
+  border: 0px;
+  padding: 5px;
+  font-weight: bolder;
+  background-color: rgba(0,0,0,0);
+}
+
+.menuImage {
+  height: 200px;
+  margin-left: 100px;
+}
+
+.closeButton {
+  height: 50px;
+  padding-top: 20px;
+}
+
+.closeButton:hover {
+  background-color: rgba(0,0,0,1)
+}
+
+.shadowBottom  {
+    -webkit-box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
+}

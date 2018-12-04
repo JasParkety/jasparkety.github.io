@@ -1,0 +1,20 @@
+/*  Okay this is to get rid of the padding of the bootstrap container fluid */
+.container-fluid {
+  padding: 0px !important;
+}
+
+
+/* get away the dotted lines in moz */
+
+
+input::-moz-focus-inner {
+  border: 0;
+	outline: none;
+}
+a:active {
+    outline: none;
+		border: 0;
+}
+a {
+outline: medium none !important;
+}
