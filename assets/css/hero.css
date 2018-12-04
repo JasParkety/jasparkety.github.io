@@ -5,12 +5,30 @@
   background-color: #f7941e;
 
   -webkit-transition: background .6s ease-in-out;
-  -moz-transition: background .6s ease-in-out
-  -ms-transition: background .6s ease-in-out
-  -o-transition: background .6s ease-in-out
+  -moz-transition: background .6s ease-in-out;
+  -ms-transition: background .6s ease-in-out;
+  -o-transition: background .6s ease-in-out;
 }
 
 
+.heroImage {
+  width: 350px;
+}
+
+
+.heroFontColorHeader {
+  -webkit-transition: color .6s ease-in-out;
+  -ms-transition: color .6s ease-in-out;
+  -moz-transition: color .6s ease-in-out;
+  -o-transition: color .6s ease-in-out;
+}
+
+.heroFontColorDescription {
+  -webkit-transition: color .6s ease-in-out;
+  -moz-transition: color .6s ease-in-out;
+  -ms-transition: color .6s ease-in-out;
+  -o-transition: color .6s ease-in-out;
+}
 
 .backgroundcolorButtons {
   padding-top:30px;
@@ -21,18 +39,11 @@
 .backgroundColorsWidth {
   width: 200px !important;
 }
-.rounded-circle {
 
+.rounded-circle
+{
   width: 35px !important;
 
-
-}
-
-.rounded-circle, .whatToTest
-{
--webkit-box-shadow: 2px 28px 16px -26px black;
--moz-box-shadow: 2px 28px 16px -26px black;
-box-shadow: 2px 28px 16px -26px black;
 }
 
 .rounded-circle:hover
@@ -43,9 +54,7 @@ transform:scale(1.1);
 -ms-transform:scale(1.1);
 -o-transform:scale(1.1);
 
--webkit-box-shadow: 1px 38px 36px -15px black;
--moz-box-shadow: 1px 38px 36px -15px black;
-box-shadow: 1px 38px 36px -15px black;
+
 
 
 }
@@ -66,4 +75,19 @@ transition:all .6s ease-in-out;
 -moz-transition:all .6s ease-in-out;
 -ms-transition:all .6s ease-in-out;
 -o-transition:all .6s ease-in-out;
+}
+
+.shadow {
+
+  -webkit-box-shadow: 0 5px 5px -5px black;
+     -moz-box-shadow: 0 5px 5px -5px black;
+          box-shadow: 0 5px 5px -5px black;
+}
+
+.shadow:hover {
+
+  -webkit-box-shadow: 1 10px 20px -8px rgba(0,0,0,1);
+     -moz-box-shadow: 1 10px 20px -8px rgba(0,0,0,1);
+          box-shadow: 1 10px 20px -8px rgba(0,0,0,1);
+
 }

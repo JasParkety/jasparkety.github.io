@@ -28,7 +28,7 @@ $( "#toggle" ).click(function() {
   }
 
   else {
-    setTimeout(function(){$('.transparentOverlayOfContent').toggleClass( 'add' );}, 320);
+    setTimeout(function(){$('.transparentOverlayOfContent').toggleClass( 'add' );},100);
 
   }
 
