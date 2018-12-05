@@ -5,8 +5,6 @@
 
 
 /* get away the dotted lines in moz */
-
-
 input::-moz-focus-inner {
   border: 0;
 	outline: none;
