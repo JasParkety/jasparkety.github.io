@@ -1,3 +1,14 @@
+.navigationButton {
+  cursor: pointer;
+  color: #4a4a4a;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+}
+.navigationButton:hover {
+  color: #f7941e;
+}
 .stickyNavContainer {
   position: fixed;
   height: 100px;
@@ -46,8 +57,6 @@
   width: 100%;
   height: 0px;
   background-color: rgba(255,255,255,1);
-  -webkit-transition: all .1s linear 0s;
-  transition: all .1s linear 0s;
 }
 
 #secondaryNavContainer.on {
