@@ -1,4 +1,6 @@
 .containerStyle {
+  z-index: 9995;
+  display: relative !important;
   background-color: #ebeceb;
   height: 250px !important;
   text-align: center;
