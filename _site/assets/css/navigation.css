@@ -167,10 +167,10 @@ i {
 /* Here we go for the products in the navigation, its dHeaders and descriptions */
 .intaQt {
   background-color: #ebeceb;
-  -webkit-transition: background .6s ease-in-out;
-  -moz-transition: background .6s ease-in-out;
-  -ms-transition: background .6s ease-in-out;
-  -o-transition: background .6s ease-in-out;
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out;
+  -ms-transition: background .2s ease-in-out;
+  -o-transition: background .2s ease-in-out;
   cursor: pointer;
 }
 .intaQt:hover {
@@ -188,10 +188,10 @@ i {
 
 .productHeader {
   color: #4a4a4a;
-  -webkit-transition: color .6s ease-in-out;
-  -moz-transition: color .6s ease-in-out;
-  -ms-transition: color .6s ease-in-out;
-  -o-transition: color .6s ease-in-out;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
 }
 .productHeader:hover {
   color: #ebeceb;
