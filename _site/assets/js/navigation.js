@@ -1,7 +1,5 @@
 var $thisParagraph = $('.stickySecondary');
 
-
-
 $( "#closeButtonID" ).click(function() {
   if($('.transparentOverlayOfContent').css('height') > '1%') {
       $('.transparentOverlayOfContent').toggleClass( 'add' );
@@ -19,9 +17,7 @@ $( "#transparentOverlay" ).click(function() {
 });
 
 $( "#toggle" ).click(function() {
-
   $('#secondaryNavContainer').toggleClass( 'on' );
   $('.displayedContent').toggleClass( 'add' );
   $('.transparentOverlayOfContent').toggleClass( 'add' );
-
 });

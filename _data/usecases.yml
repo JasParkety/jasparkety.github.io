@@ -1,0 +1,31 @@
+- usecase: Acceptance Testing
+  imagePath: assets/images/usecases/UC_Acceptance.png
+  description: This is just a Description Placeholder, soon to be finished.
+
+- usecase: Back-End Testing
+  imagePath: assets/images/usecases/UC_BackendAPI.png
+  description: This is just a Description Placeholder, soon to be finished.
+
+- usecase: Charging Conformity
+  imagePath: assets/images/usecases/UC_Charging.png
+  description: This is just a Description Placeholder, soon to be finished.
+
+- usecase: Core Network Testing
+  imagePath: assets/images/usecases/UC_CoreNW.png
+  description: This is just a Description Placeholder, soon to be finished.
+
+- usecase: End to End Testing
+  imagePath: assets/images/usecases/UC_E2E.png
+  description: This is just a Description Placeholder, soon to be finished.
+
+- usecase: IFRS
+  imagePath: assets/images/usecases/UC_IFRS.png
+  description: This is just a Description Placeholder, soon to be finished.
+
+- usecase: Internet of Things
+  imagePath: assets/images/usecases/UC_IoT.png
+  description: This is just a Description Placeholder, soon to be finished.
+
+- usecase: Protocol Testing
+  imagePath: assets/images/usecases/UC_Protocol.png
+  description: This is just a Description Placeholder, soon to be finished.

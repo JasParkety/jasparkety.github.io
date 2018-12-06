@@ -1,7 +1,7 @@
 
 .hero {
   padding-top: 200px;
-  height: 800px;
+  height: 700px;
   background-color: #f7941e;
 
   -webkit-transition: background .6s ease-in-out;
@@ -90,4 +90,15 @@ transition:all .6s ease-in-out;
      -moz-box-shadow: 1 10px 20px -8px rgba(0,0,0,1);
           box-shadow: 1 10px 20px -8px rgba(0,0,0,1);
 
+}
+
+
+.whatDoYouWantToTest {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-shadow: 3px 3px rgba(0,0,0,0.2);
 }

@@ -1,0 +1,57 @@
+.containerStyle {
+  background-color: #ebeceb;
+  height: 250px !important;
+  text-align: center;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+.tegcloud
+{
+    height:300px;
+}
+
+.hoverWord {
+  transition:all .2s ease-in-out;
+  -webkit-transition:all .2s ease-in-out;
+  -moz-transition:all .2s ease-in-out;
+  -ms-transition:all .2s ease-in-out;
+  -o-transition:all .2s ease-in-out;
+}
+
+.hoverWord:hover {
+  color: orange !important;
+  text-decoration: none !important;
+  transform:scale(1.1) !important;
+  -webkit-transform:scale(1.1) !important;
+  -moz-transform:scale(1.1) !important;
+  -ms-transform:scale(1.1) !important;
+  -o-transform:scale(1.1) !important;
+}
+
+.teg-1
+{
+
+    font-size: 12px;
+    color: black;
+}
+.teg-2
+{
+    font-size: 16px;
+    color: #32323c;
+}
+.teg-3
+{
+    font-size: 20px;
+    color: #4a4a4a;
+}
+.teg-4
+{
+
+    font-size: 28px;
+    color: #32323c;
+}
+.teg-5
+{
+    font-size: 36px;
+    color: #4a4a4a;
+}
