@@ -13,6 +13,7 @@ a:active {
   border: 0 !important;
 }
 a {
+
 outline: medium none !important;
 }
 button:active {
