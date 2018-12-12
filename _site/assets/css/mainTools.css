@@ -23,3 +23,12 @@ button:active {
 button {
   outline: medium none !important;
 }
+
+@font-face {
+   font-family: "Avenir";
+   src:url("../../assets/webfonts/319859_1_0.ttf");
+}
+
+html {
+   font-family:"Avenir" !important;
+}

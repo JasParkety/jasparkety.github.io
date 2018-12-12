@@ -9,17 +9,24 @@
 .navigationButton:hover {
   color: #f7941e;
 }
+
 .stickyNavContainer {
-  position: fixed;
+  -webkit-transition: height .6s ease-in-out;
+  -moz-transition: height .6s ease-in-out;
+  -ms-transition: height .6s ease-in-out;
+  -o-transition: height .6s ease-in-out;
   height: 100px;
-  z-index: 9999;
-  background-color: #ebeceb;
 }
 .stickyNavContainer {
-    -webkit-transition: background .6s ease-in-out;
-    -moz-transition: background .6s ease-in-out;
-    -ms-transition: background .6s ease-in-out;
-    -o-transition: background .6s ease-in-out;
+
+  -webkit-transition: background .6s ease-in-out;
+  -moz-transition: background .6s ease-in-out;
+  -ms-transition: background .6s ease-in-out;
+  -o-transition: background .6s ease-in-out;
+  position: fixed;
+
+  z-index: 9999;
+  background-color: #ebeceb;
 }
 
 .stickyNavSubContainer {
@@ -51,6 +58,7 @@
 
 
 #secondaryNavContainer{
+
   position: fixed;
   color: black;
   margin-top: 100px;
@@ -162,7 +170,6 @@ i {
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
-
 }
 /* Here we go for the products in the navigation, its dHeaders and descriptions */
 .intaQt {
@@ -181,8 +188,8 @@ i {
 }
 .productIcon {
   float:left;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 

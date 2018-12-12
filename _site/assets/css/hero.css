@@ -1,4 +1,5 @@
 
+
 .hero {
   padding-top: 200px;
   height: 700px;
@@ -10,9 +11,12 @@
   -o-transition: background .6s ease-in-out;
 }
 
-
-.heroImage {
-  width: 350px;
+.withHeroBackground {
+  height: 600px;
+  padding-left: 110px !important;
+  background-image: url("/assets/images/Hero.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 
@@ -37,6 +41,7 @@
 
 
 .backgroundColorsWidth {
+  margin-top: 150px !important;
   width: 200px !important;
 }
 

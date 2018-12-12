@@ -36,10 +36,12 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
 
 
   <link rel="stylesheet" type="text/css" href="/assets/css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/newsroomSlider.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/mainTools.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/hero.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/usecases.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/wordcloud.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/Footer-Dark.css">
 	<!-- include webfonts -->
 	<link rel="stylesheet" type="text/css" href="/assets/css/webfonts.css">
 
@@ -56,6 +58,7 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
    <div class="row">
 
       <div class="col"><a href="#"><img class="Logo" src="/assets/images/standalone.jpg"></a></div>
+      <div id="Placeholder"></div>
 
 
 
@@ -85,6 +88,7 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
     </div>
 
 </div>
+
 
 
 <div class="wrapper">
@@ -134,7 +138,16 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
 
                   <div class="col">
                       <p><div class="navigationSecondaryHeader">Execute</div></p>
-                      <p></p>
+
+                      <div class="row">
+                        <div class="col">
+                          <div class="intaQt">
+                              <img class="productIcon" src="/assets/images/productIcons/analytiQs_32x32.png">
+                              <div class="productHeader">analytiQs</div>
+                          </div>
+                          <div class="productDescription">Description</div>
+                        </div>
+                      </div>
 
                   </div>
 
@@ -171,9 +184,9 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
           
 <div class="container-fluid">
   <div class="hero">
-    <div class="container">
+    <div class="container withHeroBackground">
       <div class="row">
-        <div class="col-1"></div>
+        <div class="col-2"></div>
         <div class="col-5">
 
               <div class="heroFontColorHeader">
@@ -191,7 +204,7 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
 
 
         </div>
-        <div class="col"><img class="heroImage" src="https://www.qitasc.com/img/philosophy/kju-vacuum.png"></div>
+        <div class="col"></div>
       </div>
       <div class="row backgroundcolorButtons">
           <div class="backgroundColorsWidth">
@@ -203,7 +216,7 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
         </div>
       </div>
 
-        
+
     </div>
   </div>
 </div>
@@ -407,18 +420,40 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
 
 
 </br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+
+<div class="container-fluid" style="background-color: #ebeceb; padding: 60px; height: 600px; margin-top: 40px;">
+  <div class="container" style="padding-top: 40px;">
+    <div class="row">
+      <div class="col">
+        <div class="NewsroomText">
+            <h2>QiTASC Newsroom</h2>
+            <p>Explore articles, tutorial videos and interviews and get to know the QiTASC family.</p>
+            <p>Experience the company and the magic behind our product INTACT®</p>
+        </div>
+      </div>
+      <div class="col slider-background">
+        <div id="slider-wrapper">
+          <div class="inner-wrapper">
+            <input checked type="radio" name="slide" class="control" id="Slide1" />
+            <label for="Slide1" id="s1"></label>
+            <input type="radio" name="slide" class="control" id="Slide2" />
+            <label for="Slide2" id="s2"></label>
+            <input type="radio" name="slide" class="control" id="Slide3" />
+            <label for="Slide3" id="s3"></label>
+            <input type="radio" name="slide" class="control" id="Slide4" />
+            <label for="Slide4" id="s4"></label>
+            <div class="overflow-wrapper">
+              <div class="slide" href=""><img class="newsroomImage" src="/assets/images/navBar/Products.png" /></div>
+              <div class="slide" href=""><img class="newsroomImage" src="/assets/images/Title_Header.svg"></div>
+              <div class="slide" href=""><img class="newsroomImage" src="/assets/images/kju-vacuum.png"></div>
+              <div class="slide" href=""><img class="newsroomImage" src="/assets/images/qitasc-logo.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
 
 
 
@@ -427,12 +462,58 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
 
 
       <footer>
-        
+        <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Testing Services</div>
+                        <ul>
+                            <li><a href="/">Project-Based Services</a></li>
+                            <li><a href="/">Corporate Testing</a></li>
+                            <li><a href="/">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Products</div>
+                        <ul>
+                            <li><a href="/">conQlude</a></li>
+                            <li><a href="/">cheQ</a></li>
+                            <li><a href="/">intaQt</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">About Us</div>
+                        <ul>
+                            <li><a href="/about/philosophy#contact">Impressum</a></li>
+                            <li><a href="/about/philosophy#contact">Contact</a></li>
+                            <li><a href="/about/career">Careers</a></li>
+                            <li><a href="/about/privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Resources</div>
+                        <ul>
+                            <li><a target="_blank" href="https://docs.qitasc.com">Documentation</a></li>
+                            <li><a href="/newsroom">Newsroom</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">QiTASC © 2019</p>
+            </div>
+        </footer>
+    </div>
+
       </footer>
 
 
     <!-- Latest minified jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
+
 
 <!-- Latest compiled and minified bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -440,7 +521,8 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
 <script src="/assets/js/hero.js"></script>
 <script src="/assets/js/wordcloud.js"></script>
 <script src="/assets/js/usecases.js"></script>
-<script src="/assets/js/confetti.js"></script>
+<script src="/assets/js/jQWCloudv3.1.js"></script>
+<script src="/assets/js/index.js"></script>
 
   </body>
 </html>
