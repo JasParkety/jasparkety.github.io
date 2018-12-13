@@ -1,15 +1,20 @@
+
 .NewsroomText {
   margin-top: 50px;
   padding: 40px auto;
 }
 
 .NewsroomText h2 {
+  font-size: 30px !important;
   color: #f7941e;
   font-weight: bold;
 }
 
 .NewsroomText p {
   color: #4a4a4a;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 3px;
 
 }
 
