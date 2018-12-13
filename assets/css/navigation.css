@@ -153,9 +153,9 @@ i {
   background-position: 0 88%;
 }
 /* Here we go for the products in the navigation, its dHeaders and descriptions */
-
+/*#bfc2c9;*/
 .disQover {
-  background-color: rgb(255, 249, 226);
+  background-color: #ebeceb;
   -webkit-transition: background .2s ease-in-out;
   -moz-transition: background .2s ease-in-out;
   -ms-transition: background .2s ease-in-out;
@@ -168,7 +168,7 @@ i {
 }
 
 .cheQ {
-  background-color: rgb(211, 211, 227);
+  background-color:  #ebeceb;
   -webkit-transition: background .2s ease-in-out;
   -moz-transition: background .2s ease-in-out;
   -ms-transition: background .2s ease-in-out;
@@ -181,7 +181,7 @@ i {
 }
 
 .intaQt {
-  background-color: rgb(237, 243, 223);
+  background-color:  #ebeceb;
   -webkit-transition: background .2s ease-in-out;
   -moz-transition: background .2s ease-in-out;
   -ms-transition: background .2s ease-in-out;
@@ -193,7 +193,7 @@ i {
 }
 
 .sQedule {
-  background-color: rgb(215, 224, 214);
+  background-color:  #ebeceb;
   -webkit-transition: background .2s ease-in-out;
   -moz-transition: background .2s ease-in-out;
   -ms-transition: background .2s ease-in-out;
@@ -206,7 +206,7 @@ i {
 
 .analytiQs {
 
-  background-color: rgb(230, 206, 209);
+  background-color:  #ebeceb;
   -webkit-transition: background .2s ease-in-out;
   -moz-transition: background .2s ease-in-out;
   -ms-transition: background .2s ease-in-out;
@@ -220,7 +220,7 @@ i {
 
 .conQlude {
 
-  background-color: rgb(228, 244, 251);
+  background-color:  #ebeceb;
   -webkit-transition: background .2s ease-in-out;
   -moz-transition: background .2s ease-in-out;
   -ms-transition: background .2s ease-in-out;

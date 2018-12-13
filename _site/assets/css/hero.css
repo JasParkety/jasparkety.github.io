@@ -28,6 +28,7 @@
 }
 
 .heroFontColorDescription {
+  font-size: 18px;
   -webkit-transition: color .6s ease-in-out;
   -moz-transition: color .6s ease-in-out;
   -ms-transition: color .6s ease-in-out;
@@ -43,11 +44,21 @@
 .backgroundColorsWidth {
   margin-top: 150px !important;
   width: 200px !important;
+  user-select: none;
+-moz-user-select: none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+-o-user-select: none;
 }
 
 .rounded-circle
 {
   width: 35px !important;
+  user-select: none;
+-moz-user-select: none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+-o-user-select: none;
 
 }
 
