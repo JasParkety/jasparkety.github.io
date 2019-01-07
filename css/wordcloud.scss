@@ -153,10 +153,10 @@ $colorList: #f7941e, #4a4a4a, #bfc2c9, #32323c, #64646a, #4a4a4a, #32323c, #f794
     $nth: nth($colorList, $i);
 
     .teg-#{$i} {
-        @include stage00 {font-size: #{randomNum(3, 14)}px;};
-        @include stage01 {font-size: #{randomNum(12, 13)}px;};
-        @include stage02 {font-size: #{randomNum(13, 14)}px;};
-        @include stage03 {font-size: #{randomNum(15, 16)}px;};
+        @include stage00 {font-size: #{randomNum(12, 16)}px;};
+        @include stage01 {font-size: #{randomNum(16, 20)}px;};
+        @include stage02 {font-size: #{randomNum(20, 22)}px;};
+        @include stage03 {font-size: #{randomNum(25, 35)}px;};
         color: #{$nth} !important;
     }
 }
