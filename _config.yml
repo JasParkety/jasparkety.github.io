@@ -31,7 +31,7 @@ collections:
       output: true
 
 sass:
-  sass_dir: css
+  sass_dir: assets/css
 
 plugins:
   - jekyll-redirect-from

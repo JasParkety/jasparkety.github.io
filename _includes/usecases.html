@@ -1,31 +1,60 @@
-<div class="container useCaseContainer">
+<div class="container">
 
-    <div class="usecaseSectionHeader">Use Case Examples</div>
-
+<div class="useCaseMobileContainer">
+  <div class="usecaseSectionHeader">Use Case Examples</div>
     <div class="row">
 
-            {% for usecase in site.data.usecases %}
+          {% for usecase in site.data.usecases %}
 
-            <div class="col-md-3">
-              <div class="thumbnail">
-                <a href="#" target="_blank" style="text-decoration: none;">
+            {% assign RowBreak = forloop.index | modulo: 3  %}
 
-                  <img class="image-container" src="{{ site.baseurl }}/{{ usecase.imagePath }}" alt="Lights" style="width:100%">
-                  <div class="caption">
-                    <p><div class="usecaseHeader">{{ usecase.usecase }}</div></p>
-                    <p><div class="usecaseDescription">{{ usecase.description }}</div></p>
-                    <p><div class="usecaseReadMore">Read More</div></p>
-                  </div>
-                </a>
-              </div>
+          <div class="col-4">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
+
+                <img class="image-container" src="{{ site.baseurl }}/{{ usecase.imagePath }}" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">{{ usecase.usecase }}</div></p>
+                  <p><div class="usecaseDescription">{{ usecase.description }}</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
             </div>
-            {% endfor %}
-
-
-    </div>
-
-
+          </div>
+          {% if RowBreak == 0 %}
+        </div><div class="row">
+          {% endif %}
+          {% endfor %}
+  </div>
+  </div>
 </div>
 
 
-</br>
+<div class="container">
+<div class="useCaseDesktopContainer">
+  <div class="usecaseSectionHeader">Use Case Examples</div>
+    <div class="row">
+
+          {% for usecase in site.data.usecases %}
+
+
+
+
+
+          <div class="col-3 col-xs-5">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
+
+                <img class="image-container" src="{{ site.baseurl }}/{{ usecase.imagePath }}" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">{{ usecase.usecase }}</div></p>
+                  <p><div class="usecaseDescription">{{ usecase.description }}</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          {% endfor %}
+  </div>
+</div>
+</div>

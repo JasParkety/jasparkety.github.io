@@ -1,0 +1,212 @@
+---
+---
+
+
+html,body{
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+// ##################################################################################
+
+$mainHeaderHeightDesktop: 100px;
+$mainHeaderHeightMobile:  50px;
+
+$secondaryHeaderHeightDesktop: 550px;
+$secondaryHeaderHeightMobile: 590px;
+
+$qitascOrange: #f7941e;
+$qitascDarkGrey: #4a4a4a;
+$qitascLightGrey: #ebeceb;
+$qitascGrey: #bfc2c9;
+$qitascDarkerGrey: #32323c;
+$qitascGreyVariation: #64646a;
+
+$navigationButtonFontSizeDesktop:     20px;
+$navigationButtonFontSizeMobile:      13px;
+$navigationButtonFontSizeSmallMobile: 11px;
+
+// ##################################################################################
+// ##################################################################################
+//                                                                            #######
+//            responsiveStageZero ::   First Responsive from 0 - 410 px       #######
+//            responsiveStageOne ::    First Responsive from 411 - 767 px     #######
+//            responsiveStageTwo ::    Second Responsive from 768px - 1199px  #######
+//            responsiveStageThree ::  Third Responsive 1200px+               #######
+//                                                                            #######
+// ##################################################################################
+// ##################################################################################
+
+$stageZero: 410px;
+$stageOneLower: 411px;
+$stageOneHigher: 767px;
+$stageTwoLower: 768px;
+$stageTwoHigher: 1199px;
+$stageThree: 1200px;
+
+@mixin stage00 {
+  @media (max-width: $stageZero) { @content; }
+}
+
+@mixin stage01 {
+  @media (min-width:$stageOneLower) and (max-width:$stageOneHigher)  { @content; }
+}
+
+@mixin stage02 {
+  @media (min-width:$stageTwoLower) and (max-width:$stageTwoHigher) { @content; }
+}
+
+@mixin stage03 {
+  @media (min-width: $stageThree) { @content; }
+}
+
+// ##################################################################################
+// ##################################################################################
+//                                                                            #######
+//            Tools to extend to other classes, like shadow or transitions    #######
+//                                                                            #######
+// ##################################################################################
+// ##################################################################################
+
+.transitionColor {
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+}
+
+.transitionHeight {
+    -webkit-transition: height .6s ease-in-out;
+    -moz-transition: height .6s ease-in-out;
+    -ms-transition: height .6s ease-in-out;
+    -o-transition: height .6s ease-in-out;
+}
+
+.transitionOpacity {
+    -webkit-transition: opacity .3s linear 1s;
+    transition: opacity .3s linear 1s;
+}
+.shadowBottom  {
+    -webkit-box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
+}
+
+.transitionMargin {
+  -webkit-transition: margin 0.5s ease-in;
+  -moz-transition: margin 0.5s ease-in;
+  -o-transition: margin 0.5s ease-in;
+  transition: margin 0.5s ease-in;
+}
+
+.transitionMarginSlower {
+  -webkit-transition: margin 1s ease-out;
+  -moz-transition: margin 1s ease-out;
+  -o-transition: margin 1s ease-out;
+  transition: margin 1s ease-out;
+}
+
+.transitionAll {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.transitionBackground {
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out;
+  -ms-transition: background .2s ease-in-out;
+  -o-transition: background .2s ease-in-out;
+}
+
+.transformScale {
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+}
+
+// ##################################################################################
+// ##################################################################################
+//                                                                            #######
+//            Hero Main Div Classes                                           #######
+//                                                                            #######
+// ##################################################################################
+// ##################################################################################
+.containerFluidMobile {
+  background-color: $qitascGrey;
+}
+
+
+.heroHeader {
+  @include stage00 {
+    height: 500px;
+    background-image: url("/assets/images/HeroMobile.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  @include stage01 {
+    height: 500px;
+    background-image: url("/assets/images/HeroMobile.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+  @include stage02 {
+    height: 700px;
+    background-image: url("/assets/images/Hero.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  @include stage03 {
+    height: 700px;
+    background-image: url("/assets/images/Hero.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+
+
+}
+
+
+
+.heroFontColorHeader {
+
+  @include stage00 {
+    margin-top: 70px;
+    font-size: 10px;
+    color: $qitascOrange;
+
+  }
+  @include stage01 {
+    margin-top: 70px;
+    font-size: 10px;
+    color: $qitascOrange;
+  }
+  @include stage02 {
+  margin-top: 200px;
+  font-size: 10px;
+  color: $qitascOrange;
+  }
+  @include stage03 {
+  margin-top: 200px;
+  font-size: 10px;
+  color: $qitascOrange;}
+
+}
+
+.heroFontColorDescription {
+  @include stage00 {
+
+    font-size: 10px;
+    color: $qitascDarkerGrey;
+
+  }
+
+}

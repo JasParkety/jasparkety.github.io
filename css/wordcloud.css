@@ -1,11 +1,11 @@
-.containerStyle {
+.wordCloudContainerStyle {
   z-index: 9995;
   display: relative !important;
   background-color: #ebeceb;
   height: 700px !important;
   text-align: center;
-  padding-top: 100px !important;
-  padding-bottom: 100px !important;
+  padding-top: 70px !important;
+  padding-bottom: 70px !important;
 }
 
 .whatDoYouWantToTest {

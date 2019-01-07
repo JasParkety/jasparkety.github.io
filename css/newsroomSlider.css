@@ -24,7 +24,7 @@
 
 .slider-background {
   background-image: url("/assets/images/Newsroom.png");
-  background-size: contain;
+  background-size: 55%;
   background-repeat: no-repeat;
   background-position: center;
 }

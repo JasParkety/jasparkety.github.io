@@ -1,0 +1,712 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+html,body{
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+// ##################################################################################
+
+$mainHeaderHeightDesktop: 100px;
+$mainHeaderHeightMobile:  50px;
+
+$secondaryHeaderHeightDesktop: 550px;
+$secondaryHeaderHeightMobile: 590px;
+
+$qitascOrange: #f7941e;
+$qitascDarkGrey: #4a4a4a;
+$qitascLightGrey: #ebeceb;
+$qitascGrey: #bfc2c9;
+$qitascDarkerGrey: #32323c;
+$qitascGreyVariation: #64646a;
+
+$navigationButtonFontSizeDesktop:     20px;
+$navigationButtonFontSizeMobile:      13px;
+$navigationButtonFontSizeSmallMobile: 11px;
+
+// ##################################################################################
+// ##################################################################################
+//                                                                            #######
+//            responsiveStageZero ::   First Responsive from 0 - 410 px       #######
+//            responsiveStageOne ::    First Responsive from 411 - 767 px     #######
+//            responsiveStageTwo ::    Second Responsive from 768px - 1199px  #######
+//            responsiveStageThree ::  Third Responsive 1200px+               #######
+//                                                                            #######
+// ##################################################################################
+// ##################################################################################
+
+$stageZero: 410px;
+$stageOneLower: 411px;
+$stageOneHigher: 767px;
+$stageTwoLower: 768px;
+$stageTwoHigher: 1199px;
+$stageThree: 1199px;
+
+@mixin stage00 {
+  @media (max-width: $stageZero) { @content; }
+}
+
+@mixin stage01 {
+  @media (min-width:$stageOneLower) and (max-width:$stageOneHigher)  { @content; }
+}
+
+@mixin stage02 {
+  @media (min-width:$stageTwoLower) and (max-width:$stageTwoHigher) { @content; }
+}
+
+@mixin stage03 {
+  @media (min-width: $stageThree) { @content; }
+}
+
+// ##################################################################################
+// ##################################################################################
+//                                                                            #######
+//            Tools to extend to other classes, like shadow or transitions    #######
+//                                                                            #######
+// ##################################################################################
+// ##################################################################################
+
+.transitionColor {
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+}
+
+.transitionHeight {
+    -webkit-transition: height .6s ease-in-out;
+    -moz-transition: height .6s ease-in-out;
+    -ms-transition: height .6s ease-in-out;
+    -o-transition: height .6s ease-in-out;
+}
+
+.transitionOpacity {
+    -webkit-transition: opacity .3s linear 1s;
+    transition: opacity .3s linear 1s;
+}
+.shadowBottom  {
+    -webkit-box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
+}
+
+.transitionMargin {
+  -webkit-transition: margin 0.5s ease-in;
+  -moz-transition: margin 0.5s ease-in;
+  -o-transition: margin 0.5s ease-in;
+  transition: margin 0.5s ease-in;
+}
+
+.transitionMarginSlower {
+  -webkit-transition: margin 1s ease-out;
+  -moz-transition: margin 1s ease-out;
+  -o-transition: margin 1s ease-out;
+  transition: margin 1s ease-out;
+}
+
+.transitionAll {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.transitionBackground {
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out;
+  -ms-transition: background .2s ease-in-out;
+  -o-transition: background .2s ease-in-out;
+}
+
+.transformScale {
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+}
+// ##################################################################################
+// ##################################################################################
+//                                                                            #######
+//            Main Navigation Header Containers                               #######
+//            class: container-fluid stickyNavContainer shadowBottom          #######
+//            class: container stickyNavSubContainer                          #######
+//                                                                            #######
+// ##################################################################################
+// ##################################################################################
+
+.stickyNavContainer {
+  @extend .transitionHeight;
+
+  @extend .shadowBottom;
+  position: fixed;
+  background-color: $qitascLightGrey;
+  z-index: 9999;
+  @include stage00 {
+    height: $mainHeaderHeightMobile;
+  }
+  @include stage01 {
+    height: $mainHeaderHeightMobile;
+  }
+  @include stage02 {
+    height: $mainHeaderHeightDesktop;
+  }
+  @include stage03 {
+    height: $mainHeaderHeightDesktop;
+  }
+}
+.LogoContainer {
+  @include stage00 {
+    width: 70px !important;
+  }
+  @include stage01 {
+    width: 90px !important;
+  }
+  @include stage02 {
+    width: 180px !important;
+  }
+  @include stage03 {
+    width: 285px !important;
+  }
+  //@include stage00 { width: 60px !important;}
+}
+.Logo {
+
+  cursor: pointer;
+  @extend .transitionHeight;
+
+  @include stage00 {
+    height: $mainHeaderHeightMobile/2;
+    margin-top: $mainHeaderHeightMobile * (1/4);
+  }
+
+  @include stage01 {
+    height: $mainHeaderHeightMobile/2;
+    margin-top: $mainHeaderHeightMobile * (1/4);
+  }
+  @include stage02 {
+    height: $mainHeaderHeightDesktop/2;
+    margin-top: $mainHeaderHeightDesktop * (1/4);
+  }
+  @include stage03 {
+    height: $mainHeaderHeightDesktop/2;
+    margin-top: $mainHeaderHeightDesktop * (1/4);
+  }
+}
+
+.buttonPadding {
+  @include stage00 {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
+  @include stage01 {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
+}
+.navigationButton {
+
+  @extend .transitionMargin;
+  @extend .transitionColor;
+
+  border: 0px;
+  font-weight: bolder;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+  color: $qitascDarkGrey;
+
+  @include stage00 {
+    font-size: $navigationButtonFontSizeSmallMobile;
+    margin-top: $mainHeaderHeightMobile * (1/4);
+  }
+  @include stage01 {
+    font-size: $navigationButtonFontSizeMobile;
+    margin-top: $mainHeaderHeightMobile * (1/4);
+  }
+  @include stage02 {
+    font-size: $navigationButtonFontSizeDesktop;
+    margin-top: $mainHeaderHeightDesktop * (1/3);
+  }
+  @include stage03 {
+    font-size: $navigationButtonFontSizeDesktop;
+    margin-top: $mainHeaderHeightDesktop * (1/3);
+  }
+
+}
+
+.navigationButton:hover {
+  color: $qitascOrange;
+}
+
+
+i {
+
+    border: solid $qitascDarkGrey;
+    display: inline-block;
+    padding: 3px;
+
+    @include stage00 {
+
+      border-width: 0 1px 1px 0px;
+    }
+    @include stage01 {
+
+      border-width: 0 2px 2px 0px;
+    }
+    @include stage02 {
+
+      border-width: 0 3px 3px 0px;
+    }
+    @include stage03 {
+
+      border-width: 0 3px 3px 0px;
+    }
+
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 3px;
+    padding: 3px;
+
+}
+
+.down:hover {
+  color: $qitascOrange;
+}
+
+
+
+// ##################################################################################
+// ##################################################################################
+//                                                                            #######
+//            Here comes the Container for the Collapsed Menu                 #######
+//                     id est Secondary Header                                #######
+//            This is a foundation for all Section                            #######
+//            Products, Services and Support                                  #######
+//            class: wrapper{{ navigation.name }}                             #######
+//            class: secondaryNavContainer                                    #######
+//            class: displayedContent                                         #######
+//                                                                            #######
+// ##################################################################################
+// ##################################################################################
+
+.wrapper {
+  z-index: 9996;
+  width: 110%;
+  position: absolute;
+}
+
+#secondaryNavContainer {
+
+  @extend .transitionMarginSlower;
+  background-color: white;
+  position: fixed;
+  color: black;
+  width: 100%;
+  height: 0px;
+  @include stage00 {
+    margin-top: $mainHeaderHeightMobile;
+  }
+  @include stage01 {
+    margin-top: $mainHeaderHeightMobile;
+  }
+  @include stage02 {
+    margin-top: $mainHeaderHeightDesktop;
+  }
+  @include stage03 {
+    margin-top: $mainHeaderHeightDesktop;
+  }
+
+}
+
+#secondaryMobileNavContainer.on {
+  @include stage00 {
+    height: $secondaryHeaderHeightMobile;
+  }
+  @include stage01 {
+    height: $secondaryHeaderHeightMobile;
+  }
+  @include stage02 {
+    height: $secondaryHeaderHeightDesktop;
+  }
+  @include stage03 {
+    height: $secondaryHeaderHeightDesktop;
+  }
+}
+
+.displayedContentProducts, .displayedContentSupport {
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+
+.displayedContentProducts.add, .displayedContentSupport.add {
+  display: inline;
+  @include stage00 {
+    height: $secondaryHeaderHeightMobile;
+  }
+  @include stage01 {
+    height: $secondaryHeaderHeightMobile;
+  }
+  @include stage02 {
+    height: $secondaryHeaderHeightDesktop;
+  }
+  @include stage03 {
+    height: $secondaryHeaderHeightDesktop;
+  }
+}
+
+.transparentOverlayOfContent {
+
+  position: fixed;
+  width: 100%;
+
+  height: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0);
+
+  @include stage00 {
+    margin-top: $mainHeaderHeightMobile + $secondaryHeaderHeightMobile;
+  }
+  @include stage01 {
+    margin-top: $mainHeaderHeightMobile + $secondaryHeaderHeightMobile;
+  }
+  @include stage02 {
+    margin-top: $mainHeaderHeightDesktop + $secondaryHeaderHeightDesktop;
+  }
+  @include stage03 {
+    margin-top: $mainHeaderHeightDesktop + $secondaryHeaderHeightDesktop;
+  }
+
+
+ }
+
+.transparentOverlayOfContent.add {
+  z-index: 9997;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+
+}
+
+
+
+// ##################################################################################
+// ##################################################################################
+//                                                                            #######
+//            Products Sub Header Styles starting here                        #######
+//                                                                            #######
+// ##################################################################################
+// ##################################################################################
+
+
+
+.navigationSecondaryHeader {
+
+  color: $qitascDarkGrey;
+  font-weight: bold;
+  background-image: linear-gradient(120deg, $qitascLightGrey 0%, rgba(0,0,0,0.1) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  @include stage00 {
+    margin-top: 5px;
+    font-size: $navigationButtonFontSizeSmallMobile; // 11px
+  }
+  @include stage01 {
+    margin-top: 5px;
+    font-size: $navigationButtonFontSizeMobile; // 13px
+  }
+  @include stage02 {
+    margin-top: 5px;
+    font-size: $navigationButtonFontSizeMobile * (15/13); // 15px
+  }
+  @include stage03 {
+    margin-top: 5px;
+    font-size: $navigationButtonFontSizeMobile * (15/13); // 15px
+  }
+}
+
+.productIcon {
+  float:left;
+  @include stage00 {
+    width: 35px;
+    height: 35px;
+  }
+  @include stage01 {
+    width: 45px;
+    height: 45px;
+  }
+  @include stage02 {
+    width: 50px;
+    height: 50px;
+  }
+  @include stage03 {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.rowProductIcons {
+  @include stage00 {
+    padding-bottom: 8px;
+  }
+  @include stage01 {
+    padding-bottom: 10px;
+  }
+  @include stage02 {
+    padding-bottom: 13px;
+  }
+  @include stage03 {
+    padding-bottom: 15px;
+  }
+}
+
+.floatproduct h2 {
+  float: right;
+}
+
+.conQlude, .disQover, .cheQ, .intaQt, .sQedule, .analytiQs {
+  @extend .transitionBackground;
+  background-color:  $qitascLightGrey;
+  cursor: pointer;
+}
+
+.conQlude:hover, {
+  background-color: rgb(197, 238, 252);
+}
+.disQover:hover {
+  background-color: rgb(255, 224, 70);
+}
+.cheQ:hover, {
+  background-color: rgb(145, 150, 185);
+}
+.intaQt:hover {
+  background-color: rgb(149, 210, 56);
+}
+.sQedule:hover {
+  background-color: rgb(153, 181, 154);
+}
+.analytiQs:hover {
+  background-color: rgb(193, 134, 143);
+}
+
+
+.productHeader {
+  @extend .transitionColor;
+  color: $qitascDarkGrey;
+  @include stage00 {
+    font-size: 15px;
+  }
+  @include stage01 {
+    font-size: 15px;
+  }
+  @include stage02 {
+    font-size: 17px;
+  }
+  @include stage03 {
+    font-size: 20px;
+  }
+
+}
+.productHeader:hover {
+  color: $qitascDarkerGrey;
+}
+.productDescription {
+  color: $qitascGrey;
+  @include stage00 {
+    font-size: 15px;
+  }
+  @include stage01 {
+    font-size: 15px;
+  }
+  @include stage02 {
+    font-size: 17px;
+  }
+  @include stage03 {
+    font-size: 20px;
+  }
+}
+
+.leftPadding {
+  @include stage00 {
+    display: inline !important;
+    margin-left: 20px !important;
+    padding-right: 40px !important;
+  }
+  @include stage01 {
+    display: inline !important;
+    margin-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  @include stage02 {
+    display: none !important;
+    margin-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  @include stage03 {
+    display: none !important;
+    margin-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+.DesktopNavColFirst {
+    @include stage00 {
+     display: none;
+  }
+
+
+  @include stage01 {
+    display: none;
+  }
+  @include stage02 {
+
+    margin-left: 20px !important;
+    padding-right: 0px !important;
+    display: inline;
+  }
+  @include stage03 {
+
+    margin-left: 10% !important;
+    padding-right: 20px !important;
+
+    display: inline;
+  }
+}
+
+.DesktopNavCol {
+
+  @include stage00 {
+    display: none;
+
+  }
+  @include stage01 {
+    display: none;
+  }
+  @include stage02 {
+
+    margin-left: 0px !important;
+    padding-right: 0px !important;
+    display: inline;
+  }
+  @include stage03 {
+
+    margin-left: 20px !important;
+    padding-right: 20px !important;
+    display: inline;
+  }
+
+}
+
+.DesktopNavColLast {
+
+  @include stage00 {
+    display: none;
+
+  }
+  @include stage01 {
+    display: none;
+  }
+  @include stage02 {
+
+    margin-left: 0px !important;
+    padding-right: 10px !important;
+    display: inline;
+  }
+  @include stage03 {
+
+    margin-left: 20px !important;
+    padding-right: 20px !important;
+    display: inline;
+  }
+
+}
+
+.greyColumn {
+  background-color: $qitascGrey;
+  padding: 20px;
+  @include stage00 {
+    display: none !important;
+    height: $secondaryHeaderHeightMobile !important;
+  }
+  @include stage01 {
+    display: inline;
+    height: $secondaryHeaderHeightMobile !important;
+  }
+  @include stage02 {
+    display: inline;
+    height: $secondaryHeaderHeightDesktop !important;
+    padding-left: 10px;
+  }
+  @include stage03 {
+    display: inline;
+    height: $secondaryHeaderHeightDesktop !important;
+  }
+}
+
+.leftSideNavMenuItem {
+  color: $qitascLightGrey;
+  font-size: 20px;
+  padding-left: 20px;
+
+}
+.leftSideNavMenuItem:hover {
+  color: $qitascGreyVariation;
+  cursor: pointer;
+}
+
+.leftSideNavMenucloseButton {
+  color: $qitascLightGrey;
+  font-size: 20px;
+  padding-right: 40px;
+  float: right;
+  padding-bottom: 200px;
+  margin-top: -20px;
+
+}
+
+.closeButton {
+
+  @include stage00 {
+width: 20px;
+  }
+  @include stage01 {
+width: 20px;
+  }
+  @include stage02 {
+width: 20px;
+  }
+  @include stage03 {
+width: 35px;
+  }
+
+
+  @extend .transitionAll;
+  padding-top: 10px;
+
+  filter: brightness(120%);
+
+}
+
+.closeButton:hover {
+
+  @extend .transformScale;
+  filter: brightness(70%);
+
+}
+
+// ##################################################################################
+// ##################################################################################
+//                                                                            #######
+//            Services Sub Header Styles starting here                        #######
+//                                                                            #######
+// ##################################################################################
+// ##################################################################################

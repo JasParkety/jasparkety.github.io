@@ -35,16 +35,16 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
 	<meta name="theme-color" content="#f7941e">
 
 
-  <link rel="stylesheet" type="text/css" href="/assets/css/navigation.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/newsroomSlider.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/mainTools.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/hero.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/usecases.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/wordcloud.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/Footer-Dark.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/qualities.css">
+  <link rel="stylesheet" type="text/css" href="/css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="/css/newsroomSlider.css">
+  <link rel="stylesheet" type="text/css" href="/css/mainTools.css">
+  <link rel="stylesheet" type="text/css" href="/css/hero.css">
+  <link rel="stylesheet" type="text/css" href="/css/usecases.css">
+  <link rel="stylesheet" type="text/css" href="/css/wordcloud.css">
+  <link rel="stylesheet" type="text/css" href="/css/Footer-Dark.css">
+  <link rel="stylesheet" type="text/css" href="/css/qualities.css">
 	<!-- include webfonts -->
-	<link rel="stylesheet" type="text/css" href="/assets/css/webfonts.css">
+	<link rel="stylesheet" type="text/css" href="/css/webfonts.css">
 
    <!-- Latest compiled and minified CSS -->
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -54,176 +54,297 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
 
   <header>
 
-    <div class="container-fluid stickyNavContainer shadowBottom">
-  <div class="container stickyNavSubContainer">
-   <div class="row">
-
-      <div class="col"><div class="versionTag">v.0.1</div><a href="#"><img class="Logo" src="/assets/images/standalone.png"></a></div>
-      <div id="Placeholder"></div>
-
-
-
-
-     <div class="col">
-        <button id="toggle" class="navigationButton"> Products <i class="arrow down"></i></button>
-     </div>
+    <!--  ########################################################################### -->
+<!--  ########################################################################### -->
+<!--  ####                                                                   #### -->
+<!--  ####                                                                   #### -->
+<!--  ####                    Top Header Container                           #### -->
+<!--  ####                                                                   #### -->
+<!--  ####                                                                   #### -->
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
 
 
+<div class="container-fluid stickyNavContainer shadowBottom">
+    <div class="container stickyNavSubContainer">
+        <div class="row form-inline">
+          <div class="LogoContainer">
+              <div class="col"><a href="#"><img class="Logo" src="/assets/images/standalone.png"></a></div>
+          </div>
 
-     <div class="col">
-        <button id="toggle" class="navigationButton"> Services <i class="arrow down"></i></button>
-     </div>
+                    <div class="col col-xs-4 buttonPadding">
+                        <button id="toggleProducts" class="navigationButton">Products
+                          <i class="arrow down"></i></button>
+                    </div>
+                    <div class="col col-xs-4 buttonPadding">
+                        <button id="toggleServices" class="navigationButton">Services
+
+                          <!-- <i class="arrow down"></i> -->
+
+                        </button>
+                    </div>
+                    <div class="col col-xs-4 buttonPadding">
+                        <button id="toggleSupport" class="navigationButton">Support
+                          <i class="arrow down"></i></button>
+                    </div>
 
 
-
-     <div class="col">
-        <button id="toggle" class="navigationButton"> Support <i class="arrow down"></i></button>
-     </div>
-
-
-
-
-     </div>
-
-
+        </div>
     </div>
-
 </div>
 
+
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
 
 
 <div class="wrapper">
   <div id="secondaryNavContainer">
-    <div class="displayedContent">
-              <div class="row secondaryRowContainer">
-                  <div class="col"></div>
-                  <div class="col"></div>
+      <div class="displayedContentProducts">
+        
+<div class="row">
 
-                  <div class="col">
-
-                        <p><div class="navigationSecondaryHeader">Specify</div></p>
-
-                        <div class="row rowProductIcons">
-                          <div class="col">
-                            <div class="floatproduct disQover">
-                                <img class="productIcon" src="/assets/images/productIcons/disQover_256x256.png">
-                                <div class="productHeader">disQover</div>
-                            </div>
-                            <div class="productDescription">Description</div>
-                          </div>
-                        </div>
+<!--
+// ##################################################################################
+//            MobileViewNavigation, visible below 768 px                     #######
+// ##################################################################################
+ -->
 
 
-
-                        <div class="row rowProductIcons">
-                          <div class="col">
-                            <div class="floatproduct cheQ">
-                                <img class="productIcon" src="/assets/images/productIcons/cheQ_256x256.png">
-                                <div class="productHeader">cheQ</div>
-                            </div>
-                            <div class="productDescription">Description</div>
-                          </div>
-                        </div>
-
-                    </div>
-
-
-
-                  <div class="col">
-                      <p><div class="navigationSecondaryHeader">Execute</div></p>
-
-
-                      <div class="row rowProductIcons">
-                        <div class="col">
-                          <div class="floatproduct intaQt">
-                              <img class="productIcon" src="/assets/images/productIcons/intaQt_256x256.png">
-                              <div class="productHeader">intaQt</div>
-                          </div>
-                          <div class="productDescription">Description</div>
-                        </div>
-                      </div>
-
-                      <div class="row rowProductIcons">
-                        <div class="col">
-                          <div class="floatproduct intaQt">
-                              <img class="productIcon" src="/assets/images/productIcons/Studio_256x256.png">
-                              <div class="productHeader">Studio</div>
-                          </div>
-                          <div class="productDescription">Description</div>
-                        </div>
-                      </div>
-
-                      <div class="row rowProductIcons">
-                        <div class="col">
-                          <div class="floatproduct intaQt">
-                              <img class="productIcon" src="/assets/images/productIcons/Client_256x256.png">
-                              <div class="productHeader">Client</div>
-                          </div>
-                          <div class="productDescription">Description</div>
-                        </div>
-                      </div>
-
-                      <div class="row rowProductIcons">
-                        <div class="col">
-                          <div class="floatproduct sQedule">
-                              <img class="productIcon" src="/assets/images/productIcons/sQedule_256x256.png">
-                              <div class="productHeader">sQedule</div>
-                          </div>
-                          <div class="productDescription">Description</div>
-                        </div>
-                      </div>
-
-
-
+<div class="col leftPadding">
+              <p><div class="navigationSecondaryHeader">Specify</div></p>
+              <div class="row rowProductIcons">
+                <div class="col">
+                  <div class="floatproduct disQover">
+                      <img class="productIcon" src="/assets/images/productIcons/disQover_256x256.png">
+                      <div class="productHeader">disQover</div>
                   </div>
-
-                  <div class="col">
-                      <p><div class="navigationSecondaryHeader">Analyse</div></p>
-
-                      <div class="row rowProductIcons">
-                        <div class="col">
-                          <div class="floatproduct conQlude">
-                              <img class="productIcon" src="/assets/images/productIcons/conQlude_256x256.png">
-                              <div class="productHeader">conQlude</div>
-                          </div>
-                          <div class="productDescription">Description</div>
-                        </div>
-                      </div>
-
-                      <div class="row rowProductIcons">
-                        <div class="col">
-                          <div class="floatproduct analytiQs">
-                              <img class="productIcon" src="/assets/images/productIcons/analytiQs_256x256.png">
-                              <div class="productHeader">analytiQs</div>
-                          </div>
-                          <div class="productDescription">Description</div>
-                        </div>
-                      </div>
+                  <div class="productDescription">Description</div>
+                </div>
+              </div>
 
 
+              <div class="row rowProductIcons">
+                <div class="col">
+                  <div class="floatproduct cheQ">
+                      <img class="productIcon" src="/assets/images/productIcons/cheQ_256x256.png">
+                      <div class="productHeader">cheQ</div>
                   </div>
-                  <!-- Left Side Menu in the Navigation -->
-                  <div class="col greyColumn">
-                    <div class="leftSideNavMenu">
-                        <div class="row leftSideNavMenuItem"></div>
-                        <div class="row leftSideNavMenuItem">Newsroom</div>
-                        <div class="row leftSideNavMenuItem">About</div>
-                        <div class="row leftSideNavMenuItem">Support</div>
-                        <div class="row leftSideNavMenuItem">Documentation</div>
-                        <div class="row leftSideNavMenuItem">Contact</div>
-                        <div class="row leftSideNavMenuItem">Impressum</div>
+                  <div class="productDescription">Description</div>
+                </div>
+              </div>
+            <p><div class="navigationSecondaryHeader">Execute</div></p>
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct intaQt">
+                    <img class="productIcon" src="/assets/images/productIcons/intaQt_256x256.png">
+                    <div class="productHeader">intaQt</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
 
-                    </div>
-                  </div>
-                  <div class="col greyColumn"><img id="closeButtonID" class="closeButton" src="/assets/images/navBar/x_1.png"></div>
-                  <div class="col greyColumn"></div>
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct intaQt">
+                    <img class="productIcon" src="/assets/images/productIcons/Studio_256x256.png">
+                    <div class="productHeader">Studio</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
 
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct intaQt">
+                    <img class="productIcon" src="/assets/images/productIcons/Client_256x256.png">
+                    <div class="productHeader">Client</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct sQedule">
+                    <img class="productIcon" src="/assets/images/productIcons/sQedule_256x256.png">
+                    <div class="productHeader">sQedule</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+            <p><div class="navigationSecondaryHeader">Analyze</div></p>
+
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct conQlude">
+                    <img class="productIcon" src="/assets/images/productIcons/conQlude_256x256.png">
+                    <div class="productHeader">conQlude</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct analytiQs">
+                    <img class="productIcon" src="/assets/images/productIcons/analytiQs_256x256.png">
+                    <div class="productHeader">analytiQs</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+</div>
+<!--
+    // ##################################################################################
+    //            Desktop View of the Navigation over 768px                       #######
+    // ##################################################################################
+-->
+
+<div class="col DesktopNavColFirst">
+
+
+          <p><div class="navigationSecondaryHeader">Specify</div></p>
+          <div class="row rowProductIcons">
+            <div class="col">
+              <div class="floatproduct disQover">
+                  <img class="productIcon" src="/assets/images/productIcons/disQover_256x256.png">
+                  <div class="productHeader">disQover</div>
+              </div>
+              <div class="productDescription">Description</div>
+            </div>
+          </div>
+
+
+          <div class="row rowProductIcons">
+            <div class="col">
+              <div class="floatproduct cheQ">
+                  <img class="productIcon" src="/assets/images/productIcons/cheQ_256x256.png">
+                  <div class="productHeader">cheQ</div>
+              </div>
+              <div class="productDescription">Description</div>
+            </div>
+          </div>
+</div>
+
+
+<div class="col DesktopNavCol">
+
+        <p><div class="navigationSecondaryHeader">Execute</div></p>
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct intaQt">
+                <img class="productIcon" src="/assets/images/productIcons/intaQt_256x256.png">
+                <div class="productHeader">intaQt</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
         </div>
+
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct intaQt">
+                <img class="productIcon" src="/assets/images/productIcons/Studio_256x256.png">
+                <div class="productHeader">Studio</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct intaQt">
+                <img class="productIcon" src="/assets/images/productIcons/Client_256x256.png">
+                <div class="productHeader">Client</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct sQedule">
+                <img class="productIcon" src="/assets/images/productIcons/sQedule_256x256.png">
+                <div class="productHeader">sQedule</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+</div>
+
+
+<div class="col DesktopNavColLast">
+
+        <p><div class="navigationSecondaryHeader">Analyze</div></p>
+
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct conQlude">
+                <img class="productIcon" src="/assets/images/productIcons/conQlude_256x256.png">
+                <div class="productHeader">conQlude</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct analytiQs">
+                <img class="productIcon" src="/assets/images/productIcons/analytiQs_256x256.png">
+                <div class="productHeader">analytiQs</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+</div>
+
+
+
+<!--
+    // ##################################################################################
+    //            Grey Side Menu on Screen over 410px                             #######
+    // ##################################################################################
+-->
+
+    <div class="col greyColumn">
+
+            <!--  Close Button  -->
+            <div class="row leftSideNavMenucloseButton">
+                <img id="closeButtonID" class="closeButton" src="/assets/images/navBar/x_1.png">
+            </div>
+
+            <div class="row leftSideNavMenuItem">Newsroom</div>
+            <div class="row leftSideNavMenuItem">About</div>
+            <div class="row leftSideNavMenuItem">Support</div>
+            <div class="row leftSideNavMenuItem">Documentation</div>
+            <div class="row leftSideNavMenuItem">Contact</div>
+            <div class="row leftSideNavMenuItem">Impressum</div>
+
     </div>
+</div>
+
+      </div>
+      <div class="displayedContentSupport">
+        Support
+      </div>
+  </div>
   </div>
 </div>
 
+
 <div class="transparentOverlayOfContent" id="transparentOverlay"></div>
+
+
+
+
+
+
+
+
+<!--  Services Sub Navigation -->
 
   </header>
 
@@ -239,50 +360,37 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
 
         <!--  This is needed for the double lined navigation to push the content a little bit down -->
           
-<div class="container-fluid">
-  <div class="hero">
-    <div class="container withHeroBackground">
+<div class="container-fluid containerFluidMobile">
+
+  <div class="container">
+  <div class="heroHeader">
+
       <div class="row">
-        <div class="col-2"></div>
-        <div class="col-5">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-4">
 
-              <div class="heroFontColorHeader">
-
-                  <h3>the magic of testing</h3>
-
-              </div>
-
-              <div class="heroFontColorDescription">
-
-                <p>QiTASC's INTACT® automates your test project and improves test coverage to get your product to the market sooner.</p>
-                <p>We support diverse use cases, including core network testing, Internet of Things, charging conformity and backend testing.</p>
-
-              </div>
-
+          <div class="heroFontColorHeader"><h3>the magic of testing</h3></div>
+          <div class="heroFontColorDescription">
+              <p>QiTASC's INTACT® automates your test project and improves test coverage to get your product to the market sooner.</p>
+              <p>We support diverse use cases, including core network testing, Internet of Things, charging conformity and backend testing.</p>
+          </div>
 
         </div>
-        <div class="col"></div>
       </div>
-      <div class="row backgroundcolorButtons">
-          <div class="backgroundColorsWidth">
-            <img id="buttonOrange" class="rounded-circle shadow" src="/assets/images/circles/circleOrange.png">
-            <img id="buttonDarkGrey" class="rounded-circle shadow" src="/assets/images/circles/darkGrey.png">
-            <img id="buttonLightGrey" class="rounded-circle shadow" src="/assets/images/circles/lightGrey.png">
-            <img id="buttonMiddleGrey" class="rounded-circle shadow" src="/assets/images/circles/middleGrey.png">
-            <img id="buttonWhite" class="rounded-circle shadow" src="/assets/images/circles/white.png">
-        </div>
-      </div>
-
-
     </div>
   </div>
 </div>
 
+
+<!--
+< -->
+
 <!-- <canvas id="world"> -->
 
-    <div class="container-fluid containerStyle">
+    <div class="container-fluid wordCloudContainerStyle">
       <div class="container">
-        <div class="whatDoYouWantToTest"> What do you want to test?</div>
+        <div class="whatDoYouWantToTest">What do you want to test?</div>
 
         <div id="tegcloud" class="row">
           <div class="col">
@@ -341,142 +449,327 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
 
 <!-- </canvas> -->
 
-<div class="container useCaseContainer">
+<div class="container">
 
-    <div class="usecaseSectionHeader">Use Case Examples</div>
-
+<div class="useCaseMobileContainer">
+  <div class="usecaseSectionHeader">Use Case Examples</div>
     <div class="row">
 
+          
+
             
 
-            <div class="col-md-3">
-              <div class="thumbnail">
-                <a href="#" target="_blank" style="text-decoration: none;">
+          <div class="col-4">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
 
-                  <img class="image-container" src="/assets/images/usecases/UC_Acceptance.png" alt="Lights" style="width:100%">
-                  <div class="caption">
-                    <p><div class="usecaseHeader">Acceptance Testing</div></p>
-                    <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
-                    <p><div class="usecaseReadMore">Read More</div></p>
-                  </div>
-                </a>
-              </div>
+                <img class="image-container" src="/assets/images/usecases/UC_Acceptance.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">Acceptance Testing</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
             </div>
+          </div>
+          
+          
+
             
 
-            <div class="col-md-3">
-              <div class="thumbnail">
-                <a href="#" target="_blank" style="text-decoration: none;">
+          <div class="col-4">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
 
-                  <img class="image-container" src="/assets/images/usecases/UC_BackendAPI.png" alt="Lights" style="width:100%">
-                  <div class="caption">
-                    <p><div class="usecaseHeader">Back-End Testing</div></p>
-                    <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
-                    <p><div class="usecaseReadMore">Read More</div></p>
-                  </div>
-                </a>
-              </div>
+                <img class="image-container" src="/assets/images/usecases/UC_BackendAPI.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">Back-End Testing</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
             </div>
+          </div>
+          
+          
+
             
 
-            <div class="col-md-3">
-              <div class="thumbnail">
-                <a href="#" target="_blank" style="text-decoration: none;">
+          <div class="col-4">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
 
-                  <img class="image-container" src="/assets/images/usecases/UC_Charging.png" alt="Lights" style="width:100%">
-                  <div class="caption">
-                    <p><div class="usecaseHeader">Charging Conformity</div></p>
-                    <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
-                    <p><div class="usecaseReadMore">Read More</div></p>
-                  </div>
-                </a>
-              </div>
+                <img class="image-container" src="/assets/images/usecases/UC_Charging.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">Charging Conformity</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
             </div>
+          </div>
+          
+        </div><div class="row">
+          
+          
+
             
 
-            <div class="col-md-3">
-              <div class="thumbnail">
-                <a href="#" target="_blank" style="text-decoration: none;">
+          <div class="col-4">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
 
-                  <img class="image-container" src="/assets/images/usecases/UC_CoreNW.png" alt="Lights" style="width:100%">
-                  <div class="caption">
-                    <p><div class="usecaseHeader">Core Network Testing</div></p>
-                    <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
-                    <p><div class="usecaseReadMore">Read More</div></p>
-                  </div>
-                </a>
-              </div>
+                <img class="image-container" src="/assets/images/usecases/UC_CoreNW.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">Core Network Testing</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
             </div>
+          </div>
+          
+          
+
             
 
-            <div class="col-md-3">
-              <div class="thumbnail">
-                <a href="#" target="_blank" style="text-decoration: none;">
+          <div class="col-4">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
 
-                  <img class="image-container" src="/assets/images/usecases/UC_E2E.png" alt="Lights" style="width:100%">
-                  <div class="caption">
-                    <p><div class="usecaseHeader">End to End Testing</div></p>
-                    <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
-                    <p><div class="usecaseReadMore">Read More</div></p>
-                  </div>
-                </a>
-              </div>
+                <img class="image-container" src="/assets/images/usecases/UC_E2E.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">End to End Testing</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
             </div>
+          </div>
+          
+          
+
             
 
-            <div class="col-md-3">
-              <div class="thumbnail">
-                <a href="#" target="_blank" style="text-decoration: none;">
+          <div class="col-4">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
 
-                  <img class="image-container" src="/assets/images/usecases/UC_IFRS.png" alt="Lights" style="width:100%">
-                  <div class="caption">
-                    <p><div class="usecaseHeader">IFRS</div></p>
-                    <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
-                    <p><div class="usecaseReadMore">Read More</div></p>
-                  </div>
-                </a>
-              </div>
+                <img class="image-container" src="/assets/images/usecases/UC_IFRS.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">IFRS</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
             </div>
+          </div>
+          
+        </div><div class="row">
+          
+          
+
             
 
-            <div class="col-md-3">
-              <div class="thumbnail">
-                <a href="#" target="_blank" style="text-decoration: none;">
+          <div class="col-4">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
 
-                  <img class="image-container" src="/assets/images/usecases/UC_IoT.png" alt="Lights" style="width:100%">
-                  <div class="caption">
-                    <p><div class="usecaseHeader">Internet of Things</div></p>
-                    <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
-                    <p><div class="usecaseReadMore">Read More</div></p>
-                  </div>
-                </a>
-              </div>
+                <img class="image-container" src="/assets/images/usecases/UC_IoT.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">Internet of Things</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
             </div>
+          </div>
+          
+          
+
             
 
-            <div class="col-md-3">
-              <div class="thumbnail">
-                <a href="#" target="_blank" style="text-decoration: none;">
+          <div class="col-4">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
 
-                  <img class="image-container" src="/assets/images/usecases/UC_Protocol.png" alt="Lights" style="width:100%">
-                  <div class="caption">
-                    <p><div class="usecaseHeader">Protocol Testing</div></p>
-                    <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
-                    <p><div class="usecaseReadMore">Read More</div></p>
-                  </div>
-                </a>
-              </div>
+                <img class="image-container" src="/assets/images/usecases/UC_Protocol.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">Protocol Testing</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
             </div>
-            
-
-
-    </div>
-
-
+          </div>
+          
+          
+  </div>
+  </div>
 </div>
 
 
-</br>
+<div class="container">
+<div class="useCaseDesktopContainer">
+  <div class="usecaseSectionHeader">Use Case Examples</div>
+    <div class="row">
+
+          
+
+
+
+
+
+          <div class="col-3 col-xs-5">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
+
+                <img class="image-container" src="/assets/images/usecases/UC_Acceptance.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">Acceptance Testing</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+
+
+
+
+
+          <div class="col-3 col-xs-5">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
+
+                <img class="image-container" src="/assets/images/usecases/UC_BackendAPI.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">Back-End Testing</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+
+
+
+
+
+          <div class="col-3 col-xs-5">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
+
+                <img class="image-container" src="/assets/images/usecases/UC_Charging.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">Charging Conformity</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+
+
+
+
+
+          <div class="col-3 col-xs-5">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
+
+                <img class="image-container" src="/assets/images/usecases/UC_CoreNW.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">Core Network Testing</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+
+
+
+
+
+          <div class="col-3 col-xs-5">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
+
+                <img class="image-container" src="/assets/images/usecases/UC_E2E.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">End to End Testing</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+
+
+
+
+
+          <div class="col-3 col-xs-5">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
+
+                <img class="image-container" src="/assets/images/usecases/UC_IFRS.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">IFRS</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+
+
+
+
+
+          <div class="col-3 col-xs-5">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
+
+                <img class="image-container" src="/assets/images/usecases/UC_IoT.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">Internet of Things</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+
+
+
+
+
+          <div class="col-3 col-xs-5">
+            <div class="thumbnail">
+              <a href="#" target="_blank" style="text-decoration: none;">
+
+                <img class="image-container" src="/assets/images/usecases/UC_Protocol.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p><div class="usecaseHeader">Protocol Testing</div></p>
+                  <p><div class="usecaseDescription">This is just a Description Placeholder, soon to be finished.</div></p>
+                  <p><div class="usecaseReadMore">Read More</div></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+  </div>
+</div>
+</div>
 
 <div class="container-fluid" style="background-color: #ebeceb; padding: 60px; height: 600px; margin-top: 40px;">
   <div class="container" style="padding-top: 40px;">
@@ -509,7 +802,7 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
         </div>
       </div>
     </div>
-</div>
+  </div>
 </div>
 
 <div class="container-fluid qualitiesContainer">
@@ -619,8 +912,8 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
 <!-- Latest compiled and minified bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="/assets/js/navigation.js"></script>
-<script src="/assets/js/hero.js"></script>
 <script src="/assets/js/wordcloud.js"></script>
+<script src="/assets/js/hero.js"></script>
 <script src="/assets/js/usecases.js"></script>
 <script src="/assets/js/jQWCloudv3.1.js"></script>
 <script src="/assets/js/index.js"></script>
