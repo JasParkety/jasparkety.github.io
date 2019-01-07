@@ -32,7 +32,7 @@ $navigationButtonFontSizeSmallMobile: 11px;
 //            responsiveStageZero ::   First Responsive from 0 - 410 px       #######
 //            responsiveStageOne ::    First Responsive from 411 - 767 px     #######
 //            responsiveStageTwo ::    Second Responsive from 768px - 1199px  #######
-//            responsiveStageThree ::  Third Responsive 1200px+               #######
+//            responsiveStageThree ::  Third Responsive 1119px+               #######
 //                                                                            #######
 // ##################################################################################
 // ##################################################################################
@@ -106,11 +106,11 @@ $stageThree: 1199px;
   transition: margin 1s ease-out;
 }
 
-.transitionAllUsecases {
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all  0.4s ease-in-out;
+.transitionAll {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .transitionBackground {
@@ -126,118 +126,179 @@ $stageThree: 1199px;
   -moz-transform:scale(1.1);
   -ms-transform:scale(1.1);
   -o-transform:scale(1.1);
-
-}
-
-// ##################################################################################
-// ##################################################################################
-//                                                                            #######
-//                                                                            #######
-//                    Wordcloud Random Colors and Font Size                   #######
-//                                                                            #######
-//                                                                            #######
-// ##################################################################################
-// ##################################################################################
-
-$colorList: #f7941e, #4a4a4a, #bfc2c9, #32323c, #64646a, #4a4a4a, #32323c, #f7941e;
-
-@function randomNum($min, $max) {
-  $rand: random();
-  $randomNum: $min + floor($rand * (($max - $min) + 1));
-
-  @return $randomNum;
-}
-
-@for $i from 1 through 8 {
-    $randomNumber : randomNum(1, 6);
-    $nth: nth($colorList, $i);
-
-    .teg-#{$i} {
-        @include stage00 {font-size: #{randomNum(3, 14)}px;};
-        @include stage01 {font-size: #{randomNum(12, 13)}px;};
-        @include stage02 {font-size: #{randomNum(13, 14)}px;};
-        @include stage03 {font-size: #{randomNum(15, 16)}px;};
-        color: #{$nth} !important;
-    }
 }
 
 
 // ##################################################################################
 // ##################################################################################
 //                                                                            #######
-//                                                                            #######
-//                    Wordcloud General Stylez                                #######
-//                                                                            #######
+//           Here we go                                                       #######
 //                                                                            #######
 // ##################################################################################
 // ##################################################################################
 
-.wordCloudContainerStyle {
-  z-index: 9995;
-  display: relative !important;
-  background-color: #ebeceb;
 
-
-  @include stage00 {
-    height: 350px !important;
-    text-align: center;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-  }
-  @include stage01 {
-    height: 400px !important;
-    text-align: center;
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
-  }
-  @include stage02 {
-    height: 500px !important;
-    text-align: center;
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
-  }
-  @include stage03 {
-    height: 600px !important;
-    text-align: center;
-    padding-top: 70px !important;
-    padding-bottom: 70px !important;
-  }
-
+.NewsroomText {
+  margin-top: 50px;
+  padding: 40px auto;
 }
 
-.whatDoYouWantToTest {
-  text-align: center;
-  color: #4a4a4a;
+.NewsroomText h2 {
+  font-size: 30px !important;
+  color: #f7941e;
   font-weight: bold;
+}
 
-  @include stage00 {font-size: 18px;padding-top: 10px;padding-bottom: 10px;}
-  @include stage01 {font-size: 20px;padding-top: 10px;padding-bottom: 10px;}
-  @include stage02 {font-size: 30px;padding-top: 20px;padding-bottom: 20px;}
-  @include stage03 {font-size: 40px;padding-top: 20px;padding-bottom: 20px;}
+.NewsroomText p {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 3px;
 
 }
 
-.tegcloud
-{
-    height:300px;
-}
-#tegcloud a {
-  color: black;
-}
-.hoverWord {
-  transition:all .2s ease-in-out;
-  -webkit-transition:all .2s ease-in-out;
-  -moz-transition:all .2s ease-in-out;
-  -ms-transition:all .2s ease-in-out;
-  -o-transition:all .2s ease-in-out;
+.newsroomImage {
+  width: 25%;
 }
 
-.hoverWord:hover {
-  color: #f7941e !important;
-  text-decoration: none !important;
-  transform:scale(1.1) !important;
-  -webkit-transform:scale(1.1) !important;
-  -moz-transform:scale(1.1) !important;
-  -ms-transform:scale(1.1) !important;
-  -o-transform:scale(1.1) !important;
+.slider-background {
+  background-image: url("/assets/images/Newsroom.png");
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#slider-wrapper {
+
+  width: 400px;
+  height: 470px;
+  margin-top: 0px;
+  position: relative;
+  margin-bottom: 0px;
+
+  overflow: hidden;
+}
+
+#s1 {
+  padding: 6px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: -36px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s2 {
+  padding: 6px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: -12px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s3 {
+  padding: 6px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: 12px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s4 {
+  padding: 6px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: 36px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s1:hover,
+#s2:hover,
+#s3:hover,
+#s4:hover {
+  opacity: .50;
+}
+
+.inner-wrapper {
+  width: 400px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+.control {
+  display: none;
+}
+
+#Slide1:checked ~ .overflow-wrapper {
+  margin-left: 0%;
+}
+
+#Slide2:checked ~ .overflow-wrapper {
+  margin-left: -100%;
+}
+
+#Slide3:checked ~ .overflow-wrapper {
+  margin-left: -200%;
+}
+
+#Slide4:checked ~ .overflow-wrapper {
+  margin-left: -300%;
+}
+
+#Slide1:checked + #s1 {
+  opacity: 1;
+}
+
+#Slide2:checked + #s2 {
+  opacity: 1;
+}
+
+#Slide3:checked + #s3 {
+  opacity: 1;
+}
+
+#Slide4:checked + #s4 {
+  opacity: 1;
+}
+
+.overflow-wrapper {
+  width: 400%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.slide img {
+  width: 25%;
+  float: left;
 }
