@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<!--  Setting Parameter -->
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <title>Continuous Integration (Jenkins) With INTACT</title>
+    <meta name="description" content="
+QiTASC is an Austrian company that excels in automated end-to-end testing. Find out how we can help your business achieve a new level of testing with our INTACT® software.
+">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#f7941e">
+	<link rel="shortcut icon" href="/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#f7941e">
+
+
+  <link rel="stylesheet" type="text/css" href="/css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="/css/newsroomSlider.css">
+  <link rel="stylesheet" type="text/css" href="/css/mainTools.css">
+  <link rel="stylesheet" type="text/css" href="/css/hero.css">
+  <link rel="stylesheet" type="text/css" href="/css/usecases.css">
+  <link rel="stylesheet" type="text/css" href="/css/wordcloud.css">
+  <link rel="stylesheet" type="text/css" href="/css/Footer-Dark.css">
+  <link rel="stylesheet" type="text/css" href="/css/qualities.css">
+	<!-- include webfonts -->
+	<link rel="stylesheet" type="text/css" href="/css/webfonts.css">
+
+   <!-- Latest compiled and minified CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+
+  <header>
+
+    <!--  ########################################################################### -->
+<!--  ########################################################################### -->
+<!--  ####                                                                   #### -->
+<!--  ####                                                                   #### -->
+<!--  ####                    Top Header Container                           #### -->
+<!--  ####                                                                   #### -->
+<!--  ####                                                                   #### -->
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+
+
+<div class="container-fluid stickyNavContainer shadowBottom">
+    <div class="container stickyNavSubContainer">
+        <div class="row form-inline">
+          <div class="LogoContainer">
+              <div class="col"><a href="#"><img class="Logo" src="/assets/images/standalone.png"></a></div>
+          </div>
+
+                    <div class="col col-xs-4 buttonPadding">
+                        <button id="toggleProducts" class="navigationButton">Products
+                          <i class="arrow down"></i></button>
+                    </div>
+                    <div class="col col-xs-4 buttonPadding">
+                        <button id="toggleServices" class="navigationButton">Services
+
+                          <!-- <i class="arrow down"></i> -->
+
+                        </button>
+                    </div>
+                    <div class="col col-xs-4 buttonPadding">
+                        <button id="toggleSupport" class="navigationButton">Support
+                          <i class="arrow down"></i></button>
+                    </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+
+
+<div class="wrapper">
+  <div id="secondaryNavContainer">
+      <div class="displayedContentProducts">
+        
+<div class="row">
+
+<!--
+// ##################################################################################
+//            MobileViewNavigation, visible below 768 px                     #######
+// ##################################################################################
+ -->
+
+
+<div class="col leftPadding">
+              <p><div class="navigationSecondaryHeader">Specify</div></p>
+              <div class="row rowProductIcons">
+                <div class="col">
+                  <div class="floatproduct disQover">
+                      <img class="productIcon" src="/assets/images/productIcons/disQover_256x256.png">
+                      <div class="productHeader">disQover</div>
+                  </div>
+                  <div class="productDescription">Description</div>
+                </div>
+              </div>
+
+
+              <div class="row rowProductIcons">
+                <div class="col">
+                  <div class="floatproduct cheQ">
+                      <img class="productIcon" src="/assets/images/productIcons/cheQ_256x256.png">
+                      <div class="productHeader">cheQ</div>
+                  </div>
+                  <div class="productDescription">Description</div>
+                </div>
+              </div>
+            <p><div class="navigationSecondaryHeader">Execute</div></p>
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct intaQt">
+                    <img class="productIcon" src="/assets/images/productIcons/intaQt_256x256.png">
+                    <div class="productHeader">intaQt</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct intaQt">
+                    <img class="productIcon" src="/assets/images/productIcons/Studio_256x256.png">
+                    <div class="productHeader">Studio</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct intaQt">
+                    <img class="productIcon" src="/assets/images/productIcons/Client_256x256.png">
+                    <div class="productHeader">Client</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct sQedule">
+                    <img class="productIcon" src="/assets/images/productIcons/sQedule_256x256.png">
+                    <div class="productHeader">sQedule</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+            <p><div class="navigationSecondaryHeader">Analyze</div></p>
+
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct conQlude">
+                    <img class="productIcon" src="/assets/images/productIcons/conQlude_256x256.png">
+                    <div class="productHeader">conQlude</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct analytiQs">
+                    <img class="productIcon" src="/assets/images/productIcons/analytiQs_256x256.png">
+                    <div class="productHeader">analytiQs</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+</div>
+<!--
+    // ##################################################################################
+    //            Desktop View of the Navigation over 768px                       #######
+    // ##################################################################################
+-->
+
+<div class="col DesktopNavColFirst">
+
+
+          <p><div class="navigationSecondaryHeader">Specify</div></p>
+          <div class="row rowProductIcons">
+            <div class="col">
+              <div class="floatproduct disQover">
+                  <img class="productIcon" src="/assets/images/productIcons/disQover_256x256.png">
+                  <div class="productHeader">disQover</div>
+              </div>
+              <div class="productDescription">Description</div>
+            </div>
+          </div>
+
+
+          <div class="row rowProductIcons">
+            <div class="col">
+              <div class="floatproduct cheQ">
+                  <img class="productIcon" src="/assets/images/productIcons/cheQ_256x256.png">
+                  <div class="productHeader">cheQ</div>
+              </div>
+              <div class="productDescription">Description</div>
+            </div>
+          </div>
+</div>
+
+
+<div class="col DesktopNavCol">
+
+        <p><div class="navigationSecondaryHeader">Execute</div></p>
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct intaQt">
+                <img class="productIcon" src="/assets/images/productIcons/intaQt_256x256.png">
+                <div class="productHeader">intaQt</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct intaQt">
+                <img class="productIcon" src="/assets/images/productIcons/Studio_256x256.png">
+                <div class="productHeader">Studio</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct intaQt">
+                <img class="productIcon" src="/assets/images/productIcons/Client_256x256.png">
+                <div class="productHeader">Client</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct sQedule">
+                <img class="productIcon" src="/assets/images/productIcons/sQedule_256x256.png">
+                <div class="productHeader">sQedule</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+</div>
+
+
+<div class="col DesktopNavColLast">
+
+        <p><div class="navigationSecondaryHeader">Analyze</div></p>
+
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct conQlude">
+                <img class="productIcon" src="/assets/images/productIcons/conQlude_256x256.png">
+                <div class="productHeader">conQlude</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct analytiQs">
+                <img class="productIcon" src="/assets/images/productIcons/analytiQs_256x256.png">
+                <div class="productHeader">analytiQs</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+</div>
+
+
+
+<!--
+    // ##################################################################################
+    //            Grey Side Menu on Screen over 410px                             #######
+    // ##################################################################################
+-->
+
+    <div class="col greyColumn">
+
+            <!--  Close Button  -->
+            <div class="row leftSideNavMenucloseButton">
+                <img id="closeButtonID" class="closeButton" src="/assets/images/navBar/x_1.png">
+            </div>
+
+            <div class="row leftSideNavMenuItem">Newsroom</div>
+            <div class="row leftSideNavMenuItem">About</div>
+            <div class="row leftSideNavMenuItem">Support</div>
+            <div class="row leftSideNavMenuItem">Documentation</div>
+            <div class="row leftSideNavMenuItem">Contact</div>
+            <div class="row leftSideNavMenuItem">Impressum</div>
+
+    </div>
+</div>
+
+      </div>
+      <div class="displayedContentSupport">
+        Support
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<div class="transparentOverlayOfContent" id="transparentOverlay"></div>
+
+
+
+
+
+
+
+
+<!--  Services Sub Navigation -->
+
+  </header>
+
+  <body>
+
+
+
+
+
+
+
+      <main>
+
+        <!--  This is needed for the double lined navigation to push the content a little bit down -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/article.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="qitasc-light p-y-4 qitasc-article-header">
+    <div class="row">
+          <h1>Continuous Integration (Jenkins) With <span class="orange">IN</span>TACT<sup>®</sup></h1>
+          <div id="article-subheader">
+              <h4>In this tutorial, we’ll show you how to incorporate INTACT into the Jenkins continuous integration framework. Try our sample project out for yourself and see how easy it is to further automate your testing!<h4>
+
+              
+              
+              
+
+              
+
+
+          </div>
+    </div>
+  </br>
+</div>
+
+
+
+
+
+
+
+</br>
+
+
+<div class="qitasc-articles-header-img-container">
+    <div class="qitasc-articles-header-img-container-content">
+          <img class="qitasc-articles-header-img" src="/img/newsroom/ContinuousIntegration.jpg">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="floating-container">
+          
+          
+          
+                <div class="floating-box">
+                  <a href="#introduction"><center>Introduction</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#configureIntact"><center>Configure and Start INTACT</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#configureJenkins"><center>Configure and Run Jenkins</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#checkresults"><center>Check Build Results</center></a></br>
+                </div>
+          
+          
+                <div class="floating-box">
+                  <a href="#conclusion"><center>Conclusion</center></a></br>
+                </div>
+          
+</div>
+
+
+
+
+
+<div class="floating-container-mobile">
+  <input id="collapsible-01" class="toggle-floating-mobile" type="checkbox">
+  <label for="collapsible-01" class="lbl-toggle-floating-mobile">Table of Contents</label>
+      <div class="collapsible-content-floating-mobile">
+        <div class="floating-mobile-spacer"></div>
+        
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-1" href="#introduction"><center>Introduction</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-2" href="#configureIntact"><center>Configure and Start INTACT</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-3" href="#configureJenkins"><center>Configure and Run Jenkins</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-4" href="#checkresults"><center>Check Build Results</center></a></br>
+        
+        
+        <a class="floating-link-mobile" id="toggle-floating-input-5" href="#conclusion"><center>Conclusion</center></a></br>
+        
+      </div>
+
+</div>
+
+
+
+
+<div class="qitasc-white qitasc-article-content">
+  
+<h1 id="continuous-integration-jenkins-with-intact-">Continuous Integration (Jenkins) With INTACT <a name="introduction"></a></h1>
+<p>This tutorial will show you how to use the <strong>Jenkins</strong> continuous integration (CI) system to run INTACT test cases within a CI environment. A Jenkins Server manages <strong>build projects</strong>, which are executed on the Jenkins build agents.</p>
+
+<p>This tutorial assumes that you know how to use <strong>INTACT Client</strong>. If you have not used INTACT Client before, please see our <a href="https://docs.qitasc.com/tutorials/IntactClient/clientintro/">INTACT Client tutorial</a>. This tutorial also assumes that you are familiar with the basics of <strong>version control</strong> (e.g. Git or Subversion).</p>
+
+<h2 id="required-qitasc-products">Required QiTASC Products</h2>
+<p>The following products must be installed and running using the QiTASC Cockpit in order to run INTACT test cases via Jenkins:</p>
+
+<ul>
+  <li>INTACT Server - This should be running on a remote machine.</li>
+  <li>ADM with Android SDK - This should be on the same machine on which the INTACT Server is running.</li>
+  <li>INTACT Client - This must be the same version as for the INTACT Server.</li>
+</ul>
+
+<p>For detailed installation instructions, please refer to the INTACT Manual’s <a href="https://docs.qitasc.com/installation/installation/">INTACT Installation</a> section.</p>
+
+<h2 id="infrastructure-and-prerequisites">Infrastructure and Prerequisites</h2>
+<p>In addition to the above QiTASC products, the following must be set up and running:</p>
+
+<ul>
+  <li>All <strong>Jenkins build agents</strong> must have INTACT Client installed: Test cases will be executed via INTACT Client on another remote machine where the INTACT Server is running.</li>
+  <li>A Jenkins CI environment (a Jenkins server and optional Jenkins build agents)
+    <ul>
+      <li>If using a Jenkins Agent, INTACT Client must also be installed on the Agent (the same version as the INTACT server).</li>
+    </ul>
+  </li>
+  <li>An INTACT project that is under <strong>version control</strong>. If you do not have a project available, create the basic project that is described in the <a href="https://docs.qitasc.com/tutorials/IntactClient/clientintro/">INTACT Client tutorial</a>.</li>
+</ul>
+
+<p>Admin access to Jenkins server is necessary to make the steps in the tutorial.</p>
+
+<p><strong>Note</strong>: There is always a Jenkins Server and there are always Jenkins Build Agents, however a Jenkins Server can also be used as a build agent.</p>
+
+<h2 id="configure-and-start-intact-on-the-remote-machine-">Configure and Start INTACT on the Remote Machine <a name="configureIntact"></a></h2>
+
+<h3 id="configuration">Configuration</h3>
+<p>Add the following configuration block into the <code class="highlighter-rouge">Server.conf</code>, which is located in <code class="highlighter-rouge">QiTASC/intact-server/config</code>:</p>
+
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Intact2ApiAdapter</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="p">{</span><span class="x">
+        </span><span class="n">adapterPort</span><span class="o">:</span><span class="x"> </span><span class="m">36012</span><span class="x">
+</span><span class="p">}</span><span class="x">
+
+</span></code></pre></div></div>
+
+<p>This means that the INTACT Server’s API Adapter is configured to listen on port 36012.</p>
+
+<h3 id="start-intact-server-on-the-remote-machine">Start INTACT Server on the Remote Machine</h3>
+<p>It is important that the INTACT Server (with ADM) is running for the duration of the Jenkins usage. To start the INTACT Server from the command line, navigate to the <code class="highlighter-rouge">QiTASC</code> directory on your remote machine. Then enter the following commands:</p>
+
+<p><strong>Windows Users</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qitasc start adm
+qitasc start intact-server <span class="nt">-a</span>
+</code></pre></div></div>
+
+<p><strong>Linux and Mac OSX Users</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./qitasc start adm.exe
+./qitasc start intact-server <span class="nt">-a</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">-a</code> that follows <code class="highlighter-rouge">start intact-server</code> <strong>must</strong> be added for the phones to communicate properly with <strong>adm</strong>.</p>
+
+<p><strong>Note</strong>: It is a good practice to reserve an INTACT Server license exclusively for Jenkins usage. This is to avoid conflicts in case non-CI projects also need to be run.</p>
+
+<h2 id="configure-and-run-jenkins-">Configure and Run Jenkins <a name="configureJenkins"></a></h2>
+<p>Now that you have set up your INTACT Client project, you can configure Jenkins so that it will run the INTACT project build.</p>
+
+<h2 id="add-environment-variables-on-the-jenkins-server-">Add Environment Variables on the Jenkins Server <a name="envvariable"></a></h2>
+<p>Next we’ll configure three global environment variables so that INTACT and Jenkins can communicate with each other. Select <code class="highlighter-rouge">Manage Jenkins</code> from the left-hand menu, then select <code class="highlighter-rouge">Configure System</code>. You should see a view that looks like this:</p>
+
+<p><img src="../img/articles/ContinuousIntegration/configure.png" alt="alt text" /></p>
+
+<p>Scroll down until you reach a section called <code class="highlighter-rouge">Global properties</code>. This is where you will configure your <strong>environment variables</strong>.</p>
+
+<p>Define an environment variable for each one of the following:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">INTACT_SERVER</code> INTACT Server hostname.</li>
+  <li><code class="highlighter-rouge">INTACT_CLI_EXEC</code>: Location of the INTACT Client on the <strong>agent</strong>.
+    <ul>
+      <li>When there is more than one Jenkins agents, INTACT Client must be installed in the same location as <em>each</em> Jenkins agent.</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">INTACT_PORT</code> INTACT Server port, which should be <code class="highlighter-rouge">36012</code>, unless configured otherwise when <a href="../createproject.md">creating your project</a>.</li>
+</ul>
+
+<p><strong>Example</strong>
+<img src="../img/articles/ContinuousIntegration/env.png" alt="alt text" /></p>
+
+<h3 id="create-a-new-build-project-">Create a New Build Project <a name="createproject"></a></h3>
+<p>Select <code class="highlighter-rouge">New Item</code> from the left-hand menu then click <code class="highlighter-rouge">Freestyle project</code>:</p>
+
+<p><img src="../img/articles/ContinuousIntegration/new-item.png" alt="alt text" /></p>
+
+<p>Assign the project a name of your choice, then scroll to the bottom of the page and click <code class="highlighter-rouge">OK</code>.</p>
+
+<h3 id="configure-the-source-code-management-">Configure the Source Code Management <a name="configuresource"></a></h3>
+<p>After assigning your project a name and clicking <code class="highlighter-rouge">OK</code>, the following view should appear:</p>
+
+<p><img src="../img/articles/ContinuousIntegration/configure-project.png" alt="alt text" /></p>
+
+<p>Select the <code class="highlighter-rouge">Source Code Management</code> tab. Here, you will need to configure the <strong>version control tools</strong> you are using for your project. If you are not sure what to put here, contact your administrator. Whether using <strong>Git</strong> or <strong>Subversion</strong>, select <code class="highlighter-rouge">jenkins</code> from the <code class="highlighter-rouge">Credentials</code> menu.</p>
+
+<p><img src="../img/articles/ContinuousIntegration/source-code-management.png" alt="alt text" /></p>
+
+<h3 id="configure-the-build-environment-">Configure the Build Environment <a name="configureenvironment"></a></h3>
+<p>Scroll down and click the <code class="highlighter-rouge">Delete workspace before build starts</code> box:</p>
+
+<p><img src="../img/articles/ContinuousIntegration/build-environment.png" alt="alt text" /></p>
+
+<h3 id="configure-build-">Configure Build <a name="configurebuild"></a></h3>
+<p>In the <code class="highlighter-rouge">Build</code> section, select the type of step you’ll use to run the build. For this example, we’ll use a Linux agent and choose <code class="highlighter-rouge">Execute shell</code>, then enter the following command into the text box:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$INTACT_CLI_EXEC</span> <span class="nb">test</span> <span class="nt">-h</span> <span class="nv">$INTACT_SERVER</span> <span class="nt">-p</span> <span class="nv">$INTACT_PORT</span> HowTo-IntactClient
+</code></pre></div></div>
+
+<p><img src="../img/articles/ContinuousIntegration/build.png" alt="alt text" /></p>
+
+<p>If you have already used our [INTACT Client Tutorial][INTACT Client tutorial] to execute features on a remote host, or used INTACT Client, then the syntax may look familiar to you. The only difference is that we are using environment variables to represent parameters:</p>
+<ul>
+  <li>The <strong>host</strong>, indicated by <code class="highlighter-rouge">-h</code>, which we configured with the <strong><a href="#envvariable">environment variable</a></strong> <code class="highlighter-rouge">INTACT_SERVER</code> above.</li>
+  <li>The <strong>port</strong>, indicated by <code class="highlighter-rouge">p</code>, which we configured with the <strong><a href="#envvariable">environment variable</a></strong> <code class="highlighter-rouge">INTACT_PORT</code> above.</li>
+  <li>Additionally, the folder where the INTACT feature files are is specified as <code class="highlighter-rouge">HowTo-IntactClient</code>.</li>
+</ul>
+
+<p>When executing the same project via INTACT Client, the syntax would look like:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./intact <span class="nb">test</span> <span class="nt">-h</span> qvie-peter.qvie.qitasc.com <span class="nt">-p</span> 36012 HowTo-IntactClient
+</code></pre></div></div>
+
+<h3 id="configure-post-build-actions-">Configure Post-build Actions <a name="configurepost"></a></h3>
+<p>Finally, we’ll add two <strong>post-build actions</strong>:</p>
+<ul>
+  <li>Archive the artifacts</li>
+  <li>Publish JUnit test result report</li>
+</ul>
+
+<p><img src="../img/articles/ContinuousIntegration/post-build-actions.png" alt="alt text" /></p>
+
+<h3 id="archive-the-artifacts-">Archive the Artifacts <a name="archive"></a></h3>
+<p>First, we want to store INTACT Client’s <code class="highlighter-rouge">intact.log</code> file for each run, as well as its report folder. Select <code class="highlighter-rouge">Archive the Artifacts</code> option from the <code class="highlighter-rouge">Post-build action</code> menu, and enter the following into the <code class="highlighter-rouge">Files to archive</code> field:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>intact.log, report-*/**
+</code></pre></div></div>
+
+<h3 id="publish-junit-test-result-report--">Publish JUnit Test Result Report  <a name="publish"></a></h3>
+<p>Second, select <code class="highlighter-rouge">Publish JUnit test result report</code> from the <code class="highlighter-rouge">Add post-build action</code> menu and enter the following into the <code class="highlighter-rouge">Test reports XMLs</code> field:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>report-*/**.xml
+</code></pre></div></div>
+
+<h2 id="run-the-jenkins-build-">Run the Jenkins Build <a name="run"></a></h2>
+
+<p>Select <code class="highlighter-rouge">Build Now</code> from the drop-down menu containing your project’s name. In our case, the project name is <code class="highlighter-rouge">MyProject</code>:</p>
+
+<p><img src="../img/articles/ContinuousIntegration/buildnow.png" alt="alt text" /></p>
+
+<p>A status bar will appear – This shows that your project is being executed:</p>
+
+<p><img src="../img/articles/ContinuousIntegration/building.png" alt="alt text" /></p>
+
+<h2 id="check-build-results-">Check Build Results <a name="checkresults"></a></h2>
+
+<p>There are a few ways to check your projects’ results. Clicking on the <strong>build number</strong>, e.g. <code class="highlighter-rouge">#9</code> in the example above, is a simple approach. Alternately, you can go to the <strong>Jenkins Dashboard</strong> and see a list of all projects:</p>
+
+<p><img src="../img/articles/ContinuousIntegration/dashboard.png" alt="alt text" /></p>
+
+<p>Clicking on a project brings up a summary/dashboard:</p>
+
+<p><img src="../img/articles/ContinuousIntegration/projectView.png" alt="alt text" /></p>
+
+<p>We’ll select <code class="highlighter-rouge">Last successful build</code>, which brings up the following page:</p>
+
+<p><img src="../img/articles/ContinuousIntegration/lastBuild.png" alt="alt text" /></p>
+
+<p>Clicking on <code class="highlighter-rouge">Test Result</code> gives a quick overview of what happened during the build:</p>
+
+<p><img src="../img/articles/ContinuousIntegration/TestResult.png" alt="alt text" /></p>
+
+<p>Alternately, we can go back to our project view and click on <code class="highlighter-rouge">Build Artifacts</code>, which provides a list of items created during the execution:</p>
+
+<p><img src="../img/articles/ContinuousIntegration/artifacts.png" alt="alt text" /></p>
+
+<p>These artifacts are the same items that you would find in your projects’ <strong>reports</strong> folder. If we click on the <code class="highlighter-rouge">report-20180412-172545</code> folder, we’ll see the following list of artifacts:</p>
+
+<p><img src="../img/articles/ContinuousIntegration/artifacts2.png" alt="alt text" />
+Click on the <code class="highlighter-rouge">index.html</code> report to see an overview of the results. For more information about the different report types that will appear as artifacts, refer to the INTACT Manual’s <a href="https://docs.qitasc.com/intactbasics/logsandreports/#indexhtmlreport">Reports and Logs</a> section.</p>
+
+<h2 id="conclusion-">Conclusion <a name="conclusion"></a></h2>
+
+<p>In this tutorial, we showed you how to integrate INTACT into a Jenkins <strong>continuous integration</strong> environment using the same test cases and project structure as for the <a href="https://docs.qitasc.com/tutorials/IntactClient/clientintro/">INTACT Client tutorial</a>. After demonstrating the basic project configurations, we provided a quick summary of the various ways you can examine the test results. The <a href="https://jenkins.io/doc/">Jenkins User Documentation</a> is a great source of reference materials, including tutorials and use cases.</p>
+
+<p><em>Are you interested in learning more about how INTACT can be combined with tools like Jenkins and TeamCity?</em> Contact us at <strong>office@qitasc.com</strong> and we’ll help you optimize your testing!</p>
+
+</div>
+
+
+
+
+
+</br>
+</br>
+</br>
+</br>
+
+
+
+      </main>
+
+
+      <footer>
+        <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Testing Services</div>
+                        <ul>
+                            <li><a href="/">Project-Based Services</a></li>
+                            <li><a href="/">Corporate Testing</a></li>
+                            <li><a href="/">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Products</div>
+                        <ul>
+                            <li><a href="/">conQlude</a></li>
+                            <li><a href="/">cheQ</a></li>
+                            <li><a href="/">intaQt</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">About Us</div>
+                        <ul>
+                            <li><a href="/about/philosophy#contact">Impressum</a></li>
+                            <li><a href="/about/philosophy#contact">Contact</a></li>
+                            <li><a href="/about/career">Careers</a></li>
+                            <li><a href="/about/privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Resources</div>
+                        <ul>
+                            <li><a target="_blank" href="https://docs.qitasc.com">Documentation</a></li>
+                            <li><a href="/newsroom">Newsroom</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">QiTASC © 2019</p>
+            </div>
+        </footer>
+    </div>
+
+      </footer>
+
+
+    <!-- Latest minified jQuery -->
+<script
+			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
+
+
+<!-- Latest compiled and minified bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="/assets/js/navigation.js"></script>
+<script src="/assets/js/wordcloud.js"></script>
+<script src="/assets/js/hero.js"></script>
+<script src="/assets/js/usecases.js"></script>
+<script src="/assets/js/jQWCloudv3.1.js"></script>
+<script src="/assets/js/index.js"></script>
+
+  </body>
+</html>

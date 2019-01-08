@@ -166,15 +166,6 @@ $stageThree: 1199px;
   @include stage03 {font-size: 40px; padding: 40px !important;}
 }
 
-.image-container {
-  filter: brightness(100%);
-  @extend .transitionAllUsecases;
-}
-
-.image-container:hover {
-  filter: brightness(105%);
-  @extend .transformScale;
-}
 
 
 .usecaseHeader {

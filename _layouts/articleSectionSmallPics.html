@@ -1,0 +1,130 @@
+---
+layout: default
+---
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{{ baseurl }}/js/article.js"></script>
+
+
+{% capture page.title %}{{ page.position }} {{ page.location }}{% endcapture %}
+
+{% comment %}##############################################{% endcomment %}
+{% comment %}## If the field experience exists and is 1 ###{% endcomment %}
+{% comment %}########### The Tutorial Experience ##########{% endcomment %}
+{% comment %}################ will be shown ###############{% endcomment %}
+{% comment %}##############################################{% endcomment %}
+
+{% if page.experience == 1 %}
+
+<div class="qitasc-white qitasc-productsandservices-managedservices-header p-b-2 m-b-6">
+    <div class="row">
+        <div class="col-xs-offset-1 col-md-offset-4 col-xs-10 col-md-7 m-t-6 m-b-24">
+          <h2>{{ page.subtitle }}</h2>
+          <div class="newsroom-entry-date">{{ page.date | date: "%b %d, %Y" }}</div></br>
+            </br>
+            </br>
+          {{ page.text }}
+          </br>
+          </br>
+          All Tutorials can also be found in our online <a class="more" target="_blank" href="https://manual.qvie.qitasc.com/tutorials/README/"><span class="orange">IN</span>TACT Manual</a>
+            </br>
+              </br>
+
+        </div>
+    </div>
+</div>
+
+{% endif %}
+
+{% comment %}##############################################{% endcomment %}
+{% comment %}###########   Main Article Header   ##########{% endcomment %}
+{% comment %}##############################################{% endcomment %}
+<div class="qitasc-light p-y-4 qitasc-article-header">
+    <div class="row">
+          <h1>{{ page.colorTitle }}</h1>
+          <div id="article-subheader">
+              <h4>{{ page.subtext }}<h4>
+
+              {% comment %}##############################################{% endcomment %}
+              {% comment %}########## If webContent Field is 1 ##########{% endcomment %}
+              {% comment %}##############################################{% endcomment %}
+
+              {% if page.webContent == 1 %}
+                      <div class="qitasc-message-text-align">
+                      	<p class="h4">{{ page.subtitle }}</p>
+                      </div>
+              {% endif %}
+
+
+          </div>
+    </div>
+  </br>
+</div>
+
+
+
+{% comment %}##############################################{% endcomment %}
+{% comment %}######  If Main Article Image is set  ########{% endcomment %}
+{% comment %}##############################################{% endcomment %}
+
+</br>
+
+{% if page.img_main_url %}
+<div class="qitasc-articles-header-img-container">
+    <div class="qitasc-articles-header-img-container-content">
+          <img class="qitasc-articles-header-img" src="{{ page.img_main_url }}">
+    </div>
+</div>
+{% endif %}
+
+{% comment %}##############################################{% endcomment %}
+{% comment %}######  Building the Table Of Content ########{% endcomment %}
+{% comment %}##############################################{% endcomment %}
+
+
+
+{% comment %}################ Desktop Version #############{% endcomment %}
+<div id="floating-container">
+          {% assign tableOfContent = page.anchors %}
+          {% for anchor in tableOfContent %}
+          {% assign LoopIndex = forloop.index | minus:1 %}
+                <div class="floating-box">
+                  <a href="#{{ page.anchors[LoopIndex] }}"><center>{{ page.anchorsNames[LoopIndex] }}</center></a></br>
+                </div>
+          {% endfor %}
+</div>
+
+{% comment %}################ Mobile Version #############{% endcomment %}
+
+
+
+<div class="floating-container-mobile">
+  <input id="collapsible-01" class="toggle-floating-mobile" type="checkbox">
+  <label for="collapsible-01" class="lbl-toggle-floating-mobile">Table of Contents</label>
+      <div class="collapsible-content-floating-mobile">
+        <div class="floating-mobile-spacer"></div>
+        {% assign tableOfContent = page.anchors %}
+        {% for anchor in tableOfContent %}
+        {% assign LoopIndex = forloop.index | minus:1 %}
+        <a class="floating-link-mobile" id="toggle-floating-input-{{ forloop.index }}" href="#{{ page.anchors[LoopIndex] }}"><center>{{ page.anchorsNames[LoopIndex] }}</center></a></br>
+        {% endfor %}
+      </div>
+
+</div>
+
+
+{% comment %}##############################################{% endcomment %}
+{% comment %}######  Building the Content #################{% endcomment %}
+{% comment %}##############################################{% endcomment %}
+<div class="qitasc-white qitasc-article-content-smallPics">
+{{ page.content | markdownify }}
+</div>
+
+
+{% comment %}##############################################{% endcomment %}
+{% comment %}## Adding Spacer to the End of the Article  ##{% endcomment %}
+{% comment %}##############################################{% endcomment %}
+</br>
+</br>
+</br>
+</br>

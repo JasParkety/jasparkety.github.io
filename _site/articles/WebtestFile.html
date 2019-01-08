@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<!--  Setting Parameter -->
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <title>Example Apptest Configuration and Webtest File</title>
+    <meta name="description" content="
+QiTASC is an Austrian company that excels in automated end-to-end testing. Find out how we can help your business achieve a new level of testing with our INTACT® software.
+">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#f7941e">
+	<link rel="shortcut icon" href="/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#f7941e">
+
+
+  <link rel="stylesheet" type="text/css" href="/css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="/css/newsroomSlider.css">
+  <link rel="stylesheet" type="text/css" href="/css/mainTools.css">
+  <link rel="stylesheet" type="text/css" href="/css/hero.css">
+  <link rel="stylesheet" type="text/css" href="/css/usecases.css">
+  <link rel="stylesheet" type="text/css" href="/css/wordcloud.css">
+  <link rel="stylesheet" type="text/css" href="/css/Footer-Dark.css">
+  <link rel="stylesheet" type="text/css" href="/css/qualities.css">
+	<!-- include webfonts -->
+	<link rel="stylesheet" type="text/css" href="/css/webfonts.css">
+
+   <!-- Latest compiled and minified CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+
+  <header>
+
+    <!--  ########################################################################### -->
+<!--  ########################################################################### -->
+<!--  ####                                                                   #### -->
+<!--  ####                                                                   #### -->
+<!--  ####                    Top Header Container                           #### -->
+<!--  ####                                                                   #### -->
+<!--  ####                                                                   #### -->
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+
+
+<div class="container-fluid stickyNavContainer shadowBottom">
+    <div class="container stickyNavSubContainer">
+        <div class="row form-inline">
+          <div class="LogoContainer">
+              <div class="col"><a href="#"><img class="Logo" src="/assets/images/standalone.png"></a></div>
+          </div>
+
+                    <div class="col col-xs-4 buttonPadding">
+                        <button id="toggleProducts" class="navigationButton">Products
+                          <i class="arrow down"></i></button>
+                    </div>
+                    <div class="col col-xs-4 buttonPadding">
+                        <button id="toggleServices" class="navigationButton">Services
+
+                          <!-- <i class="arrow down"></i> -->
+
+                        </button>
+                    </div>
+                    <div class="col col-xs-4 buttonPadding">
+                        <button id="toggleSupport" class="navigationButton">Support
+                          <i class="arrow down"></i></button>
+                    </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+<!--  ########################################################################### -->
+
+
+<div class="wrapper">
+  <div id="secondaryNavContainer">
+      <div class="displayedContentProducts">
+        
+<div class="row">
+
+<!--
+// ##################################################################################
+//            MobileViewNavigation, visible below 768 px                     #######
+// ##################################################################################
+ -->
+
+
+<div class="col leftPadding">
+              <p><div class="navigationSecondaryHeader">Specify</div></p>
+              <div class="row rowProductIcons">
+                <div class="col">
+                  <div class="floatproduct disQover">
+                      <img class="productIcon" src="/assets/images/productIcons/disQover_256x256.png">
+                      <div class="productHeader">disQover</div>
+                  </div>
+                  <div class="productDescription">Description</div>
+                </div>
+              </div>
+
+
+              <div class="row rowProductIcons">
+                <div class="col">
+                  <div class="floatproduct cheQ">
+                      <img class="productIcon" src="/assets/images/productIcons/cheQ_256x256.png">
+                      <div class="productHeader">cheQ</div>
+                  </div>
+                  <div class="productDescription">Description</div>
+                </div>
+              </div>
+            <p><div class="navigationSecondaryHeader">Execute</div></p>
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct intaQt">
+                    <img class="productIcon" src="/assets/images/productIcons/intaQt_256x256.png">
+                    <div class="productHeader">intaQt</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct intaQt">
+                    <img class="productIcon" src="/assets/images/productIcons/Studio_256x256.png">
+                    <div class="productHeader">Studio</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct intaQt">
+                    <img class="productIcon" src="/assets/images/productIcons/Client_256x256.png">
+                    <div class="productHeader">Client</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct sQedule">
+                    <img class="productIcon" src="/assets/images/productIcons/sQedule_256x256.png">
+                    <div class="productHeader">sQedule</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+            <p><div class="navigationSecondaryHeader">Analyze</div></p>
+
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct conQlude">
+                    <img class="productIcon" src="/assets/images/productIcons/conQlude_256x256.png">
+                    <div class="productHeader">conQlude</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+            <div class="row rowProductIcons">
+              <div class="col">
+                <div class="floatproduct analytiQs">
+                    <img class="productIcon" src="/assets/images/productIcons/analytiQs_256x256.png">
+                    <div class="productHeader">analytiQs</div>
+                </div>
+                <div class="productDescription">Description</div>
+              </div>
+            </div>
+</div>
+<!--
+    // ##################################################################################
+    //            Desktop View of the Navigation over 768px                       #######
+    // ##################################################################################
+-->
+
+<div class="col DesktopNavColFirst">
+
+
+          <p><div class="navigationSecondaryHeader">Specify</div></p>
+          <div class="row rowProductIcons">
+            <div class="col">
+              <div class="floatproduct disQover">
+                  <img class="productIcon" src="/assets/images/productIcons/disQover_256x256.png">
+                  <div class="productHeader">disQover</div>
+              </div>
+              <div class="productDescription">Description</div>
+            </div>
+          </div>
+
+
+          <div class="row rowProductIcons">
+            <div class="col">
+              <div class="floatproduct cheQ">
+                  <img class="productIcon" src="/assets/images/productIcons/cheQ_256x256.png">
+                  <div class="productHeader">cheQ</div>
+              </div>
+              <div class="productDescription">Description</div>
+            </div>
+          </div>
+</div>
+
+
+<div class="col DesktopNavCol">
+
+        <p><div class="navigationSecondaryHeader">Execute</div></p>
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct intaQt">
+                <img class="productIcon" src="/assets/images/productIcons/intaQt_256x256.png">
+                <div class="productHeader">intaQt</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct intaQt">
+                <img class="productIcon" src="/assets/images/productIcons/Studio_256x256.png">
+                <div class="productHeader">Studio</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct intaQt">
+                <img class="productIcon" src="/assets/images/productIcons/Client_256x256.png">
+                <div class="productHeader">Client</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct sQedule">
+                <img class="productIcon" src="/assets/images/productIcons/sQedule_256x256.png">
+                <div class="productHeader">sQedule</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+</div>
+
+
+<div class="col DesktopNavColLast">
+
+        <p><div class="navigationSecondaryHeader">Analyze</div></p>
+
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct conQlude">
+                <img class="productIcon" src="/assets/images/productIcons/conQlude_256x256.png">
+                <div class="productHeader">conQlude</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+        <div class="row rowProductIcons">
+          <div class="col">
+            <div class="floatproduct analytiQs">
+                <img class="productIcon" src="/assets/images/productIcons/analytiQs_256x256.png">
+                <div class="productHeader">analytiQs</div>
+            </div>
+            <div class="productDescription">Description</div>
+          </div>
+        </div>
+
+</div>
+
+
+
+<!--
+    // ##################################################################################
+    //            Grey Side Menu on Screen over 410px                             #######
+    // ##################################################################################
+-->
+
+    <div class="col greyColumn">
+
+            <!--  Close Button  -->
+            <div class="row leftSideNavMenucloseButton">
+                <img id="closeButtonID" class="closeButton" src="/assets/images/navBar/x_1.png">
+            </div>
+
+            <div class="row leftSideNavMenuItem">Newsroom</div>
+            <div class="row leftSideNavMenuItem">About</div>
+            <div class="row leftSideNavMenuItem">Support</div>
+            <div class="row leftSideNavMenuItem">Documentation</div>
+            <div class="row leftSideNavMenuItem">Contact</div>
+            <div class="row leftSideNavMenuItem">Impressum</div>
+
+    </div>
+</div>
+
+      </div>
+      <div class="displayedContentSupport">
+        Support
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<div class="transparentOverlayOfContent" id="transparentOverlay"></div>
+
+
+
+
+
+
+
+
+<!--  Services Sub Navigation -->
+
+  </header>
+
+  <body>
+
+
+
+
+
+
+
+      <main>
+
+        <!--  This is needed for the double lined navigation to push the content a little bit down -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/article.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="qitasc-light p-y-4 qitasc-article-header">
+    <div class="row">
+          <h1>Example Apptest Configuration and Webtest File</h1>
+          <div id="article-subheader">
+              <h4><h4>
+
+              
+              
+              
+
+              
+
+
+          </div>
+    </div>
+  </br>
+</div>
+
+
+
+
+
+
+
+</br>
+
+
+
+
+
+
+
+
+
+
+<div id="floating-container">
+          
+          
+</div>
+
+
+
+
+
+<div class="floating-container-mobile">
+  <input id="collapsible-01" class="toggle-floating-mobile" type="checkbox">
+  <label for="collapsible-01" class="lbl-toggle-floating-mobile">Table of Contents</label>
+      <div class="collapsible-content-floating-mobile">
+        <div class="floating-mobile-spacer"></div>
+        
+        
+      </div>
+
+</div>
+
+
+
+
+<div class="qitasc-white qitasc-article-content">
+  
+<p>If you would like to run the same test case that we automated in our <a href="../RemoteApptest/RemoteApptest.html">Remote Apptest</a> article, please add the following <code class="highlighter-rouge">Appium</code> and <code class="highlighter-rouge">AppTest</code> configuration blocks in your <code class="highlighter-rouge">Server.conf</code>. Next, create a <code class="highlighter-rouge">.webtest</code> file in INTACT Studio and use the Stepdefs and Views that are listed beneath the configuration.</p>
+
+<p><strong>Appium Configuration</strong>
+To use Apptests, you must have Appium installed on the machine that will be executing INTACT test cases. The following configuration block tells the INTACT Server that Appium is active and accessible.</p>
+
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Appium</span><span class="x"> </span><span class="p">{</span><span class="x">
+    </span><span class="n">isActive</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="no">true</span><span class="x">
+</span><span class="p">}</span><span class="x">
+</span></code></pre></div></div>
+
+<p><strong>AppTest Configuration</strong>
+The AppTest Configuration below tells the INTACT Server what app is being automated by specifying its name and its APK:</p>
+
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">AppTest</span><span class="x"> </span><span class="p">{</span><span class="x">
+    </span><span class="n">apps</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="p">[</span><span class="x">
+        </span><span class="p">{</span><span class="x">
+            </span><span class="n">name</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="s">"sms-messaging"</span><span class="x">
+            </span><span class="n">path</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="s">"resources/apks/sms-messaging-aosp-1-4-multi-android.apk"</span><span class="x">
+            </span><span class="n">capabilities</span><span class="x"> </span><span class="p">{</span><span class="x">
+                </span><span class="n">appWaitActivity</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="s">"com.android.mms.ui.ConversationList"</span><span class="x">
+                </span><span class="n">automationName</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="s">"uiautomator2"</span><span class="x">
+            </span><span class="p">}</span><span class="x">
+        </span><span class="p">}</span><span class="x">
+    </span><span class="p">]</span><span class="x">
+</span><span class="p">}</span><span class="x">
+</span></code></pre></div></div>
+
+<p><strong>Glue Path</strong>
+The Glue path tells INTACT where to find its custom step definitions. We’ve saved them in a directory called <code class="highlighter-rouge">Webtest</code> and defined its relative path:</p>
+
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Glue</span><span class="x"> </span><span class="p">{</span><span class="x">
+   </span><span class="n">path</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="p">[</span><span class="s">"Webtest"</span><span class="p">]</span><span class="x">
+</span><span class="p">}</span><span class="x">
+</span></code></pre></div></div>
+<p><strong>Apptest Webtest File</strong>
+The Webtest file below includes the stepdefs needed to construct a test case where two phones message each other via a messaging app. These stepdefs call on the <strong>Views</strong>, which define the apps elements and the actions we want to perform on those elements:</p>
+
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">stepdef</span><span class="x"> </span><span class="s">"send message {} to {}"</span><span class="x"> </span><span class="o">/</span><span class="x"> </span><span class="n">message</span><span class="p">,</span><span class="x"> </span><span class="n">phone</span><span class="x"> </span><span class="o">/</span><span class="x">
+    </span><span class="n">goHomeView</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">find</span><span class="x"> </span><span class="n">GoHomeButtonView</span><span class="x">
+    </span><span class="k">if</span><span class="x"> </span><span class="p">(</span><span class="n">goHomeView</span><span class="x"> </span><span class="o">!=</span><span class="x"> </span><span class="n">null</span><span class="p">)</span><span class="x"> </span><span class="n">then</span><span class="x">
+        </span><span class="n">goHomeView</span><span class="o">.</span><span class="n">goHome</span><span class="p">()</span><span class="x">
+    </span><span class="n">end</span><span class="x">
+
+    </span><span class="n">mainView</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">await</span><span class="x"> </span><span class="n">MessageListView</span><span class="x">
+    </span><span class="n">mainView</span><span class="o">.</span><span class="n">newMessage</span><span class="p">()</span><span class="x">
+
+    </span><span class="n">conversationView</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">await</span><span class="x"> </span><span class="n">ConversationView</span><span class="x">
+    </span><span class="n">conversationView</span><span class="o">.</span><span class="n">setRecipient</span><span class="p">(</span><span class="n">phone</span><span class="o">.</span><span class="n">number</span><span class="p">)</span><span class="x">
+    </span><span class="n">conversationView</span><span class="o">.</span><span class="n">writeMessage</span><span class="p">(</span><span class="n">message</span><span class="p">)</span><span class="x">
+    </span><span class="n">conversationView</span><span class="o">.</span><span class="n">send</span><span class="p">()</span><span class="x">
+</span><span class="n">end</span><span class="x">
+
+</span><span class="n">stepdef</span><span class="x"> </span><span class="s">"confirm message {} reception from {}"</span><span class="x"> </span><span class="o">/</span><span class="x"> </span><span class="n">message</span><span class="p">,</span><span class="x"> </span><span class="n">phone</span><span class="o">/</span><span class="x">
+    </span><span class="n">goHomeView</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">find</span><span class="x"> </span><span class="n">GoHomeButtonView</span><span class="x">
+    </span><span class="k">if</span><span class="x"> </span><span class="p">(</span><span class="n">goHomeView</span><span class="x"> </span><span class="o">!=</span><span class="x"> </span><span class="n">null</span><span class="p">)</span><span class="x"> </span><span class="n">then</span><span class="x">
+        </span><span class="n">goHomeView</span><span class="o">.</span><span class="n">goHome</span><span class="p">()</span><span class="x">
+    </span><span class="n">end</span><span class="x">
+
+    </span><span class="n">mainView</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">await</span><span class="x"> </span><span class="n">MessageListWithItemView</span><span class="p">(</span><span class="n">phone</span><span class="o">.</span><span class="n">woNdc</span><span class="p">)</span><span class="x">
+    </span><span class="n">mainView</span><span class="o">.</span><span class="n">goToConversation</span><span class="p">()</span><span class="x">
+
+    </span><span class="n">messageView</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">await</span><span class="x"> </span><span class="n">ConversationWithMessageView</span><span class="p">(</span><span class="n">message</span><span class="p">)</span><span class="x">
+    </span><span class="n">receivedMessage</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">messageView</span><span class="o">.</span><span class="n">getMessage</span><span class="p">()</span><span class="x">
+
+    </span><span class="nb">println</span><span class="p">(</span><span class="n">receivedMessage</span><span class="p">)</span><span class="x">
+</span><span class="n">end</span><span class="x">
+
+</span><span class="n">view</span><span class="x"> </span><span class="n">MessageListView</span><span class="x">
+    </span><span class="n">elem</span><span class="x"> </span><span class="n">newMessageButton</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="s">"//*[@content-desc='New message']"</span><span class="x">
+
+    </span><span class="n">action</span><span class="x"> </span><span class="p">(</span><span class="n">newMessageButton</span><span class="p">)</span><span class="x"> </span><span class="n">newMessage</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">click</span><span class="x">
+</span><span class="n">end</span><span class="x">
+
+</span><span class="n">view</span><span class="x"> </span><span class="n">MessageListWithItemView</span><span class="p">(</span><span class="n">phoneNumber</span><span class="p">)</span><span class="x">
+    </span><span class="n">elem</span><span class="x"> </span><span class="n">conversationField</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="s">"//*[@resource-id='fr.slvn.mms:id/from' and contains(@text,'@{phoneNumber}')]"</span><span class="x">
+
+    </span><span class="n">action</span><span class="x"> </span><span class="p">(</span><span class="n">conversationField</span><span class="p">)</span><span class="x"> </span><span class="n">goToConversation</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">click</span><span class="x">
+</span><span class="n">end</span><span class="x">
+
+</span><span class="n">view</span><span class="x"> </span><span class="n">ConversationView</span><span class="x">
+    </span><span class="n">elem</span><span class="x"> </span><span class="n">toField</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="s">"//*[@resource-id='fr.slvn.mms:id/recipients_editor']"</span><span class="x"> </span><span class="p">[</span><span class="n">dynamic</span><span class="p">]</span><span class="x">
+    </span><span class="n">elem</span><span class="x"> </span><span class="n">textField</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="s">"//*[@resource-id='fr.slvn.mms:id/embedded_text_editor']"</span><span class="x">
+    </span><span class="n">elem</span><span class="x"> </span><span class="n">sendMessageButton</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="s">"//*[@resource-id='fr.slvn.mms:id/send_button_sms']"</span><span class="x">
+
+    </span><span class="n">action</span><span class="x"> </span><span class="p">(</span><span class="n">toField</span><span class="p">)</span><span class="x"> </span><span class="n">setRecipient</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="k">type</span><span class="x">
+    </span><span class="n">action</span><span class="x"> </span><span class="p">(</span><span class="n">textField</span><span class="p">)</span><span class="x"> </span><span class="n">writeMessage</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="k">type</span><span class="x">
+    </span><span class="n">action</span><span class="x"> </span><span class="p">(</span><span class="n">sendMessageButton</span><span class="p">)</span><span class="x"> </span><span class="n">send</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">click</span><span class="x">
+</span><span class="n">end</span><span class="x">
+
+</span><span class="n">view</span><span class="x"> </span><span class="n">ConversationWithMessageView</span><span class="p">(</span><span class="n">message</span><span class="p">)</span><span class="x">
+    </span><span class="n">elem</span><span class="x"> </span><span class="n">messageText</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="s">"//*[@resource-id='fr.slvn.mms:id/msg_list_item_recv']//*[@resource-id='fr.slvn.mms:id/text_view' and contains(@text, '@{message}')]"</span><span class="x">
+
+    </span><span class="n">action</span><span class="x"> </span><span class="p">(</span><span class="n">messageText</span><span class="p">)</span><span class="x"> </span><span class="n">getMessage</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">content</span><span class="x">
+</span><span class="n">end</span><span class="x">
+
+</span><span class="n">view</span><span class="x"> </span><span class="n">GoHomeButtonView</span><span class="x">
+    </span><span class="n">elem</span><span class="x"> </span><span class="n">homeButton</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="s">"//*[@resource-id='android:id/home']"</span><span class="x">
+
+    </span><span class="n">action</span><span class="x"> </span><span class="p">(</span><span class="n">homeButton</span><span class="p">)</span><span class="x"> </span><span class="n">goHome</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">click</span><span class="x">
+</span><span class="n">end</span><span class="x">
+</span></code></pre></div></div>
+
+</div>
+
+
+
+
+
+</br>
+</br>
+</br>
+</br>
+
+
+
+      </main>
+
+
+      <footer>
+        <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Testing Services</div>
+                        <ul>
+                            <li><a href="/">Project-Based Services</a></li>
+                            <li><a href="/">Corporate Testing</a></li>
+                            <li><a href="/">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Products</div>
+                        <ul>
+                            <li><a href="/">conQlude</a></li>
+                            <li><a href="/">cheQ</a></li>
+                            <li><a href="/">intaQt</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">About Us</div>
+                        <ul>
+                            <li><a href="/about/philosophy#contact">Impressum</a></li>
+                            <li><a href="/about/philosophy#contact">Contact</a></li>
+                            <li><a href="/about/career">Careers</a></li>
+                            <li><a href="/about/privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="footer_h3">Resources</div>
+                        <ul>
+                            <li><a target="_blank" href="https://docs.qitasc.com">Documentation</a></li>
+                            <li><a href="/newsroom">Newsroom</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">QiTASC © 2019</p>
+            </div>
+        </footer>
+    </div>
+
+      </footer>
+
+
+    <!-- Latest minified jQuery -->
+<script
+			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
+
+
+<!-- Latest compiled and minified bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="/assets/js/navigation.js"></script>
+<script src="/assets/js/wordcloud.js"></script>
+<script src="/assets/js/hero.js"></script>
+<script src="/assets/js/usecases.js"></script>
+<script src="/assets/js/jQWCloudv3.1.js"></script>
+<script src="/assets/js/index.js"></script>
+
+  </body>
+</html>

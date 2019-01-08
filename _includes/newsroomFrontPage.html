@@ -1,5 +1,5 @@
-<div class="container-fluid">
-  <div class="container">
+<div class="container-fluid NewsroomSliderContainerFluid" style="padding-top: 200px !important;">
+  <div class="container NewsroomSliderContainer">
     <div class="row">
       <div class="col">
         <div class="NewsroomText">
@@ -8,26 +8,83 @@
             <p>Experience the company and the magic behind our product INTACT®</p>
         </div>
       </div>
-      <div class="col slider-background">
-        <div id="slider-wrapper">
-          <div class="inner-wrapper">
-            <input checked type="radio" name="slide" class="control" id="Slide1" />
-            <label for="Slide1" id="s1"></label>
-            <input type="radio" name="slide" class="control" id="Slide2" />
-            <label for="Slide2" id="s2"></label>
-            <input type="radio" name="slide" class="control" id="Slide3" />
-            <label for="Slide3" id="s3"></label>
-            <input type="radio" name="slide" class="control" id="Slide4" />
-            <label for="Slide4" id="s4"></label>
-            <div class="overflow-wrapper">
-              <div class="slide" href=""><img class="newsroomImage" src="{{ site.baseurl }}/assets/images/navBar/Products.png" /></div>
-              <div class="slide" href=""><img class="newsroomImage" src="{{ site.baseurl }}/assets/images/Title_Header.svg"></div>
-              <div class="slide" href=""><img class="newsroomImage" src="{{ site.baseurl }}/assets/images/kju-vacuum.png"></div>
-              <div class="slide" href=""><img class="newsroomImage" src="{{ site.baseurl }}/assets/images/qitasc-logo.png"></div>
+      <div class="col">
+
+        <!--
+        // ##################################################################################
+        // ##################################################################################
+        //                                                                            #######
+        //            Create Random List of 4 Articles                                #######
+        //                                                                            #######
+        // ##################################################################################
+        // ##################################################################################
+        -->
+
+        <div class="csslider infinity" id="slider1">
+
+          <input type="radio" name="slides" checked="checked" id="slides_1"/>
+          <input type="radio" name="slides" id="slides_2"/>
+          <input type="radio" name="slides" id="slides_3"/>
+          <input type="radio" name="slides" id="slides_4"/>
+
+        <ul>
+
+        {% for i in (1..4)%}
+
+        {% assign siteArticles = site.articles | where: 'group', 'visible'%}
+        {% assign siteArticlesSorted = siteArticles | sort: 'date' %}
+        {% assign siteArticlesSortedReversed = siteArticlesSorted | reverse %}
+
+        <li>
+
+          <img class="newsroomImage" src="../assets/images/qitasc-logo.png">
+          <h1>CSS Events</h1>
+          <p>When slide 3 is reached - play CSS animation!</p>
+        </li>
+
+
+        {% endfor %}
+        </ul>
+
+
+
+
+
+
+
+
+          <div class="arrows">
+            <label for="slides_1"></label>
+            <label for="slides_2"></label>
+            <label for="slides_3"></label>
+            <label for="slides_4"></label>
+
+            <label class="goto-first" for="slides_1"></label>
+            <label class="goto-last" for="slides_4"></label>
+          </div>
+          <div class="navigation">
+            <div>
+              <label for="slides_1"></label>
+              <label for="slides_2"></label>
+              <label for="slides_3"></label>
+              <label for="slides_4"></label>
+
             </div>
           </div>
         </div>
+
+
+
+
+
+
+
+      </div>
       </div>
     </div>
   </div>
 </div>
+
+<div class="container-fluid">
+  <div class="container">
+</div></div>
