@@ -139,10 +139,10 @@ $stageThree: 1199px;
 // ##################################################################################
 // ##################################################################################
 .NewsroomSliderContainerFluid {
-  @include stage00 {min-height: 700px !important;}
-  @include stage01 {min-height: 700px !important;}
-  @include stage02 {min-height: 700px !important;}
-  @include stage03 {min-height: 700px !important;}
+  @include stage00 {min-height: 700px !important; padding-top: 130px !important;}
+  @include stage01 {min-height: 700px !important; padding-top: 130px !important;}
+  @include stage02 {min-height: 700px !important; padding-top: 130px !important;}
+  @include stage03 {min-height: 700px !important; padding-top: 130px !important;}
   background-color: $qitascGreyVariation;
 }
 .NewsroomSliderContainer {
@@ -170,7 +170,10 @@ $stageThree: 1199px;
   padding-left: 3px;
 
 }
+.NewsroomSliderInnerContainer {
 
+  width: 420px;
+}
 .newsroomImage {
   width: 50%;
 
@@ -180,6 +183,65 @@ $stageThree: 1199px;
 }
 
 
+.newsroomSliderImage {
+  width: 260px !important;
+  background-color: $qitascLightGrey;
+  border-width:5px;
+  border-style:solid;
+  border-color:$qitascGreyVariation;
+  margin-left: 160px;
+  margin-top: 20px;
+}
+
+.newsroomSliderArticleTitle {
+
+  font-size: 18px;
+  margin-left: 160px;
+  margin-top: 60px;
+  font-weight: bold;
+  color: $qitascDarkerGrey;
+
+}
+.NewsroomSecondaryHeader {
+
+  margin-left: 160px;
+  margin-top: 10px;
+  background-image: linear-gradient(120deg, $qitascLightGrey 0%, rgba(0,0,0,0.1) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  color: $qitascGreyVariation;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+.NewsroomSliderText {
+  margin-left: 160px;
+  margin-top: 10px;
+  color: $qitascGreyVariation;
+  font-size: 14px;
+
+}
+.NewsroomDate {
+  margin-left: 160px;
+  margin-top: 10px;
+  color: $qitascGreyVariation;
+  font-size: 12px;
+}
+.NewsroomSliderReadMore a {
+  margin-left: 160px;
+  margin-top: 30px;
+  padding-top: 5px;
+  color: $qitascOrange;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.NewsroomSliderReadMore a:hover {
+  font-style: underline;
+  color: $qitascOrange;
+}
 
 
 
@@ -444,7 +506,7 @@ ol {
   font-family: 'Lato';
 }
 #slider1 > ul > li:nth-of-type(3) {
-  
+
 }
 #slider1 > input:nth-of-type(3):checked ~ ul .bg {
   width: 80%;
