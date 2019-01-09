@@ -674,16 +674,20 @@ i {
 .closeButton {
 
   @include stage00 {
-width: 20px;
+
+height: 40px;
   }
   @include stage01 {
-width: 20px;
+
+height: 40px;
   }
   @include stage02 {
-width: 20px;
+
+height: 40px;
   }
   @include stage03 {
-width: 35px;
+width: 40px;
+height: 40px;
   }
 
 

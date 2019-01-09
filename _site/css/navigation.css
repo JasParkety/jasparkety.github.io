@@ -165,9 +165,9 @@ i { border: solid #4a4a4a; display: inline-block; padding: 3px; }
 .leftSideNavMenucloseButton { color: #ebeceb; font-size: 20px; padding-right: 40px; float: right; padding-bottom: 200px; margin-top: -20px; }
 
 .closeButton { padding-top: 10px; filter: brightness(120%); }
-@media (max-width: 410px) { .closeButton { width: 20px; } }
-@media (min-width: 411px) and (max-width: 767px) { .closeButton { width: 20px; } }
-@media (min-width: 768px) and (max-width: 1199px) { .closeButton { width: 20px; } }
-@media (min-width: 1199px) { .closeButton { width: 35px; } }
+@media (max-width: 410px) { .closeButton { height: 40px; } }
+@media (min-width: 411px) and (max-width: 767px) { .closeButton { height: 40px; } }
+@media (min-width: 768px) and (max-width: 1199px) { .closeButton { height: 40px; } }
+@media (min-width: 1199px) { .closeButton { width: 40px; height: 40px; } }
 
 .closeButton:hover { filter: brightness(70%); }

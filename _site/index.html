@@ -43,6 +43,7 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
   <link rel="stylesheet" type="text/css" href="/css/wordcloud.css">
   <link rel="stylesheet" type="text/css" href="/css/Footer-Dark.css">
   <link rel="stylesheet" type="text/css" href="/css/qualities.css">
+  <link rel="stylesheet" type="text/css" href="/css/references.css">
 	<!-- include webfonts -->
 	<link rel="stylesheet" type="text/css" href="/css/webfonts.css">
 
@@ -308,22 +309,23 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
     //            Grey Side Menu on Screen over 410px                             #######
     // ##################################################################################
 -->
+  <div class="col greyColumn">
 
-    <div class="col greyColumn">
+        <!--  Close Button  -->
+        <div class="row leftSideNavMenucloseButton">
+            <img id="closeButtonID" class="closeButton" src="/assets/images/navBar/x_1.png">
+        </div>
 
-            <!--  Close Button  -->
-            <div class="row leftSideNavMenucloseButton">
-                <img id="closeButtonID" class="closeButton" src="/assets/images/navBar/x_1.png">
-            </div>
+        <div class="row leftSideNavMenuItem">Newsroom</div>
+        <div class="row leftSideNavMenuItem">About</div>
+        <div class="row leftSideNavMenuItem">Support</div>
+        <div class="row leftSideNavMenuItem">Documentation</div>
+        <div class="row leftSideNavMenuItem">Contact</div>
+        <div class="row leftSideNavMenuItem">Impressum</div>
 
-            <div class="row leftSideNavMenuItem">Newsroom</div>
-            <div class="row leftSideNavMenuItem">About</div>
-            <div class="row leftSideNavMenuItem">Support</div>
-            <div class="row leftSideNavMenuItem">Documentation</div>
-            <div class="row leftSideNavMenuItem">Contact</div>
-            <div class="row leftSideNavMenuItem">Impressum</div>
+</div>
 
-    </div>
+    
 </div>
 
       </div>
@@ -731,7 +733,7 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
             <a href="#" class="hoverWord">Hardware</a>
             <a href="#" class="hoverWord">Internet of Things</a>
             <a href="#" class="hoverWord">Industry 4.0</a>
-            <a href="#" class="hoverWord">IFRS</a>
+            <!-- <a href="#" class="hoverWord">IFRS</a>
             <a href="#" class="hoverWord">Mobile</a>
             <a href="#" class="hoverWord">Network</a>
             <a href="#" class="hoverWord">Back-End</a>
@@ -760,7 +762,7 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
             <a href="#" class="hoverWord">Webtesting</a>
             <a href="#" class="hoverWord">Hardware</a>
             <a href="#" class="hoverWord">Internet of Things</a>
-            <a href="#" class="hoverWord">Industry 4.0</a>
+            <a href="#" class="hoverWord">Industry 4.0</a> -->
           </div>
           </div>
           </div>
@@ -782,17 +784,19 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
             <p>Experience the company and the magic behind our product INTACT®</p>
         </div>
       </div>
-      <div class="col">
 
-        <!--
-        // ##################################################################################
-        // ##################################################################################
-        //                                                                            #######
-        //            Create Random List of 4 Articles                                #######
-        //                                                                            #######
-        // ##################################################################################
-        // ##################################################################################
-        -->
+      <!--
+      // ##################################################################################
+      // ##################################################################################
+      //                                                                            #######
+      //            Create Random List of 4 Articles on DESKTOP VIEW                #######
+      //                                                                            #######
+      // ##################################################################################
+      // ##################################################################################
+      -->
+      <div class="col responsiveDisplayDesktop">
+
+
 
         <div class="csslider infinity" id="slider1">
 
@@ -978,62 +982,148 @@ QiTASC is an Austrian company that excels in automated end-to-end testing. Find 
             </div>
           </div>
         </div>
+    </div>
+
+    <!--
+    // ##################################################################################
+    // ##################################################################################
+    //                                                                            #######
+    //            Create Random List of 4 Articles on DESKTOP VIEW                #######
+    //                                                                            #######
+    // ##################################################################################
+    // ##################################################################################
+    -->
+
+
+    <div class="responsiveDisplayMobile">
+        <div class="container-fluid">
+            <div class="row mobileSliderRow">
+
+                <div class="col SliderContent">
+
+                  <div class="newsroomSliderArticleTitleMobile">How to Customize your INTACT Test Case Execution Experience</div>
+                  <div class="NewsroomSecondaryHeaderMobile">Get to Know INTACT</div>
+                  <div class="NewsroomDateMobile">Nov 01, 2018</div>
+                  
+                  <a href="../articles/20180924-IntactStudio" target="_self"><img class="newsroomSliderImageMobile" src="../img/articles/IntactExecution/ExecutionSmall.png"/></a>
+                  
+
+                  <!-- <div class="NewsroomSliderTextMobile">When executing several tests within the same project, it's often necessary to adapt them to changes that arise so that all tests are compatible wit...</div>
+                  <div class="NewsroomSliderReadMoreMobile"><a href="../articles/20181101-IntactExecution" target="_self">Read More</a></div> -->
 
 
 
 
 
+                </div>
 
 
+            </div>
+          </div>
       </div>
-      </div>
+
+
+
+
+
+
+
     </div>
   </div>
 </div>
-
-<div class="container-fluid">
-  <div class="container">
-</div></div>
 
 <div class="container-fluid qualitiesContainer">
   <div class="container">
     <div class="row">
 
-        <div class="column qualitiesItem">
+        <div class="col col-xs-3 qualitiesItem">
           <img class="qualitiesImage" src="/assets/images/qualities/6-points-1.png">
           <div class="qualitiesHeader">Customer Loyalty</div>
           <div class="qualitiesText">We help you boost customer loyalty through trust and credibility.</div>
         </div>
 
-        <div class="column qualitiesItem">
+        <div class="col col-xs-3 qualitiesItem">
           <img class="qualitiesImage" src="/assets/images/qualities/6-points-2.png">
           <div class="qualitiesHeader">Quality</div>
           <div class="qualitiesText">We support you throughout the whole product development life cycle.</div>
         </div>
 
-        <div class="column qualitiesItem">
+        <div class="col col-xs-3 qualitiesItem">
           <img class="qualitiesImage" src="/assets/images/qualities/6-points-3.png">
           <div class="qualitiesHeader">Cost and Time Effectiveness</div>
           <div class="qualitiesText">Our tool saves you time and money while providing constant quality</div>
         </div>
     </div>
+
     <div class=row>
-        <div class="column qualitiesItem">
+        <div class="col qualitiesItem">
           <img class="qualitiesImage" src="/assets/images/qualities/6-points-4.png">
           <div class="qualitiesHeader">All-In-One Solutions</div>
           <div class="qualitiesText">Our complete package covers the entire development life cycle.</div>
         </div>
 
-        <div class="column qualitiesItem">
+        <div class="col qualitiesItem">
           <img class="qualitiesImage" src="/assets/images/qualities/6-points-5.png">
           <div class="qualitiesHeader">Comprehend and Excel</div>
           <div class="qualitiesText">We provide clear and practical documentation throughout the process.</div>
         </div>
-        <div class="column qualitiesItem">
+        <div class="col qualitiesItem">
           <img class="qualitiesImage" src="/assets/images/qualities/6-points-6.png">
           <div class="qualitiesHeader">Forecasting Ability</div>
           <div class="qualitiesText">We assist you in predicting future workloads.</div>
         </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid referencesContainer">
+  <div class="container referencesBackgroundPicture">
+    <div class="row">
+
+      <div class="col referencesItem">
+        <img class="referencesImage" src="/assets/images/references/reference07.png">
+        <div class="referencesHeader"></div>
+        <div class="referencesText">CDR Verification for CS and PS Core network. Type and field acceptance for prepaid IN services </div>
+      </div>
+      
+        <div class="col col-xs-3 referencesItem">
+          <img class="referencesImage" src="/assets/images/references/reference01.png">
+          <div class="referencesHeader"></div>
+          <div class="referencesText">Operating concept for a TCoE</div>
+        </div>
+
+        <div class="col col-xs-3 referencesItem">
+          <img class="referencesImage" src="/assets/images/references/reference02.png">
+          <div class="referencesHeader"></div>
+          <div class="referencesText">Functional Acceptance Test Automation</div>
+        </div>
+
+        <div class="col col-xs-3 referencesItem">
+          <img class="referencesImage" src="/assets/images/references/reference03.jpg">
+          <div class="referencesHeader"></div>
+          <div class="referencesText">Virtualization of a prepaid IN service</div>
+        </div>
+    </div>
+
+    <div class=row>
+        <div class="col referencesItem">
+          <img class="referencesImage" src="/assets/images/references/reference04.png">
+          <div class="referencesHeader"></div>
+          <div class="referencesText">Network configuration & integration </div>
+        </div>
+
+        <div class="col referencesItem">
+          <img class="referencesImage" src="/assets/images/references/reference05.jpg">
+          <div class="referencesHeader"></div>
+          <div class="referencesText">Quality Assurance for automated testing </div>
+        </div>
+        <div class="col referencesItem">
+          <img class="referencesImage" src="/assets/images/references/reference06.png">
+          <div class="referencesHeader"></div>
+          <div class="referencesText">IoT Test Automation </div>
+        </div>
+
 
     </div>
   </div>

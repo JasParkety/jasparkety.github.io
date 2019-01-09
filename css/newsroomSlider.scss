@@ -140,32 +140,42 @@ $stageThree: 1199px;
 // ##################################################################################
 .NewsroomSliderContainerFluid {
   @include stage00 {min-height: 700px !important; padding-top: 130px !important;}
-  @include stage01 {min-height: 700px !important; padding-top: 130px !important;}
-  @include stage02 {min-height: 700px !important; padding-top: 130px !important;}
-  @include stage03 {min-height: 700px !important; padding-top: 130px !important;}
+  @include stage01 {min-height: 750px !important; padding-top: 130px !important; padding-bottom: 50px !important;}
+  @include stage02 {min-height: 750px !important; padding-top: 130px !important; padding-bottom: 50px !important;}
+  @include stage03 {min-height: 700px !important; padding-top: 130px !important; padding-bottom: 50px !important;}
   background-color: $qitascGreyVariation;
 }
 .NewsroomSliderContainer {
   @include stage00 {min-height: 700px !important;}
-  @include stage01 {min-height: 700px !important;}
-  @include stage02 {min-height: 700px !important;}
-  @include stage03 {min-height: 700px !important;}
+  @include stage01 {min-height: 750px !important; padding-bottom: 50px !important;}
+  @include stage02 {min-height: 750px !important; padding-bottom: 50px !important;}
+  @include stage03 {min-height: 700px !important; padding-bottom: 50px !important;}
 }
 .NewsroomText {
-  margin-top: 50px;
-  padding: 40px auto;
+  @include stage00 {margin-top: 20px; padding: 15px auto;}
+  @include stage01 {margin-top: 30px; padding: 20px auto;}
+  @include stage02 {margin-top: 50px; padding: 40px auto;}
+  @include stage03 {margin-top: 50px; padding: 40px auto;}
+
 }
 
 .NewsroomText h2 {
-  font-size: 30px !important;
+  @include stage00 {font-size: 14px !important;}
+  @include stage01 {font-size: 15px !important;}
+  @include stage02 {font-size: 20px !important;}
+  @include stage03 {font-size: 30px !important;}
+
   color: #f7941e;
   font-weight: bold;
 }
 
 .NewsroomText p {
+  @include stage00 {font-size: 12px !important;}
+  @include stage01 {font-size: 13px !important;}
+  @include stage02 {font-size: 15px !important;}
+  @include stage03 {font-size: 18px !important;}
+  color: $qitascLightGrey;
 
-  color: $qitascDarkerGrey;
-  font-size: 14px;
   font-weight: bold;
   padding-left: 3px;
 
@@ -243,9 +253,92 @@ $stageThree: 1199px;
   color: $qitascOrange;
 }
 
+.responsiveDisplayDesktop {
+  @include stage00 {display: none;}
+  @include stage01 {display: none;}
+  @include stage02 {display: inline;}
+  @include stage03 {display: inline;}
+}
+.responsiveDisplayMobile {
+  @include stage00 {display: inline;}
+  @include stage01 {display: inline;}
+  @include stage02 {display: none;}
+  @include stage03 {display: none;}
+  width: 100% !important;
+}
+
+
+.mobileSliderRow {
+  @include stage00 {height: 300px !important;}
+  @include stage01 {height: 500px !important;}
+  
+
+
+  }
+
+
+.SliderContent {
+
+  padding: 0px !important;
+  display: inline-block;
+  background-image: url("../assets/images/Newsroom.png");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width:70% !important;
+}
+
+.newsroomSliderArticleTitleMobile {
+  width: 70%;
+  margin-top: 50px;
+  padding-left: 25%;
+  font-size: 10px;
+  font-weight: bold;
+  color: $qitascDarkerGrey;
+
+}
+.NewsroomSecondaryHeaderMobile {
+
+    width: 40%;
+    margin-left: 25%;
+    margin-top: 0px;
+    background-image: linear-gradient(120deg, $qitascLightGrey 0%, rgba(0,0,0,0.1) 10%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    color: $qitascGreyVariation;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+.newsroomSliderImageMobile {
+  width: 40%;
+  margin-left: 25%;
+  margin-top: 0px;
+  background-color: $qitascLightGrey;
+  border-width:5px;
+  border-style:solid;
+  border-color:$qitascGreyVariation;
+}
+.NewsroomDateMobile {
+  margin-left: 25%;
+  margin-top: 0px;
+  color: $qitascGreyVariation;
+  font-size: 8px;
+
+}
+.NewsroomSliderTextMobile {}
+.NewsroomSliderReadMoreMobile {}
+
+
+
+
 
 
 .csslider {
+
+
   -moz-perspective: 1300px;
   -ms-perspective: 1300px;
   -webkit-perspective: 1300px;
@@ -309,6 +402,7 @@ $stageThree: 1199px;
   box-sizing: border-box;
 }
 .csslider > ul > li {
+
   position: relative;
   display: inline-block;
   width: 100%;
@@ -405,6 +499,10 @@ $stageThree: 1199px;
   position: absolute;
   left: -31px;
   top: 50%;
+  @include stage01 {
+    width:60%;
+    // margin-left: 100px !important;
+  }
   width: 100%;
   height: 26px;
   padding: 0 31px;
