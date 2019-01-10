@@ -346,12 +346,16 @@ i {
   display: inline;
   @include stage00 {
     height: $secondaryHeaderHeightMobile;
+    direction: rtl;
+    overflow: scroll;
   }
   @include stage01 {
     height: $secondaryHeaderHeightMobile;
+
   }
   @include stage02 {
     height: $secondaryHeaderHeightDesktop;
+
   }
   @include stage03 {
     height: $secondaryHeaderHeightDesktop;
@@ -454,10 +458,10 @@ i {
 
 .rowProductIcons {
   @include stage00 {
-    padding-bottom: 8px;
+    padding-bottom: 6px;
   }
   @include stage01 {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
   }
   @include stage02 {
     padding-bottom: 13px;
@@ -516,24 +520,52 @@ i {
 }
 .productHeader:hover {
   color: $qitascDarkerGrey;
+
+
+}// #################################################################################
+//    Media Queries for short Description so that there is enough space       #######
+// ##################################################################################
+
+ @media (max-width:670px) and (min-width: 410px) {
+     .productDescription
+     {display: none;}
+     .productShorterDescription
+     {display: inline;}
+ }
+@media (max-width: 410px) {
+  .productDescription
+  {display: inline;}
+  .productShorterDescription
+  {display: none;}
 }
-.productDescription {
-  color: $qitascGrey;
+
+@media (min-width: 670px) {
+  .productDescription
+  {display: inline;}
+  .productShorterDescription
+  {display: none;}
+}
+
+.productDescription, .productShorterDescription {
+  color: $qitascGreyVariation;
   @include stage00 {
-    font-size: 15px;
+    font-size: 12px;
   }
   @include stage01 {
-    font-size: 15px;
+    font-size: 13px;
   }
   @include stage02 {
-    font-size: 17px;
+    font-size: 15px;
   }
   @include stage03 {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
 .leftPadding {
+
+
+
   @include stage00 {
     display: inline !important;
     margin-left: 20px !important;
@@ -629,6 +661,7 @@ i {
 }
 
 .greyColumn {
+
   background-color: $qitascGrey;
   padding: 20px;
   @include stage00 {

@@ -271,7 +271,7 @@ $stageThree: 1199px;
 .mobileSliderRow {
   @include stage00 {height: 300px !important;}
   @include stage01 {height: 500px !important;}
-  
+
 
 
   }
@@ -650,7 +650,6 @@ ol {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background: url(https://raw.github.com/drygiel/csslider/master/examples/themes/fruit.jpg) 1px 23%;
   -webkit-filter: blur(7px);
 }
 .bg:after {
