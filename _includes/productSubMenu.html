@@ -15,7 +15,7 @@
                 <div class="col">
                   <div class="floatproduct disQover">
                       <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.disQover.iconLink }}">
-                      <div class="productHeader">{{ site.data.navigation.disQover.title }}</div>
+                      <a class="navigationProductLink" href="{{ site.data.navigation.disQover.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.disQover.title }}</div></a>
                   </div>
                   <div class="productShorterDescription">{{ site.data.navigation.disQover.shorterDescription }}</div>
                   <div class="productDescription">{{ site.data.navigation.disQover.shortDescription }}</div>
@@ -26,11 +26,12 @@
               <div class="row rowProductIcons">
                 <div class="col">
                   <div class="floatproduct cheQ">
+
                       <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.cheQ.iconLink }}">
-                      <div class="productHeader">{{ site.data.navigation.cheQ.title }}</div>
+                      <a class="navigationProductLink" href="{{ site.data.navigation.cheQ.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.cheQ.title }}</div></a>
                   </div>
-                  <div class="productShorterDescription">{{ site.data.navigation.cheQ.shorterDescription }}</div>
-<div class="productDescription">{{ site.data.navigation.cheQ.shortDescription }}</div>
+                    <div class="productShorterDescription">{{ site.data.navigation.cheQ.shorterDescription }}</div>
+                    <div class="productDescription">{{ site.data.navigation.cheQ.shortDescription }}</div>
                 </div>
               </div>
             <p><div class="navigationSecondaryHeader">{{ site.data.navigation.intaQt.type }}</div></p>
@@ -38,7 +39,7 @@
               <div class="col">
                 <div class="floatproduct intaQt">
                     <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.intaQt.iconLink }}">
-                    <div class="productHeader">{{ site.data.navigation.intaQt.title }}</div>
+                    <a class="navigationProductLink" href="{{ site.data.navigation.intaQt.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.intaQt.title }}</div></a>
                 </div>
                 <div class="productShorterDescription">{{ site.data.navigation.intaQt.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.intaQt.shortDescription }}</div>
@@ -49,7 +50,7 @@
               <div class="col">
                 <div class="floatproduct intaQt">
                     <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.studio.iconLink }}">
-                    <div class="productHeader">{{ site.data.navigation.studio.title }}</div>
+                    <a class="navigationProductLink" href="{{ site.data.navigation.studio.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.studio.title }}</div></a>
                 </div>
                 <div class="productShorterDescription">{{ site.data.navigation.studio.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.studio.shortDescription }}</div>
@@ -60,7 +61,7 @@
               <div class="col">
                 <div class="floatproduct intaQt">
                     <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.client.iconLink }}">
-                    <div class="productHeader">{{ site.data.navigation.client.title }}</div>
+                    <a class="navigationProductLink" href="{{ site.data.navigation.client.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.client.title }}</div></a>
                 </div>
                 <div class="productShorterDescription">{{ site.data.navigation.client.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.client.shortDescription }}</div>
@@ -71,7 +72,7 @@
               <div class="col">
                 <div class="floatproduct sQedule">
                     <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.sQedule.iconLink }}">
-                    <div class="productHeader">{{ site.data.navigation.sQedule.title }}</div>
+                    <a class="navigationProductLink" href="{{ site.data.navigation.sQedule.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.sQedule.title }}</div></a>
                 </div>
                 <div class="productShorterDescription">{{ site.data.navigation.sQedule.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.sQedule.shortDescription }}</div>
@@ -83,7 +84,7 @@
               <div class="col">
                 <div class="floatproduct conQlude">
                     <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.conQlude.iconLink }}">
-                    <div class="productHeader">{{ site.data.navigation.conQlude.title }}</div>
+                    <a class="navigationProductLink" href="{{ site.data.navigation.conQlude.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.conQlude.title }}</div></a>
                 </div>
                 <div class="productShorterDescription">{{ site.data.navigation.conQlude.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.conQlude.shortDescription }}</div>
@@ -93,7 +94,7 @@
               <div class="col">
                 <div class="floatproduct analytiQs">
                     <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.analytiQs.iconLink }}">
-                    <div class="productHeader">{{ site.data.navigation.analytiQs.title }}</div>
+                    <a class="navigationProductLink" href="{{ site.data.navigation.analytiQs.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.analytiQs.title }}</div></a>
                 </div>
                 <div class="productShorterDescription">{{ site.data.navigation.analytiQs.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.analytiQs.shortDescription }}</div>
@@ -115,11 +116,11 @@
           <div class="row rowProductIcons">
             <div class="col">
               <div class="floatproduct disQover">
-                  <img class="productIcon" src="{{ site.baseurl }}/assets/images/productIcons/disQover_256x256.png">
-                  <div class="productHeader">{{ site.data.navigation.disQover.title }}</div>
+                  <div id="hoverProductIcon"><img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.disQover.iconLink }}"></div>
+                  <a href="{{ site.data.navigation.disQover.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.disQover.title }}</div></a>
               </div>
               <div class="productShorterDescription">{{ site.data.navigation.disQover.shorterDescription }}</div>
-<div class="productDescription">{{ site.data.navigation.disQover.shortDescription }}</div>
+              <div class="productDescription">{{ site.data.navigation.disQover.shortDescription }}</div>
             </div>
           </div>
 
@@ -127,8 +128,8 @@
           <div class="row rowProductIcons">
             <div class="col">
               <div class="floatproduct cheQ">
-                  <img class="productIcon" src="{{ site.baseurl }}/assets/images/productIcons/cheQ_256x256.png">
-                  <div class="productHeader">{{ site.data.navigation.cheQ.title }}</div>
+                  <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.cheQ.iconLink }}">
+                  <a class="navigationProductLink" href="{{ site.data.navigation.cheQ.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.cheQ.title }}</div></a>
               </div>
               <div class="productShorterDescription">{{ site.data.navigation.cheQ.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.cheQ.shortDescription }}</div>
@@ -144,7 +145,7 @@
           <div class="col">
             <div class="floatproduct intaQt">
                 <img class="productIcon" src="{{ site.baseurl }}{{ site.baseurl }}{{ site.data.navigation.intaQt.iconLink }}">
-                <div class="productHeader">{{ site.data.navigation.intaQt.title }}</div>
+                <a class="navigationProductLink" href="{{ site.data.navigation.intaQt.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.intaQt.title }}</div></a>
             </div>
             <div class="productShorterDescription">{{ site.data.navigation.intaQt.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.intaQt.shortDescription }}</div>
@@ -155,7 +156,7 @@
           <div class="col">
             <div class="floatproduct intaQt">
                 <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.studio.iconLink }}">
-                <div class="productHeader">{{ site.data.navigation.studio.title }}</div>
+                <a class="navigationProductLink" href="{{ site.data.navigation.studio.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.studio.title }}</div></a>
             </div>
             <div class="productShorterDescription">{{ site.data.navigation.studio.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.studio.shortDescription }}</div>
@@ -166,7 +167,7 @@
           <div class="col">
             <div class="floatproduct intaQt">
                 <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.client.iconLink }}">
-                <div class="productHeader">{{ site.data.navigation.client.title }}</div>
+                <a class="navigationProductLink" href="{{ site.data.navigation.client.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.client.title }}</div></a>
             </div>
             <div class="productShorterDescription">{{ site.data.navigation.client.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.client.shortDescription }}</div>
@@ -177,7 +178,7 @@
           <div class="col">
             <div class="floatproduct sQedule">
                 <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.sQedule.iconLink }}">
-                <div class="productHeader">{{ site.data.navigation.sQedule.title }}</div>
+                <a class="navigationProductLink" href="{{ site.data.navigation.sQedule.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.sQedule.title }}</div></a>
             </div>
             <div class="productShorterDescription">{{ site.data.navigation.sQedule.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.sQedule.shortDescription }}</div>
@@ -195,7 +196,7 @@
           <div class="col">
             <div class="floatproduct conQlude">
                 <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.conQlude.iconLink }}">
-                <div class="productHeader">{{ site.data.navigation.conQlude.title }}</div>
+                <a class="navigationProductLink" href="{{ site.data.navigation.conQlude.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.conQlude.title }}</div></a>
             </div>
             <div class="productShorterDescription">{{ site.data.navigation.conQlude.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.conQlude.shortDescription }}</div>
@@ -205,7 +206,7 @@
           <div class="col">
             <div class="floatproduct analytiQs">
                 <img class="productIcon" src="{{ site.baseurl }}{{ site.data.navigation.analytiQs.iconLink }}">
-                <div class="productHeader">{{ site.data.navigation.analytiQs.title }}</div>
+                <a class="navigationProductLink" href="{{ site.data.navigation.analytiQs.link }}" target="_self"><div class="productHeader">{{ site.data.navigation.analytiQs.title }}</div></a>
             </div>
             <div class="productShorterDescription">{{ site.data.navigation.analytiQs.shorterDescription }}</div>
 <div class="productDescription">{{ site.data.navigation.analytiQs.shortDescription }}</div>

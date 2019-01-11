@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: INTACT Studio - Custom Plugins
 colorTitle: <span class="orange">IN</span>TACT<sup>®</sup> Studio - Custom Plugins
 subtitleNewsroom: Videos

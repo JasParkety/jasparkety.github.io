@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: QiTASC Resource Center
 colorTitle: Introducing the QiTASC Resource Center
 subtitleNewsroom: Get to Know INTACT
@@ -22,7 +22,7 @@ anchorsNames: ["Manual or Tutorial?", "Why Use Tutorials?", "Why Use Manuals?", 
 
 ########## SYNTAX
 
-# layout: articleSection this builds the page according to layouts/articleSection.html
+# layout: newsroomArticle this builds the page according to layouts/newsroomArticle.html
 # title: Main Title (Visible in Browser Tabs)
 # colorTitle: Coloured Main title used in the Descriptions
 # subtitle: selfexplaining

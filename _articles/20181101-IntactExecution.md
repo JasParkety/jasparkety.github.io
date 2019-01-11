@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: How to Customize your INTACT Test Case Execution Experience
 colorTitle: How to Customize your <span class="orange">IN</span>TACT<sup>®</sup> Test Case Execution Experience
 subtitle: Test Case Execution

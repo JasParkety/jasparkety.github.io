@@ -1,0 +1,31 @@
+header:
+  title: QiTASC Newsroom
+  Description: Explore articles, tutorial videos and interviews and get to know the QiTASC family, the company and the magic behind our product <span class="orange">IN</span>TACT<sup>®</sup>
+  SubDescription: Find more information in the <a class="more" target="_blank" href="https://docs.qitasc.com/"><span class="orange">IN</span>TACT<sup>®</sup> Resource Center</a>
+  imagePath: /img/newsroom/Title_Header.svg
+  imagePathMobile: /img/newsroom/Title_Header_mobileM.svg
+  # Max 20 characters for shorter Description
+  shorterDescription: test case generation
+
+link: /Newsroom/
+
+Insights:
+  title: Automation Insights
+  Description: Welcome to the QiTASC Newsroom! Every week, we’ll be sharing new content about our product, our company and test automation in general. Some of the different topics you’ll find here include.
+
+topics:
+    -
+        name: How-To Guides & Learning
+        description: These guides provide step-by-step instructions to help you find out about and learn how to use specific <span class="orange">IN</span>TACT<sup>®</sup> features.
+    -
+        name: New Feature
+        description: We provide you with an in-depth look into the most exciting new features we’re introducing.
+    -
+        name: Get to Know <span class="orange">IN</span>TACT<sup>®</sup></i>
+        description: Find out about existing features, what they do and why you should use them..
+    -
+        name: Get to Know QiTASC
+        description: Learn about the people who help bring the magic of <span class="orange">IN</span>TACT<sup>®</sup> to life!
+    -
+        name: Videos
+        description: See how <span class="orange">IN</span>TACT<sup>®</sup> looks in action and learn some tips and tricks from our experts.

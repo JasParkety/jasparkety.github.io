@@ -1,0 +1,90 @@
+Hero:
+    mainSoftware: conQlude
+    softwareHeader: conQlude
+    logoPath: /assets/images/products/productLogos/conQlude.svg
+    iconPath: /assets/images/products/productIcons/conQlude_256x256.png
+    group: mainProduct
+    # Notice that the first line must be an space followed by the | character and a new line. Then you must indent the text one level more than its parent.
+    softwareText: |
+      Collect, manage and export intaQt test case project data as well as bug and error tracking without any manual effort.
+      <div class="boldStyleYML">conQlude</div> automatically uploads all test reports, logs, media attachments and metadata to a centrally-accessible, secure web interface. This powerful but user-friendly interface ensures that you can remain confident that all test execution details are 100% correct, up-to-date and conform to formats recognized by external project management systems.
+
+IntaQtFeatures:
+    header: conQlude Features
+    text: ConQlude was developed for managing data from intaQt test execution data and, optionally, integrating it into an external project management systems and issue tracking systems such as HP ALM, Atlassian JIRA and YouTrack. The reporting service is an encrypted, web interface that only registered project members can access. ConQlude provides features tailored to your entire time&#58;Testers, test managers/project managers, and IT administrators have all been carefully considered when developing conQlude.
+    group: secondary
+
+Features:
+    -
+        title: Features for Testers
+        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin ornare nibh id mollis. Nulla sit amet felis vel velit consequat egestas. Vestibulum tincidunt, elit nec volutpat semper, sapien quam placerat tellus, pretium bibendum justo nisi sed erat. Vivamus vitae gravida orci. Morbi accumsan mollis.
+        group: testFeatures
+        screenshot: SCREENSHOT.svg
+        subfeatures:
+            -
+                title: Review & Verify
+                subtitle: Review and verify test executions via the Test Run Reports feature.
+                screenshot: conqlude.png
+            -
+                title: Attachments
+                subtitle: Access or download test attachments, including media, text, XML, logs and step-specific metadata.
+                screenshot: conqlude.png
+            -
+                title: Bug Tracking
+                subtitle: Add error codes, comments or update tags and project-specific categories.
+                screenshot: conQlude.png
+            -
+                title: Charts
+                subtitle: View data visualisations of univariate test data.
+                screenshot: conQlude.svg
+            -
+                title: Data Export
+                subtitle: Export Test Run Report data to CSV or XLS.
+                screenshot: conQlude.svg
+
+
+    -
+        title: Test Manager/Project Manager
+        subtitle: Test managers have access to *all ConQlude features available to test engineers* as well as&#58;
+        group: testManager
+        subfeatures:
+            -
+                title: Configure Test Categories
+                subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin ornare nibh id mollis. Nulla sit amet felis vel velit consequat egestas. Vestibulum tincidunt, elit nec volutpat semper, sapien quam placerat tellus, pretium bibendum justo nisi sed erat. Vivamus vitae gravida orci. Morbi accumsan mollis.
+                screenshot: conQlude.png
+
+            -
+                title: Configure Project Settings ## maybe change this.
+                subtitle: Configure external test management systems/project management systems to receive test reports from ConQlude.
+                screenshot: conQlude.png
+
+            -
+                title: Approve & Manage
+                subtitle: pprove Test Run Reports for upload to external test management systems/project management systems.
+                screenshot: conQlude.png
+
+    -
+        title: Administrators/IT Services
+        subtitle: Administrators have access to *all ConQlude features available to test engineers* as well as&#58;
+        group: administrators
+        screenshot: code.png
+        subfeatures:
+                  -
+                      title: Project Settings
+                      subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin ornare nibh id mollis. Nulla sit amet felis vel velit consequat egestas. Vestibulum tincidunt, elit nec volutpat semper, sapien quam placerat tellus, pretium bibendum justo nisi sed erat. Vivamus vitae gravida orci. Morbi accumsan mollis.
+                      screenshot: conQlude.png
+
+                  -
+                      title: Ticketing System Integration
+                      subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin ornare nibh id mollis. Nulla sit amet felis vel velit consequat egestas. Vestibulum tincidunt, elit nec volutpat semper, sapien quam placerat tellus, pretium bibendum justo nisi sed erat. Vivamus vitae gravida orci. Morbi accumsan mollis.
+                      screenshot: conQlude.png
+
+                  -
+                      title: Project Management System Integration
+                      subtitle: Integration with external tools such as HP ALM, Atlassian JIRA and JetBrains YouTrack.
+                      screenshot: conQlude.png
+
+                  -
+                      title: Error Category Configuration
+                      subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin ornare nibh id mollis. Nulla sit amet felis vel velit consequat egestas. Vestibulum tincidunt, elit nec volutpat semper, sapien quam placerat tellus, pretium bibendum justo nisi sed erat. Vivamus vitae gravida orci. Morbi accumsan mollis.
+                      screenshot: conQlude.png

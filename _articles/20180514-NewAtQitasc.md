@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: From Athens to Vienna - Costas Joins the QiTASC Development Team
 colorTitle: From Athens to Vienna - Costas Joins the QiTASC Development Team
 subtitle: New At QiTASC
@@ -23,7 +23,7 @@ anchorsNames: ["Introduction", "Why QiTASC?", "Daily Life at QiTASC", "Skills De
 
 ########## SYNTAX
 
-# layout: articleSection this builds the page according to layouts/articleSection.html
+# layout: newsroomArticle this builds the page according to layouts/newsroomArticle.html
 # title: Main Title (Visible in Browser Tabs)
 # colorTitle: Coloured Main title used in the Descriptions
 # subtitle: selfexplaining

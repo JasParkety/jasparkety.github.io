@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: INTACT Studio Tips & Tricks
 colorTitle: <span class="orange">IN</span>TACT<sup>®</sup> Studio Tips & Tricks
 subtitleNewsroom: Videos
@@ -19,7 +19,7 @@ subtext: Watch Mihai from Development demonstrate INTACT Studio tips & tricks fo
 
 ########## SYNTAX
 
-# layout: articleSection this builds the page according to layouts/articleSection.html
+# layout: newsroomArticle this builds the page according to layouts/newsroomArticle.html
 # title: Main Title (Visible in Browser Tabs)
 # colorTitle: Coloured Main title used in the Descriptions
 # subtitle: selfexplaining

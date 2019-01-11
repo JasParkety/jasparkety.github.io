@@ -142,7 +142,7 @@ $stageThree: 1199px;
 
   @extend .shadowBottom;
   position: fixed;
-  background-color: $qitascLightGrey;
+  background-color: $qitascGrey;
   z-index: 9999;
   @include stage00 {
     height: $mainHeaderHeightMobile;
@@ -206,6 +206,9 @@ $stageThree: 1199px;
     padding-right: 3px !important;
   }
 }
+
+
+
 .navigationButton {
 
   @extend .transitionMargin;
@@ -346,8 +349,7 @@ i {
   display: inline;
   @include stage00 {
     height: $secondaryHeaderHeightMobile;
-    direction: rtl;
-    overflow: scroll;
+
   }
   @include stage01 {
     height: $secondaryHeaderHeightMobile;
@@ -470,7 +472,9 @@ i {
     padding-bottom: 15px;
   }
 }
-
+a:hover {
+    text-decoration: none !important;
+}
 .floatproduct h2 {
   float: right;
 }
@@ -483,22 +487,30 @@ i {
 
 .conQlude:hover, {
   background-color: rgb(197, 238, 252);
+  text-decoration: none !important;
 }
 .disQover:hover {
   background-color: rgb(255, 224, 70);
+  text-decoration: none !important;
 }
 .cheQ:hover, {
   background-color: rgb(145, 150, 185);
+  text-decoration: none !important;
 }
 .intaQt:hover {
   background-color: rgb(149, 210, 56);
+  text-decoration: none !important;
 }
 .sQedule:hover {
   background-color: rgb(153, 181, 154);
+  text-decoration: none !important;
 }
 .analytiQs:hover {
   background-color: rgb(193, 134, 143);
+  text-decoration: none !important;
 }
+
+
 
 
 .productHeader {
@@ -520,9 +532,10 @@ i {
 }
 .productHeader:hover {
   color: $qitascDarkerGrey;
+  text-decoration: none !important;
+}
 
-
-}// #################################################################################
+// #################################################################################
 //    Media Queries for short Description so that there is enough space       #######
 // ##################################################################################
 
@@ -682,16 +695,25 @@ i {
     height: $secondaryHeaderHeightDesktop !important;
   }
 }
-
-.leftSideNavMenuItem {
+.leftSideNavMenuItem a {
+  color: $qitascLightGrey;
+  font-size: 20px;
+}
+.leftSideNavMenuItem a:hover {
+  text-decoration: none !important;
+  color: $qitascGreyVariation;
+  cursor: pointer;
+}
+.leftSideNavMenuItem  {
   color: $qitascLightGrey;
   font-size: 20px;
   padding-left: 20px;
 
 }
-.leftSideNavMenuItem:hover {
+.leftSideNavMenuItem:hover  {
   color: $qitascGreyVariation;
   cursor: pointer;
+  text-decoration: none !important;
 }
 
 .leftSideNavMenucloseButton {
@@ -707,19 +729,19 @@ i {
 .closeButton {
 
   @include stage00 {
-
+width: 30px;
 height: 40px;
   }
   @include stage01 {
-
+width: 30px;
 height: 40px;
   }
   @include stage02 {
-
+width: 30px;
 height: 40px;
   }
   @include stage03 {
-width: 40px;
+width: 30px;
 height: 40px;
   }
 

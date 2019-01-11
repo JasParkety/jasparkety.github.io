@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: INTACT Studio Tips and Tricks
 colorTitle: <span class="orange">IN</span>TACT<sup>®</sup> Studio Tips and Tricks
 subtitle: StudioTricks

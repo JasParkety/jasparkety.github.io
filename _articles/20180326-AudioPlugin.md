@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: INTACT Audio Plugin
 colorTitle: The <span class="orange">IN</span>TACT<sup>®</sup> Audio Plugin
 subtitleNewsroom: New Feature
@@ -22,7 +22,7 @@ anchorsNames: ["Introduction", "The Big Picture", "How to Create Recordings", "S
 
 ########## SYNTAX
 
-# layout: articleSection this builds the page according to layouts/articleSection.html
+# layout: newsroomArticle this builds the page according to layouts/newsroomArticle.html
 # title: Main Title (Visible in Browser Tabs)
 # colorTitle: Coloured Main title used in the Descriptions
 # subtitle: selfexplaining
