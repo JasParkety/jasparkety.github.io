@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: Continuous Integration (Jenkins) With INTACT
 colorTitle: Continuous Integration (Jenkins) With <span class="orange">IN</span>TACT<sup>®</sup>
 subtitle: Continuous Integration
@@ -23,7 +23,7 @@ anchorsNames: ["Introduction", "Configure and Start INTACT", "Configure and Run 
 
 ########## SYNTAX
 
-# layout: articleSection this builds the page according to layouts/articleSection.html
+# layout: newsroomArticle this builds the page according to layouts/newsroomArticle.html
 # title: Main Title (Visible in Browser Tabs)
 # colorTitle: Coloured Main title used in the Descriptions
 # subtitle: selfexplaining

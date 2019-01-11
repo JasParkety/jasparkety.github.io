@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: Take a Quick Tour of INTACT Studio
 colorTitle: Take a Quick Tour of <span class="orange">IN</span>TACT<sup>®</sup> Studio
 subtitle: IntactStudio

@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: Concise, Reusable Test Cases - How Compound Steps Can Simplify Your Test Design
 colorTitle: Concise, Reusable Test Cases - How Compound Steps Can Simplify Your Test Design
 subtitle: Compound Steps
@@ -23,7 +23,7 @@ anchorsNames: ["Introduction", "The Problem with Simple Steps", "A Cleaner Appro
 
 ########## SYNTAX
 
-# layout: articleSection this builds the page according to layouts/articleSection.html
+# layout: newsroomArticle this builds the page according to layouts/newsroomArticle.html
 # title: Main Title (Visible in Browser Tabs)
 # colorTitle: Coloured Main title used in the Descriptions
 # subtitle: selfexplaining

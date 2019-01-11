@@ -37,3 +37,8 @@ html *
 html {
    font-family:"Avenir" !important;
 }
+
+.boldStyleYML {
+  font-weight: bold;
+  display: inline;
+}

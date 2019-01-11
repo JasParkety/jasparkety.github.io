@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: Executing Test Cases with INTACT
 colorTitle: Video Tutorial - Executing <span class="orange">IN</span>TACT<sup>®</sup> Test Cases
 subtitleNewsroom: Videos
@@ -19,7 +19,7 @@ subtext: In this tutorial, Mihai demonstrates how to execute INTACT Webtest test
 
 ########## SYNTAX
 
-# layout: articleSection this builds the page according to layouts/articleSection.html
+# layout: newsroomArticle this builds the page according to layouts/newsroomArticle.html
 # title: Main Title (Visible in Browser Tabs)
 # colorTitle: Coloured Main title used in the Descriptions
 # subtitle: selfexplaining

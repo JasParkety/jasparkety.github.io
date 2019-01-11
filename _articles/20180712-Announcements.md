@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: Automated Announcement Verification with the INTACT Audio Plugin
 colorTitle: Automated Announcement Verification with the <span class="orange">IN</span>TACT<sup>®</sup> Audio Plugin
 subtitle: Automated Announcement Verification with the INTACT Audio Plugin

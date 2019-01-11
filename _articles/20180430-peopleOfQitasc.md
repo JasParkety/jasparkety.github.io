@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: The People of QiTASC
 colorTitle: The People of QiTASC
 subtitleNewsroom: Get to Know QiTASC
@@ -22,7 +22,7 @@ anchorsNames: ["The People of QiTASC", "Where We Come From", "What QiTASC does",
 
 ########## SYNTAX
 
-# layout: articleSection this builds the page according to layouts/articleSection.html
+# layout: newsroomArticle this builds the page according to layouts/newsroomArticle.html
 # title: Main Title (Visible in Browser Tabs)
 # colorTitle: Coloured Main title used in the Descriptions
 # subtitle: selfexplaining

@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: INTACT Apptest Tutorial
 colorTitle: <span class="orange">IN</span>TACT<sup>®</sup> Apptest Tutorial
 subtitle: The Tutorial Experience
@@ -24,7 +24,7 @@ experience: 1
 
 ########## SYNTAX
 
-# layout: articleSection this builds the page according to layouts/articleSection.html
+# layout: newsroomArticle this builds the page according to layouts/newsroomArticle.html
 # title: Main Title (Visible in Browser Tabs)
 # colorTitle: Coloured Main title used in the Descriptions
 # subtitle: selfexplaining

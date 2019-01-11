@@ -1,11 +1,11 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: Remote Apptest with INTACT
 colorTitle: Remote Apptest with <span class="orange">IN</span>TACT<sup>®</sup>
 subtitle: Apptest
 subtitleNewsroom: New Feature
 overview: Topics
-img_url: img/articles/RemoteApptest/MobileTitle.png
+img_url: img/articles/RemoteApptest/MobileTitle.svg
 img_main_url: /img/newsroom/RemoteApptest.jpg
 category: article
 group: visible

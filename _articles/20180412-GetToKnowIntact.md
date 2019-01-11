@@ -1,5 +1,5 @@
 ---
-layout: articleSectionSmallPics
+layout: newsroomArticleSmallPics
 title: Eight Important Automated Testing Scenarios Where INTACT Excels
 colorTitle: Eight Important Automated Testing Scenarios Where <span class="orange">IN</span>TACT<sup>®</sup> Excels
 subtitle: Get To Know INTACT
@@ -23,7 +23,7 @@ anchorsNames: ["Core Network Testing", "IFRS Testing", "Internet of Things", "Ch
 
 ########## SYNTAX
 
-# layout: articleSection this builds the page according to layouts/articleSection.html
+# layout: newsroomArticle this builds the page according to layouts/newsroomArticle.html
 # title: Main Title (Visible in Browser Tabs)
 # colorTitle: Coloured Main title used in the Descriptions
 # subtitle: selfexplaining

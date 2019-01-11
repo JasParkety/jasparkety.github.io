@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: Theo's Summer Internship at QiTASC
 colorTitle: Theo's Summer Internship at QiTASC
 subtitle: Internship

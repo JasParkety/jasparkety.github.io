@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: INTACT Studio Phone Plugin
 colorTitle: <span class="orange">IN</span>TACT<sup>®</sup> Studio Phone Plugin Demo
 subtitleNewsroom: Videos
@@ -19,7 +19,7 @@ subtext: Mihai shows how our Phone Plugin lets you to view a phone's behavior fr
 
 ########## SYNTAX
 
-# layout: articleSection this builds the page according to layouts/articleSection.html
+# layout: newsroomArticle this builds the page according to layouts/newsroomArticle.html
 # title: Main Title (Visible in Browser Tabs)
 # colorTitle: Coloured Main title used in the Descriptions
 # subtitle: selfexplaining

@@ -1,5 +1,5 @@
 ---
-layout: articleSection
+layout: newsroomArticle
 title: INTACT Virtual Phones Tutorial
 colorTitle: <span class="orange">IN</span>TACT<sup>®</sup> Virtual Phones Tutorial
 subtitle: The Tutorial Experience
@@ -22,7 +22,7 @@ anchorsNames: ["Virtual Phones Introduction", "Create Project", "Create Test Cas
 
 ########## SYNTAX
 
-# layout: articleSection this builds the page according to layouts/articleSection.html
+# layout: newsroomArticle this builds the page according to layouts/newsroomArticle.html
 # title: Main Title (Visible in Browser Tabs)
 # colorTitle: Coloured Main title used in the Descriptions
 # subtitle: selfexplaining
