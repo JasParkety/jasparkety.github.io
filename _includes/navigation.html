@@ -7,9 +7,11 @@
 <!--  ####                                                                   #### -->
 <!--  ########################################################################### -->
 <!--  ########################################################################### -->
-
-
+{% if page.url contains "/products" %}
+<div class="container-fluid stickyNavContainer">
+{% else %}
 <div class="container-fluid stickyNavContainer shadowBottom">
+  {% endif %}
     <div class="container stickyNavSubContainer">
         <div class="row form-inline">
           <div class="LogoContainer">

@@ -87,6 +87,7 @@ $stageThree: 1199px;
     transition: opacity .3s linear 1s;
 }
 .shadowBottom  {
+
     -webkit-box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
        -moz-box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
             box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
@@ -140,24 +141,25 @@ $stageThree: 1199px;
 .stickyNavContainer {
   @extend .transitionHeight;
 
-  @extend .shadowBottom;
+
   position: fixed;
   background-color: $qitascGrey;
   z-index: 9999;
   @include stage00 {
-    height: $mainHeaderHeightMobile;
+    height: $mainHeaderHeightMobile !important;
   }
   @include stage01 {
-    height: $mainHeaderHeightMobile;
+    height: $mainHeaderHeightMobile !important;
   }
   @include stage02 {
-    height: $mainHeaderHeightDesktop;
+    height: $mainHeaderHeightDesktop !important;
   }
   @include stage03 {
-    height: $mainHeaderHeightDesktop;
+    height: $mainHeaderHeightDesktop !important;
   }
 }
 .LogoContainer {
+
   @include stage00 {
     width: 70px !important;
   }
@@ -295,7 +297,7 @@ i {
 // ##################################################################################
 
 .wrapper {
-  z-index: 9996;
+  z-index: 9998;
   width: 110%;
   position: absolute;
 }
@@ -365,7 +367,7 @@ i {
 }
 
 .transparentOverlayOfContent {
-
+  z-index: 9998;
   position: fixed;
   width: 100%;
 
@@ -394,7 +396,7 @@ i {
  }
 
 .transparentOverlayOfContent.add {
-  z-index: 9997;
+  z-index: 9998;
   height: 100%;
   background-color: rgba(0,0,0,0.5);
 

@@ -1,7 +1,22 @@
+var addShadow = function() {
+  if (window.location.href.indexOf("products") > -1) {
+   $('.stickyNavContainer').addClass( 'shadowBottom' );
+}
+};
+
+var removeShadow = function() {
+  if (window.location.href.indexOf("products") > -1) {
+   $('.stickyNavContainer').removeClass( 'shadowBottom' );
+}
+};
+
+
+
 $( "#closeButtonID" ).click(function() {
   if($('.transparentOverlayOfContent').css('height') > '1%') {
     if($('.displayedContentProducts').is(':visible')){
       $('.displayedContentProducts').toggleClass( 'add' );
+      removeShadow();
     }
     if($('.displayedContentSupport').is(':visible')){
       $('.displayedContentSupport').toggleClass( 'add' );
@@ -16,6 +31,7 @@ $( "#transparentOverlay" ).click(function() {
   if($('.transparentOverlayOfContent').css('height') > '1%') {
       $('.transparentOverlayOfContent').toggleClass( 'add' );
       $('#secondaryNavContainer').toggleClass( 'on' );
+      removeShadow();
 
       if($('.displayedContentProducts').is(':visible')){
         $('.displayedContentProducts').toggleClass( 'add' );
@@ -27,6 +43,13 @@ $( "#transparentOverlay" ).click(function() {
 });
 
 $( "#toggleProducts" ).click(function() {
+    if( ($('.transparentOverlayOfContent').css('height') > '1%') && ($('.displayedContentProducts').is(':visible')) ) {
+      removeShadow();
+    }
+    else {
+      addShadow();
+    }
+
     if($('.displayedContentSupport').is(':visible')){
       $('.displayedContentSupport').toggleClass( 'add' );
       $('.displayedContentProducts').toggleClass( 'add' );
@@ -39,11 +62,18 @@ $( "#toggleProducts" ).click(function() {
 });
 
 $( "#toggleSupport" ).click(function() {
+  if( ($('.transparentOverlayOfContent').css('height') > '1%') && ($('.displayedContentSupport').is(':visible')) ) {
+    removeShadow();
+  }
+  else {
+    addShadow();
+  }
   if($('.displayedContentProducts').is(':visible')){
     $('.displayedContentProducts').toggleClass( 'add' );
     $('.displayedContentSupport').toggleClass( 'add' );
   }
   else {
+    addShadow();
     $('#secondaryNavContainer').toggleClass( 'on' );
     $('.displayedContentSupport').toggleClass( 'add' );
     $('.transparentOverlayOfContent').toggleClass( 'add' );

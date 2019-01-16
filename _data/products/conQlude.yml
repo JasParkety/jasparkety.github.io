@@ -4,10 +4,11 @@ Hero:
     logoPath: /assets/images/products/productLogos/conQlude.svg
     iconPath: /assets/images/products/productIcons/conQlude_256x256.png
     group: mainProduct
+    shortDescription: Integrated reporting and issue tracking
     # Notice that the first line must be an space followed by the | character and a new line. Then you must indent the text one level more than its parent.
     softwareText: |
-      Collect, manage and export intaQt test case project data as well as bug and error tracking without any manual effort.
-      <div class="boldStyleYML">conQlude</div> automatically uploads all test reports, logs, media attachments and metadata to a centrally-accessible, secure web interface. This powerful but user-friendly interface ensures that you can remain confident that all test execution details are 100% correct, up-to-date and conform to formats recognized by external project management systems.
+      <br>Collect, manage and export intaQt test case project data as well as bug and error tracking without any manual effort.
+      <br><div class="boldStyleYML">conQlude</div> automatically uploads all test reports, logs, media attachments and metadata to a centrally-accessible, secure web interface. This powerful but user-friendly interface ensures that you can remain confident that all test execution details are 100% correct, up-to-date and conform to formats recognized by external project management systems.
 
 IntaQtFeatures:
     header: conQlude Features
@@ -19,28 +20,28 @@ Features:
         title: Features for Testers
         subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin ornare nibh id mollis. Nulla sit amet felis vel velit consequat egestas. Vestibulum tincidunt, elit nec volutpat semper, sapien quam placerat tellus, pretium bibendum justo nisi sed erat. Vivamus vitae gravida orci. Morbi accumsan mollis.
         group: testFeatures
-        screenshot: SCREENSHOT.svg
+        screenshot: /img/philosophy/kju-vacuum.png
         subfeatures:
             -
                 title: Review & Verify
                 subtitle: Review and verify test executions via the Test Run Reports feature.
-                screenshot: conqlude.png
+                screenshot: cheQ_256x256.png
             -
                 title: Attachments
                 subtitle: Access or download test attachments, including media, text, XML, logs and step-specific metadata.
-                screenshot: conqlude.png
+                screenshot: cheQ_256x256.png
             -
                 title: Bug Tracking
                 subtitle: Add error codes, comments or update tags and project-specific categories.
-                screenshot: conQlude.png
+                screenshot: cheQ_256x256.png
             -
                 title: Charts
                 subtitle: View data visualisations of univariate test data.
-                screenshot: conQlude.svg
+                screenshot: cheQ_256x256.png
             -
                 title: Data Export
                 subtitle: Export Test Run Report data to CSV or XLS.
-                screenshot: conQlude.svg
+                screenshot: cheQ_256x256.png
 
 
     -
@@ -88,3 +89,13 @@ Features:
                       title: Error Category Configuration
                       subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin ornare nibh id mollis. Nulla sit amet felis vel velit consequat egestas. Vestibulum tincidunt, elit nec volutpat semper, sapien quam placerat tellus, pretium bibendum justo nisi sed erat. Vivamus vitae gravida orci. Morbi accumsan mollis.
                       screenshot: conQlude.png
+
+serverUseCases:
+    title: intaQt Server Use Cases
+    subtitle: Subtitle
+    enumeration:
+    -
+      point: Core network testing how devices including mobile and VoiP phones behave when used in the network.
+      point: Core network testing how devices including mobile and VoiP phones behave when used in the network.
+      point: Core network testing how devices including mobile and VoiP phones behave when used in the network.
+      point: Core network testing how devices including mobile and VoiP phones behave when used in the network.
