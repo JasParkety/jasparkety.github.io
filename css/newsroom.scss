@@ -21,6 +21,7 @@ $qitascLightGrey: #ebeceb;
 $qitascGrey: #bfc2c9;
 $qitascDarkerGrey: #32323c;
 $qitascGreyVariation: #64646a;
+$qitascTeal: #0094ac;
 
 $navigationButtonFontSizeDesktop:     20px;
 $navigationButtonFontSizeMobile:      13px;
@@ -147,7 +148,7 @@ $stageThree: 1199px;
 
 .NewsroomArticleContainer {
   padding-top: 100px !important;
-  background-image: url("../img/newsroom/BackgroundGrey.jpg");
+  background-image: url("../assets/images/newsroom/BackgroundGrey.jpg");
   background-size: 20%;
   background-repeat: repeat;
 }
@@ -369,6 +370,193 @@ $stageThree: 1199px;
   text-decoration: underline;
   color: $qitascOrange !important;
 }
+// ##################################################################################
+// ##################################################################################
+//                                                                            #######
+//            Newsroom Article Styles are included here, this affects         #######
+//            the file: _layouts/newsroomArticle.html                         #######
+//                                                                            #######
+// ##################################################################################
+// ##################################################################################
+
+.newsroomIndividualArticlePageExperienceContainer {
+    margin-top: 300px;
+}
+
+.more {
+  color: $qitascOrange !important;
+}
+
+.qitasc-article-content a {
+  color: $qitascOrange !important;
+}
+
+// ##################################################################################
+// ##################################################################################
+//                                                                            #######
+//            Article Table Of Content Stylez are here                        #######
+//                                                                            #######
+// ##################################################################################
+// ##################################################################################
+
+$articleTableOfContentHeight: 70px;
+$articleTableOfContentIconHeight: 50px;
+$difference: ($articleTableOfContentHeight - $articleTableOfContentIconHeight)*(1/2);
+.articleTableOfContent {
+    width: 100%;
+    position: fixed;
+    background-color: $qitascTeal;
+    z-index: 9997 !important;
+
+    @extend .transitionAll;
+    @extend .shadowBoxNice;
+
+    @include stage00{margin-top: $mainHeaderHeightMobile !important; min-height: $articleTableOfContentHeight; height: $articleTableOfContentHeight;}
+    @include stage01{margin-top: $mainHeaderHeightMobile !important; min-height: $articleTableOfContentHeight; height: $articleTableOfContentHeight;}
+    @include stage02{margin-top: $mainHeaderHeightDesktop !important; min-height: $articleTableOfContentHeight; height: $articleTableOfContentHeight;}
+    @include stage03{margin-top: $mainHeaderHeightDesktop !important; min-height: $articleTableOfContentHeight; height: $articleTableOfContentHeight;}
+}
+
+.articleTableOfContentTitle {
+
+  @include stage00 {font-size: 20px;}
+  @include stage01 {font-size: 20px;}
+  @include stage02 {font-size: 20px;}
+  @include stage03 {font-size: 20px;}
+  margin-top: $difference + 10;
+
+  font-weight: bold;
+  color: $qitascLightGrey;
+
+}
+
+
+.articleTableOfContentIcon {
+  color: $qitascLightGrey;
+  @extend .transitionAll;
+  min-height: $articleTableOfContentIconHeight;
+  max-height: $articleTableOfContentIconHeight;
+  height: $articleTableOfContentIconHeight;
+  margin-top: $difference;
+
+}
+.articleTableOfContentIcon:hover {
+
+}
+
+.mainArticleHeader {
+  background-color: $qitascDarkGrey !important;
+  background-image: url(../assets/images/newsroom/kju-contact.png);
+  background-position: bottom center;
+	background-repeat: no-repeat;
+  font-size: 2.5rem;
+  padding-top: 200px !important;
+	padding-left: 4rem;
+	padding-right: 4rem;
+
+   top: 140px;
+   overflow: hidden;
+   position: relative
+}
+.mainArticleHeader h1 {
+  font-size: 40px;
+  color: $qitascOrange !important;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.mainArticleHeader h4 {
+  font-size: 20px;
+  color: $qitascLightGrey !important;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 30px;
+}
+
+
+// Best Practise Middle Allignment
+// Tested On: IE10, [IE9, IE8 without transitions], Chrome, FireFox, Safari
+.mainArticleImage {
+    padding-top: 200px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    /*for demonstration only*/
+    height: 50%;
+
+}
+
+.mainArticleImageClass {
+  @extend .shadowBoxNice;
+  width: 75%;
+}
+
+
+
+.qitasc-article-content {
+    padding-top: 100px;
+}
+.qitasc-article-content h1, h2, h3{
+    color: #F7941E !important;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+		background-size: 90% 100%;
+    font-size: 30px !important;
+}
+.qitasc-article-content img {
+
+    @extend .shadowBoxNice;
+    @extend .transitionOpacity;
+    border: 15px solid $qitascGrey;
+    border-style: inset;
+    border-radius: 5px;
+
+		max-height:90%;
+		max-width:90%;
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+
+}
+
+.qitasc-article-content img:hover {
+
+   filter: alpha(opacity=120);
+   opacity: 1.2;
+
+}
+
+
+
+/*
+qitasc-white qitasc-productsandservices-managedservices-header p-b-2 m-b-6
+newsroom-entry-date
+orange
+qitasc-article-header
+article-subheader
+qitasc-message-text-align
+mainArticleImage
+mainArticleImage-content
+qitasc-articles-header-img
+qitasc-article-content
+*/
+
+// ##################################################################################
+// ##################################################################################
+//                                                                            #######
+//              Overwrite Markdownify Styles:                                 #######
+//                                                                            #######
+// ##################################################################################
+// ##################################################################################
+
+.highlighter-rouge {
+  color: $qitascTeal !important;
+}
+
 
 // ##################################################################################
 // ##################################################################################

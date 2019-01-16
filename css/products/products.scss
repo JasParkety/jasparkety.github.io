@@ -402,14 +402,36 @@ $stageThree: 1200px;
         @include stage01 {min-height: 400px !important;}
         @include stage02 {min-height: 450px !important;}
         @include stage03 {min-height: 450px !important;}
+
         @if $i % 2 == 0 {
-        background-color: white;
+
+          background-color: white;
+
         }
         @else {
+
           background-color: $qitascLightGrey;
+
+        }
+    }
+
+    .containerFluidFeatures-#{$i} .productsSubFeatureContainer {
+
+        @if $i % 2 == 0 {
+
+            background-color: $qitascLightGrey;
+
+        }
+        @else {
+
+            background-color: white;
+
         }
     }
 }
+
+
+
 body > main > div.spacerForFeatures > div.container-fluid.containerFluidFeatures-1 > div > div.row.mainFeatureRow {
   @include stage00 {padding-top: 450px !important;}
   @include stage01 {padding-top: 450px !important;}
@@ -474,6 +496,11 @@ body > main > div.spacerForFeatures > div.container-fluid.containerFluidFeatures
 
     @extend .shadowBoxNice;
     @extend .transitionAllFast;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none !important;
+
   	width: 90%;
   	margin-right:auto;
   	margin-left:auto;
@@ -509,10 +536,7 @@ body > main > div.spacerForFeatures > div.container-fluid.containerFluidFeatures
 
   	}
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: $qitascLightGrey;
-    text-decoration: none !important;
+
     img{
       width: 100%;
   		opacity: 1;

@@ -84,10 +84,10 @@ priority: 11
 
                         <div class="qitasc-newsroom-container-entry">
 													{% if article.img_url %}
-                          <a href="../{{ site.baseurl }}articles/{{ article.link }}" target="_self"><img class="NewsroomImage" src="../../{{ article.img_url }}"/></a>
+                          <a href="{{ site.baseurl }}/articles/{{ article.link }}" target="_self"><img class="NewsroomImage" src="{{ site.baseurl }}/{{ article.img_url }}"/></a>
                           {% endif %}
                           {% if article.videoImg_url %}
-                          <a class="js-lightbox-video" data-videoid="video_{{ article.video_ref }}" href="https://www.youtube.com/watch?v={{ article.video_ref }}"><img class="NewsroomImage" src="../{{ article.videoImg_url }}"/></a>
+                          <a class="js-lightbox-video" data-videoid="video_{{ article.video_ref }}" href="https://www.youtube.com/watch?v={{ article.video_ref }}"><img class="NewsroomImage" src="{{ site.baseurl }}/{{ article.videoImg_url }}"/></a>
                           {% endif %}
 
                           {% if article.subtitleNewsroom %}
@@ -102,7 +102,7 @@ priority: 11
                               <a class="js-lightbox-video newsroom-entry-ReadMore" data-videoid="video_{{ article.video_ref }}" href="https://www.youtube.com/watch?v={{ article.video_ref }}">{{ article.ReadMore }}</a>                              {% endif %}
                               {% if article.img_url %}
                               <br>
-                              <a class="newsroom-entry-ReadMore" href="../{{ site.baseurl }}articles/{{ article.link }}">{{ article.ReadMore }}</a>
+                              <a class="newsroom-entry-ReadMore" href="{{ site.baseurl }}/articles/{{ article.link }}">{{ article.ReadMore }}</a>
                               {% endif %}
                           </div>
 
