@@ -5,7 +5,7 @@ colorTitle: <span class="orange">IN</span>TACT<sup>®</sup> Virtual Phones Tutor
 subtitle: The Tutorial Experience
 subtitleNewsroom: How-To Guides & Learning
 overview: Topics
-img_url: img/articles/virtualPhones/newSoaptest.png
+img_url: assets/images/newsroom/articles/virtualPhones/newSoaptest.png
 category: article
 group: visible
 manualLink: 'https://docs.qitasc.com/'
@@ -91,27 +91,27 @@ qitasc start intact-studio
 
 ## Run INTACT Studio
 After launching the products, INTACT Studio will start. First, select `Create New Project`. Alternately, you can select `New` -> `Project...` from the File menu.
-![alt text](/img/articles/apptest/02-StartIntact.png)
+![alt text](/assets/images/newsroom/articles/apptest/02-StartIntact.png)
 
 The following view will appear. Select `INTACT` and click the `Next` button.
-![alt text](/img/articles/apptest/02b-NewProject.png)
+![alt text](/assets/images/newsroom/articles/apptest/02b-NewProject.png)
 
 Assign your project the name `VirtualPhones`.
 
 ## Create the Directories
 Create two directories: one to store your **stepdefs** and one to store your **feature files**. First, right-click on the project name `VirtualPhones` on the left-hand side of the window. Select `New`, then `Directory`. Name the directory `lang`. This is the folder where you store your **stepdefs**.
 
-![alt text](/img/articles/virtualPhones/CreateDirectory.png)
+![alt text](/assets/images/newsroom/articles/virtualPhones/CreateDirectory.png)
 
 Create a second directory and name it `features`. This is where you will store your **feature files**. Your project structure should now look like this:
 
-![alt text](/img/articles/virtualPhones/projectStructure.png)
+![alt text](/assets/images/newsroom/articles/virtualPhones/projectStructure.png)
 
 # Create the Test Case <a name="CreateTestCase"></a>
 
 Right-click on the `features` directory -> `New` -> `Feature`:
 
-![alt text](/img/articles/virtualPhones/newFeature.png)
+![alt text](/assets/images/newsroom/articles/virtualPhones/newFeature.png)
 
 Name the Feature file `phoneConnection` and the **Scenario** `Phone connection`. INTACT Studio will append the `.feature` extension to the file.
 
@@ -135,7 +135,7 @@ Feature: A phone can dial another phone and connect within 30 seconds
 ## Deactivate the Internal Telephony Steps and Try to Run the Scenario
 To deactivate the internal telephony built-in steps, add a **configuration file** to the project. Create a **new empty file** in the project root directory called `project.conf`. Your project structure should now look like this:
 
-![alt text](/img/articles/virtualPhones/projectStructure2.png)
+![alt text](/assets/images/newsroom/articles/virtualPhones/projectStructure2.png)
 
 Paste the following into the `project.conf`:
 
@@ -151,11 +151,11 @@ Glue = {
 
 Note that after applying this change, INTACT studio shows the telephony steps as **unknown** (they are automatically highlighted in red):
 
-![alt text](/img/articles/virtualPhones/redText.png)
+![alt text](/assets/images/newsroom/articles/virtualPhones/redText.png)
 
 The steps marked in red are unknown by INTACT because they were **removed** by setting `builtinTelephonySteps` to `”deactivated”`. If you try to run this Feature file, the test will terminate with errors:
 
-![alt text](/img/articles/virtualPhones/terminated.png)
+![alt text](/assets/images/newsroom/articles/virtualPhones/terminated.png)
 
 
 ## Implement Custom Step Definitions
@@ -182,7 +182,7 @@ Now that we have configured our Glue path and deactivated the built-in telephony
 
 Create a Soaptest file by right-clicking on the `lang` directory -> `New` -> `Soaptest`:
 
-![alt text](/img/articles/virtualPhones/newSoaptest.png)
+![alt text](/assets/images/newsroom/articles/virtualPhones/newSoaptest.png)
 
 Name the Soaptest file `CustomTelephonyStepdefs`. INTACT Studio will append the `.soaptest` extension to the file. Replace the template text with the code below:
 
@@ -265,7 +265,7 @@ end
 
 Run the test case again. At the bottom of the INTACT Studio window, you will see a list of executed steps, step details and their statuses. Click on the step `phones A and B:`
 
-![alt text](/img/articles/virtualPhones/testOutput.png)
+![alt text](/assets/images/newsroom/articles/virtualPhones/testOutput.png)
 
 The output from `ids` shows a list of two **elements**: `[A, B]`. By using the `phoneTags` keyword, `A` and `B` are implicitly created as **Virtual Phones**. Now we can make use of these phones by adapting our stepdef.
 

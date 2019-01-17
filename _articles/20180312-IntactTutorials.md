@@ -5,7 +5,7 @@ colorTitle: <span class="orange">IN</span>TACT<sup>®</sup> Apptest Tutorial
 subtitle: The Tutorial Experience
 subtitleNewsroom: How-To Guides & Learning
 overview: Topics
-img_url: img/newsroom/ApptestTutorial.png
+img_url: assets/images/newsroom/ApptestTutorial.png
 category: article
 group: visible
 manualLink: 'https://docs.qitasc.com/'
@@ -67,7 +67,7 @@ Additionally, **Java and Android environment variables** must be set for the App
 ## Appium Desktop App Installation
 The Appium Desktop app lets you find an app's **UI elements**, including XPaths, which you can then use to automate tests in INTACT Studio. Download the most current version [here](https://github.com/appium/appium-desktop/). After installing the software, you will find this icon on your desktop:
 
-![alt text](/img/articles/apptest/01-AppiumDesktopAppIcon.png)
+![alt text](/assets/images/newsroom/articles/apptest/01-AppiumDesktopAppIcon.png)
 
 ## Phone & App Setup
 The following section provides information about setting up your phone and installing an application to test on it.
@@ -125,18 +125,18 @@ The `-a` that follows `start intact-server` **must** be added so that the phones
 
 ## Run INTACT Studio
 After launching the three products, INTACT Studio will start. First, select `Create New Project`.
-![alt text](/img/articles/apptest/02-StartIntact.png)
+![alt text](/assets/images/newsroom/articles/apptest/02-StartIntact.png)
 
 The following view will appear. Select `INTACT` and click the `Next` button.
-![alt text](/img/articles/apptest/02b-NewProject.png)
+![alt text](/assets/images/newsroom/articles/apptest/02b-NewProject.png)
 
 Next, name your project `FirstAppTest` and click `Finish`.
 
-![alt text](/img/articles/apptest/02c-NameProject.png)
+![alt text](/assets/images/newsroom/articles/apptest/02c-NameProject.png)
 
 An empty INTACT Studio will appear -- a `Connected` icon should be visible in the bottom right corner:
 
-![alt text](/img/articles/apptest/03-IntactConnected.png)
+![alt text](/assets/images/newsroom/articles/apptest/03-IntactConnected.png)
 
 ## Create Resources Directory
 Create a directory to store your APK file in. Although this is not necessary, we recommend this type of structure to help keep your Apptest projects organized.
@@ -144,13 +144,13 @@ Create a directory to store your APK file in. Although this is not necessary, we
 First, right-click on the project name `FirstAppTest` on the left side of the window. Select `New`, then `Directory`. Name the new directory `resources`. Then, create a subdirectory by right-clicking on the `resources` folder and again selecting `New` and `Directory`. Name this one `apks`.
 
 
-![alt text](/img/articles/apptest/04-CreateResourcesDirectory.png)
+![alt text](/assets/images/newsroom/articles/apptest/04-CreateResourcesDirectory.png)
 
 ### Add APKs to the Resources Directory
 
 Drag and drop the Selendroid Test App apk into the newly-created `apks` folder in INTACT Studio:
 
-![alt text](/img/articles/apptest/05-DragAndDropApkFile.png)
+![alt text](/assets/images/newsroom/articles/apptest/05-DragAndDropApkFile.png)
 
 Now that you have created a new INTACT project and imported your app's APK file, we'll move on to using Appium Desktop to get the UI elements you need to test.
 
@@ -158,15 +158,15 @@ Now that you have created a new INTACT project and imported your app's APK file,
 
 Addressing an app's **UI element** is crucial to Apptest. We'll use the Appium Desktop App to get this information. Open Appium : If this is your first time using it, the application may take some time to load. Once the following window appears, click the `Start Server` button.
 
-![alt text](/img/articles/apptest/06-StartServer.png)
+![alt text](/assets/images/newsroom/articles/apptest/06-StartServer.png)
 
 A new window will appear. Click the magnifying glass in the upper right corner of the top bar to start your session:
 
-![alt text](/img/articles/apptest/07-StartSession.png)
+![alt text](/assets/images/newsroom/articles/apptest/07-StartSession.png)
 
 The window is for configuring your phone and the Selendroid app for the Appium Session. Click on the `+` button to add each new field:
 
-![alt text](/img/articles/apptest/08b-emptyappium.png)
+![alt text](/assets/images/newsroom/articles/apptest/08b-emptyappium.png)
 
 Add the following configurations:
 
@@ -183,7 +183,7 @@ Find the `app` value:
 * Select `Copy Path`.
 * Paste the path into the `app` value field.
 
-![alt text](/img/articles/apptest/08-CopyPath.png)
+![alt text](/assets/images/newsroom/articles/apptest/08-CopyPath.png)
 
 Find the `appWaitActivity` value:
 * Start the Selendroid Test app.
@@ -195,7 +195,7 @@ adb shell dumpsys window
 
 Now, let's use the Command Prompt/Terminal search function to find `mCurrentFocus`:
 
-![alt text](/img/articles/apptest/09-ForegroundActivity.png)
+![alt text](/assets/images/newsroom/articles/apptest/09-ForegroundActivity.png)
 
 The entire string is:
 ```bash
@@ -210,21 +210,21 @@ io.selendroid.testapp.HomeScreenActivity
 
 Return to Appium and paste the string into the `appWaitActivity` value field. When you're finished, your Appium configuration window should look like this:
 
-![alt text](/img/articles/apptest/10-SessionConfigured.png)
+![alt text](/assets/images/newsroom/articles/apptest/10-SessionConfigured.png)
 
 **Save** the configuration so that you can use it later:  
 
-![alt text](/img/articles/apptest/11-SaveConfiguration.png)
+![alt text](/assets/images/newsroom/articles/apptest/11-SaveConfiguration.png)
 
 Next, click the `Start Session` button:
 
-![alt text](/img/articles/apptest/12-StartSession.png)
+![alt text](/assets/images/newsroom/articles/apptest/12-StartSession.png)
 
 The session may take a couple of minutes to start, but subsequent starts will be faster. If you encounter an error, such as an incorrect path or name, a message will pop up on the configuration page. The **Server log window**, in the background window, will contain more details.
 
 Once the session has fully started, a window showing the Selendroid Test App will appear:
 
-![alt text](/img/articles/apptest/15-AppStartedInAppiumDesktop.png)
+![alt text](/assets/images/newsroom/articles/apptest/15-AppStartedInAppiumDesktop.png)
 
 Next we will use Appium Desktop to find the XPaths that we need to build our INTACT Studio test case.
 
@@ -237,7 +237,7 @@ The app that we're using contains a **UI element** that allows the user to enter
 
 Using Appium Desktop, move your mouse over the Selendroid Test App text field and click it. Some XML will appear in Appium's middle section, and the right-hand section contains a table of attributes as well as three `Find By` criteria, which can be used to address the element.
 
-![alt text](/img/articles/apptest/16-FindTextField.png)
+![alt text](/assets/images/newsroom/articles/apptest/16-FindTextField.png)
 
 We'll use the element's XPath: `//android.widget.EditText[@content-desc="my_text_fieldCD"]`.
 
@@ -245,20 +245,20 @@ We'll use the element's XPath: `//android.widget.EditText[@content-desc="my_text
 
 Alternately, you can use the  **search function** to find which element an XPath belongs to. Click the magnifier glass at the top of the Appium Desktop window and select `XPath` from the `Locator Strategy` drop-down menu:
 
-![alt text](/img/articles/apptest/17-VerifyXPath-1.png)
+![alt text](/assets/images/newsroom/articles/apptest/17-VerifyXPath-1.png)
 
 Enter the XPath from above and click `Search`.
 
-![alt text](/img/articles/apptest/18-VerifyXPath-2.png)
+![alt text](/assets/images/newsroom/articles/apptest/18-VerifyXPath-2.png)
 
 
 Appium Desktop returns one element for this search term. The element will also appear highlighted on the left-hand side of the window.
 
-![alt text](/img/articles/apptest/19-VerifyXPath-3.png)
+![alt text](/assets/images/newsroom/articles/apptest/19-VerifyXPath-3.png)
 
 Searching for a less-specific XPath may result in a list of matching elements XPath. For example, the Selendroid Test App uses six buttons -- if we write an XPath expression like `//android.widget.Button` without specifying any other attribute, Appium will give us the following result:
 
-![alt text](/img/articles/apptest/20-VerifyXPathList.png)
+![alt text](/assets/images/newsroom/articles/apptest/20-VerifyXPathList.png)
 
 Now that you've gained some insight into using Appium Desktop to find UI elements, we'll go back to INTACT Studio and put together our test case.
 
@@ -292,7 +292,7 @@ Appium {
 ## Create the Feature File
 Create a directory called `Features` by again right-clicking on the project name and selecting `Directory`. Then right-click on the `Features` directory, select `New` and then `Feature`. Name the file `entertext` and the **scenario** `Enter text and press 2nd button`. A Feature file template will appear:
 
-![alt text](/img/articles/apptest/EmptyFeature.png)
+![alt text](/assets/images/newsroom/articles/apptest/EmptyFeature.png)
 
 ### Write the Test - Get a Phone  
 
@@ -325,7 +325,7 @@ Custom steps are stored in separate files. Create another directory called `step
 
 The following stepdef template will appear:
 
-![alt text](/img/articles/apptest/EmptyStepdef.png)
+![alt text](/assets/images/newsroom/articles/apptest/EmptyStepdef.png)
 
 
 Edit the stepdef's first line so that it matches the step we've used in the **Feature file**:
@@ -418,11 +418,11 @@ End the Appium Desktop session, then click the `||` sign in the black log output
 ### Run the Feature File
 After closing the Appium Desktop app, return to your **Feature file** in INTACT Studio. Click the green `Run` button located on the top right side of the window:
 
-![alt text](/img/articles/apptest/RunButton.png)
+![alt text](/assets/images/newsroom/articles/apptest/RunButton.png)
 
 Alternately, right click on the Feature file and select `Run 'entertext.feature'`. Your Feature file and directory structure should look like the example below, and there should be no red text or warnings, such as for typos or undefined steps:
 
-![alt text](/img/articles/apptest/TestCaseReady.png)
+![alt text](/assets/images/newsroom/articles/apptest/TestCaseReady.png)
 
 As the text is executing, you will see the Selendroid Test App launch on your phone and `"some text"` will be entered into the field.
 

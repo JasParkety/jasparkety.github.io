@@ -4,8 +4,8 @@ title: INTACT Audio Plugin
 colorTitle: The <span class="orange">IN</span>TACT<sup>®</sup> Audio Plugin
 subtitleNewsroom: New Feature
 overview: Topics
-img_url: img/newsroom/audioPluginArticlePic.png
-img_main_url: /img/newsroom/AudioPlugin.jpg
+img_url: assets/images/newsroom/audioPluginArticlePic.png
+img_main_url: assets/images/newsroom/AudioPlugin.jpg
 category: article
 group: visible
 manualLink: 'https://docs.qitasc.com/'
@@ -62,7 +62,7 @@ Using the **INTACT Audio Plugin** requires the following setup:
 * Each Raspberry Pi is connected through a USB sound card to a given phone using a special audio cable.
 * A phone's unique mapping to the Raspberry Pi configured via **INTACT** to link the phone's serial number to the Raspberry's IP address.
 
-![alt text](/img/articles/audioPlugin/Audio01_Setup.jpg)
+![alt text](/assets/images/newsroom/articles/audioPlugin/Audio01_Setup.jpg)
 
 ## The Big Picture <a name="big"></a>
 Whenever a recording is required on a given phone, **INTACT** looks up the IP address of the Raspberry Pi that it is configured to. **INTACT** connects to the `Audio Service` on a configured URL to **start**, **stop**, and eventually **retrieve** the recording. The recording is a `*.wav` file that is attached to the test report.
@@ -94,7 +94,7 @@ The reference audio files are fixed audio files that are located on the Raspberr
 
 When the recording on `B` has finished, the recorder audio file is analyzed to detect the locations and durations of beeps and pauses.
 
-![alt text](/img/articles/audioPlugin/Audio02_Beeps.jpg)
+![alt text](/assets/images/newsroom/articles/audioPlugin/Audio02_Beeps.jpg)
 
 The recording's analysis uses:
 
@@ -112,7 +112,7 @@ A given audio recording is compared to a set of reference recordings by using th
 
 **Hint:** Audio fingerprints can be visualized as a cloud of points in a spectrogram. This point cloud is characteristic of the audio signal.
 
-![alt text](/img/articles/audioPlugin/Audio04_Fingerprint.jpg)
+![alt text](/assets/images/newsroom/articles/audioPlugin/Audio04_Fingerprint.jpg)
 
 
 ### Using the Audio Fingerprinting
@@ -131,7 +131,7 @@ If, for the best match, the number of equal fingerprints is below a configured *
 
 The the match is only considered good if the similarity percentage is above the limit set by the stepdef
 
-![alt text](/img/articles/audioPlugin/Audio05_Scores.jpg)
+![alt text](/assets/images/newsroom/articles/audioPlugin/Audio05_Scores.jpg)
 
 
 ## Conclusion <a name="conclusion"></a>

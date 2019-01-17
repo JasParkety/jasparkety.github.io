@@ -5,8 +5,8 @@ colorTitle: Continuous Integration (Jenkins) With <span class="orange">IN</span>
 subtitle: Continuous Integration
 subtitleNewsroom: Get to Know INTACT
 overview: Topics
-img_url: img/articles/ContinuousIntegration/ContinuousVignetteNewsroom.jpg
-img_main_url: /img/newsroom/ContinuousIntegration.jpg
+img_url: assets/images/newsroom/articles/ContinuousIntegration/ContinuousVignetteNewsroom.jpg
+img_main_url: assets/images/newsroom/ContinuousIntegration.jpg
 category: article
 group: visible
 manualLink: 'https://docs.qitasc.com/'
@@ -114,7 +114,7 @@ Now that you have set up your INTACT Client project, you can configure Jenkins s
 ## Add Environment Variables on the Jenkins Server <a name="envvariable"></a>
 Next we'll configure three global environment variables so that INTACT and Jenkins can communicate with each other. Select `Manage Jenkins` from the left-hand menu, then select `Configure System`. You should see a view that looks like this:
 
-![alt text](../img/articles/ContinuousIntegration/configure.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/configure.png)
 
 Scroll down until you reach a section called `Global properties`. This is where you will configure your **environment variables**.
 
@@ -126,29 +126,29 @@ Define an environment variable for each one of the following:
 * `INTACT_PORT` INTACT Server port, which should be `36012`, unless configured otherwise when [creating your project](../createproject.md).
 
 **Example**
-![alt text](../img/articles/ContinuousIntegration/env.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/env.png)
 
 
 ### Create a New Build Project <a name="createproject"></a>
 Select `New Item` from the left-hand menu then click `Freestyle project`:
 
-![alt text](../img/articles/ContinuousIntegration/new-item.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/new-item.png)
 
 Assign the project a name of your choice, then scroll to the bottom of the page and click `OK`.
 
 ### Configure the Source Code Management <a name="configuresource"></a>
 After assigning your project a name and clicking `OK`, the following view should appear:
 
-![alt text](../img/articles/ContinuousIntegration/configure-project.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/configure-project.png)
 
 Select the `Source Code Management` tab. Here, you will need to configure the **version control tools** you are using for your project. If you are not sure what to put here, contact your administrator. Whether using **Git** or **Subversion**, select `jenkins` from the `Credentials` menu.
 
-![alt text](../img/articles/ContinuousIntegration/source-code-management.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/source-code-management.png)
 
 ### Configure the Build Environment <a name="configureenvironment"></a>
 Scroll down and click the `Delete workspace before build starts` box:
 
-![alt text](../img/articles/ContinuousIntegration/build-environment.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/build-environment.png)
 
 ### Configure Build <a name="configurebuild"></a>
 In the `Build` section, select the type of step you'll use to run the build. For this example, we'll use a Linux agent and choose `Execute shell`, then enter the following command into the text box:
@@ -157,7 +157,7 @@ In the `Build` section, select the type of step you'll use to run the build. For
 $INTACT_CLI_EXEC test -h $INTACT_SERVER -p $INTACT_PORT HowTo-IntactClient
 ```
 
-![alt text](../img/articles/ContinuousIntegration/build.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/build.png)
 
 If you have already used our [INTACT Client Tutorial][INTACT Client tutorial] to execute features on a remote host, or used INTACT Client, then the syntax may look familiar to you. The only difference is that we are using environment variables to represent parameters:  
 * The **host**, indicated by `-h`, which we configured with the **[environment variable](#envvariable)** `INTACT_SERVER` above.
@@ -175,7 +175,7 @@ Finally, we'll add two **post-build actions**:
 * Archive the artifacts
 * Publish JUnit test result report
 
-![alt text](../img/articles/ContinuousIntegration/post-build-actions.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/post-build-actions.png)
 
 ### Archive the Artifacts <a name="archive"></a>
 First, we want to store INTACT Client's `intact.log` file for each run, as well as its report folder. Select `Archive the Artifacts` option from the `Post-build action` menu, and enter the following into the `Files to archive` field:
@@ -195,37 +195,37 @@ report-*/**.xml
 
 Select `Build Now` from the drop-down menu containing your project's name. In our case, the project name is `MyProject`:
 
-![alt text](../img/articles/ContinuousIntegration/buildnow.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/buildnow.png)
 
 A status bar will appear -- This shows that your project is being executed:
 
-![alt text](../img/articles/ContinuousIntegration/building.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/building.png)
 
 ## Check Build Results <a name="checkresults"></a>
 
 There are a few ways to check your projects' results. Clicking on the **build number**, e.g. `#9` in the example above, is a simple approach. Alternately, you can go to the **Jenkins Dashboard** and see a list of all projects:
 
-![alt text](../img/articles/ContinuousIntegration/dashboard.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/dashboard.png)
 
 Clicking on a project brings up a summary/dashboard:
 
-![alt text](../img/articles/ContinuousIntegration/projectView.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/projectView.png)
 
 We'll select `Last successful build`, which brings up the following page:
 
-![alt text](../img/articles/ContinuousIntegration/lastBuild.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/lastBuild.png)
 
 Clicking on `Test Result` gives a quick overview of what happened during the build:
 
-![alt text](../img/articles/ContinuousIntegration/TestResult.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/TestResult.png)
 
 Alternately, we can go back to our project view and click on `Build Artifacts`, which provides a list of items created during the execution:
 
-![alt text](../img/articles/ContinuousIntegration/artifacts.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/artifacts.png)
 
 These artifacts are the same items that you would find in your projects' **reports** folder. If we click on the `report-20180412-172545` folder, we'll see the following list of artifacts:
 
-![alt text](../img/articles/ContinuousIntegration/artifacts2.png)
+![alt text](..assets/images/newsroom/articles/ContinuousIntegration/artifacts2.png)
 Click on the `index.html` report to see an overview of the results. For more information about the different report types that will appear as artifacts, refer to the INTACT Manual's [Reports and Logs](https://docs.qitasc.com/intactbasics/logsandreports/#indexhtmlreport) section.
 
 ## Conclusion <a name="conclusion"></a>

@@ -4,8 +4,8 @@ title: The People of QiTASC
 colorTitle: The People of QiTASC
 subtitleNewsroom: Get to Know QiTASC
 overview: Topics
-img_url: img/articles/peopleOfQitasc/ScientificBackgroundNewsroom.png
-img_main_url: /img/newsroom/Spotlight.png
+img_url: assets/images/newsroom/articles/peopleOfQitasc/ScientificBackgroundNewsroom.png
+img_main_url: assets/images/newsroom/Spotlight.png
 category: article
 group: visible
 manualLink: 'https://docs.qitasc.com/'
@@ -49,17 +49,17 @@ anchorsNames: ["The People of QiTASC", "Where We Come From", "What QiTASC does",
 Who is behind the software at QiTASC? Our team is made up of about 50 people between our Vienna and Düsseldorf locations. Despite being a small Austrian company, our employees come from nearly 20 different countries and have diverse technical backgrounds. This allows us to match the right specialists to our own projects *and* to support our customers.
 
 ## Where We Come From <a name="whereFrom"></a>
-![alt text](../img/articles/peopleOfQitasc/Map.png)
+![alt text](..assets/images/newsroom/articles/peopleOfQitasc/Map.png)
 
 About half of our employees come from Austria or Germany, with another 40% coming from other European countries and the rest coming from North America, Asia and Australia. Many of our foreign employees came to QiTASC during or after completing a university degree in Austria. With so many different nationalities, English and German are the most commonly used languages in our offices. At our Vienna location, beginner and intermediate German courses are offered to employees who want to improve their fluency.
 
 ## What QiTASC Does <a name="whatQitasc"></a>
-![alt text](../img/articles/peopleOfQitasc/Circle.png)
+![alt text](..assets/images/newsroom/articles/peopleOfQitasc/Circle.png)
 
 QiTASC is largely made up of developers and test engineers along with several small 2-3 person teams in areas including IT, management and marketing. It's not uncommon to see developers working with the test team to get feedback on new features, or to see the technical writers liaising between testers and development to create documentation that is both technically accurate and helpful. Working across and within departments ensures knowledge transfer and lets us learn from each other.  
 
 ## Our Diverse Disciplines <a name="disciplines"></a>
-![alt text](../img/articles/peopleOfQitasc/ScientificBackground.png)
+![alt text](..assets/images/newsroom/articles/peopleOfQitasc/ScientificBackground.png)
 
 Although many of our employees previously studied computer sciences, IT or software engineering, some of the other backgrounds QiTASC's employees come from include:
 * Chemistry
@@ -75,7 +75,7 @@ Although many of our employees previously studied computer sciences, IT or softw
 Having such a diverse group of people allows us to work in cross-disciplinary teams to tackle unique development and customer-specific problems that benefit from being looked at through multiple perspectives.
 
 ## Case Study: Audio Plugin <a name="audio"></a>
-![alt text](../../img/newsroom/AudioPlugin.jpg)
+![alt text](../../assets/images/newsroom/AudioPlugin.jpg)
 A big challenge in automated mobile testing is executing tests that verify **voice announcements** are played in certain scenarios -- and that the *correct* announcements are played. Often, announcements must still be manually played back and checked, which can add a lot of unnecessary  additional time to testing. The QiTASC [Audio Plugin](http://www.qitasc.com/articles/20180326-AudioPlugin) was developed as a solution to this problem: Its **Audio Fingerprinting** functionality compares audio recordings against a database of reference announcements and provides a *similarity score*.
 
 Developing the Audio Plugin could not have been possible without a multidisciplinary approach that drew on physics, computer sciences and sound engineering. One developer, with a background in theoretical physics, used his expertise to adapt existing audio comparison algorithms to our specific use cases. At the same time, a second developer who is currently studying media informatics used his knowledge of audio technology and sound synthesis to refine the Audio Plugin's features. A third developer, whose experience is firmly rooted in computer engineering, focused on developing all INTACT-side aspects of the Audio Plugin and integrating its functionality into our software.

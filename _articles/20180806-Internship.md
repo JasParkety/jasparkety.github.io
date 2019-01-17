@@ -5,8 +5,8 @@ colorTitle: Theo's Summer Internship at QiTASC
 subtitle: Internship
 subtitleNewsroom: Get to Know QiTASC
 overview: Topics
-img_url: img/articles/Internship/InternshipSmall.jpg
-img_main_url: /img/newsroom/Internship.jpg
+img_url: assets/images/newsroom/articles/Internship/InternshipSmall.jpg
+img_main_url: assets/images/newsroom/Internship.jpg
 category: article
 group: visible
 manualLink: 'https://docs.qitasc.com/'

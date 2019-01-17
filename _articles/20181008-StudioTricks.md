@@ -5,8 +5,8 @@ colorTitle: <span class="orange">IN</span>TACT<sup>®</sup> Studio Tips and Tric
 subtitle: StudioTricks
 subtitleNewsroom: Get to Know INTACT
 overview: Topics
-img_url: img/articles/StudioTricks/tipsTeaser.png
-img_main_url: /img/newsroom/tipsArticle.png
+img_url: assets/images/newsroom/articles/StudioTricks/tipsTeaser.png
+img_main_url: assets/images/newsroom/tipsArticle.png
 category: article
 group: visible
 manualLink: 'https://docs.qitasc.com/'
@@ -28,11 +28,11 @@ When working in large projects with multiple directories, use the `Find` shortcu
 * Mac OS: `COMMAND `+` SHIFT `+` N` and start typing the file name.
 
 Auto-Complete helps find the file.
-![alt text](../../img/newsroom/goToFile.png)
+![alt text](../../assets/images/newsroom/goToFile.png)
 
 After you find the file, press `Enter` to go to that file:
 
-![alt text](../../img/newsroom/foundFile.png)
+![alt text](../../assets/images/newsroom/foundFile.png)
 
 ## Comment Out Files <a name="commentout"></a>
 If you don't want certain steps to be available, comment them out by selecting the text and entering the following:
@@ -40,41 +40,41 @@ If you don't want certain steps to be available, comment them out by selecting t
 * Mac OS: `COMMAND `+` /`
 
 In feature files, `#` will appear before each commented-out line:
-![alt text](../../img/newsroom/commentOut.png)
+![alt text](../../assets/images/newsroom/commentOut.png)
 
 In other files, including configurations, Webtest and Soaptest files, `//` will appear before each commented out line:
 
-![alt text](../../img/newsroom/commentOut2.png)
+![alt text](../../assets/images/newsroom/commentOut2.png)
 
 ### Document Stepdefs <a name="documenting"></a>
 INTACT Studio interprets comments written above stepdefs (those marked with `//`) as documentation.
 
-![alt text](../../img/newsroom/documentedStepdef.png)
+![alt text](../../assets/images/newsroom/documentedStepdef.png)
 
 To access the documentation from a Feature File:
 
 * Windows/Linux: Hover over the step and type `CTRL` + `Q`.
 * Mac OS: Hover over the step and type `CTRL` + `J` + `,`
 
-![alt text](../../img/newsroom/documentedStepdef2.png)
+![alt text](../../assets/images/newsroom/documentedStepdef2.png)
 
 ## Create To-do Lists <a name="todoLists"></a>
 Sometimes we leave a `To-do` note in our codes. For example, if there is something that needs to be fixed or done in a better way at a later time. We an leave `To-do` lists by placing `TODO` after a comment indicator in a Feature File or Stepdef:
 
-![alt text](../../img/newsroom/todo.png)
+![alt text](../../assets/images/newsroom/todo.png)
 
-![alt text](../../img/newsroom/todo2.png)
+![alt text](../../assets/images/newsroom/todo2.png)
 
 INTACT Studio shows To-dos at the bottom of the application. Click on `TODO` to see the list of files with To-dos, and click on the triangle icon to expand them:
 
-![alt text](../../img/newsroom/todo3.png)
+![alt text](../../assets/images/newsroom/todo3.png)
 
 ## Find Steps <a name="findSteps"></a>
 With big projects, we don't always know which stepdefs we have at our disposal, and need help searching through the project. One option is to search throughout the full project:
 
 * Linux/Windows/Mac OS: `CTRL `+` SHIFT `+` F` and start typing parts of the stepdef.
 
-![alt text](../../img/newsroom/findInPath.png)
+![alt text](../../assets/images/newsroom/findInPath.png)
 
 For example, if we know we have a `read temperature` step, we can start typing `read temp` and INTACT Studio will list all files in the project that contain those terms.
 
@@ -83,7 +83,7 @@ To search specifically for a stepdef, the *fuzzy search* shortcut is useful if y
 * Linux/Windows: `CTRL `+` .`
 * Mac OS: `COMMAND `+` .`
 
-![alt text](../../img/newsroom/fuzzySearch.png)
+![alt text](../../assets/images/newsroom/fuzzySearch.png)
 
 INTACT Studio will search through all matches and find the best possible match.
 
@@ -94,21 +94,21 @@ INTACT Studio provides auto-completion functionality to help you find different 
 
 If you start typing the `Given` keyword and then `read temperature from`, a list pops up that shows all the steps. The `{}` symbols refer to arguments that need to be filled in:
 
-![alt text](../../img/newsroom/autoComplete_1.png)
+![alt text](../../assets/images/newsroom/autoComplete_1.png)
 
 Press `Enter` to confirm the search. Next, fill in the arguments, which are indicated in the Feature File with `...` and press `TAB` to proceed to the next argument:
 
-![alt text](../../img/newsroom/autoComplete_2.png)
+![alt text](../../assets/images/newsroom/autoComplete_2.png)
 
 ## Error Inspections <a name="errorInspect"></a>
 If you mistype a step definition that doesn’t exist, INTACT Studio will mark it as "unresolvable" in red. Additionally, INTACT Studio displays a red warning icon on the right side of the editor and a red `__` to indicate what line the error is on:
 
-![alt text](../../img/newsroom/unresolvable.png)
+![alt text](../../assets/images/newsroom/unresolvable.png)
 
 
 Fix the error: When a green check appears, this means there are no errors:
 
-![alt text](../../img/newsroom/resolved.png)
+![alt text](../../assets/images/newsroom/resolved.png)
 
 ## Copy, Paste and Duplicate Lines <a name="copyPaste"></a>
 [Scenario Outlines](https://docs.qitasc.com/intactbasics/featurefiles/#scenariooutline) are useful for when you want to execute multiple versions of a test case with different parameters. For example, our `TemperatureReading` test checks for different expected temperatures by iterating through different variables.
@@ -129,16 +129,16 @@ Select the line(s) you want to copy, then type:
 * Mac OS: `COMMAND `+` D`
  * `COMMAND `+` Y` deletes the selected lines.
 
-![alt text](../../img/newsroom/duplicate.png)
+![alt text](../../assets/images/newsroom/duplicate.png)
 
-![alt text](../../img/newsroom/duplicate2.png)
+![alt text](../../assets/images/newsroom/duplicate2.png)
 
 ## Move Lines Up/Down
 Imagine that we want to execute the second `Example` of our Scenario Outline first. Highlight the line, and then use `SHIFT `+` ALT `+` up/down arrow`:
 
-![alt text](../../img/newsroom/shiftUp.png)
+![alt text](../../assets/images/newsroom/shiftUp.png)
 
-![alt text](../../img/newsroom/shiftUp2.png)
+![alt text](../../assets/images/newsroom/shiftUp2.png)
 
 ## Resolve References <a name="resolve"></a>
 One of the most important INTACT Studio features is that it *resolves* references to step definitions. For example, the `read temperature` step in our Feature File is a custom step definition. You can easily find its step definition:
@@ -148,7 +148,7 @@ One of the most important INTACT Studio features is that it *resolves* reference
 
 This takes us to the stepdef:
 
-![alt text](../../img/newsroom/declaration.png)
+![alt text](../../assets/images/newsroom/declaration.png)
 
 Alternately, hovering over stepdef and using the `CTRL` + `B`/`COMMAND` + `B` shortcut will bring you to the step in its Feature File.
 
@@ -157,7 +157,7 @@ We're going to switch to a Webtest file for the rest of this article to demonstr
 
 As you can see, the one of the stepdefs is badly formatted:
 
-![alt text](../../img/newsroom/badFormatting2.png)
+![alt text](../../assets/images/newsroom/badFormatting2.png)
 
 We can easily reformat it:
 * Windows/Linux: `CTRL` + `ALT` + `L`
@@ -165,13 +165,13 @@ We can easily reformat it:
 
 Now our stepdefs are properly formatted:
 
-![alt text](../../img/newsroom/formatted.png)
+![alt text](../../assets/images/newsroom/formatted.png)
 
 
 ## Highlight References <a name="highlight"></a>
 Earlier we mentioned step definition references. These also work inside of Soaptest and Webtest files. Highlighted references belong together. This is useful to find different parts of your code that are linked together, especially in large files:
 
-![alt text](../../img/newsroom/highlightReference.png)
+![alt text](../../assets/images/newsroom/highlightReference.png)
 
 In the example above, highlighting the `SearchFormView` reference in the Stepdef starting at **line 5** also highlights the View called `SearchFormView` on **line 16**.
 
@@ -180,54 +180,54 @@ Using `CTRL` + `B` on Windows/Linux or `COMMAND` + `B` on Mac OS toggles between
 ### Error Inspection in Webtests
 Previously we showed an **unresolved reference** in a Feature File that was marked with red text and a warning icon. Webtest also recognizes unknown Views:
 
-![alt text](../../img/newsroom/unknownView.png)
+![alt text](../../assets/images/newsroom/unknownView.png)
 
 ## Modify Text - Search and Replace <a name="modify"></a>
 Usually when we have big projects in there, we need to modify content. For example, giving something a better, more accurate name. One option is to use the search and replace function by typing `CTRL` + `SHIFT` + `R`:
 
-![alt text](../../img/newsroom/searchAndReplace.png)
+![alt text](../../assets/images/newsroom/searchAndReplace.png)
 
 This approach is quite error prone, which is why we recommend **rename refactoring**.
 
 ## Modify Text - Rename Refactoring <a name="rename"></a>
 INTACT Studio supports rename refactoring, which searches *all* references and usages and renames them accordingly. This also works with local parameters. Highlight what you want to rename across a project and type `SHIFT` + `F6`:
 
-![alt text](../../img/newsroom/renameRefactor.png)
+![alt text](../../assets/images/newsroom/renameRefactor.png)
 
 In the example above, we renamed `SearchFormView` to `MyView`:
 
-![alt text](../../img/newsroom/renameRefactor2.png)
+![alt text](../../assets/images/newsroom/renameRefactor2.png)
 
 Rename refactoring also works with local parameters. For example, we can rename the parameter `query` to `query2`:
 
-![alt text](../../img/newsroom/renameRefactor3.png)
+![alt text](../../assets/images/newsroom/renameRefactor3.png)
 
-![alt text](../../img/newsroom/renameRefactor4.png)
+![alt text](../../assets/images/newsroom/renameRefactor4.png)
 
 ## Multiple Cursor <a name="multipleCursor"></a>
 Another frequent use case involves modifying multiple lines at the same time.
 
 Let's assume we want to have four Actions in our Webtest View. They are all marked as error with a red underline, because we can't have multiple Actions with the same name:
 
-![alt text](../../img/newsroom/multipleActions.png)
+![alt text](../../assets/images/newsroom/multipleActions.png)
 
 To fix this, we'll use the **multiple cursor** so that we can modify all of the Actions by using `SHIFT` + `ALT` + `CLICK` an selecting each line that you want to apply the cursor to.
 
 
-![alt text](../../img/newsroom/multipleCursor.png)
+![alt text](../../assets/images/newsroom/multipleCursor.png)
 
 Now we can modify all of the lines at the same time and change `content` to `type`:
 
-![alt text](../../img/newsroom/multipleCursor2.png)
+![alt text](../../assets/images/newsroom/multipleCursor2.png)
 
 ## Live Templates <a name="liveTemplates"></a>
 In addition to auto-completion, INTACT Studio provides built-in live templates as well as the ability to create your own templates. For example, if you start typing `mod` in your Webtest file, INTACT Studio will offer you a suggestion:
 
-![alt text](../../img/newsroom/liveTemplate.png)
+![alt text](../../assets/images/newsroom/liveTemplate.png)
 
 Press the `TAB` key, and the model template appears:
 
-![alt text](../../img/newsroom/liveTemplate2.png)
+![alt text](../../assets/images/newsroom/liveTemplate2.png)
 
 ### Create Live Templates
 If you want to edit or create your own live templates, you can easily do this within INTACT Studio:
@@ -236,18 +236,18 @@ If you want to edit or create your own live templates, you can easily do this wi
 
 To edit an existing template, click on that template. It displays the template's syntax as well as what file types it's compatible with. You can also edit the abbreviation or description as well as the template's variables:
 
-![alt text](../../img/newsroom/liveTemplate3.png)
+![alt text](../../assets/images/newsroom/liveTemplate3.png)
 
 To create your own template, click the `+` icon on the right side of the window and define your template's abbreviation, description and variables:
 
-![alt text](../../img/newsroom/liveTemplate4.png)
+![alt text](../../assets/images/newsroom/liveTemplate4.png)
 
 ## Split Tabs
 Finally, some people like to work in parallel -- between Feature Files, Webtest and Soaptest files. Right-click one of your project tabs and select `Split vertically` or `Split horizontally` depending on your preference:
 
-![alt text](../../img/newsroom/splitView.png)
+![alt text](../../assets/images/newsroom/splitView.png)
 
-![alt text](../../img/newsroom/splitView2.png)
+![alt text](../../assets/images/newsroom/splitView2.png)
 
 ## Conclusion
 INTACT Studio is full of shortcuts that save you time editing, finding files and steps, looking for errors as well as managing your projects. Follow one of our [INTACT Tutorials](https://docs.qitasc.com/tutorials/) and try out these shortcuts as you go through the tutorial steps, or use them in your own project. You can also create your own shortcuts via:

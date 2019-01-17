@@ -5,8 +5,8 @@ colorTitle: Automated Announcement Verification with the <span class="orange">IN
 subtitle: Automated Announcement Verification with the INTACT Audio Plugin
 subtitleNewsroom: New Feature
 overview: Topics
-img_url: img/articles/Announcements/AudioMatching.jpg
-img_main_url: /img/newsroom/AudioMatching.jpg
+img_url: assets/images/newsroom/articles/Announcements/AudioMatching.jpg
+img_main_url: assets/images/newsroom/AudioMatching.jpg
 category: article
 group: visible
 manualLink: 'https://docs.qitasc.com/'

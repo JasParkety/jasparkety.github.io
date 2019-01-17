@@ -4,7 +4,7 @@ title: INTACT Studio Phone Plugin
 colorTitle: <span class="orange">IN</span>TACT<sup>®</sup> Studio Phone Plugin Demo
 subtitleNewsroom: Videos
 overview: Topics
-videoImg_url: img/newsroom/phonePlugin.png
+videoImg_url: assets/images/newsroom/phonePlugin.png
 video_ref: qE12lLu0kmc
 category: article
 group: visible

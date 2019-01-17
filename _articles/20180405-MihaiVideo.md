@@ -4,7 +4,7 @@ title: Introduction to Intact Studio
 colorTitle: Introduction to <span class="orange">IN</span>TACT<sup>®</sup> Studio
 subtitleNewsroom: Videos
 overview: Topics
-videoImg_url: img/newsroom/TipsAndTricks.jpg
+videoImg_url: assets/images/newsroom/TipsAndTricks.jpg
 video_ref: pSRzmsQjeIs
 category: article
 group: visible

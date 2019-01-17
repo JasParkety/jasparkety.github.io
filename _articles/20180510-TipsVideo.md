@@ -4,7 +4,7 @@ title: INTACT Studio Tips & Tricks
 colorTitle: <span class="orange">IN</span>TACT<sup>®</sup> Studio Tips & Tricks
 subtitleNewsroom: Videos
 overview: Topics
-videoImg_url: img/newsroom/tipsComplete.png
+videoImg_url: assets/images/newsroom/tipsComplete.png
 video_ref: wHkylhnLntI
 category: article
 group: visible

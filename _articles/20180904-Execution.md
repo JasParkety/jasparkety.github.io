@@ -4,7 +4,7 @@ title: Executing Test Cases with INTACT
 colorTitle: Video Tutorial - Executing <span class="orange">IN</span>TACT<sup>®</sup> Test Cases
 subtitleNewsroom: Videos
 overview: Topics
-videoImg_url: img/newsroom/Execution.png
+videoImg_url: assets/images/newsroom/Execution.png
 video_ref: U41Ru3NhU7Y
 category: article
 group: visible

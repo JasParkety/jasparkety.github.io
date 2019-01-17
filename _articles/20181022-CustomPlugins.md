@@ -4,7 +4,7 @@ title: INTACT Studio - Custom Plugins
 colorTitle: <span class="orange">IN</span>TACT<sup>®</sup> Studio - Custom Plugins
 subtitleNewsroom: Videos
 overview: Topics
-videoImg_url: img/newsroom/customPlugin.png
+videoImg_url: assets/images/newsroom/customPlugin.png
 video_ref: 72JVf_WcEag
 category: article
 group: visible

@@ -4,8 +4,8 @@ title: QiTASC Resource Center
 colorTitle: Introducing the QiTASC Resource Center
 subtitleNewsroom: Get to Know INTACT
 overview: Topics
-img_url: img/articles/Documentation/DocuNewsroom.png
-img_main_url: ../img/newsroom/Tutorial.jpg
+img_url: assets/images/newsroom/articles/Documentation/DocuNewsroom.png
+img_main_url: assets/images/newsroom/Tutorial.jpg
 category: article
 group: visible
 manualLink: 'https://docs.qitasc.com/'

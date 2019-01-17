@@ -5,8 +5,8 @@ colorTitle: From Athens to Vienna - Costas Joins the QiTASC Development Team
 subtitle: New At QiTASC
 subtitleNewsroom: Get to Know QiTASC
 overview: Topics
-img_url: img/articles/NewAtQitasc/NewAtQitascNewsroom.png
-img_main_url: /img/articles/NewAtQitasc/NewAtQitasc.png
+img_url: assets/images/newsroom/articles/NewAtQitasc/NewAtQitascNewsroom.png
+img_main_url: assets/images/newsroom/articles/NewAtQitasc/NewAtQitasc.png
 category: article
 group: visible
 manualLink: 'https://docs.qitasc.com/'

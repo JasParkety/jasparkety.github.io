@@ -5,8 +5,8 @@ colorTitle: Take a Quick Tour of <span class="orange">IN</span>TACT<sup>®</sup>
 subtitle: IntactStudio
 subtitleNewsroom: Get to Know INTACT
 overview: Topics
-img_url: img/articles/IntactStudio/IntactStudioTeaser.jpg
-img_main_url: /img/newsroom/IntactStudioMain.jpg
+img_url: assets/images/newsroom/articles/IntactStudio/IntactStudioTeaser.jpg
+img_main_url: assets/images/newsroom/IntactStudioMain.jpg
 category: article
 group: visible
 manualLink: 'https://docs.qitasc.com/'
@@ -26,7 +26,7 @@ This article will demonstrate the concepts used to build a basic suite of test c
 ## Project Directories <a name="directories"></a>
 Although not necessary, creating directories to hold files is a good practice to keep your projects manageable. In a small project, a the directory might look similar to the one below:
 
-![alt text](../../img/newsroom/FirstProjectDirectory.png)
+![alt text](../../assets/images/newsroom/FirstProjectDirectory.png)
 
 This project contains all the most important, frequently-used INTACT files and is structured according to each file type:
 * `features` directory: Feature Files, which contain Scenarios or Scenario Outlines
@@ -38,7 +38,7 @@ The most basic INTACT test cases consist of a single Feature File that defines t
 
 INTACT Studio includes an auto-complete feature to help you write your test cases and find INTACT's built-in *and* your custom-defined steps more easily. When you start typing your first step, you'll probably see some suggestions pop up:
 
-![alt text](../../img/newsroom/AutoComplete.png)
+![alt text](../../assets/images/newsroom/AutoComplete.png)
 
 The `{}` curly braces indicate parameters that you can fill in with values specific to the test. For example, a number to indicate how many seconds to wait.
 
@@ -123,12 +123,12 @@ The `lib` is the folder define in the example project about, where custom Stepde
 ## Executing the Test <a name="execution"></a>
 To Execute a test case, you can click on the green `Run` button in INTACT Studio, or right-click on your feature file and select `Run` from the drop-down menu. For power users, plenty of shortcuts are also available.
 
-![alt text](../../img/newsroom/Runtest.png)
+![alt text](../../assets/images/newsroom/Runtest.png)
 
 When you execute a test case, INTACT Studio shows test output at the bottom of the window. Users can toggle between a Protocol log, a Trace log or an INTACT Server log, depending on what information they would like to see. The example below shows Protocol log output for our HTTP test:
 
 **Test Case Output Example**
-![alt text](../../img/newsroom/HttpOutput.png)
+![alt text](../../assets/images/newsroom/HttpOutput.png)
 
 ## Evaluating the Results <a name="evaluation"></a>
 Besides the INTACT Studio test output windows, two additional features allow users to further evaluate the results of a test case execution in greater detail:
@@ -139,19 +139,19 @@ Besides the INTACT Studio test output windows, two additional features allow use
 Every time a test case is executed, the INTACT Server stores a report of the test execution under the `reports` folder. This folder contains a set of logs outputs, configurations, reports and other artifacts created by the test execution. By default, this folder is in the INTACT Server installation directory.
 
 **Report Folder Example**
-![alt text](../../img/newsroom/ReportFolder.png)
+![alt text](../../assets/images/newsroom/ReportFolder.png)
 
 Our reports folder only contains a few files. Test cases with a lot of custom steps, or that use features such as the INTACT Audio Plugin, may generate many more files within each reports folder.
 
 ### QiTASC ConQlude Reporting Service
 Users who have a [QiTASC ConQlude](https://docs.qitasc.com/conqlude/introduction/) license can also access test execution reports and artifacts. The ConQlude reporting service is a web interface that contains a centralized storage of all test execution reports created by members of a project. It also enables users to filter for test results and perform actions such as verifying, exporting to external project management systems, and assigning error categories.
 
-![alt text](../../img/newsroom/Conqlude.png)
+![alt text](../../assets/images/newsroom/Conqlude.png)
 
 Each test execution has its own unique report in ConQlude. In ConQlude, the icons next to steps indicate attachments types (which contain, e.g., images, text, audio or metadata). These attachments are particularly helpful when troubleshooting failed test cases or identifying defects:
 
 **ConQlude Test Output Example**
-![alt text](../../img/newsroom/Conqlude2.png)
+![alt text](../../assets/images/newsroom/Conqlude2.png)
 
 ## Conclusion <a name="conclusion"></a>
 There are several file types available to create and customize INTACT test cases using INTACT Studio. First we introduced Feature Files, which contain a set of steps that define the test objective and the actions that will achieve the objective.

@@ -5,8 +5,8 @@ colorTitle: Concise, Reusable Test Cases - How Compound Steps Can Simplify Your 
 subtitle: Compound Steps
 subtitleNewsroom: Get to Know INTACT
 overview: Topics
-img_url: img/articles/CompoundSteps/CompoundLeverNewsroom.jpg
-img_main_url: /img/newsroom/CompoundLever.png
+img_url: assets/images/newsroom/articles/CompoundSteps/CompoundLeverNewsroom.jpg
+img_main_url: assets/images/newsroom/CompoundLever.png
 category: article
 group: visible
 manualLink: 'https://docs.qitasc.com/'
@@ -126,7 +126,7 @@ By using compound steps, we have reduced the amount of steps needed to execute o
   * In our compound step example, however, the events that take place throughout the call flow are all implicitly defined by INTACT: This means we only need to specify additional parameters where necessary. Because this is a `call forwarding no answer` test, we chose a ringing duration of 30 seconds. If we had not specified it, the default value for this parameter is a random number between 2 and 6 seconds.
 * In addition to the three compound steps we used, we also added some [expectation steps](https://docs.qitasc.com/intactsteps/expectcalldetail/). These steps are used to synchronize with the compound step that executes in the background so we can time appropriate actions like changing the tariff.
 
-![alt text](../img/articles/CompoundSteps/CompoundPieces.png)
+![alt text](..assets/images/newsroom/articles/CompoundSteps/CompoundPieces.png)
 
 ### What Else Do Compound Steps Do? <a name="whatelse"></a>
 As we mentioned earlier, the simple steps used in our first example have several limitations including that they *block* other steps, prevent **parallel execution** and pose threats to test case stability because of the potential to leave out certain essential steps. Furthermore, as a test becomes more complicated, it often becomes more difficult to read even when using a user-friendly keyword-based framework. The high-level design of INTACT's compound steps promote readability, so users don't need to parse the **keyword soup** for its structure to know which scenario is being executed.
@@ -188,13 +188,13 @@ Feature: Compound steps with download and voice call
 
 We also added some **simple steps** for data settings as well as a simple step that *records time and data sequences* so that we can visualize some of the test case's events it in a nifty chart. In our download graph, we can see the temporary drop in the download speed that coincides with `Phone A` making the call to `Phone B`:
 
-![alt text](../img/articles/CompoundSteps/plotGraph.png)
+![alt text](..assets/images/newsroom/articles/CompoundSteps/plotGraph.png)
 
 This example test case involves a 4G download, but because of the voice call, the phone registers into the 3G network -- this is why we expect a drop in download speed. After the call ends, the phone  re-registers into the 4G network, which is why we expect another rise in download speed. INTACT offers additional steps to verify the drop and rise in download speeds, but that topic is beyond the scope of this article.
 
 ## Reusability: How Do Compound Steps Work Across All Testing Phases? <a name="reusability"></a>
 
-![alt text](../img/articles/CompoundSteps/CompoundPhases.png)
+![alt text](..assets/images/newsroom/articles/CompoundSteps/CompoundPhases.png)
 
 
 Depending on the test phase, certain components such as phones or signals might need to be simulated for practical reasons. Consequently, different test cases often must be written to account for changes to the test infrastructure. Compound steps, however, have been implemented in such a way that the user can "switch" between using INTACT's **built-in steps**, which use real phones and **custom compound steps** that allow for using [virtual phones](https://docs.qitasc.com/intactbasics/stepdefs/) or external tools to simulate different event types. The test case-specific switching back is enabled by our [hierarchical configuration](https://docs.qitasc.com/configuration/hierarchicalconf/).
