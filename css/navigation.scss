@@ -765,7 +765,151 @@ height: 40px;
 // ##################################################################################
 // ##################################################################################
 //                                                                            #######
-//            Services Sub Header Styles starting here                        #######
+//            Support Sub Header Styles starting here                         #######
 //                                                                            #######
 // ##################################################################################
 // ##################################################################################
+
+
+
+.navigationSecondaryHeaderSupport {
+
+  color: $qitascDarkGrey;
+  font-weight: bold;
+  background-image: linear-gradient(120deg, $qitascLightGrey 0%, rgba(0,0,0,0.1) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  @include stage00 {
+    display: none !important;
+  }
+  @include stage01 {
+    max-width: 160px !important;
+    margin-top: 5px;
+    font-size: $navigationButtonFontSizeMobile; // 13px
+  }
+  @include stage02 {
+    max-width: 360px !important;
+    margin-top: 5px;
+    font-size: $navigationButtonFontSizeMobile * (15/13); // 15px
+  }
+  @include stage03 {
+    margin-top: 5px;
+    font-size: $navigationButtonFontSizeMobile * (15/13); // 15px
+  }
+}
+
+
+.SupportItemsContainer {
+    @include stage00 {
+     display: none;
+  }
+
+
+  @include stage01 {
+    margin-left: 20px !important;
+    padding-right: 0px !important;
+    display: inline;
+  }
+  @include stage02 {
+
+    margin-left: 20px !important;
+    padding-right: 20px !important;
+    display: inline;
+  }
+  @include stage03 {
+
+    margin-left: 10% !important;
+    padding-right: 20px !important;
+
+    display: inline;
+  }
+}
+
+
+.supportHeader {
+  @extend .transitionColor;
+  color: $qitascDarkGrey;
+  @include stage00 {
+    font-size: 15px;
+  }
+  @include stage01 {
+    font-size: 15px;
+    max-width: 150px !important;
+  }
+  @include stage02 {
+    font-size: 17px;
+  }
+  @include stage03 {
+    font-size: 20px;
+  }
+
+}
+.supportDescription {
+  color: $qitascGreyVariation;
+  @include stage00 {
+    font-size: 12px;
+  }
+  @include stage01 {
+    font-size: 13px;
+  }
+  @include stage02 {
+    font-size: 15px;
+  }
+  @include stage03 {
+    font-size: 15px;
+  }
+}
+
+.supportHeader:hover {
+  color: $qitascDarkerGrey;
+  text-decoration: none !important;
+}
+
+.supportGreyLink {
+  @include stage00 {
+
+  }
+  @include stage01 {
+
+    max-width: 175px !important;
+  }
+  @include stage02 {
+
+  }
+  @include stage03 {
+
+  }
+
+  @extend .transitionBackground;
+  background-color:  $qitascLightGrey;
+  cursor: pointer;
+}
+.supportGreyLink:hover {
+  background-color: rgb(255, 224, 70);
+  text-decoration: none !important;
+}
+
+
+.greyColumnSupport {
+
+  background-color: $qitascGrey;
+  padding: 20px;
+  @include stage00 {
+    display: inline;
+    height: $secondaryHeaderHeightMobile !important;
+  }
+  @include stage01 {
+    display: inline;
+    height: $secondaryHeaderHeightMobile !important;
+  }
+  @include stage02 {
+    display: inline;
+    height: $secondaryHeaderHeightDesktop !important;
+    padding-left: 10px;
+  }
+  @include stage03 {
+    display: inline;
+    height: $secondaryHeaderHeightDesktop !important;
+  }
+}

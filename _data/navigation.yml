@@ -62,3 +62,44 @@ analytiQs:
     link: /products/analytiQs
     # Max 20 characters for shorter Description
     shorterDescription: Description
+
+manual:
+    title: doQumentation
+    shortDescription: Access all QiTASC manuals & tutorials
+    link: https://docs.qitasc.com/
+    type: QiTASC Resources
+
+ContactUs:
+    title: Contact Us
+    shortDescription: Get in touch
+    link: /about/contact
+    type: Get in touch
+
+### Here are all Items in the Grey Menu, you can find it in _includes/navigatioNRightSecondaryMenu.html
+
+RightSecondaryMenu:
+    -
+      SubMenuTitle: Newsroom
+      link: Newsroom/
+    -
+      SubMenuTitle: Contact Us
+      link: about/contact/
+    -
+      SubMenuTitle: Usecases
+      link: '#usecases'
+    -
+      SubMenuTitle: About
+      link: about/
+    -
+      SubMenuTitle: Newsroom
+      link: Newsroom/
+    -
+      SubMenuTitle: Impressum
+      link: about/contact/
+    -
+      SubMenuTitle: Careers
+      link: careers/
+
+Documentation:
+    SubMenuTitle: Documentation
+    link: https://docs.qitasc.com

@@ -1,0 +1,38 @@
+<div class="row">
+
+    <div class="col SupportItemsContainer">
+
+                  <p><div class="navigationSecondaryHeaderSupport">{{ site.data.navigation.manual.type }}</div></p>
+                  <div class="row rowProductIcons">
+                    <div class="col">
+                      <div class="floatproduct supportGreyLink">
+                          <a class="navigationProductLink" href="{{ site.data.navigation.manual.link }}" target="_self"><div class="supportHeader">{{ site.data.navigation.manual.title }}</div></a>
+                      </div>
+
+                      <div class="supportDescription">{{ site.data.navigation.manual.shortDescription }}</div>
+                    </div>
+                  </div>
+
+
+                  <p><div class="navigationSecondaryHeaderSupport">{{ site.data.navigation.ContactUs.type }}</div></p>
+                  <div class="row rowProductIcons">
+                    <div class="col">
+                        <div class="floatproduct supportGreyLink">
+                            <a class="navigationProductLink" href="{{ site.data.navigation.ContactUs.link }}" target="_self"><div class="supportHeader">{{ site.data.navigation.ContactUs.title }}</div></a>
+                        </div>
+                    </div>
+                  </div>
+    </div>
+
+<!--
+// ##################################################################################
+//            Grey Side Menu on Screen over 410px                             #######
+//            We need the classes outside to toggle when Support              #######
+//            or Products are choosen                                         #######
+// ##################################################################################
+-->
+    <div class="col greyColumnSupport">
+    {% include navigationRightSecondaryMenu.html %}
+    </div>
+
+</div>
