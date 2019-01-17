@@ -1,16 +1,14 @@
-<div class="col greyColumn">
+
 
         <!--  Close Button  -->
         <div class="row leftSideNavMenucloseButton">
-            <img id="closeButtonID" class="closeButton" src="{{ site.baseurl }}/assets/images/navBar/x_1.png">
+            <img class="closeButton" src="{{ site.baseurl }}/assets/images/navBar/x_1.png">
         </div>
 
-        <div class="row leftSideNavMenuItem"><a href="{{ site.baseurl }}/Newsroom/">Newsroom</a></div>
-        <div class="row leftSideNavMenuItem">Usecases</div>
-        <div class="row leftSideNavMenuItem">About</div>
-        <div class="row leftSideNavMenuItem">Support</div>
-        <div class="row leftSideNavMenuItem">Documentation</div>
-        <div class="row leftSideNavMenuItem">Contact</div>
-        <div class="row leftSideNavMenuItem">Impressum</div>
+        {% for item in site.data.navigation.RightSecondaryMenu %}
 
-</div>
+              <div class="row leftSideNavMenuItem"><a href="{{ site.baseurl }}/{{ item.link }}">{{ item.SubMenuTitle }}</a></div>
+              {% if forloop.index == 6 %}
+              <div class="row leftSideNavMenuItem"><a href="{{ site.data.navigation.Documentation.link }}">{{ site.data.navigation.Documentation.SubMenuTitle }}</a></div>
+              {% endif %}
+        {% endfor %}

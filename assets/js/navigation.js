@@ -12,15 +12,19 @@ var removeShadow = function() {
 
 
 
-$( "#closeButtonID" ).click(function() {
+$( ".closeButton" ).click(function() {
   if($('.transparentOverlayOfContent').css('height') > '1%') {
+
+    if($('.SupportItemsContainer').is(':visible')){
+      $('.displayedContentSupport').toggleClass( 'add' );
+      removeShadow();
+    }
+
     if($('.displayedContentProducts').is(':visible')){
       $('.displayedContentProducts').toggleClass( 'add' );
       removeShadow();
     }
-    if($('.displayedContentSupport').is(':visible')){
-      $('.displayedContentSupport').toggleClass( 'add' );
-    }
+
     $('.transparentOverlayOfContent').toggleClass( 'add' );
     $('#secondaryNavContainer').toggleClass( 'on' );
 
