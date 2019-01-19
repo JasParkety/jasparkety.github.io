@@ -33,9 +33,6 @@ collections:
 sass:
   sass_dir: assets/css
 
-plugins:
-  - jekyll-redirect-from
-
 
 # Google Analytics Cide
 google_analytics: UA-113548274-2

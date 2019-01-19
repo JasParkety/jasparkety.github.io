@@ -1,31 +1,39 @@
 - usecase: Acceptance Testing
   imagePath: assets/images/usecases/UC_Acceptance.png
-  description: This is just a Description Placeholder, soon to be finished.
+  description: Test the software itself to ensure that your system is running smoothly.
+  link: acceptance/
 
-- usecase: Back-End Testing
+- usecase: Backend Testing
   imagePath: assets/images/usecases/UC_BackendAPI.png
-  description: This is just a Description Placeholder, soon to be finished.
+  description: Verify server-side functionality the communication between interdependent components.
+  link: backend/
 
-- usecase: Charging Conformity
+- usecase: Tariff Verification and Charging Conformity
   imagePath: assets/images/usecases/UC_Charging.png
-  description: This is just a Description Placeholder, soon to be finished.
+  description: Make sure that convergent charging systems, online charging systems and customer accounts are behaving correctly.
+  link: charging/
 
 - usecase: Core Network Testing
   imagePath: assets/images/usecases/UC_CoreNW.png
-  description: This is just a Description Placeholder, soon to be finished.
+  description: Confirm that all aspects of a network behave correctly for telephony, SMS, data and everything else behind the scenes.
+  link: coreNetwork/
 
-- usecase: End to End Testing
+- usecase: End to End Testing and Migration Testing
   imagePath: assets/images/usecases/UC_E2E.png
-  description: This is just a Description Placeholder, soon to be finished.
+  description: Check that a network behaves exactly as it would when triggered by a customer, even for time-sensitive projects like migrations.
+  link: endtoend/
 
-- usecase: IFRS
+- usecase: IFRS Testing
   imagePath: assets/images/usecases/UC_IFRS.png
-  description: This is just a Description Placeholder, soon to be finished.
+  description: Ensure compliance to IFRS standards comparing huge sets of metadata against expected outcomes.
+  link: ifrs/
 
-- usecase: Internet of Things
+- usecase: Internet of Things Testing
   imagePath: assets/images/usecases/UC_IoT.png
-  description: This is just a Description Placeholder, soon to be finished.
+  description: Automate smart devices to check that they communicate with their app and are working properly.
+  link: iot/
 
 - usecase: Protocol Testing
   imagePath: assets/images/usecases/UC_Protocol.png
-  description: This is just a Description Placeholder, soon to be finished.
+  description: Ensure that data is transmitted between devices and over networks according to protocol specification.
+  link: protocol/
