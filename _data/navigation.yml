@@ -85,7 +85,7 @@ RightSecondaryMenu:
       SubMenuTitle: Contact Us
       link: about/contact/
     -
-      SubMenuTitle: Usecases
+      SubMenuTitle: Use Cases
       link: '#usecases'
     -
       SubMenuTitle: About

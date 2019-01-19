@@ -368,7 +368,7 @@ $stageThree: 1199px;
 }
 .NewsroomHeaderSubDescription a:hover {
   text-decoration: underline;
-  color: $qitascOrange !important;
+  color: $qitascGrey !important;
 }
 // ##################################################################################
 // ##################################################################################
@@ -389,7 +389,13 @@ $stageThree: 1199px;
 
 .qitasc-article-content a {
   color: $qitascOrange !important;
+  @extend .transitionColor;
 }
+
+.qitasc-article-content a:hover {
+  color: $qitascGrey !important;
+}
+
 
 // ##################################################################################
 // ##################################################################################
@@ -494,16 +500,20 @@ $difference: ($articleTableOfContentHeight - $articleTableOfContentIconHeight)*(
 
 
 
+.qitasc-article-content ul {list-style: none}
+.qitasc-article-content li::before {content: "•"; color: $qitascTeal; display: inline-block; width: 1em;margin-left: -1em}
+
 .qitasc-article-content {
     padding-top: 100px;
 }
-.qitasc-article-content h1, h2, h3{
+.qitasc-article-content h1, h2, h3, h4{
     color: #F7941E !important;
     font-weight: bold;
     padding-top: 10px;
     padding-bottom: 10px;
 		background-size: 90% 100%;
     font-size: 30px !important;
+    line-height: 3;
 }
 .qitasc-article-content img {
 
@@ -530,7 +540,9 @@ $difference: ($articleTableOfContentHeight - $articleTableOfContentIconHeight)*(
 
 }
 
-
+#article-subheader > h4 {
+  line-height: 50px !important;
+}
 
 /*
 qitasc-white qitasc-productsandservices-managedservices-header p-b-2 m-b-6
@@ -556,6 +568,41 @@ qitasc-article-content
 .highlighter-rouge {
   color: $qitascTeal !important;
 }
+
+// Codeblock
+
+
+$background: $qitascTeal;
+$accent-color: $qitascLightGrey;
+$body-font-size: 100%;
+
+code {
+  @extend .shadowBoxNice;
+  border: 15px solid $qitascGrey;
+  border-style: inset;
+  border-radius: 5px;
+
+      max-height:90%;
+      max-width:90%;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      white-space: pre;
+      word-wrap: normal;
+      overflow-x: scroll;
+      display: block;
+      padding: 0 10px;
+      background: $accent-color;
+      background-image: linear-gradient(darken($accent-color, 3%) 50%, transparent 50%);
+      background-size: 100% 3em;
+      background-position: 0 1.5em;
+      background-origin: content-box;
+      color: $background;
+      line-height: 1.5;
+      font-size: 15px;
+      font-weight: 300;
+    }
+
 
 
 // ##################################################################################
