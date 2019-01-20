@@ -1,0 +1,57 @@
+---
+layout: default
+title: Careers
+permalink: /careers/
+main: true
+priority: 11
+---
+
+
+<div class="articleTableOfContent">
+    <div class="container">
+        <div class="row">
+          <div class="col-2">
+
+          </div>
+          <div class="col">
+            <div class="articleTableOfContentTitle">{{ site.data.careers.Hero.title }}</div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<div class="container-fluid CareersBackgroundColorHero">
+  <div class="container">
+    <div class="row">
+          <h1>{{ site.data.careers.Hero.HeroTitle }}</h1>
+          <div id="article-subheader">
+              <h4>{{ site.data.careers.Hero.Subtitle }}<h4>
+          </div>
+    </div>
+  </div>
+</div>
+
+
+
+              {% comment %}##############################################{% endcomment %}
+              {% comment %}########## Explore Newsroom Articles #########{% endcomment %}
+              {% comment %}##############################################{% endcomment %}
+              <h4>{{ site.data.careers.Hero.CareersArticleTitle }}<h4>
+
+{% for item in site.data.careers.Hero.CareerArticles %}
+<div class="col-2">
+  <a href="{{ item.link }}" target="_self">
+    <div class="CareerArticleContainer">
+      <div class="row">
+            <div class="col">
+                <div class="titleSubfeatures">{{ item.title }}</div>
+
+            </div>
+            <div class="col">
+                <img class="CareerArticleImage" src="{{ site.baseurl }}{{ item.imgPath}}"/>
+            </div>
+      </div>
+    </div>
+  </a>
+</div>
+{% endfor %}
