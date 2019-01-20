@@ -1,11 +1,11 @@
 var addShadow = function() {
-  if ( (window.location.href.indexOf("products") > -1) || (window.location.href.indexOf("articles") > -1) || (window.location.href.indexOf("usecases") > -1) ) {
+  if ( (window.location.href.indexOf("products") > -1) || (window.location.href.indexOf("articles") > -1) || (window.location.href.indexOf("usecases") > -1) || (window.location.href.indexOf("careers") > -1) ) {
    $('.stickyNavContainer').addClass( 'shadowBottom' );
 }
 };
 
 var removeShadow = function() {
-  if ( (window.location.href.indexOf("products") > -1) || (window.location.href.indexOf("articles") > -1) || (window.location.href.indexOf("usecases") > -1) ) {
+  if ( (window.location.href.indexOf("products") > -1) || (window.location.href.indexOf("articles") > -1) || (window.location.href.indexOf("usecases") > -1) || (window.location.href.indexOf("careers") > -1) ) {
    $('.stickyNavContainer').removeClass( 'shadowBottom' );
 }
 };

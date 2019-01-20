@@ -1,0 +1,54 @@
+Hero:
+    title: Your Carrer at QiTASC
+    HeroTitle: Help us improving QiTASC everyday
+    Subtitle: Join our collaborative team of great minds and play a role in creating great testing products and supporting projects around the world! Let our current opening be your future job.
+    CareersArticleTitle: "Explore Career related Articles:"
+    CareerArticles:
+      -
+        title: The People of QiTASC
+        link: /articles/20180430-peopleOfQitasc
+        imgPath: /assets/images/newsroom/articles/peopleOfQitasc/ScientificBackgroundNewsroom.png
+      -
+        title: Mixin Work with Fun - QiTASC in Styria
+        link: /articles/20180717-Workshop
+        imgPath: /assets/images/newsroom/articles/Workshop/SteiermarkTeaser.jpg
+      -
+        title: Costas Joins the Development Team
+        link: /articles/20180514-NewAtQitasc
+        imgPath: /assets/images/newsroom/articles/NewAtQitasc/NewAtQitascNewsroom.png
+      -
+        title: Theo's Summer Internship at QiTASC
+        link: /articles/20180806-Internship
+        imgPath: /assets/images/newsroom/articles/Internship/InternshipSmall.jpg
+
+header:
+    title: Your job at QiTASC
+    subtitle: Join our team of great minds in making <span class="orange">IN</span>TACT<sup>®</sup> an even better tool. Let this jobdescription be your future job.
+    contact:
+        text: contact
+        mail: 'michael.zehender@qitasc.com'
+        subject: 'Application for job'
+
+generic:
+    company: QiTASC excels in end-to-end test automation of complex system landscapes. To maintain our high quality, we grow selectively. At QiTASC, everybody matters in contributing to our success. Join our team and be part of our exciting future!
+    development: Growing team, more projects
+    product:
+        title: 'Our product: <span class="orange">IN</span>TACT<sup>®</sup>'
+        subtitle: for test automation
+        list:
+            - mobile phones
+            - mobile network elements
+            - graphical user interfaces
+            - backend systems
+    jobposting: Job posting
+    workplace:
+        title: We offer a workspace with...
+        description:
+        list:
+            - enough display space
+            - great team environment
+            - above average salary
+            - flexible time 38.5h/week
+            - company excursions
+            - additional accident insurance
+            - refrigerator full of drinks, cakes, Ben and Jerry's ice cream, fruits and vegetables from Adamah's Biokistl
