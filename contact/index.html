@@ -1,0 +1,77 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+main: true
+priority: 11
+---
+
+{% assign Vienna = site.data.imprint.Vienna %}
+<div class="container-fluid ContactContainerFluid">
+  <div class="container ContactContainer">
+
+    <div class="row">
+      <div class="col">
+        <h4>Contact Us in Vienna</h4>
+        <div class="ContactInfoText">{{ Vienna.phonenumber }}</div>
+        <div class="ContactInfoText">{{ Vienna.email }}</div>
+        <h5>Address</h5>
+        <div class="ContactInfoText">{{ Vienna.companyname }}</div>
+        <div class="ContactInfoText">{{ Vienna.street }} {{ Vienna.streetnumber }}</div>
+        <div class="ContactInfoText">{{ Vienna.postalcode }}</div>
+        <div class="ContactInfoText">{{ Vienna.country }}</div>
+      </div>
+      <div class="col">
+        <img class="ContactImage" src="{{ site.baseurl }}/assets/images/contact/qitasc-location-vienna.svg"/>
+        <br>
+        <div class="ContactGoogleMapsLink"><a href="https://maps.google.com/?q=Diefenbachgasse+53%2F2%2F3%2FA%2BB%2C+1150+Vienna%2C+Austria" target="_self">Google Maps Office Vienna</a></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  {% assign Duesseldorf = site.data.imprint.Duesseldorf %}
+<div class="container-fluid ContactContainerFluidDussel">
+    <div class="container ContactContainer">
+
+      <div class="row">
+        <div class="col">
+          <h4>Contact Us in Düsseldorf</h4>
+          <div class="ContactInfoText">{{ Duesseldorf.phonenumber }}</div>
+          <div class="ContactInfoText">{{ Duesseldorf.email }}</div>
+          <h5>Address</h5>
+          <div class="ContactInfoText">{{ Duesseldorf.companyname }}</div>
+          <div class="ContactInfoText">{{ Duesseldorf.street }} {{ Duesseldorf.streetnumber }}</div>
+          <div class="ContactInfoText">{{ Duesseldorf.postalcode }}</div>
+          <div class="ContactInfoText">{{ Duesseldorf.country }}</div>
+        </div>
+        <div class="col">
+          <img class="ContactImage" src="{{ site.baseurl }}/assets/images/contact/qitasc-location-duss.svg"/>
+          <br>
+          <div class="ContactGoogleMapsLink"><a href="https://maps.google.com/?q=Prinzenallee+1%2C+40549+D%C3%BCsseldorf%2C+Germany" target="_self">Google Maps Office Düsseldorf</a></div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+
+
+    <div class="container-fluid ContactContainerFluidImpressum">
+      <div class="container ContactContainer">
+
+        <div class="row">
+          <div class="col">
+            <h4>Impressum</h4>
+            <div class="ContactInfoText">QiTASC GmbH</div>
+            <div class="ContactInfoText">Inhaber: Beate Zehender, Can Davutoglu, Denise Zehender, Michael Zehender</div>
+            <div class="ContactInfoText">FN {{ Vienna.companynumber }}</div>
+            <div class="ContactInfoText">{{ Vienna.companyname }} / Sitz {{ Vienna.headoffice }} / {{ Vienna.jurisdiction }}</div>
+            <div class="ContactInfoText"></div>
+            <div class="ContactInfoText">Concept and Layout:</div>
+            <div class="ContactInfoText">EPU Anna Parisa Ehsani, www.aboutanna.at</div>
+          </div>
+        </div>
+      </div>
+    </div>

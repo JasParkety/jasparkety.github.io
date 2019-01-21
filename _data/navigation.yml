@@ -82,9 +82,6 @@ RightSecondaryMenu:
       SubMenuTitle: Newsroom
       link: Newsroom/
     -
-      SubMenuTitle: Contact Us
-      link: about/contact/
-    -
       SubMenuTitle: Use Cases
       link: '#usecases'
     -
@@ -94,12 +91,15 @@ RightSecondaryMenu:
       SubMenuTitle: Newsroom
       link: Newsroom/
     -
-      SubMenuTitle: Impressum
-      link: about/contact/
-    -
       SubMenuTitle: Careers
       link: careers/
-
+    -
+      SubMenuTitle: Contact Us
+      link: contact/
+    -
+      SubMenuTitle: Impressum
+      link: contact/
+      
 Documentation:
     SubMenuTitle: Documentation
     link: https://docs.qitasc.com
