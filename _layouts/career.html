@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{% comment %}
+
+{% capture page.title %}{{ page.position }} {{ page.location }}{% endcapture %}
+<div class="qitasc-jobs-header qitasc-white">
+    <div class="row">
+        <div class="col-xs-offset-1 col-sm-offset-2 col-xs-10 col-sm-7 m-b-4">
+
+            {% capture subject %}{{ site.data.jobs.header.contact.subject }}: {{ page.title }}{% endcapture %}
+
+            {% capture headercontent %}
+            <a href="mailto:{{ site.data.jobs.header.contact.mail }}?subject={{ subject | uri_escape }}" class="more">{{ site.data.jobs.header.contact.text }}</a>
+            {% endcapture %}
+
+            {% include message.html message=site.data.jobs.header content=headercontent %}
+        </div>
+    </div>
+    {{ content }}
+</div>
+
+<div class="qitasc-white p-y-6">
+    <div class="row p-y-2">
+
+        <div class="col-xs-12 col-sm-offset-1 col-sm-10 p-y-2 m-b-3 qitasc-about-team-jobs-jobposting">
+            {% include jobposting.html data=page %}
+        </div>
+    </div>
+</div>
+{% endcomment %}

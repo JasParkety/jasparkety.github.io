@@ -1,0 +1,35 @@
+{% assign benefits = site.data.careers.generic %}
+
+
+<div class="container-fluid benefitsConainerFluid">
+  <div class="container benefitsContainer">
+
+      <div class="row">
+        <div class="benefitsTitle">{{ benefits.workplace.title }}</div>
+      </div>
+
+      <ul>
+        {% for item in benefits.workplace.list %}
+        <li><div class="benefitsItems">{{ item }}</div></li>
+        {% endfor %}
+
+      </ul>
+
+
+
+  </div>
+</div>
+
+
+<div class="container-fluid benefitsConainerFluidImage">
+  <div class="container benefitsContainerImage">
+
+    {% if page.url contains "ienna" %}
+    <img class="benefitsImage" src="{{ site.baseurl}}/{{ benefits.imageLinkVienna }}" alt="" />
+    {% else %}
+    <img class="benefitsImage" src="{{ site.baseurl}}/{{ benefits.imageLinkDuessel }}" alt="" />
+    {% endif %}
+
+
+  </div>
+</div>
