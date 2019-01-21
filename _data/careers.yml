@@ -9,7 +9,7 @@ Hero:
         link: /articles/20180430-peopleOfQitasc
         imgPath: /assets/images/newsroom/articles/peopleOfQitasc/ScientificBackgroundNewsroom.png
       -
-        title: Mixin Work with Fun - QiTASC in Styria
+        title: Mixing Work with Fun - QiTASC in Styria
         link: /articles/20180717-Workshop
         imgPath: /assets/images/newsroom/articles/Workshop/SteiermarkTeaser.jpg
       -
@@ -30,6 +30,8 @@ header:
         subject: 'Application for job'
 
 generic:
+    imageLinkVienna: assets/images/careers/FutureWorkplace.svg
+    imageLinkDuessel: assets/images/careers/FutureWorkplaceD.svg
     company: QiTASC excels in end-to-end test automation of complex system landscapes. To maintain our high quality, we grow selectively. At QiTASC, everybody matters in contributing to our success. Join our team and be part of our exciting future!
     development: Growing team, more projects
     product:
@@ -52,3 +54,260 @@ generic:
             - company excursions
             - additional accident insurance
             - refrigerator full of drinks, cakes, Ben and Jerry's ice cream, fruits and vegetables from Adamah's Biokistl
+
+Jobs:
+    -
+      title: Junior Automation Engineer in Vienna
+      status: unavailable
+      link:
+      position: Junior Automation Engineer
+      location: Vienna
+      headline: We are looking for a Junior Automation Engineer!
+      hardfacts:
+          title: Hard Facts
+          subtitle: job as a Junior Automation Engineer
+          list:
+              - in Vienna
+              - at QiTASC GmbH (<a href="http://www.qitasc.com">www.qitasc.com</a>)
+              - field&#58; Test Automation
+              - Full-Time job (38,5 hours per week)
+              - <u>minimum €26.040.-</u> per year salary (gross) for full-time
+          apply: Please apply to <a href="mailto:office@qitasc.com">office@qitasc.com</a>
+      description:
+          -
+              title: Your responsibilities
+              subtitle: as a Junior Automation Engineer
+              list:
+              - support during test environment setup and test scope planning
+              - write, execute and analyze automated test cases
+              - support execution result reporting and during defect management
+              - interact with customers‘ test engineers
+          -
+              title: Key Requirements
+              list:
+              - passion for automation engineering
+              - high degree of commitment and motivation
+              - strong problem solving and analytical skills
+              - able to learn independently, e.g. to understand complex solutions
+              - fluent English in writing and speaking
+          -
+              title: Helpful
+              list:
+              - know-how in telecommunications
+              - basic programming experience
+              - good German skills (min. C1)
+    -
+        title: IT Administrator in Düsseldorf
+        status: available
+        link: it-administrator-duesseldorf
+        position: IT Administrator
+        location: Düsseldorf
+        headline: We are looking for an IT Administrator!
+        hardfacts:
+            title: Hard Facts
+            subtitle: job as an IT Administrator
+            list:
+                - in Düsseldorf
+                - at QiTASC UG (<a href="http://www.qitasc.com">www.qitasc.com</a>)
+                - field&#58; Test Automation
+                - Full-Time job (40 hours per week)
+            apply: Please apply to <a href="mailto:michael.zehender@qitasc.com">michael.zehender@qitasc.com</a>
+        description:
+            -
+                title: Your responsibilities
+                subtitle: as an IT Administrator
+                list:
+                    - manage server and network infrastructure across the organization
+                    - automate IT processes and workflows
+                    - plan, test and execute solutions based on an analysis of business requirements
+                    - liaise with external parties
+                    - provide internal support to the business
+            -
+                title: Key Requirements
+                list:
+                - strong Unix / Linux server administration experience
+                - excellent understanding of networking concepts (including routing, VPN and firewalls)
+                - strong experience with configuration management tools (such as SaltStack, Ansible, Chef)
+                - good knowledge of scripting languages
+                - robust understanding of virtualization technologies
+                - passion for writing and updating clear documentation
+                - fluent in English (written and verbal)
+                - good German skills (min. C1)
+                - works well both independently and in a team
+                - positive “can-do” attitude towards work
+            -
+                title: Helpful
+                list:
+                - knowledge of Windows and OSX operating environments
+                - experience/interest in DevOps and Infrastructure as Code
+                - knowledge of typical DevOps technologies (build systems, code repositories, CI/CD, containerization, etc.)
+                - experience in the telecommunications industry
+    -
+        title: Senior Automation Engineer in Vienna
+        status: available
+        link: senior-automation-engineer-vienna
+        position: Senior Automation Enginner
+        location: Vienna
+        headline: We are looking for a Senior Automation Engineer!
+        hardfacts:
+            title: Hard Facts
+            subtitle: job as a Senior Automation Engineer
+            list:
+                - in Vienna
+                - at QiTASC GmbH (<a href="http://www.qitasc.com">www.qitasc.com</a>)
+                - field&#58; Test Automation
+                - Full-Time job (38,5 hours per week)
+                - <u>minimum €39.200.-</u> per year salary (gross) for full-time
+            apply: Please apply to <a href="mailto:office@qitasc.com">office@qitasc.com</a>
+        description:
+            -
+                title: Your responsibilities
+                subtitle: as a Senior Automation Engineer
+                list:
+                - planning, setup and management of test environment and test scope
+                - taking responsibility and ownership of test scope
+                - coordinate a small team of testers
+                - QA for automated test cases
+                - drive execution result reporting and defect management
+                - lead interaction with customers‘ test engineers and management
+                - write, execute and analyze automated test cases
+            -
+                title: Key Requirements
+                list:
+                - passion for automation engineering
+                - a proven record of independently learning and understanding complex solutions
+                - high degree of commitment and motivation
+                - strong problem solving and analytical skills
+                - experience in programming and project management
+                - fluent English in writing and speaking
+
+            -
+                title: Helpful
+                list:
+                - know-how in telecommunications
+                - good German skills (min. C1)
+    -
+        title: Software Developer in Vienna
+        status: available
+        link: software-developer-vienna
+        position: Software Developer
+        location: Vienna
+        headline: We are looking for a Software Developer!
+        hardfacts:
+            title: Hard Facts
+            subtitle: job as Software Developer
+            list:
+                - in Vienna
+                - at QiTASC GmbH (<a href="http://www.qitasc.com">www.qitasc.com</a>)
+                - field&#58; Test Automation
+                - 30-38.5 hours per week
+                - <u>minimum €32.200.-</u> per year salary (gross) for full-time
+            apply: Please apply to <a href="mailto:michael.zehender@qitasc.com">michael.zehender@qitasc.com</a>
+        description:
+            -
+                title: Your responsibilities
+                subtitle: as a software developer
+                list:
+                    - extract and abstract the essence of a concept
+                    - write automated tests
+                    - refactor your code regularly
+                    - review code and provide constructive feedback
+            -
+                title: Key Requirements
+                list:
+                    - passion for software engineering and architecture
+                    - proficiency in Java, Kotlin or another JVM language
+                    - clear understanding of object-orientation
+                    - a sense for plugin-based architectures
+                    - fluent English in writing and speaking
+            -
+                title: Helpful
+                list:
+                    - know-how in telecommunications
+                    - Kotlin know-how
+                    - German skills
+    -
+        title: Senior Automation Engineer in Düsseldorf
+        status: available
+        link: senior-automation-engineer-duesseldorf
+        position: Senior Automation Enginner
+        location: Düsseldorf
+        headline: We are looking for a Senior Automation Engineer!
+        hardfacts:
+            title: Hard Facts
+            subtitle: job as a Senior Automation Engineer
+            list:
+                - in Düsseldorf
+                - at QiTASC UG (<a href="http://www.qitasc.com">www.qitasc.com</a>)
+                - field&#58; Test Automation
+                - Full-Time job (40 hours per week)
+            apply: Please apply to <a href="mailto:osman.davutoglu@qitasc.com">osman.davutoglu@qitasc.com</a>
+        description:
+            -
+                title: Your responsibilities
+                subtitle: as a Senior Automation Engineer
+                list:
+                - planning, setup and management of test environment and test scope
+                - taking responsibility and ownership of test scope
+                - coordinate a small team of testers
+                - QA for automated test cases
+                - manage execution result reporting and defect management
+                - lead interaction with customers‘ test engineers and management
+                - write, execute and analyze automated test cases
+            -
+                title: Key Requirements
+                list:
+                - passion for automation engineering
+                - a proven record of independently learning and understanding complex solutions
+                - high degree of commitment and motivation
+                - strong problem solving and analytical skills
+                - experience in programming and project management
+                - fluent English in writing and speaking
+                - good German skills (min. C1)
+            -
+                title: Helpful
+                list:
+                - know-how in telecommunications
+    -
+        title: Senior Software Developer in Vienna
+        status: available
+        link: senior-software-developer-vienna
+        position: Senior Software Developer
+        location: Vienna
+        headline: We are looking for a Senior Software Developer!
+        hardfacts:
+            title: Hard Facts
+            subtitle: job as a Senior Software Developer
+            list:
+                - in Vienna
+                - at QiTASC GmbH (<a href="http://www.qitasc.com">www.qitasc.com</a>)
+                - field&#58; Test Automation
+                - 38.5 hours per week
+                - <u>minimum €53.000.-</u> per year salary (gross) for full-time
+            apply: Please apply to <a href="mailto:michael.zehender@qitasc.com">michael.zehender@qitasc.com</a>
+        description:
+            -
+                title: Your responsibilities
+                subtitle: as a senior software developer
+                list:
+                    - liaise with customers about QiTASC's software solutions
+                    - have a good feel for software architecture
+                    - extract and abstract the essence of a concept
+                    - write automated tests
+                    - refactor your code regularly
+                    - review code and provide constructive feedback
+                    - mentor team members
+            -
+                title: Key Requirements
+                list:
+                    - passion for software engineering
+                    - have a good feel for software architecture
+                    - highly proficient in Java, Kotlin or another JVM language
+                    - clear understanding of object orientation
+                    - fluent English in writing and speaking
+            -
+                title: Helpful
+                list:
+                    - know-how in telecommunications
+                    - Go, Elm, Rust know-how
+                    - German skills

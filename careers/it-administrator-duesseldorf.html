@@ -1,0 +1,43 @@
+---
+layout: jobs
+---
+
+{% assign jobpostArray = site.data.careers.Jobs | where: 'link', 'it-administrator-duesseldorf'%}
+{% assign jobpost = jobpostArray | first %}
+
+<div class="container-fluid JobIndividualContainerFluid">
+  <div class="container JobIndividualContainer">
+
+    <div class="row">
+      <div class="JobIndividualTitle">{{ jobpost.title }}</div>
+    </div>
+    <div class="row">
+      <div class="subtitleCareers">{{ jobpost.hardfacts.title }}</div>
+    </div>
+
+    <ul>
+      {% for item in jobpost.hardfacts.list %}
+      <li>{{ item }}</li>
+      {% endfor %}
+      <li>{{ jobpost.hardfacts.apply }}</li>
+    </ul>
+
+    {% for i in (0..2)%}
+
+    <div class="row">
+      <div class="subtitleCareers">{{ jobpost.description[i].title }}</div>
+    </div>
+
+    <ul>
+      {% for item in jobpost.description[i].list %}
+      <li>{{ item }}</li>
+      {% endfor %}
+
+    </ul>
+    {% endfor %}
+
+
+  </div>
+</div>
+
+{% include careers/benefits.html %}
