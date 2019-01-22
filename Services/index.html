@@ -1,0 +1,196 @@
+---
+layout: default
+title: Services
+permalink: /Services/
+main: true
+priority: 11
+---
+{% assign Hero = site.data.services.services.Hero %}
+
+<div class="container-fluid ServicesContainerFluid">
+  <div class="container ServicesHero">
+    <div class="row">
+
+      <div class="col">
+      </div>
+
+      <div class="col-8">
+          <h4>{{ Hero.mainHeader }}</h4>
+          <div class="ServicesHeroSubTitle">
+              {{ Hero.mainText }}
+          </div>
+          <ul>
+            {% for item in Hero.enumeration %}
+            <li>{{ item }}</li>
+            {% endfor %}
+
+          </ul>
+      </div>
+
+      <div class="col">
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+{% assign ManagedTesting = site.data.services.services.ServiceManaged %}
+
+<div class="container-fluid ServicesContainerFluidManagedTesting">
+  <div class="container ServicesContainerManagedTesting">
+    <div class="row">
+
+      <div class="col">
+      </div>
+
+      <div class="col-8">
+          <h4>{{ ManagedTesting.header }}</h4>
+          <div class="ManagedTestingSubTitle">
+              {{ ManagedTesting.text }}
+          </div>
+          <ul>
+            {% for item in ManagedTesting.enumeration %}
+            <li>{{ item }}</li>
+            {% endfor %}
+
+          </ul>
+      </div>
+
+      <div class="col">
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+{% assign Retest = site.data.services.services.Retest %}
+
+<div class="container-fluid RetestContainerFluid">
+  <div class="container RetestContainer">
+    <div class="row">
+
+      <div class="col">
+      </div>
+
+      <div class="col-8">
+          <h4>{{ Retest.header }}</h4>
+          <div class="ServicesHeroSubTitle">
+              {{ Retest.text }}
+          </div>
+          <ul>
+            {% for item in Retest.enumeration %}
+            <li>{{ item }}</li>
+            {% endfor %}
+
+          </ul>
+      </div>
+
+      <div class="col">
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+{% assign TrainingHeader = site.data.services.services.ServiceTraining %}
+{% assign Classroom = site.data.services.services.Classroom %}
+{% assign FeatureSpecific = site.data.services.services.FeatureSpecific %}
+
+
+<div class="container-fluid TrainingContainerFluid">
+  <div class="container TrainingContainer">
+
+    <div class="row">
+
+      <div class="col">
+      </div>
+
+      <div class="col-8">
+          <h4>{{ TrainingHeader.header }}</h4>
+          <div class="TrainingSubTitle">
+              {{ TrainingHeader.text }}
+          </div>
+
+      </div>
+
+      <div class="col">
+      </div>
+
+
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="col ClassRoomBackground">
+      </div>
+
+      <div class="col-6">
+          <h4>{{ Classroom.header }}</h4>
+          <div class="TrainingSubSubTitle">
+              {{ Classroom.text }}
+          </div>
+
+      </div>
+
+      <div class="col-6">
+          <h4>{{ FeatureSpecific.header }}</h4>
+          <div class="TrainingSubSubTitle">
+              {{ FeatureSpecific.text }}
+          </div>
+
+      </div>
+
+
+      <div class="col FeatureSpecificBackground">
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+{% assign SecondaryServices = site.data.services.services.SecondaryServices %}
+
+<div class="container-fluid SecondaryServicesContainerFluid">
+  <div class="container SecondaryServicesContainer">
+
+        {% for service in SecondaryServices %}
+        {% assign endLoop = forloop.index | minus: '1' %}
+        {% endfor %}
+
+
+        {% for k in (0..endLoop) %}
+
+          <div class="row">
+
+              <div class="secondaryServicesBox">
+                <div class="titleSecondaryServices">
+                    {{ SecondaryServices[k].SecondaryService.header }}
+                </div>
+                <div class="subtitleSecondaryServices">
+                  {{ SecondaryServices[k].SecondaryService.text }}
+              </div>
+              {% if SecondaryServices[k].SecondaryService.contact %}
+                <div class="secondaryServicesContact">
+                  <a href="{{ site.baseurl }}/contact" target="_self">Contact Us</a>
+                </div>
+              {% endif %}
+          </div>
+        </div>
+
+        {% endfor %}
+
+
+
+
+  </div>
+</div>
