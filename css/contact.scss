@@ -200,7 +200,7 @@ $stageThree: 1199px;
 
 .ContactGoogleMapsLink a {
   @extend .transitionColor;
-  color: $qitascOrange;
+  color: $qitascOrange !important;
 }
 
 .ContactGoogleMapsLink a:hover {

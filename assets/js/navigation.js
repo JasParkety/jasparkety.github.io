@@ -10,8 +10,6 @@ var removeShadow = function() {
 }
 };
 
-
-
 $( ".closeButton" ).click(function() {
   if($('.transparentOverlayOfContent').css('height') > '1%') {
 
