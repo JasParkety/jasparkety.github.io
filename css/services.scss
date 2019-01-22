@@ -507,7 +507,7 @@ $stageThree: 1199px;
   		padding-top: 2rem;
   		padding-left: 2rem;
   		padding-right: 2rem;
-  		padding-bottom: 2rem;
+		  padding-bottom: 50px;
   		margin-top: 4rem;
   		margin-bottom: 2rem;
 
@@ -515,6 +515,7 @@ $stageThree: 1199px;
   	@include stage03 {
   		padding: 25px;
       margin-bottom: 25px;
+      padding-bottom: 50px;
 
   	}
 
