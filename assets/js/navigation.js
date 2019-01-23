@@ -13,13 +13,18 @@ var removeShadow = function() {
 $( ".closeButton" ).click(function() {
   if($('.transparentOverlayOfContent').css('height') > '1%') {
 
+    if($('.displayedContentProducts').is(':visible')){
+      $('.displayedContentProducts').toggleClass( 'add' );
+      removeShadow();
+    }
+
     if($('.SupportItemsContainer').is(':visible')){
       $('.displayedContentSupport').toggleClass( 'add' );
       removeShadow();
     }
 
-    if($('.displayedContentProducts').is(':visible')){
-      $('.displayedContentProducts').toggleClass( 'add' );
+    if($('.displayedContentAbout').is(':visible')){
+      $('.displayedContentAbout').toggleClass( 'add' );
       removeShadow();
     }
 
@@ -41,10 +46,14 @@ $( "#transparentOverlay" ).click(function() {
       if($('.displayedContentSupport').is(':visible')){
         $('.displayedContentSupport').toggleClass( 'add' );
       }
+      if($('.displayedContentAbout').is(':visible')){
+        $('.displayedContentAbout').toggleClass( 'add' );
+      }
   }
 });
 
 $( "#toggleProducts" ).click(function() {
+
     if( ($('.transparentOverlayOfContent').css('height') > '1%') && ($('.displayedContentProducts').is(':visible')) ) {
       removeShadow();
     }
@@ -54,6 +63,10 @@ $( "#toggleProducts" ).click(function() {
 
     if($('.displayedContentSupport').is(':visible')){
       $('.displayedContentSupport').toggleClass( 'add' );
+      $('.displayedContentProducts').toggleClass( 'add' );
+    }
+    else if($('.displayedContentAbout').is(':visible')){
+      $('.displayedContentAbout').toggleClass( 'add' );
       $('.displayedContentProducts').toggleClass( 'add' );
     }
     else {
@@ -74,6 +87,10 @@ $( "#toggleSupport" ).click(function() {
     $('.displayedContentProducts').toggleClass( 'add' );
     $('.displayedContentSupport').toggleClass( 'add' );
   }
+  else if($('.displayedContentAbout').is(':visible')){
+    $('.displayedContentAbout').toggleClass( 'add' );
+    $('.displayedContentSupport').toggleClass( 'add' );
+  }
   else {
 
     $('#secondaryNavContainer').toggleClass( 'on' );
@@ -82,15 +99,45 @@ $( "#toggleSupport" ).click(function() {
   }
 });
 
+$( "#toggleAbout" ).click(function() {
+  if( ($('.transparentOverlayOfContent').css('height') > '1%') && ($('.displayedContentAbout').is(':visible')) ) {
+    removeShadow();
+  }
+  else {
+    addShadow();
+  }
+  if($('.displayedContentProducts').is(':visible')){
+    $('.displayedContentProducts').toggleClass( 'add' );
+    $('.displayedContentAbout').toggleClass( 'add' );
+  }
+  else if($('.displayedContentSupport').is(':visible')){
+    $('.displayedContentSupport').toggleClass( 'add' );
+    $('.displayedContentAbout').toggleClass( 'add' );
+  }
 
-// $(window).scroll(function (event) {
-//     var scroll = $(window).scrollTop();
-//     if (scroll > 350) {
-//     $('.containerMobile').css("background-color", "white");
+  else {
+
+    $('#secondaryNavContainer').toggleClass( 'on' );
+    $('.displayedContentAbout').toggleClass( 'add' );
+    $('.transparentOverlayOfContent').toggleClass( 'add' );
+  }
+});
+
+
+// Here comes the Scroll Event when clicked on Usecases in the Grey Nav
+// $( "#toggleAbout" ).click(function() {
 //
-//     }
-//     else
-//     $('.containerMobile').css("background-color", "#ebeceb");
-//
-//
-// });
+//     $(document).ready(function(){
+//         $('a[href^="#"]').click(function() {
+//             var target = $(this.hash);
+//             if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+//             if (target.length == 0) target = $('html');
+//             if($(window).width() < 1000) {
+//               $('html, body').animate({ scrollTop: target.offset().top - (70) }, 1000);
+//             }
+//             else {
+//               $('html, body').animate({ scrollTop: target.offset().top - (13) }, 1000);
+//             }
+//         });
+//     });
+// })

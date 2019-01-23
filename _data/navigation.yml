@@ -99,7 +99,20 @@ RightSecondaryMenu:
     -
       SubMenuTitle: Impressum
       link: contact/
-      
+
 Documentation:
     SubMenuTitle: Documentation
     link: https://docs.qitasc.com
+
+Team:
+    title: The QiTASC Team
+    shortDescription: Explore QiTASC's departures and Management
+    link: about/team/
+    type: Explore QiTASC
+
+
+Philosophy:
+    title: QiTASC's Philosophy
+    shortDescription:
+    link: /about/philosophy
+    type:

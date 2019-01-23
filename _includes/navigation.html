@@ -29,11 +29,18 @@
 
                         </button>
                     </div>
+
                     <div class="col col-xs-4 buttonPadding">
                         <button id="toggleSupport" class="navigationButton">Support
                           <i class="arrow down"></i></button>
                     </div>
 
+                    <div class="col col-xs-4 buttonPadding">
+                        <button id="toggleAbout" class="navigationButton">About
+                          <i class="arrow down"></i>
+
+                        </button>
+                    </div>
 
         </div>
     </div>
@@ -54,6 +61,9 @@
       </div>
       <div class="displayedContentSupport">
         {% include supportSubMenu.html %}
+      </div>
+      <div class="displayedContentAbout">
+        {% include aboutSubMenu.html %}
       </div>
   </div>
   </div>
