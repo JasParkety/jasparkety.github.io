@@ -46,7 +46,7 @@ generic:
     workplace:
         title: We offer a workspace with...
         description:
-        list:
+        listVienna:
             - enough display space
             - great team environment
             - above average salary
@@ -54,7 +54,12 @@ generic:
             - company excursions
             - additional accident insurance
             - refrigerator full of drinks, cakes, Ben and Jerry's ice cream, fruits and vegetables from Adamah's Biokistl
-
+        listDuesseldorf:
+            - enough display space
+            - great team environment
+            - above average salary
+            - company excursions
+            - refrigerator full of drinks
 Jobs:
     -
       title: Junior Automation Engineer in Vienna

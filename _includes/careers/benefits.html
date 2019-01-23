@@ -9,10 +9,19 @@
       </div>
 
       <ul>
-        {% for item in benefits.workplace.list %}
-        <li><div class="benefitsItems">{{ item }}</div></li>
-        {% endfor %}
+          {% if page.url contains "duessel" %}
 
+            {% for item in benefits.workplace.listDuesseldorf %}
+              <li><div class="benefitsItems">{{ item }}</div></li>
+            {% endfor %}
+
+          {% else %}
+
+            {% for item in benefits.workplace.listVienna %}
+              <li><div class="benefitsItems">{{ item }}</div></li>
+            {% endfor %}
+
+          {% endif %}
       </ul>
 
 
