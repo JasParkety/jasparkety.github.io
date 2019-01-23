@@ -411,7 +411,7 @@ $difference: ($articleTableOfContentHeight - $articleTableOfContentIconHeight)*(
 .articleTableOfContent {
     width: 100%;
     position: fixed;
-    background-color: $qitascTeal;
+    background-color: $qitascGreyVariation;
     z-index: 9997 !important;
 
     @extend .transitionAll;
@@ -425,15 +425,27 @@ $difference: ($articleTableOfContentHeight - $articleTableOfContentIconHeight)*(
 
 .articleTableOfContentTitle {
 
-  @include stage00 {font-size: 20px;}
-  @include stage01 {font-size: 20px;}
-  @include stage02 {font-size: 20px;}
+  @include stage00 {font-size: 14px;}
+  @include stage01 {font-size: 16px;}
+  @include stage02 {font-size: 18px;}
   @include stage03 {font-size: 20px;}
   margin-top: $difference + 10;
 
   font-weight: bold;
   color: $qitascLightGrey;
 
+  a {
+    font-weight: bold;
+    @include stage00 {font-size: 12px;}
+    @include stage01 {font-size: 14px;}
+    @include stage02 {font-size: 16px;}
+    @include stage03 {font-size: 16px;}
+    color: $qitascGrey;
+  }
+  a:hover {
+    color: $qitascLightGrey;
+
+  }
 }
 
 
@@ -445,34 +457,52 @@ $difference: ($articleTableOfContentHeight - $articleTableOfContentIconHeight)*(
   height: $articleTableOfContentIconHeight;
   margin-top: $difference;
 
+  @include stage00 {
+    min-height: $articleTableOfContentIconHeight + 10;
+    max-height: $articleTableOfContentIconHeight + 10;
+    height: $articleTableOfContentIconHeight + 10;
+  }
+
 }
 .articleTableOfContentIcon:hover {
 
 }
 
 .mainArticleHeader {
+
+  @include stage00 { padding-left: 10px !important;padding-top: 100px !important;padding-bottom: 50px !important;}
+  @include stage01 { padding-left: 10px !important;padding-top: 100px !important;padding-bottom: 50px !important;}
+  @include stage02 { padding-left: 10px !important;padding-top: 200px !important;padding-bottom: 100px !important;}
+  @include stage03 { padding-left: 10px !important;padding-top: 200px !important;padding-bottom: 100px !important;}
   background-color: $qitascDarkGrey !important;
-  background-image: url(../assets/images/newsroom/kju-contact.png);
+  background-image: url();
   background-position: bottom center;
 	background-repeat: no-repeat;
   font-size: 2.5rem;
-  padding-top: 200px !important;
+
 	padding-left: 4rem;
 	padding-right: 4rem;
 
-   top: 140px;
+   top: 100px;
    overflow: hidden;
    position: relative
 }
 .mainArticleHeader h1 {
-  font-size: 40px;
+
   color: $qitascOrange !important;
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
+  @include stage00 {font-size: 26px !important;}
+  @include stage01 {font-size: 28px !important;}
+  @include stage02 {font-size: 30px !important;}
+  @include stage03 {font-size: 40px !important;}
 }
 .mainArticleHeader h4 {
-  font-size: 20px;
+  @include stage00 {font-size: 18px !important;}
+  @include stage01 {font-size: 20px !important;}
+  @include stage02 {font-size: 24px !important;}
+  @include stage03 {font-size: 26px !important;}
   color: $qitascLightGrey !important;
   font-weight: bold;
   padding-top: 10px;
@@ -480,6 +510,13 @@ $difference: ($articleTableOfContentHeight - $articleTableOfContentIconHeight)*(
   line-height: 30px;
 }
 
+#article-subheader > h4 {
+  @include stage00 { line-height: 20px !important;}
+  @include stage01 { line-height: 30px !important;}
+  @include stage02 { line-height: 40px !important;}
+  @include stage03 { line-height: 50px !important;}
+
+}
 
 // Best Practise Middle Allignment
 // Tested On: IE10, [IE9, IE8 without transitions], Chrome, FireFox, Safari
@@ -540,9 +577,7 @@ $difference: ($articleTableOfContentHeight - $articleTableOfContentIconHeight)*(
 
 }
 
-#article-subheader > h4 {
-  line-height: 50px !important;
-}
+
 
 /*
 qitasc-white qitasc-productsandservices-managedservices-header p-b-2 m-b-6
@@ -569,8 +604,24 @@ qitasc-article-content
   color: $qitascTeal !important;
 }
 
-// Codeblock
+.qitasc-article-content code.highlighter-rouge
 
+{
+  border: 0 !important;
+  top: 5px;
+
+  width: max-content !important;
+  margin-left: 0% !important;
+  margin-top: 5px !important;
+  display: inline-block !important;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  background-image: url() !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+
+}
 
 $background: $qitascTeal;
 $accent-color: $qitascLightGrey;
@@ -583,7 +634,7 @@ code {
   border-radius: 5px;
 
       max-height:90%;
-
+      width: auto;
       position: relative;
       margin-left: auto;
       margin-right: auto;
@@ -602,7 +653,6 @@ code {
       font-size: 15px;
       font-weight: 300;
     }
-
 
 
 // ##################################################################################

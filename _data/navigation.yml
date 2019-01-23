@@ -83,7 +83,7 @@ RightSecondaryMenu:
       link: Newsroom/
     -
       SubMenuTitle: Use Cases
-      link: '#usecases'
+      link: 
     -
       SubMenuTitle: Services
       link: Services/
