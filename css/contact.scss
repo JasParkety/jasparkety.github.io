@@ -188,7 +188,12 @@ $stageThree: 1199px;
   line-height: 30px;
 }
 
-
+.ContactImage {
+  @include stage00 {width: 280px !important;}
+  @include stage01 {width: 320px !important;}
+  @include stage02 {width: 410px !important;}
+  @include stage03 {width: 768px !important;}
+}
 .ContactInfoText {
   @include stage00 {font-size: 14px;}
   @include stage01 {font-size: 16px;}
