@@ -154,8 +154,8 @@ $stageThree: 1199px;
 .referencesBackgroundPicture {
     @include stage00 {min-height: 400px; background-image: url();}
     @include stage01 {min-height: 600px; background-image: url();}
-    @include stage02 {min-height: 800px; background-image: url(../assets/images/references/Skyline.svg);}
-    @include stage03 {min-height: 800px; background-image: url(../assets/images/references/Skyline.svg);}
+    @include stage02 {min-height: 800px; background-image: url(../assets/images/references/Skyline.png);}
+    @include stage03 {min-height: 800px; background-image: url(../assets/images/references/Skyline.png);}
 
     background-repeat: no-repeat;
     background-size: contain;
@@ -188,9 +188,9 @@ $stageThree: 1199px;
 
 .referencesImage {
   @include stage00 {width: 130px !important;}
-  @include stage01 {width: auto;}
-  @include stage02 {width: auto;}
-  @include stage03 {width: auto;}
+  @include stage01 {width: 180px !important;}
+  @include stage02 {width: 180px !important;}
+  @include stage03 {width: 180px !important;}
 
   @extend .transitionAll;
 

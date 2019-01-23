@@ -92,7 +92,7 @@ RightSecondaryMenu:
       link: contact/
     -
       SubMenuTitle: Team
-      link: about/team/
+      link: about/team
     -
       SubMenuTitle: Philosophy
       link: about/philosophy
