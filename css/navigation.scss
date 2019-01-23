@@ -722,6 +722,49 @@ a:hover {
   text-decoration: none !important;
 }
 
+.leftSideNavMenuItemNewsroom a {
+  color: $qitascOrange;
+  font-size: 20px;
+}
+.leftSideNavMenuItemNewsroom a:hover {
+  text-decoration: none !important;
+  color: $qitascGreyVariation;
+  cursor: pointer;
+}
+.leftSideNavMenuItemNewsroom  {
+  color: $qitascOrange;
+  font-size: 20px;
+  padding-left: 20px;
+
+}
+.leftSideNavMenuItemNewsroom:hover  {
+  color: $qitascGreyVariation;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.leftSideNavMenuItemDocumentation a {
+  color: $qitascLightGrey;
+  font-size: 20px;
+}
+.leftSideNavMenuItemDocumentation a:hover {
+  text-decoration: none !important;
+  color: $qitascGreyVariation;
+  cursor: pointer;
+}
+.leftSideNavMenuItemDocumentation  {
+  color: $qitascLightGrey;
+  font-size: 20px;
+  padding-left: 35px;
+
+}
+.leftSideNavMenuItemDocumentation:hover  {
+  color: $qitascGreyVariation;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+
 .leftSideNavMenucloseButton {
   color: $qitascLightGrey;
   font-size: 20px;

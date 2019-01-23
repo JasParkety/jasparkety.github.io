@@ -6,7 +6,11 @@
         </div>
 
         {% for item in site.data.navigation.RightSecondaryMenu %}
+            {% if item.SubMenuTitle contains "Newsroom" %}
+              <div class="row leftSideNavMenuItemNewsroom"><a href="{{ site.baseurl }}/{{ item.link }}">{{ item.SubMenuTitle }}</a></div>
+            {% else %}
               <div class="row leftSideNavMenuItem"><a href="{{ site.baseurl }}/{{ item.link }}">{{ item.SubMenuTitle }}</a></div>
+            {% endif %}
         {% endfor %}
 
-        <div class="row leftSideNavMenuItem"><a href="{{ site.data.navigation.Documentation.link }}">{{ site.data.navigation.Documentation.SubMenuTitle }}</a></div>
+        <div class="row leftSideNavMenuItemDocumentation"><a href="{{ site.data.navigation.Documentation.link }}">{{ site.data.navigation.Documentation.SubMenuTitle }}</a></div>

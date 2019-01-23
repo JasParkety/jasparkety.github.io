@@ -85,17 +85,20 @@ RightSecondaryMenu:
       SubMenuTitle: Use Cases
       link: '#usecases'
     -
-      SubMenuTitle: About
-      link: about/
-    -
-      SubMenuTitle: Newsroom
-      link: Newsroom/
-    -
-      SubMenuTitle: Careers
-      link: careers/
+      SubMenuTitle: Services
+      link: Services/
     -
       SubMenuTitle: Contact Us
       link: contact/
+    -
+      SubMenuTitle: Team
+      link: about/team/
+    -
+      SubMenuTitle: Philosophy
+      link: about/philosophy
+    -
+      SubMenuTitle: Careers
+      link: careers/
     -
       SubMenuTitle: Impressum
       link: contact/
@@ -109,7 +112,6 @@ Team:
     shortDescription: Explore QiTASC's departures and Management
     link: about/team/
     type: Explore QiTASC
-
 
 Philosophy:
     title: QiTASC's Philosophy
