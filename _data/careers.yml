@@ -1,5 +1,5 @@
 Hero:
-    title: Your Carrer at QiTASC
+    title: Your Career at QiTASC
     HeroTitle: Help us improving QiTASC everyday
     Subtitle: Join our collaborative team of great minds and play a role in creating great testing products and supporting projects around the world! Let our current opening be your future job.
     CareersArticleTitle: "Explore Career related Articles:"
@@ -35,7 +35,7 @@ generic:
     company: QiTASC excels in end-to-end test automation of complex system landscapes. To maintain our high quality, we grow selectively. At QiTASC, everybody matters in contributing to our success. Join our team and be part of our exciting future!
     development: Growing team, more projects
     product:
-        title: 'Our product: <span class="orange">IN</span>TACT<sup>®</sup>'
+        title: 'Our product: <div class="boldStyleYML">intaQt</div>'
         subtitle: for test automation
         list:
             - mobile phones
