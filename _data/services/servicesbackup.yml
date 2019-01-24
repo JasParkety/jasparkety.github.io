@@ -1,7 +1,10 @@
 Hero:
   mainService: Testing Services
   mainHeader: Testing Services
-  mainText: When time and resources are limited, handing testing activities over to QiTASC is a cost-effective and reliable solution that lets you focus on critical issues like bug fixing, product development and research.<br><br>Depending on your requirements, QiTASC's service packages may include:
+  mainText: |
+      In some cases, such as when customers have a limited time or resources available to do some or all of their testing activities, handing these tasks and responsibilities over to professionals is a cost-effective and reliable solution. QiTASC's testing and professional services allow our partners to focus on critical issues like bug fixing, product development and research without straining their resources on QA activities.
+      <br>
+      Depending on your requirements, QiTASC's service packages may include:
   enumeration:
     - Managed testing, including implementing test requirements, developing test cases and executing tests
     - Hiring QiTASC test engineers to support your own team
@@ -16,7 +19,10 @@ Hero:
 
 ServiceManaged:
   header: Managed Testing
-  text: Managed testing is a great way to see <div class="boldStyleYML">intaQt</div> in action, along with QiTASC's entire range of testing and automation tools, before deciding whether or not whether or not to purchase your own licenses. Strong communication between QiTASC and the customer is at the heart of our managed testing services: This helps us transfer knowledge about our software and how it works to the customer while keeping them up-to-date on the status of their test project. <br><br> Key features of QiTASC's managed testing may include:
+  text: |
+      Managed testing is a great way to see <div class="boldStyleYML">intaQt</div> in action, along with QiTASC's entire range of testing and automation tools, before deciding whether or not to purchase your own licenses. Strong communication between QiTASC and the customer is at the heart of our managed testing services: This helps us transfer knowledge about our software and how it works to the customer while keeping them up-to-date on the status of their test project.
+      <br>
+       Key features of QiTASC's managed testing may include:
   group: secondary
   enumeration:
     - Developing a risk assessment
@@ -48,13 +54,13 @@ ServiceTraining:
 ## Sub-category of training:
 Classroom:
   header: On-site, Classroom-style Training
-  text: Comprehensive courses are taught in English by our in-house experts, and are adapted to the specific use cases and requirements of your future projects. This option is strongly recommended for new customers that are purchasing multiple licenses for corporate use. After the training sessions are finished, test engineers are armed with <div class="boldStyleYML">intaQt</div> information and experience that they can share with their colleagues and train themselves. This approach is cost-effective by promoting <div class="boldStyleYML">intaQt</div> knowledge transfer from a business' existing users to new users and hires.
+  text: Our on-site training services range from half-day sessions that focus on the very specific to two-week comprehensive courses that teach new users how to learn how to confidently use the <div class="boldStyleYML">intaQt Server</div> and <div class="boldStyleYML">intaQt Studio</div>, how these applications integrate with their own test project  and about other QiTASC products such as <div class="boldStyleYML">conQlude</div> and <div class="boldStyleYML">intaQt Client</div>. <br> Comprehensive courses are taught in English by our in-house experts, and are adapted to the specific use cases and requirements of your future projects. This option is strongly recommended for new customers that are purchasing multiple licenses for corporate use. After the training sessions are finished, test engineers are armed with <div class="boldStyleYML">intaQt</div> information and experience that they can share with their colleagues and train themselves. This approach is cost-effective by promoting <div class="boldStyleYML">intaQt</div> knowledge transfer from existing users to new users and hires.
   group: subTraining
 
 ## Sub-category of training:
 FeatureSpecific:
   header: Feature-specific Training
-  text: Often existing customers discover the need develop advanced skills surrounding a few <div class="boldStyleYML">intaQt Server</div> features, or want a quick training session when adding an additional QiTASC product, such as <div class="boldStyleYML">conQlude</div> or <div class="boldStyleYML">intaQt Verification</div> to their workflow. <br><br> These training sessions may be conducted on-site or remotely, and are scheduled at times that works best for the customer.
+  text: Often existing customers discover the need develop advanced skills surrounding a few <div class="boldStyleYML">intaQt Server</div> features, or want a quick training session when adding an additional QiTASC product, such as <div class="boldStyleYML">conQlude</div> or <div class="boldStyleYML">intaQt Verification</div> to their workflow. <br> These training sessions may last a few hours, half a day or even 1-2 days, and assume existing <div class="boldStyleYML">intaQt</div> knowledge and prior usage. These training sessions may be conducted on-site or remotely, and are scheduled at times that works best for the customer.
   group: subTraining
 
 SecondaryServices:

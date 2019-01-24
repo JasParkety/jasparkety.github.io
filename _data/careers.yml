@@ -23,11 +23,11 @@ Hero:
 
 header:
     title: Your job at QiTASC
-    subtitle: Join our team of great minds in making <span class="orange">IN</span>TACT<sup>®</sup> an even better tool. Let this jobdescription be your future job.
+    subtitle: Join our team of great minds in making <div class="boldStyleYML">intaQt</div> an even better tool. Let this job description be your future job.
     contact:
         text: contact
         mail: 'michael.zehender@qitasc.com'
-        subject: 'Application for job'
+        subject: 'Job application'
 
 generic:
     imageLinkVienna: assets/images/careers/FutureWorkplace.svg
@@ -50,8 +50,9 @@ generic:
             - enough display space
             - great team environment
             - above average salary
-            - flexible time 38.5h/week
+            - 38.5 hours per week, with flexible time schedule
             - company excursions
+            - Weekly yoga & German classes
             - additional accident insurance
             - refrigerator full of drinks, cakes, Ben and Jerry's ice cream, fruits and vegetables from Adamah's Biokistl
         listDuesseldorf:
@@ -94,7 +95,7 @@ Jobs:
               - high degree of commitment and motivation
               - strong problem solving and analytical skills
               - able to learn independently, e.g. to understand complex solutions
-              - fluent English in writing and speaking
+              - fluent in spoken and written English
           -
               title: Helpful
               list:
@@ -136,7 +137,7 @@ Jobs:
                 - good knowledge of scripting languages
                 - robust understanding of virtualization technologies
                 - passion for writing and updating clear documentation
-                - fluent in English (written and verbal)
+                - fluent in spoken and written English
                 - good German skills (min. C1)
                 - works well both independently and in a team
                 - positive “can-do” attitude towards work
@@ -184,7 +185,7 @@ Jobs:
                 - high degree of commitment and motivation
                 - strong problem solving and analytical skills
                 - experience in programming and project management
-                - fluent English in writing and speaking
+                - fluent in spoken and written English
 
             -
                 title: Helpful
@@ -224,7 +225,7 @@ Jobs:
                     - proficiency in Java, Kotlin or another JVM language
                     - clear understanding of object-orientation
                     - a sense for plugin-based architectures
-                    - fluent English in writing and speaking
+                    - fluent in spoken and written English
             -
                 title: Helpful
                 list:
@@ -267,7 +268,7 @@ Jobs:
                 - high degree of commitment and motivation
                 - strong problem solving and analytical skills
                 - experience in programming and project management
-                - fluent English in writing and speaking
+                - fluent in spoken and written English
                 - good German skills (min. C1)
             -
                 title: Helpful
@@ -309,7 +310,7 @@ Jobs:
                     - have a good feel for software architecture
                     - highly proficient in Java, Kotlin or another JVM language
                     - clear understanding of object orientation
-                    - fluent English in writing and speaking
+                    - fluent in spoken and written English
             -
                 title: Helpful
                 list:
