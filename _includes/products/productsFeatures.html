@@ -10,7 +10,7 @@
             <div class="row mainFeatureRow">
               <div class="col mainFeatureImageColumn">
                 {% if feature.screenshot %}
-                    <img class="mainFeatureScreenshot" src="{{ site.baseurl }}{{ feature.screenshot }}"/>
+                    <img class="mainFeatureScreenshot" src="{{ site.baseurl }}/{{ feature.screenshot }}"/>
                 {% endif %}
               </div>
 
@@ -77,7 +77,7 @@
                                 <div class="subtitleSubfeatures">{{ subfeature.subtitle}}</div>
                             </div>
                             <div class="col">
-                                <img class="subfeatureImage" src="{{ site.baseurl }}/assets/images/products/productIcons/{{ subfeature.screenshot }}"/>
+                                <img class="subfeatureImage" src="{{ site.baseurl }}{{ subfeature.screenshot }}"/>
                             </div>
                       </div>
                     </div>

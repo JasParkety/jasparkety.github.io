@@ -147,8 +147,8 @@ $stageThree: 1199px;
 
 
 .useCaseDesktopContainer {
-  @include stage00 {display: none !important;}
-  @include stage01 {display: none !important;}
+  @include stage00 {display:  inline !important;}
+  @include stage01 {display:  inline !important;}
   @include stage02 {display: inline !important;}
   @include stage03 {display: inline !important;}
 
@@ -167,25 +167,32 @@ $stageThree: 1199px;
   font-weight: bold;
   text-align: center;
 
-  color: $qitascOrange  !important;
-  @include stage00 {font-size: 20px; padding: 20px !important;}
-  @include stage01 {font-size: 25px; padding: 25px !important;}
-  @include stage02 {font-size: 30px; padding: 30px !important;}
-  @include stage03 {font-size: 40px; padding: 40px !important;}
+  color: $qitascGreyVariation !important;
+  @include stage00 {font-size: 20px; padding-top: 50px !important; padding-bottom: 50px !important;}
+  @include stage01 {font-size: 25px; padding-top: 50px !important; padding-bottom: 50px !important;}
+  @include stage02 {font-size: 30px; padding-top: 100px !important; padding-bottom: 50px !important;}
+  @include stage03 {font-size: 40px; padding-top: 100px !important; padding-bottom: 50px !important;}
 }
 
 
-.usecaseRow { padding-bottom: 50px !important;}
+.usecaseRow { padding-bottom: 50px !important; }
 
-
+.usecaseIndividualContainerFluid {
+  background-color: white;
+}
 .usecaseIndividualContainer {
-    min-height: 382px !important;
-    background-color: $qitascLightGrey;
-    @extend .transitionAllUsecases;
-    @extend .shadowBoxNice;
-    padding: 30px !important;
-    margin-bottom: 40px !important;
+  @include stage00 {min-height: 200px !important;}
+  @include stage01 {min-height: 200px !important;}
+  @include stage02 {min-height: 382px !important;}
+  @include stage03 {min-height: 382px !important;}
+
+
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 20px !important;
+    margin-bottom: 20px !important;
     img{
+      @extend .transitionAllUsecases;
       width: 100%;
       opacity: 1;
       -webkit-transition: .3s ease-in-out;
@@ -193,11 +200,12 @@ $stageThree: 1199px;
     }
     img:hover {
       opacity: 0.8;
+      @extend .transformScale;
     }
 }
 
 .usecaseIndividualContainer:hover {
-  @extend .transformScale;
+
   cursor: pointer;
 }
 
@@ -210,10 +218,10 @@ $stageThree: 1199px;
 
   font-weight: bold;
   padding-left: 3px;
-  @include stage00 {font-size: 14px;}
+  @include stage00 {font-size: 12px;}
   @include stage01 {font-size: 14px;}
   @include stage02 {font-size: 16px;}
-  @include stage03 {font-size: 16px;}
+  @include stage03 {font-size: 18px;}
 }
 .usecaseHeader:hover, .usecaseDescription:hover {
   text-decoration: none;
@@ -221,11 +229,11 @@ $stageThree: 1199px;
 
 .usecaseDescription {
   color: $qitascDarkerGrey;
-  font-weight: bold;
-  @include stage00 {font-size: 10px;}
+
+  @include stage00 {font-size: 12px;}
   @include stage01 {font-size: 12px;}
-  @include stage02 {font-size: 12px;}
-  @include stage03 {font-size: 12px;}
+  @include stage02 {font-size: 14px;}
+  @include stage03 {font-size: 16px;}
 }
 
 .usecaseReadMore {

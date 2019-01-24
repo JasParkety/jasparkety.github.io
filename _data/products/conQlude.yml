@@ -12,47 +12,48 @@ Hero:
 
 IntaQtFeatures:
     header: conQlude Features
-    text: ConQlude was developed for managing data from intaQt test execution data and, optionally, integrating it into an external project management systems and issue tracking systems such as HP ALM, Atlassian JIRA and YouTrack. The reporting service is an encrypted, web interface that only registered project members can access. ConQlude provides features tailored to your entire time&#58;Testers, test managers/project managers, and IT administrators have all been carefully considered when developing conQlude.
+    text:<div class="boldStyleYML">conQlude</div>was developed for managing data from intaQt test execution data and, optionally, integrating it into an external project management systems and issue tracking systems such as HP ALM, Atlassian JIRA and YouTrack. The reporting service is an encrypted, web interface that only registered project members can access.<div class="boldStyleYML">conQlude</div>provides features tailored to your entire team: Testers, test managers/project managers, and IT administrators have all been carefully considered when developing conQlude.
     group: secondary
 
 Features:
     -
-        title: Features for Testers
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin ornare nibh id mollis. Nulla sit amet felis vel velit consequat egestas. Vestibulum tincidunt, elit nec volutpat semper, sapien quam placerat tellus, pretium bibendum justo nisi sed erat. Vivamus vitae gravida orci. Morbi accumsan mollis.
-        group: testFeatures
-        screenshot: /img/philosophy/kju-vacuum.png
+        title: Features for Testers and Project Members
+        subtitle: Review test reports, track bugs and take a closer look at multimedia attachments, metadata and logs.
         subfeatures:
             -
                 title: Review & Verify
                 subtitle: Review and verify test executions via the Test Run Reports feature.
-                screenshot: cheQ_256x256.png
+                screenshot: /assets/images/products/features/conqTestRunReport.png
             -
                 title: Attachments
                 subtitle: Access or download test attachments, including media, text, XML, logs and step-specific metadata.
-                screenshot: cheQ_256x256.png
+                screenshot: /assets/images/products/features/conqAttachments.png
             -
                 title: Bug Tracking
                 subtitle: Add error codes, comments or update tags and project-specific categories.
-                screenshot: cheQ_256x256.png
+                ## I need to replace this screenshot tomorrow with one that shows an error. But need to spend time using Conqlude.
+                screenshot: /assets/images/products/features/conqAttachments.png
             -
                 title: Charts
-                subtitle: View data visualisations of univariate test data.
-                screenshot: cheQ_256x256.png
+                subtitle: View data visualisations of test data.
+                screenshot: /assets/images/products/features/conqCharts.png
             -
                 title: Data Export
-                subtitle: Export Test Run Report data to CSV or XLS.
-                screenshot: cheQ_256x256.png
+                ## I need to replace this screenshot tomorrow with one that shows an error. But need to spend time using Conqlude.
+                screenshot: /assets/images/products/features/conqAttachments.png
 
 
     -
-        title: Test Manager/Project Manager
-        subtitle: Test managers have access to *all ConQlude features available to test engineers* as well as&#58;
+        title: Features for Test Managers and Project Managers
+        subtitle: |
+          Test managers have access to all<div class="boldStyleYML">conQlude</div>features available to test engineers as well as:
         group: testManager
         subfeatures:
             -
                 title: Configure Test Categories
-                subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin ornare nibh id mollis. Nulla sit amet felis vel velit consequat egestas. Vestibulum tincidunt, elit nec volutpat semper, sapien quam placerat tellus, pretium bibendum justo nisi sed erat. Vivamus vitae gravida orci. Morbi accumsan mollis.
-                screenshot: conQlude.png
+                subtitle: When tests are executed, configured <div class="boldStyleYML">intaQt</div> feature files are automatically marked with the category.
+                screenshot: /assets/images/products/features/conqCategories.png
+
 
             -
                 title: Configure Project Settings ## maybe change this.
@@ -62,18 +63,19 @@ Features:
             -
                 title: Approve & Manage
                 subtitle: Approve Test Run Reports for upload to external test management systems/project management systems.
-                screenshot: conQlude.png
+                screenshot: /assets/images/products/features/conqApprove.png
 
     -
         title: Administrators/IT Services
-        subtitle: Administrators have access to *all ConQlude features available to test engineers* as well as&#58;
+        subtitle: |
+          Administrators have access to all<div class="boldStyleYML">conQlude</div>features available to test engineers as well as:
         group: administrators
-        screenshot: code.png
         subfeatures:
                   -
                       title: Project Settings
                       subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin ornare nibh id mollis. Nulla sit amet felis vel velit consequat egestas. Vestibulum tincidunt, elit nec volutpat semper, sapien quam placerat tellus, pretium bibendum justo nisi sed erat. Vivamus vitae gravida orci. Morbi accumsan mollis.
-                      screenshot: conQlude.png
+                      ## I need to replace this screenshot tomorrow with one that shows an error. But need to spend time using Conqlude.
+                      screenshot: /assets/images/products/features/conqAttachments.png
 
                   -
                       title: Ticketing System Integration
@@ -82,20 +84,10 @@ Features:
 
                   -
                       title: Project Management System Integration
-                      subtitle: Integration with external tools such as HP ALM, Atlassian JIRA and JetBrains YouTrack.
-                      screenshot: conQlude.png
+                      ## I need to replace this screenshot tomorrow with one that shows an error. But need to spend time using Conqlude.
+                      screenshot: /assets/images/products/features/conqAttachments.png
 
                   -
                       title: Error Category Configuration
-                      subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin ornare nibh id mollis. Nulla sit amet felis vel velit consequat egestas. Vestibulum tincidunt, elit nec volutpat semper, sapien quam placerat tellus, pretium bibendum justo nisi sed erat. Vivamus vitae gravida orci. Morbi accumsan mollis.
-                      screenshot: conQlude.png
-
-serverUseCases:
-    title: intaQt Server Use Cases
-    subtitle: Subtitle
-    enumeration:
-    -
-      point: Core network testing how devices including mobile and VoiP phones behave when used in the network.
-      point: Core network testing how devices including mobile and VoiP phones behave when used in the network.
-      point: Core network testing how devices including mobile and VoiP phones behave when used in the network.
-      point: Core network testing how devices including mobile and VoiP phones behave when used in the network.
+                      subtitle: Error categories specify a regular expression pattern to match against error messages from failed test cases. Newly-defined error categories are applied against previously-executed test suites, meaning old test reports will be updated to display the error category.
+                      screenshot: /assets/images/products/features/conqErrors.png

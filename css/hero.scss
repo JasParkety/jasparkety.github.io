@@ -203,11 +203,9 @@ $stageThree: 1200px;
 }
 
 .heroFontColorDescription {
-  @include stage00 {
-
-    font-size: 10px;
-    color: $qitascDarkerGrey;
-
-  }
+  @include stage00 {font-size: 16px !important; color: $qitascDarkerGrey; }
+  @include stage01 {font-size: 16px !important; color: $qitascDarkerGrey; }
+  @include stage02 {font-size: 18px !important; color: $qitascDarkerGrey; }
+  @include stage03 {font-size: 18px !important; color: $qitascDarkerGrey; }
 
 }

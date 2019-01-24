@@ -1,8 +1,35 @@
-
 // Lets set a global Var to define the Window Height of the Hero on the Mobile View Here
+var addMargin = function() {
+  widthWindowstage03 = 1199;
+  widthWindowstage02 = 768;
+  widthWindowstage01 = 411;
+
+  var heightOfMarginControl = $('.marginControl').css( "height" );
+
+  if ($( window ).width() > widthWindowstage03) {
+     var marginTop = parseInt(heightOfMarginControl) + 10;
+  }
+  else if ( ($( window ).width() < widthWindowstage03 ) && ($( window ).width() > widthWindowstage02) ) {
+     var marginTop = parseInt(heightOfMarginControl) + 100;
+  }
+  else if ($( window ).width() < widthWindowstage02 ) {
+     var marginTop = parseInt(heightOfMarginControl) + 350;
+  }
+
+      $(".LogoImage").addClass( 'toggleHeightOfLogo' );
+      $(".LogoImage").css('margin-top', marginTop);
+
+}
+
+var removeMargin = function() {
+  var heightOfMarginControl = $('.marginControl').css( "height" );
+  var marginTop = 0;
+
+      $(".LogoImage").removeClass( 'toggleHeightOfLogo' );
+      $(".LogoImage").css('margin-top', marginTop);
 
 
-
+}
 
 var setHeroHeight = function() {
   var widthWindow = 768;
@@ -21,7 +48,7 @@ var heroShrinker = function() {
 
         if (scrollOffset > 170) {
             $('.heroProductsMobile').addClass( 'toggleHeight' );
-            $('.LogoImage').addClass( 'toggleMargin' );
+            addMargin();
             $('.productHeroSecondary').addClass( 'invisibleMe' );
             $('#productsHeroIcon').addClass( 'invisibleMe' );
             $('subHeaderContainer').addClass( 'invisibleMe' );
@@ -37,13 +64,12 @@ var heroShrinker = function() {
             $('.heroProductsDesktop').removeClass( 'toggleHeight' );
           }
             $('.heroProductsMobile').removeClass( 'toggleHeight' );
-            $('.LogoImage').removeClass( 'toggleMargin' );
+            removeMargin();
             $('.productHeroSecondary').removeClass( 'invisibleMe' );
             $('#productsHeroIcon').removeClass( 'invisibleMe' );
             $('subHeaderContainer').removeClass( 'invisibleMe' );
 
         }
-
 
   });
 }

@@ -189,9 +189,10 @@ $stageThree: 1200px;
     @extend .shadowBottom;
     z-index: 9997 !important;
 
-    background-image: url("/assets/images/products/productBackgroundHero.jpg");
-    background-size: cover;
+    background-image: url("/assets/images/products/Textur_Newsroom_opacity.jpg");
+    background-size: 15%;
     background-position: center;
+    background-repeat: repeat;
     overflow: hidden;
 
     position: fixed !important;
@@ -269,11 +270,20 @@ $stageThree: 1200px;
   opacity: 1;
 }
 .marginToggleStage02 {
-@include stage00 {margin-top: 0}
-@include stage01 {margin-top: 0}
-@include stage02 {margin-top: -100px !important; width: 720px !important; max-width: 720px !important;}
-@include stage03 {margin-top: 0}
+@include stage00 {min-height: 524px !important; margin-top: 0}
+@include stage01 {min-height: 524px !important; margin-top: 0}
+@include stage02 {min-height: 524px !important; margin-top: -100px !important; width: 720px !important; max-width: 720px !important;}
+@include stage03 {min-height: 524px !important; margin-top: 0}
 }
+
+.withMinHeight {
+  @include stage00 {min-height: 524px !important;}
+  @include stage01 {min-height: 524px !important;}
+  @include stage02 {min-height: 524px !important;}
+  @include stage03 {min-height: 524px !important;}
+}
+
+
 .LogoImage {
 
   z-index: 9997;
@@ -285,12 +295,27 @@ $stageThree: 1200px;
 
 }
 
+.toggleHeightOfLogo {
+
+  @include stage00 {height: 50px !important;  }
+  @include stage01 {height: 50px !important;  }
+  @include stage02 {height: 80px !important;  }
+  @include stage03 {height: 80px !important;  }
+}
+
+.toggleMarginintaQtClient {
+
+  @include stage00 {height: 50px !important; margin-top: 355px !important;}
+  @include stage01 {height: 50px !important; margin-top: 355px !important;}
+  @include stage02 {height: 80px !important; margin-top: 300px !important;}
+  @include stage03 {height: 80px !important; margin-top: 300px !important;}
+}
 .toggleMargin {
 
   @include stage00 {height: 50px !important; margin-top: 355px !important;}
   @include stage01 {height: 50px !important; margin-top: 355px !important;}
-  @include stage02 {height: 80px !important; margin-top: 420px !important;}
-  @include stage03 {height: 80px !important; margin-top: 375px !important;}
+  @include stage02 {}
+  @include stage03 {}
 }
 
 .invisibleMe {
@@ -448,8 +473,7 @@ body > main > div.spacerForFeatures > div.container-fluid.containerFluidFeatures
   @include stage03 {padding-top: 70px; padding-bottom: 50px;}
 }
 .subfeatureImage {
-  height: 100px !important;
-  width: 100px !important;
+  max-width: 100%;
 }
 .mainFeatureImageColumn {
 

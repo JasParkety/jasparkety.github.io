@@ -120,7 +120,7 @@
     // ##################################################################################
     // ##################################################################################
     //                                                                            #######
-    //            Create Random List of 4 Articles on DESKTOP VIEW                #######
+    //            Create Single Articles on Mobile VIEW                #######
     //                                                                            #######
     // ##################################################################################
     // ##################################################################################
@@ -139,6 +139,8 @@
                   {% if article01.img_url %}
                   <a href="../{{ site.baseurl }}articles/{{ article.link }}" target="_self"><img class="newsroomSliderImageMobile" src="../{{ article01.img_url }}"/></a>
                   {% endif %}
+                  <div class="NewsroomSliderTextMobile">{{ article.subtext | truncate: 25 }}</div>
+
 
                   <!-- <div class="NewsroomSliderTextMobile">{{ article01.subtext | truncate: 150 }}</div>
                   <div class="NewsroomSliderReadMoreMobile"><a href="../{{ site.baseurl }}articles/{{ article01.link }}" target="_self">Read More</a></div> -->

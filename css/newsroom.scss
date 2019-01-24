@@ -474,7 +474,7 @@ $difference: ($articleTableOfContentHeight - $articleTableOfContentIconHeight)*(
   @include stage01 { padding-left: 10px !important;padding-top: 100px !important;padding-bottom: 50px !important;}
   @include stage02 { padding-left: 10px !important;padding-top: 200px !important;padding-bottom: 100px !important;}
   @include stage03 { padding-left: 10px !important;padding-top: 200px !important;padding-bottom: 100px !important;}
-  background-color: $qitascDarkGrey !important;
+  background-color: $qitascDarkerGrey !important;
   background-image: url();
   background-position: bottom center;
 	background-repeat: no-repeat;

@@ -282,6 +282,8 @@ $stageThree: 1199px;
   padding: 0px !important;
   display: inline-block;
   background-image: url("../assets/images/Newsroom.png");
+  @include stage00 {background-size: 65%;}
+  @include stage01 {background-size: 65%;}
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
@@ -328,7 +330,16 @@ $stageThree: 1199px;
   font-size: 8px;
 
 }
-.NewsroomSliderTextMobile {}
+.NewsroomSliderTextMobile {
+    @include stage00 {display: none !important;}
+    @include stage01 {width: 200px !important;}
+    margin-left: 25%;
+    margin-top: 10px;
+    color: $qitascGreyVariation;
+    font-size: 12px;
+
+
+}
 .NewsroomSliderReadMoreMobile {}
 
 

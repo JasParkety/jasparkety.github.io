@@ -8,7 +8,7 @@
   description: Verify server-side functionality the communication between interdependent components.
   link: backend
 
-- usecase: Tariff Verification and Charging Conformity
+- usecase: Tariff Verification & Charging Conformity
   imagePath: assets/images/usecases/UC_Charging.png
   description: Make sure that convergent charging systems, online charging systems and customer accounts are behaving correctly.
   link: charging
@@ -18,7 +18,7 @@
   description: Confirm that all aspects of a network behave correctly for telephony, SMS, data and everything else behind the scenes.
   link: coreNetwork
 
-- usecase: End to End Testing and Migration Testing
+- usecase: End to End Testing & Migration Testing
   imagePath: assets/images/usecases/UC_E2E.png
   description: Check that a network behaves exactly as it would when triggered by a customer, even for time-sensitive projects like migrations.
   link: endtoend

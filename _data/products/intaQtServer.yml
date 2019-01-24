@@ -1,0 +1,168 @@
+Hero:
+  mainSoftware: intaQt Server
+  softwareHeader: intaQt Server
+  softwareText: Create, manage and execute automated tests that reflect real-world scenarios, customer experiences and complex relationships with backend systems. The intaQt Server supports real and simulated devices, and provides configurations to ensure that test resources are managed efficiently and that test cases and their results reflect real-life scenarios.
+  group: mainProduct
+  ## imgURL: services/Magier_Testcase_Staple.png
+
+IntaQtFeatures:
+  header: intaQt Server Features
+  text: The <div class="boldStyleYML">intaQt Server</div> is at the heart of QiTASC's suite of test automation tools. Its comprehensive collection of features, built-ins and custom languages enable users to develop test cases with unparalleled precision that cover all stages of the product development life cycle.
+  group: secondary
+
+Features:
+    -
+        title: Telephony
+        subtitle: Our software helps introduce, test and integrate new services, technologies and legal requirements into telecommunications products. With the touch of a button, <div class="boldStyleYML">intaQt</div> executes complex end-to-end testing scenarios quickly, accurately and efficiently.
+        group: Telephony
+        image: Telephony_1.svg
+        subfeatures:
+            -
+                title: Android, VoIP and Virtual Phones
+                subtitle: The <div class="boldStyleYML">intaQt Server</div> automates Android devices and VoiP phones, enabling call flows and activities identical to that of an end user. By adding Virtual Phones into the mix, test cases can be re-used across the testing cycle as additional components are integrated.
+                image: Telephony_2.svg
+            -
+                title: Device Management
+                subtitle: To streamline organization, the <div class="boldStyleYML">intaQt Server</div> also takes care of managing devices and their properties. Properties can be chosen by defining one or multiple criteria at the beginning of a test case or in configuration files.
+                image: Telephony_3.svg
+            -
+                title: Standard Telephony Functions
+                subtitle: The <div class="boldStyleYML">intaQt Server</div> supports all functionality of a live mobile network and reproduces the end user’s experience. Furthermore, it can read all of the used device’s relevant connection information, such as received messages, incoming numbers and metadata.
+                image: Telephony_4.svg
+            -
+                title: Roaming Test Cases
+                subtitle: Execute roaming test cases on devices foreign locations from your desk<br> End devices are managed and controlled by remote access, and a SIM card’s credentials can be transferred to a location outside of the home network. Alternately, a SIM card located in the domestic location can be virtually “put into” a smartphone at a foreign site.
+                image: Telephony_5.svg
+            -
+                title: Interactions with External Hardware and Network Data
+                subtitle: Test handovers between multiple transmitting stations, connection establishments, and create performance charts. The <div class="boldStyleYML">intaQt Server</div> also provides functionality for sending DTMF codes, changing preferred network settings, and even accessing WiFi networks.
+                image: AdditionalFeatures.svg
+
+    -
+        title: Telephony - Audio Testing
+        subtitle: The <div class="boldStyleYML">intaQt</div> Audio Service enables the automated testing of audio recordings, audio matching and speech channel monitoring within telephony test cases. This is especially useful for verifying IVR prompts, audio recordings that subscriber hears, or assessing their quality.
+        group: Audio
+        subfeatures:
+
+            -
+                title: Audio Recorder
+                subtitle: Start and stop audio recordings within test cases to capture all of a call flow. These recordings can be further assessed using speech channel monitoring and/or audio matching steps.
+                image: Audio_3.png
+
+            -
+                title: Audio Matcher
+                subtitle: The Audio Matcher reads an audio recording and uses an algorithm to compute a collection of <div class="boldStyleYML">Audio Fingerprints</div>, which represent the recording. These fingerprints are then compared to a reference database, which yields a similarity score <br> A higher number indicates a stronger similarity to the reference recording.
+                image: Audio_2.png
+
+            -
+                title: Speech Channel Monitoring
+                subtitle: Speech channel monitoring evaluates the quality and content of the speech channel established between two phones that are under the <div class="boldStyleYML">intaQt Server</div>'s control.
+                image: Audio_4.png
+
+
+    -
+        title: Webtest, Apptest and IoT
+        subtitle: The <div class="boldStyleYML">intaQt</div> Webtest language automates activities performed while using websites, mobile apps and IoT devices. First, elements such as XPaths are defined and then actions are applied to these elements, which  create scenarios that mirror a user's real-life behavior.
+        group: Webtest
+        image: Webtest.png
+        subfeatures:
+
+            -
+                title: Apps and Mobile Web
+                subtitle: Verify that your web applications work properly on mobile devices using a tablet or phone's browser.
+                image: WebtestLanguage_4.svg
+
+            -
+                title: Internet of Things
+                subtitle: Adjust, configure and detect actions on IoT devices locally or remotely. <div class="boldStyleYML">intaQt</div> then automates and tests the characteristics of interconnected devices that are used for smart home automation.
+                image: IOT.svg
+
+            -
+               title: Webtest Actions
+               subtitle: Our Webtest language automates browsing actions that a user performs, including clicking, and scrolling and entering text. Multiple actions can be "chained" together to create scenarios that mirror a user's real-life behavior.
+               image: WebtestActions.svg
+
+            -
+               title: On-Detect Actions
+               subtitle: On-Detect Listeners execute actions <div class="italicStyleYML">only</div> if certain elements appear. For example, if a pop-up window appears, a "click" action can close that window. If no pop-up window appears, the "click" action is ignored.
+               image: OnDetectListeners.svg
+
+            -
+                title: Webtest Built-ins
+                subtitle: Webtest Built-ins provide out-of-the-box functionality for browsing activities including switching and/or closing multiple browser windows, taking screenshots and refreshing pages.
+                image: WebtestLanguage_5.svg
+
+            -
+               title: Browser Customization
+               subtitle: intaQt Webtest supports Google Chrome, Microsoft Internet Explorer, Microsft Edge and Mozilla Firefox and enables customizing preferences and user profiles in your configurations.
+               image: WebtestLanguage_2.svg
+
+            -
+               title: Remote Apptests
+               subtitle: Test apps on phones located in a certain country or connected to a specific network, and even interact with them from intaQt Studio. Whether testing remote or local phones, <div class="boldStyleYML">intaQt</div>'s behavior is the same <br> Simply switch on/off a remote phone configuration, or choose the specific devices you want to test.
+               image: RoamingApptest.svg
+
+            -
+               title: Maintainability
+               subtitle: <div class="boldStyleYML">intaQt</div> separates a website or app's elements and the actions performed upon them from each other, which allows them to be accessed, adjusted and reused across multiple tests within your project.
+               image: WebtestLanguage_6.svg
+
+    -
+        anchor: 'backend-systems'
+        title: Built-ins for Backend Systems
+        subtitle: The <div class="boldStyleYML">intaQt Server</div> provides comes with extensive built-in functionalities for communicating with backend systems. This includes HTTP/REST, SSH, JSON, XML, SQL, E-mail and more.
+        group: Builtins
+        image: BackendSystems-01.svg
+        subfeatures:
+
+            -
+                title: SSH and SCP
+                subtitle: Start SSH processes, such as batch processing, to accomplish multiple tasks in a single session. Additionally, intaQt's Secure Copy Protocol (SCP) built-in performs activities such as fetching log files for future analysis.
+                image: Backend_2.svg
+
+            -
+                title: LDAP
+                subtitle: Create new participants in a telecommunications network, debug, execute and more within your test cases.
+                image: Backend_3.svg
+
+            -
+                title: HTTP/REST AND SOAP
+                subtitle: The <div class="boldStyleYML">intaQt Server</div> supports universally-utilizable communication interfaces to exchange data within backend systems. The HTTP Built-ins are typically used to change configurations, start workflows, customize client settings and create cookies or cookie stores.
+                image: Backend_4.svg
+
+            -
+                title: CSV, JSON and XML
+                subtitle: The <div class="boldStyleYML">intaQt Server</div> efficiently processes responses in CSV, JSON and XML. These three Built-ins support the most important data formats involved, allowing for seamless test case automation.
+                image: Backend_5.svg
+
+            -
+                title: E-Mail and PDF
+                subtitle: Automate sending reports via E-mail in HTML and PDF format. Additionally, the intaQt PDF built-in can complete PDF forms before sending them as attachments.
+                image: Backend_6.svg
+
+            -
+                title: SQL
+                subtitle: Directly access databases, execute queries, retrieve results, and perform SQL functions to manage databases within a test case.
+                image: Backend_7.svg
+
+## Will have links added once the use case webpages exist
+ServerUseCases:
+    -
+        title: intaQt Server Use Cases
+        subtitle: Learn about specific <div class="boldStyleYML">intaQt Server</div> use cases
+        enumeration:
+            -
+                <div class="boldStyleYML">Core network testing</div> - intaQt's Built-in Telephony features allow for simulating and testing all aspect of a network's functionality and how devices including mobile and VoiP phones behave when used in the network.
+            -
+                <div class="boldStyleYML">Internet of Things</div> - Use intaQt's Webtest language to automate IoT apps, their software, and their integration with hardware such as SmartHome Devices.
+            -
+                <div class="boldStyleYML">Web and Apptesting</div> - Test websites and apps by automating actions performed on elements, ranging from simple browsing activities to multi-step processes.
+            -
+                <div class="boldStyleYML">End-to-end, migration and blackbox testing</div> - Execute time-sensitive projects in a live environment with plenty of time to spare for any last-minute bug fixing.
+            -
+                <div class="boldStyleYML">Charging Conformity and Tariffs</div> - Verify hundreds of parameters that affect charging within seconds, and ensure that subscribers and their accounts are treated correctly using collected metadata including call/event detail records and huge XML files from IFRS data centers.
+            -
+                <div class="boldStyleYML">Backend Testing</div> - intaQt provides built-in functionalities for communicating with and testing backend systems. This includes automating HTTP/REST, SSH, JSON, XML, SQL, E-mail and more.
+            -
+                <div class="boldStyleYML">Protocol Testing</div> - Evaluate compliance to protocol specifications.
+        group: intaqtServerUseCases

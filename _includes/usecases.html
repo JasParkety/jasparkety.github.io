@@ -1,65 +1,31 @@
-{% comment %}
+<div class="usecaseIndividualContainerFluid">
+  <div class="container">
+    <div class="useCaseDesktopContainer">
+      <div class="usecaseSectionHeader">What do you want to test?</div>
+        <div class="row usecaseRow">
 
-<div class="container">
-<a href="#usecases"></a>
-<div class="useCaseMobileContainer">
-  <div class="usecaseSectionHeader">Use Case Examples</div>
-    <div class="row">
+              {% for usecase in site.data.usecasesFrontPage %}
 
-          {% for usecase in site.data.usecasesFrontPage %}
 
-            {% assign RowBreak = forloop.index | modulo: 3  %}
 
-          <div class="col-4">
-            <div class="thumbnail">
-              <a href="#" target="_blank" style="text-decoration: none;">
+            <div class="col-md-3 col-sm-4 col-6">
+                  <a href="{{ site.baseurl }}/usecases/{{ usecase.link }}">
+                    <div class="usecaseIndividualContainer">
 
-                <img class="image-container" src="{{ site.baseurl }}/{{ usecase.imagePath }}" alt="Lights" style="width:100%">
-                <div class="caption">
-                  <p><div class="usecaseHeader">{{ usecase.usecase }}</div></p>
-                  <p><div class="usecaseDescription">{{ usecase.description }}</div></p>
-                  <p><div class="usecaseReadMore">Read More</div></p>
-                </div>
-              </a>
+                        <img class="image-container" src="{{ site.baseurl }}/{{ usecase.imagePath }}">
+
+                        <div class="caption">
+                          <p><div class="usecaseHeader">{{ usecase.usecase }}</div></p>
+                          <p><div class="usecaseDescription">{{ usecase.description }}</div></p>
+
+                        </div>
+
+                  </div>
+                </a>
+
             </div>
-          </div>
-          {% if RowBreak == 0 %}
-        </div><div class="row">
-          {% endif %}
-          {% endfor %}
+              {% endfor %}
+      </div>
+    </div>
   </div>
-  </div>
-</div>
-
-{% endcomment %}
-
-
-<div class="container">
-<div class="useCaseDesktopContainer">
-  <div class="usecaseSectionHeader">What do you want to test?</div>
-    <div class="row usecaseRow">
-
-          {% for usecase in site.data.usecasesFrontPage %}
-
-
-
-        <div class="col-3 col-xs-5">
-              <a href="{{ site.baseurl }}/usecases/{{ usecase.link }}">
-                <div class="usecaseIndividualContainer">
-
-                    <img class="image-container" src="{{ site.baseurl }}/{{ usecase.imagePath }}">
-
-                    <div class="caption">
-                      <p><div class="usecaseHeader">{{ usecase.usecase }}</div></p>
-                      <p><div class="usecaseDescription">{{ usecase.description }}</div></p>
-
-                    </div>
-
-              </div>
-            </a>
-
-        </div>
-          {% endfor %}
-  </div>
-</div>
 </div>

@@ -15,27 +15,37 @@ cheQ:
     # Max 20 characters for shorter Description
     shorterDescription: Trace Verification
 intaQt:
-    title: intaQt
+    title: intaQt Studio
     shortDescription: Manage test automation projects
     iconLink: /assets/images/products/productIcons/intaQt_256x256.png
     type: Execute
-    link: /products/intaQt
+    link: /products/intaQtStudio
     # Max 20 characters for shorter Description
     shorterDescription: Managing Projects
+
+server:
+    title: intaQt Server
+    shortDescription: Create, manage and execute automated tests
+    iconLink: /assets/images/products/productIcons/intaQt_256x256.png
+    type: Execute
+    link: /products/intaQtServer
+    # Max 20 characters for shorter Description
+    shorterDescription: Create, manage and execute automated tests
+
 studio:
-    title: Studio
+    title: intaQt Studio
     shortDescription: An IDE made for testing
     iconLink: /assets/images/products/productIcons/Studio_256x256.png
     type: Execute
-    link: /products/studio
+    link: /products/intaQtStudio
     # Max 20 characters for shorter Description
     shorterDescription: IDE for testing
 client:
-    title: Client
+    title: intaQt Client
     shortDescription: CLI & continuous integration support
     iconLink: /assets/images/products/productIcons/Client_256x256.png
     type: Execute
-    link: /products/client
+    link: /products/intaQtClient
     # Max 20 characters for shorter Description
     shorterDescription: CLI Support
 sQedule:
@@ -56,12 +66,20 @@ conQlude:
     shorterDescription: Reporting
 analytiQs:
     title: analytiQs
-    shortDescription: Analyising Test Cases
+    shortDescription: Analyizing Test Cases
     iconLink: /assets/images/products/productIcons/analytiQs_256x256.png
     type: Analyze
     link: /products/analytiQs
     # Max 20 characters for shorter Description
     shorterDescription: Description
+verification:
+    title: intaQt Verifcation
+    shortDescription: Verify your Test Case
+    iconLink: /assets/images/products/productIcons/intaQt_256x256.png
+    type: Analyze
+    link: /products/intaQtVerification
+    # Max 20 characters for shorter Description
+    shorterDescription: Verify your Test Project
 
 manual:
     title: doQumentation
@@ -83,7 +101,7 @@ RightSecondaryMenu:
       link: Newsroom/
     -
       SubMenuTitle: Use Cases
-      link: 
+      link:
     -
       SubMenuTitle: Services
       link: Services/
