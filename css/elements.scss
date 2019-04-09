@@ -23,6 +23,25 @@
         padding-bottom: 17.5px;
 
     }
+
+    .wrapperCol-#{$i} {
+
+      @include stage00 {padding-left: 10px;}
+      @include stage01 {padding-left: 12px;}
+      @include stage02 {padding-left: 15px;}
+      @include stage03 {padding-left: 20px;}
+      @if $i % 2 == 0 {
+         float: left !important;
+         text-align: left;
+      }
+      @else {
+        float: right !important;
+        text-align: right;
+      }
+
+
+      text-align: left;
+    }
 }
 
 
@@ -36,15 +55,6 @@
 }
 
 
-.wrapperCol {
-
-  @include stage00 {padding-left: 10px;}
-  @include stage01 {padding-left: 12px;}
-  @include stage02 {padding-left: 15px;}
-  @include stage03 {padding-left: 20px;}
-  float: left !important;
-  text-align: left;
-}
 
 .screenshots {
   padding: 15px 0;
