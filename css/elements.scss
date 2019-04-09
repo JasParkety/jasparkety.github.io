@@ -1,0 +1,51 @@
+@for $i from 0 through 1 {
+
+    .elementsContainer-#{$i} {
+
+        min-width: 100%;
+
+        @extend .shadowBox;
+        @extend .transitionAllFast;
+
+        @if $i % 2 == 0 {
+           background-color:rgba(0, 0, 0, 0.5);
+        }
+        @else {
+          background-color:rgba(0, 0, 0, 0.3);
+        }
+        text-decoration: none !important;
+      	margin-right:auto;
+      	margin-left:auto;
+
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        padding-top: 17.5px;
+        padding-bottom: 17.5px;
+
+    }
+}
+
+
+.mainElementSection {
+
+  @include stage00 {padding: 10px 0;}
+  @include stage01 {padding: 12px 0;}
+  @include stage02 {padding: 15px 0;}
+  @include stage03 {padding: 20px 0;}
+
+}
+
+
+.wrapperCol {
+
+  @include stage00 {padding-left: 10px;}
+  @include stage01 {padding-left: 12px;}
+  @include stage02 {padding-left: 15px;}
+  @include stage03 {padding-left: 20px;}
+  float: left !important;
+  text-align: left;
+}
+
+.screenshots {
+  padding: 15px 0;
+}

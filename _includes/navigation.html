@@ -1,0 +1,10 @@
+{% assign Skills = site.data.Skills %}
+
+
+<div class="LogosContainer">
+  {% for item in Skills.Skillset %}
+      <img class="logoSkills" src="{{ site.url }}/{{ item.logoPath }}">
+
+
+  {% endfor %}
+</div>

@@ -1,0 +1,22 @@
+$stageZero: 410px;
+$stageOneLower: 411px;
+$stageOneHigher: 767px;
+$stageTwoLower: 768px;
+$stageTwoHigher: 1199px;
+$stageThree: 1199px;
+
+@mixin stage00 {
+  @media (max-width: $stageZero) { @content; }
+}
+
+@mixin stage01 {
+  @media (min-width:$stageOneLower) and (max-width:$stageOneHigher)  { @content; }
+}
+
+@mixin stage02 {
+  @media (min-width:$stageTwoLower) and (max-width:$stageTwoHigher) { @content; }
+}
+
+@mixin stage03 {
+  @media (min-width: $stageThree) { @content; }
+}

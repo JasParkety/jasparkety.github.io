@@ -10,4 +10,26 @@ html *
 
 html h1 {
    font-family:"Antonellie" !important;
+
+   -webkit-user-select: none; /* Safari */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* IE10+/Edge */
+   user-select: none; /* Standard */
+
+}
+
+.mainElementSection h2 {
+  color: $colorPurpleMain;
+  @include stage00 {font-size: 1.6rem;}
+  @include stage01 {font-size: 1.8rem;}
+  @include stage02 {font-size: 2rem;}
+  @include stage03 {font-size: 2.2rem;}
+}
+
+.wrapperCol h2 {
+    color: $colorLightGreen;
+    @include stage00 {font-size: 1.4rem;}
+    @include stage01 {font-size: 1.6rem;}
+    @include stage02 {font-size: 1.8rem;}
+    @include stage03 {font-size: 2rem;}
 }

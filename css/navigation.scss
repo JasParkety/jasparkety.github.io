@@ -1,0 +1,43 @@
+.logoSkills {
+  @extend .transitionAllFast;
+  max-height: 25px !important;
+  @include stage00 {padding: 0 10px;}
+  @include stage01 {padding: 0 10px;}
+  @include stage02 {padding: 0 10px;}
+  @include stage03 {padding: 0 10px;}
+
+  -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+     -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+
+}
+
+.logoSkills:hover {
+
+    -webkit-filter: grayscale(10%);
+     -moz-filter: grayscale(10%);
+       -o-filter: grayscale(10%);
+      -ms-filter: grayscale(10%);
+          filter: grayscale(10%);
+
+          cursor: pointer;
+}
+
+.HeaderTextContainer {
+
+  padding:25px 0;
+}
+
+
+
+.LogosContainer {
+
+  padding: 15px 0;
+}

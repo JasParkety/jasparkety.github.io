@@ -1,0 +1,77 @@
+{% assign Skills = site.data.Skills.Skillset %}
+
+
+
+
+  {% for item in Skills %}
+    {% assign modCategories = forloop.index | modulo: 2 %}
+
+
+
+        <div class="mainElementSection">
+        <h2>{{ item.title }}</h2>
+      </div>
+
+
+
+    {% for Skill in item.Skill %}
+        {% assign mod = forloop.index | modulo: 2 %}
+
+
+
+            <div class="elementsContainer-{{ modCategories }}">
+
+
+{% if modCategories == 1 %}
+    <div class="row">
+      <div class="col-sm-6">
+
+
+
+            <div class="wrapperCol">
+              <h2>{{ Skill.title }}</h2>
+              {{ Skill.description }}
+            </div>
+
+      </div>
+            <div class="col-sm-6">
+              <img class="screenshots" onclick=triggerModal("{{ site.url }}/{{ Skill.screenshot }}") src="{{ site.url }}/{{ Skill.screenshot }}" style="width:100%;max-width:300px">
+            </div>
+
+    </div>
+{% else %}
+<div class="row">
+
+  <div class="col-sm-6">
+    <img class="screenshots" onclick=triggerModal("{{ site.url }}/{{ Skill.screenshot }}") src="{{ site.url }}/{{ Skill.screenshot }}" style="width:100%;max-width:300px">
+  </div>
+
+  <div class="col-sm-6">
+
+
+
+        <div class="wrapperCol">
+          <h2>{{ Skill.title }}</h2>
+          {{ Skill.description }}
+        </div>
+
+  </div>
+
+
+</div>
+
+{% endif %}
+
+
+        </div>
+        {% endfor %}
+
+
+
+  {% endfor %}
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>

@@ -2,18 +2,43 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import "font.scss";
+@import "mainResponsiveFunctions.scss";
 @import "extendingTools.scss";
 @import "colors.scss";
+@import "font.scss";
+@import "navigation.scss";
+@import "modal.scss";
+@import "elements.scss";
 
-
+/* Set body background color */
 .Background {
-  min-height: 2000px;
+
   height: 100%;
-  max-height: 100%;
+
   background: -webkit-linear-gradient(left,$colorPink, $colorLightGreen);
   background: linear-gradient(to right, $colorPink, $colorLightGreen);
   text-align: center;
 
 
+}
+
+/* get away the dotted lines in moz */
+input::-moz-focus-inner {
+  border: 0 !important;
+	outline: none !important;
+}
+a:active {
+  outline: none !important;
+  border: 0 !important;
+}
+a {
+
+outline: medium none !important;
+}
+button:active {
+  outline: none !important;
+  border: 0 !important;
+}
+button {
+  outline: medium none !important;
 }
