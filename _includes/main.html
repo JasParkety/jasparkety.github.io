@@ -2,13 +2,22 @@
 
 
 <div class="container LogosContainer">
+  {% for item in Skills %}
 
-     <img class="logoSkills" src="https://jasparkety.github.io/assets/images/logos/jQuery.png">
-     <img class="logoSkills" src="https://jasparkety.github.io/assets/images/logos/bash.png">
-     <img class="logoSkills" src="https://jasparkety.github.io/assets/images/logos/python.png">
-     <img class="logoSkills" src="https://jasparkety.github.io/assets/images/logos/git.png">
-     <img class="logoSkills" src="https://jasparkety.github.io/assets/images/logos/jekyll.png">
-     <img class="logoSkills" src="https://jasparkety.github.io/assets/images/logos/sass.png">
+     <img class="logoSkills" src="../{{ item.logoPath }}" onclick="smoothScroll(document.getElementById('{{ item.anchor }}'))">
+
+  {% endfor %}
+</div>
+<div class="introduction">
+  <div class="introductionTitle"><h1> Jas Parkety </h1></div>
+  <div class="introductionText">{{ site.data.Introduction.Bio }}</div>
+
+  <a href="https://stackoverflow.com/users/8557886/jasparkety" target="_blank"><img class="introductionImages" src="../assets/images/logos/stackoverflow.png"></a>
+
+
+  <a href="https://codepen.io/JasParkety" target="_blank"><img class="introductionImages" src="../assets/images/logos/codepen.png"></a>
+
+
 </div>
 
   {% for item in Skills %}
@@ -38,12 +47,14 @@
 
             <div class="wrapperCol-{{ modCategories }}">
               <h2>{{ Skill.title }}</h2>
-              {{ Skill.description }}
+                  <div class="SkillDescription">
+                      {{ Skill.description }}
+                  </div>
             </div>
 
       </div>
             <div class="col-sm-6">
-              <img class="screenshots" onclick=triggerModal("{{ site.url }}/{{ Skill.screenshot }}") src="{{ site.url }}/{{ Skill.screenshot }}" style="width:100%;max-width:300px">
+              <img class="screenshots" onclick=triggerModal("../{{ Skill.screenshot }}") src="../{{ Skill.screenshot }}" style="width:100%;max-width:300px">
             </div>
 
     </div>
@@ -51,7 +62,7 @@
 <div class="row">
 
   <div class="col-sm-6">
-    <img class="screenshots" onclick=triggerModal("{{ site.url }}/{{ Skill.screenshot }}") src="{{ site.url }}/{{ Skill.screenshot }}" style="width:100%;max-width:300px">
+    <img class="screenshots" onclick=triggerModal("../{{ Skill.screenshot }}") src="{{ site.url }}/{{ Skill.screenshot }}" style="width:100%;max-width:300px">
   </div>
 
   <div class="col-sm-6">
@@ -60,7 +71,9 @@
 
         <div class="wrapperCol-{{ modCategories }}">
           <h2>{{ Skill.title }}</h2>
-          {{ Skill.description }}
+              <div class="SkillDescription2">
+                  {{ Skill.description }}
+              </div>
         </div>
 
   </div>

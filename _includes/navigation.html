@@ -6,7 +6,7 @@
 
        {% for item in Skills %}
 
-          <img class="logoSkills" src="https://jasparkety.github.io/{{ item.logoPath }}" onclick="smoothScroll(document.getElementById('{{ item.anchor }}'))">
+          <img class="logoSkills" src="../{{ item.logoPath }}" onclick="smoothScroll(document.getElementById('{{ item.anchor }}'))">
 
        {% endfor %}
 
@@ -18,9 +18,10 @@
 
   {% for item in Skills %}
 
-     <img class="logoSkills" src="https://jasparkety.github.io/{{ item.logoPath }}">
+     <img class="logoSkills" src="../{{ item.logoPath }}" onclick="smoothScroll(document.getElementById('{{ item.anchor }}'))">
 
   {% endfor %}
+
 </div>
 
 
@@ -40,24 +41,20 @@
 
     <div id="secondDisplay" class="slider hide">
       <div class="mobileLogoContainerFlex">
-
         {% for item in Skills %}
           <div class="logoSkillsContainer">
-            <img class="logoSkills" src="https://jasparkety.github.io/{{ item.logoPath }}">
+           <img class="logoSkills" src="../{{ item.logoPath }}" onclick="smoothScroll(document.getElementById('{{ item.anchor }}'))">
           </div>
         {% endfor %}
-
       </div>
     </div>
 
     <div id="display" class="slider hide">
-
       <div class="FrontEndMobile">
         <span>Front</span>
         <span>End</span>
         <span>Development</span>
       </div>
-
     </div>
 
 </div>

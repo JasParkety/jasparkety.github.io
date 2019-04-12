@@ -26,11 +26,58 @@ $height: 2000px;
 
 
 }
+
+.introduction {
+  @include stage00 {padding: 0 0;}
+  @include stage01 {padding: 0 0 0;}
+  @include stage02 {padding: 100px 0;}
+  @include stage03 {padding: 100px 0;}
+
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  justify-content: center;
+}
+.introductionTitle { justify-content: center; text-align: center;}
+.introductionText { justify-content: center; text-align: center;}
+
+.introductionImages {
+  @extend .transitionAllFast;
+    -webkit-filter: grayscale(100%);
+     -moz-filter: grayscale(100%);
+       -o-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+  max-width: 200px;
+  justify-content: center; text-align: center;
+  margin: 25px;
+
+  &:hover {
+
+
+        -webkit-filter: grayscale(10%);
+         -moz-filter: grayscale(10%);
+           -o-filter: grayscale(10%);
+          -ms-filter: grayscale(10%);
+              filter: grayscale(10%);
+
+              cursor: pointer;
+
+
+  }
+}
+.introduction a {justify-content: center; text-align: center;}
 // Lets get the main Content Section a little responsive paddings mmmhm
 
 .mainContentContainerFluid  {
 
-  @include stage00 {padding: 200px 0 0 0;}
+  @include stage00 {padding: 150px 0 0 0;}
   @include stage01 {padding: 200px 0 0 0;}
   @include stage02 {padding: 0;}
   @include stage03 {padding: 0;}

@@ -4,18 +4,22 @@
       var scroll = $(window).scrollTop();
 
       if ( (scroll > condition) && ($( window ).width() < 768) ) {
+
             $(' .firstGradient ').toggleClass('.opacityZero');
             $(' .secondGradient ').css("opacity", "1");
+            $(' .SkillDescription ').css("color", "white");
       }
       else if ( (scroll > condition) && ($( window ).width() > 768) ) {
             $(' .firstGradient ').toggleClass('.opacityZero');
             $(' .secondGradient ').css("opacity", "1");
             $(' .StickyNav ').css("top", "0px");
+            $(' .SkillDescription ').css("color", "white");
            }
       else {
             $(' .firstGradient ').toggleClass('.opacityZero');
             $(' .secondGradient ').css("opacity", "0");
             $(' .StickyNav ').css("top", "-100px");
+            $(' .SkillDescription ').css("color", "black");
 
       }
    });
