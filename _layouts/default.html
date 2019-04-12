@@ -3,39 +3,36 @@
 
 <!--  Setting Parameter -->
 
-
-
   {% include head.html %}
 
   <header>
 
-    {% comment %}{% include navigation.html %}{% endcomment %}
+    {% include navigation.html %}
   </header>
 
 <body>
 
+    <!--  Lets get the nice transition for the Background -->
+    <div class="firstGradient">
+    </div>
+    <div class="secondGradient">
+    </div>
+
+    <!-- Main Section for the layout's holder -->
+    <main>
+
+        {{ content }}
+
+    </main>
 
 
 
 
-
-      <main>
-
-
-          {{ content }}
-
-
-      </main>
-
-
-      <footer>
-        {% comment %}{% include footer.html %}{% endcomment %}
-      </footer>
-
-
-    {% comment %}{% include javascripts.html %}{% endcomment %}
-
-    {% include javascripts.html %}
-
+{% include javascripts.html %}
   </body>
+
+  <footer>
+    {% comment %}{% include footer.html %}{% endcomment %}
+  </footer>
+
 </html>

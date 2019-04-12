@@ -1,7 +1,8 @@
 Skillset:
     -
         title: Bash
-        logoPath: assets/images/logos/bash.png
+        anchor: Bash
+        logoPath: assets/images/logos/bashGreen.png
         Skill:
             -
                 title: Dead Link Checker
@@ -17,6 +18,7 @@ Skillset:
                  this is a test
     -
         title: Examples of few JS/jQuery Code Snippets
+        anchor: jQuery
         logoPath: assets/images/logos/jQuery.png
         Skill:
             -
@@ -27,6 +29,7 @@ Skillset:
                  this is a test
     -
         title: Python Test Driven Development & Tool Snippets
+        anchor: Python
         logoPath: assets/images/logos/python.png
         Skill:
             -
@@ -45,6 +48,7 @@ Skillset:
                  this is a test
     -
         title: Jekyll Liquid Language
+        anchor: Jekyll
         logoPath: assets/images/logos/jekyll.png
         Skill:
             -
@@ -53,6 +57,7 @@ Skillset:
                  this is a test
     -
         title: Git of your feet
+        anchor: Git
         logoPath: assets/images/logos/git.png
         Skill:
             -
@@ -61,6 +66,7 @@ Skillset:
                  this is a test
     -
         title: CSS/SCSS
+        anchor: CSS
         logoPath: assets/images/logos/sass.png
         Skill:
             -

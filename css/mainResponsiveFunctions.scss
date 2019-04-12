@@ -20,3 +20,10 @@ $stageThree: 1199px;
 @mixin stage03 {
   @media (min-width: $stageThree) { @content; }
 }
+
+
+.onlyMobile {
+  @include stage01 {display:none;}
+  @include stage02 {display:none;}
+  @include stage03 {display:none;}
+}

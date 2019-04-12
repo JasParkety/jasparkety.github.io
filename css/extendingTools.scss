@@ -24,9 +24,15 @@
 }
 
 .transitionOpacity {
-    -webkit-transition: opacity .3s linear 1s;
-    transition: opacity .3s linear 1s;
+
+      -webkit-transition: opacity 1s ease-in-out;
+       -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+         -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+
 }
+
 .shadowBottom  {
     -webkit-box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
        -moz-box-shadow: 0 10px 6px -8px rgba(0,0,0,0.5);
@@ -67,4 +73,21 @@
   -moz-transform:scale(1.1);
   -ms-transform:scale(1.1);
   -o-transform:scale(1.1);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.opacityZero {
+
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0.0;
 }

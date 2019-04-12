@@ -6,21 +6,60 @@
 @import "extendingTools.scss";
 @import "colors.scss";
 @import "font.scss";
-@import "navigation.scss";
 @import "modal.scss";
 @import "elements.scss";
+
+$height: 2000px;
+.container {
+  z-index: 1 !important;
+}
+.mainContainer {
+  z-index: 1;
+}
 
 /* Set body background color */
 .Background {
 
   height: 100%;
-
-  background: -webkit-linear-gradient(left,$colorPink, $colorLightGreen);
-  background: linear-gradient(to right, $colorPink, $colorLightGreen);
-  text-align: center;
+  min-height: $height;
+  max-height: $height;
 
 
 }
+// Lets get the main Content Section a little responsive paddings mmmhm
+
+.mainContentContainerFluid  {
+
+  @include stage00 {padding: 200px 0 0 0;}
+  @include stage01 {padding: 200px 0 0 0;}
+  @include stage02 {padding: 0;}
+  @include stage03 {padding: 0;}
+}
+
+.firstGradient {
+
+  @extend .transitionOpacity;
+  background: linear-gradient(0deg, $brightSand, $darkSand);
+  min-height: $height;
+  max-height: $height;
+  width: 100%;
+  position:fixed;
+  opacity: 1;
+  z-index: -1;
+
+}
+
+.secondGradient {
+   @extend .transitionOpacity;
+  background: linear-gradient(0deg, $darkSand,$brightSand );
+  min-height: $height;
+  max-height: $height;
+  width: 100%;
+  position:fixed;
+  opacity: 0;
+  z-index: -1;
+}
+
 
 /* get away the dotted lines in moz */
 input::-moz-focus-inner {

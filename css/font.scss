@@ -19,7 +19,7 @@ html h1 {
 }
 
 .mainElementSection h2 {
-  color: $colorPurpleMain;
+  color: white;
   @include stage00 {font-size: 1.6rem;}
   @include stage01 {font-size: 1.8rem;}
   @include stage02 {font-size: 2rem;}
@@ -32,4 +32,8 @@ html h1 {
     @include stage01 {font-size: 1.6rem;}
     @include stage02 {font-size: 1.8rem;}
     @include stage03 {font-size: 2rem;}
+}
+
+.fontFamilyAntonellie {
+  font-family:"Antonellie" !important;
 }

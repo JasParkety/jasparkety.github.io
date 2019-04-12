@@ -1,7 +1,7 @@
 @for $i from 0 through 1 {
 
     .elementsContainer-#{$i} {
-
+        z-index: 2;
         min-width: 100%;
 
         @extend .shadowBox;

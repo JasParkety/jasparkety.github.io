@@ -1,14 +1,22 @@
 {% assign Skills = site.data.Skills.Skillset %}
 
 
+<div class="container LogosContainer">
 
+     <img class="logoSkills" src="https://jasparkety.github.io/assets/images/logos/jQuery.png">
+     <img class="logoSkills" src="https://jasparkety.github.io/assets/images/logos/bash.png">
+     <img class="logoSkills" src="https://jasparkety.github.io/assets/images/logos/python.png">
+     <img class="logoSkills" src="https://jasparkety.github.io/assets/images/logos/git.png">
+     <img class="logoSkills" src="https://jasparkety.github.io/assets/images/logos/jekyll.png">
+     <img class="logoSkills" src="https://jasparkety.github.io/assets/images/logos/sass.png">
+</div>
 
   {% for item in Skills %}
     {% assign modCategories = forloop.index | modulo: 2 %}
 
 
 
-        <div class="mainElementSection">
+        <div class="mainElementSection" id="{{item.anchor}}">
         <h2>{{ item.title }}</h2>
       </div>
 

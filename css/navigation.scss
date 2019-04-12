@@ -1,23 +1,12 @@
-.logoSkills {
-  @extend .transitionAllFast;
-  max-height: 25px !important;
-  @include stage00 {padding: 0 10px;}
-  @include stage01 {padding: 0 10px;}
-  @include stage02 {padding: 0 10px;}
-  @include stage03 {padding: 0 10px;}
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
 
-  -webkit-filter: grayscale(100%);
-   -moz-filter: grayscale(100%);
-     -o-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-        filter: grayscale(100%);
+@import "mainResponsiveFunctions.scss";
+@import "extendingTools.scss";
+@import "colors.scss";
+@import "font.scss";
 
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-
-}
 
 .logoSkills:hover {
 
@@ -36,8 +25,206 @@
 }
 
 
+.JasParketyCustomization {
+    font-family: 'Mr De Haviland', cursive;
+    font-weight:bold;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.frontEnd {
+
+  margin-top: 10px;
+  text-align: center;
+  float: center;
+}
+
 
 .LogosContainer {
 
   padding: 15px 0;
+    text-align: center;
+
+}
+
+.containerNav {
+  padding-top: 10px;
+  z-index: 9998;
+  float: center;
+  text-align: center;
+}
+
+.LogosContainer, .StickyNav, .containerNav
+{
+  @include stage00 {display: none;}
+  @include stage01 {display: none;}
+}
+
+.StickyNav {
+  z-index: 9999;
+  background: white;
+  transition:top 0.5s ease-in;
+  position: fixed;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  min-width: 100%;
+  margin-top: 0px;
+  top: -100px;
+
+}
+
+.logoSkills {
+  @extend .transitionAllFast;
+  @include stage00 {margin: 10px 0; padding: 0 10px; max-height: 25px !important;}
+  @include stage01 {padding: 0 10px; max-height: 25px !important;}
+  @include stage02 {padding: 0 10px; max-height: 30px !important;}
+  @include stage03 {padding: 0 10px; max-height: 40px !important;}
+
+  -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+     -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+
+}
+
+// #################################################### //
+// #################################################### //
+// #################################################### //
+//                                                      //
+// Tablet & Mobile Navigation                           //
+//                                                      //
+// #################################################### //
+// #################################################### //
+// #################################################### //
+
+
+.TabletTopNavigation {
+
+  z-index: 9999;
+
+  justify-content: space-evenly;
+
+  @include stage00 {display: none !important;}
+  @include stage01 {display: flex; padding: 10px 10px;}
+  @include stage02 {display: none;}
+  @include stage03 {display: none;}
+
+  width: 100%;
+  min-height: 50px;
+  max-height: 50px;
+  height: 50px;
+
+  position: fixed;
+
+  background-color: white;
+
+}
+
+.MobileTopNavigation {
+
+  z-index: 9999;
+
+  position: fixed;
+
+  width: 100%;
+  min-height: 60px;
+  max-height: 60px;
+  height: 60px;
+
+  background-color: white;
+
+  justify-content: space-between;
+
+  @include stage00 {display: flex; padding: 10px 10px;}
+  @include stage01 {display: none !important;}
+  @include stage02 {display: none !important;}
+  @include stage03 {display: none !important;}
+
+}
+
+.slider{
+  @extend .onlyMobile;
+
+  width:50vw;
+  height:100vh;
+  position:fixed;
+  top:60px;
+  padding: 30px;
+}
+
+#display{
+  @extend .onlyMobile;
+
+  right:0;
+  background-color:$darkSand;
+  transition:right 0.5s ease;
+  z-index:9996
+}
+#secondDisplay{
+
+  @extend .onlyMobile;
+
+  right:50vw;
+  background-color: $brightSand;
+  transition:right 1.5s ease;
+  z-index:9995
+
+}
+#display.hide,#secondDisplay.hide{
+
+  @extend .onlyMobile;
+
+  right:-50vw;
+  transition:right 0.5s ease;
+
+}
+
+
+.JasParketyMobile {
+
+  text-align:center;
+  vertical-align: center;
+  align-self: center;
+  min-height: 30px;
+  max-height: 30px;
+  height: 30px;
+
+  @extend .fontFamilyAntonellie;
+
+  font-size: 20px;
+  line-height: 30px !important;
+
+  padding-right: 20px;
+
+}
+
+.FrontEndMobile {
+
+  text-align:center;
+  vertical-align: center;
+  align-self: center;
+
+  overflow-x: hidden;
+
+  & span {
+
+      font-size: 14px;
+      line-height: 20px !important;
+
+      color: white;
+  }
+}
+
+.mobileLogoContainerFlex {
+  display: flex;
+  flex-direction: column;
+
 }
