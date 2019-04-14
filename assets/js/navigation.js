@@ -3,13 +3,13 @@
     $(window).scroll(function (event) {
       var scroll = $(window).scrollTop();
 
-      if ( (scroll > condition) && ($( window ).width() < 768) ) {
+      if ( (scroll > condition) && ($( window ).width() < 1200) ) {
 
             $(' .firstGradient ').toggleClass('.opacityZero');
             $(' .secondGradient ').css("opacity", "1");
             $(' .SkillDescription ').css("color", "white");
       }
-      else if ( (scroll > condition) && ($( window ).width() > 768) ) {
+      else if ( (scroll > condition) && ($( window ).width() > 1200) ) {
             $(' .firstGradient ').toggleClass('.opacityZero');
             $(' .secondGradient ').css("opacity", "1");
             $(' .StickyNav ').css("top", "0px");

@@ -30,6 +30,5 @@ $stageThree: 1199px;
 
 .onlyTabletAndMobile {
 
-  @include stage02 {display:none;}
   @include stage03 {display:none;}
 }

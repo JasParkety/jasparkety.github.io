@@ -60,6 +60,7 @@
 {
   @include stage00 {display: none;}
   @include stage01 {display: none;}
+  @include stage02 {display:none;}
 }
 
 .StickyNav {
@@ -80,7 +81,7 @@
   @extend .transitionAllFast;
   @include stage00 {margin: 10px 0; padding: 0 10px; max-height: 25px !important;}
   @include stage01 {margin: 10px 0; padding: 0 10px; max-height: 30px !important;}
-  @include stage02 {padding: 0 10px; max-height: 30px !important;}
+  @include stage02 {margin: 10px 0; padding: 0 10px; max-height: 30px !important;}
   @include stage03 {padding: 0 10px; max-height: 40px !important;}
 
   -webkit-filter: grayscale(100%);
@@ -146,7 +147,7 @@
 
   @include stage00 {display: flex; padding: 10px 10px;}
   @include stage01 {display: flex; padding: 10px 10px;}
-  @include stage02 {display: none !important;}
+  @include stage02 {display: flex; padding: 10px 10px;}
   @include stage03 {display: none !important;}
 
 }
