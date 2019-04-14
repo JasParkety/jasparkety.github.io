@@ -36,10 +36,18 @@ html h1 {
 .SkillDescription {
 
   @extend .transitionAllFast;
+  @include stage00 {font-size: 0.8rem;}
+  @include stage01 {font-size: 0.8rem;}
+  @include stage02 {font-size: 1rem;}
+  @include stage03 {font-size: 1.2rem;}
   color: black;
 
 }
 
 .introductionText {
   color: white;
+  @include stage00 {font-size: 1rem;}
+  @include stage01 {font-size: 1.2rem;}
+  @include stage02 {font-size: 1.4rem;}
+  @include stage03 {font-size: 1.6rem;}
 }

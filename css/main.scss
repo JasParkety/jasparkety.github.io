@@ -29,7 +29,7 @@ $height: 2000px;
 }
 
 .introduction {
-  @include stage00 {padding: 0 0;}
+  @include stage00 {padding: 200px 0;}
   @include stage01 {padding: 0 0 0;}
   @include stage02 {padding: 100px 0;}
   @include stage03 {padding: 100px 0;}
