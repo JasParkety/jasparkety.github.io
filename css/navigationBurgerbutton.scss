@@ -25,9 +25,9 @@
 
 .item {
 
-   top: -5px;
-   width: 40px;
-   height: 40px;
+   top: 10px;
+   width: 55px;
+   height: 50px;
    background: #fff;
    margin: 5px;
    padding: 5px;
@@ -43,22 +43,22 @@
    span {
       display: block;
       background: darken(#7A8C51, 30%);
-      width: 25px;
+      width: 40px;
       height: 3px;
       position: absolute;
       left: 7px;
       right: 7px;
 
       &.top {
-         top: 9px;
+         top: 12px;
       }
 
       &.middle {
-         top: 19px;
+         top: 22px;
       }
 
       &.bottom {
-         top: 29px;
+         top: 32px;
       }
    }
 }

@@ -19,6 +19,22 @@ $height: 2000px;
 }
 
 /* Set body background color */
+
+.controlResponsive {
+  @include stage00 { margin-left: 0px !important; margin-right: 0px !important; min-width: 100% !important; max-width: 100% !important;}
+  @include stage01 { margin-left: 0px !important; margin-right: 0px !important; min-width: 100% !important; max-width: 100% !important;}
+  @include stage02 { margin-left: 0px !important; margin-right: 0px !important; min-width: 100% !important; max-width: 100% !important;}
+  // @include stage03 {
+  //
+  //   width: 100%;
+  //   padding-right: 15px;
+  //   padding-left: 15px;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  //   max-width: 1140px !important;
+  // }
+
+}
 .Background {
 
   height: 100%;
@@ -81,8 +97,8 @@ $height: 2000px;
 
   @include stage00 {padding: 150px 0 0 0;}
   @include stage01 {padding: 200px 0 0 0;}
-  @include stage02 {padding: 0;}
-  @include stage03 {padding: 0;}
+  @include stage02 {padding: 200px 0 0 0;}
+  @include stage03 {padding: 100px 0 0 0;}
 
   padding-bottom: 200px !important;
 }
