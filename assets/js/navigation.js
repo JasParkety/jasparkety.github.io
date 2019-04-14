@@ -24,30 +24,18 @@
       }
    });
 
+   // Lets get the Slider for Tablet navigation to work
+
    $("#initiate").on("click",function(){
       $(".slider").toggleClass("hide");
+      $(this).toggleClass('active');
+
    });
    $(".slider").on("click",function(){
      $(".slider").toggleClass("hide");
+     $("#initiate").toggleClass("active");
+
    });
-
-
-   (function($) {
-      $('.item-transition').on('click', function() {
-         $(this).toggleClass('active');
-      });
-
-      $('.item-animation').on('click', function() {
-         if($(this).hasClass('active-in')) {
-            $(this).removeClass('active-in');
-            $(this).addClass('active-out');
-         } else {
-            $(this).removeClass('active-out');
-            $(this).addClass('active-in');
-         }
-      });
-   })(jQuery);
-
 
    const rippleElements = document.getElementsByClassName("myRipple");
 

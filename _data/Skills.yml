@@ -36,16 +36,11 @@ Skillset:
                 title: Fileserver HTML tag handler
                 description: In some cases a team wants to deploy different kind of documentation. The Work Flow should stay the same. Using mutliple tools to visualize text documents may need some coding to be able to use the full power of several tools.
                 screenshot: assets/images/htmlParser.png
-                code: |
-                 this is a test
             -
                 title: Youtrack API Communiation
-                code: |
-                 this is a test
-            -
-                title: Fileserver HTML tag handler
-                code: |
-                 this is a test
+                description: The following Code Snippet was used to read the latest Release Version and to implement it on a webpage. It was also a preparation for a version controlled documentation.
+                screenshot: assets/images/youtrack.png
+
     -
         title: Jekyll Liquid Language
         anchor: Jekyll
@@ -53,8 +48,8 @@ Skillset:
         Skill:
             -
                 title: Generating a 3 column automated responsive and alligned Newspaper Front End
-                code: |
-                 this is a test
+                description: In Jekyll there are several ways to align an element in a parent's column. In this particular example the goal was to insert an element in the first column if its modulo was 0, second if its modulo was 1 and third if its modulo was 2.
+                screenshot: assets/images/newsroomJekyll.png
     -
         title: Git of your feet
         anchor: Git
@@ -62,48 +57,18 @@ Skillset:
         Skill:
             -
                 title: Resolve Mergeconflict the best way
-                code: |
-                 this is a test
+                description: A good way to solve quick&dirty merge conflicts with git is via the command rebase. Unfortunately, this will overwrite the history. This is not how git is supposed to be used. The Screenshot shows a more consistent way by overwriting the branch and therefor not erasing the history.
+                screenshot: assets/images/git.png
     -
         title: CSS/SCSS
         anchor: CSS
         logoPath: assets/images/logos/sass.png
         Skill:
             -
-                title: Responsive mixin functions
-                code: |
-                 this is a test
-            -
-                title: Looping
-                code: |
-                 this is a test
-            -
-                title: Pseudo Element
-                code: |
-                 this is a test
-            -
-                title: keyframes
-                code: |
-                 this is a test
-            -
-                title: Pure CSS Dropdown Field
-                code: |
-                 this is a test
-            -
-                title: Responsive Collapsable Flexbox
-                code: |
-                 this is a test
-            -
-                title: Bootstrap Example
-                code: |
-                 this is a test
-            -
-                title: Maing Customized Image Appearances in markdownified content
-                code: |
-                 this is a test
+                title: Responsive mixin functions & Loopig in SCSS
+                description: Just a nice example how I like to use scss to create dynamic layouts.
+                screenshot: assets/images/scss.png
             -
                 title: Preventing FOC
                 description: A very small code snippet which made a fast flash on the landing page to prevent FOC on index only.
                 screenshot: assets/images/foc.png
-                code: |
-                 this is a test this is a test

@@ -12,10 +12,9 @@
   <div class="introductionTitle"><h1> Jas Parkety </h1></div>
   <div class="introductionText">{{ site.data.Introduction.Bio }}</div>
 
-  <a href="https://stackoverflow.com/users/8557886/jasparkety" target="_blank"><img class="introductionImages" src="../assets/images/logos/stackoverflow.png"></a>
-
-
+  <a href="https://github.com/JasParkety/" target="_blank"><img class="introductionImages" src="../assets/images/logos/github.png"></a>
   <a href="https://codepen.io/JasParkety" target="_blank"><img class="introductionImages" src="../assets/images/logos/codepen.png"></a>
+  <a href="https://stackoverflow.com/users/8557886/jasparkety" target="_blank"><img class="introductionImages" src="../assets/images/logos/stackoverflow.png"></a>
 
 
 </div>
@@ -25,8 +24,8 @@
 
 
 
-        <div class="mainElementSection" id="{{item.anchor}}">
-        <h2>{{ item.title }}</h2>
+        <div class="mainElementSection-{{ modCategories }}" id="{{item.anchor}}">
+          <h2>{{ item.title }}</h2>
       </div>
 
 
@@ -40,44 +39,35 @@
 
 
 {% if modCategories == 1 %}
-    <div class="row">
-      <div class="col-sm-6">
 
+    <div class="elementsFlexContainer-{{ modCategories }}">
 
-
-            <div class="wrapperCol-{{ modCategories }}">
+        <div class="wrapperCol-{{ modCategories }}">
               <h2>{{ Skill.title }}</h2>
                   <div class="SkillDescription">
                       {{ Skill.description }}
                   </div>
-            </div>
-
-      </div>
-            <div class="col-sm-6">
+        </div>
+        <div class="screenshotFlexContainer-{{ modCategories }}">
               <img class="screenshots" onclick=triggerModal("../{{ Skill.screenshot }}") src="../{{ Skill.screenshot }}" style="width:100%;max-width:300px">
-            </div>
-
-    </div>
-{% else %}
-<div class="row">
-
-  <div class="col-sm-6">
-    <img class="screenshots" onclick=triggerModal("../{{ Skill.screenshot }}") src="{{ site.url }}/{{ Skill.screenshot }}" style="width:100%;max-width:300px">
-  </div>
-
-  <div class="col-sm-6">
-
-
-
-        <div class="wrapperCol-{{ modCategories }}">
-          <h2>{{ Skill.title }}</h2>
-              <div class="SkillDescription2">
-                  {{ Skill.description }}
-              </div>
         </div>
 
-  </div>
+    </div>
 
+{% else %}
+
+<div class="elementsFlexContainer-{{ modCategories }}">
+
+    <div class="screenshotFlexContainer-{{ modCategories }}">
+          <img class="screenshots" onclick=triggerModal("../{{ Skill.screenshot }}") src="../{{ Skill.screenshot }}" style="width:100%;max-width:300px">
+    </div>
+
+    <div class="wrapperCol-{{ modCategories }}">
+          <h2>{{ Skill.title }}</h2>
+              <div class="SkillDescription">
+                  {{ Skill.description }}
+              </div>
+    </div>
 
 </div>
 

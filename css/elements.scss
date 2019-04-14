@@ -1,3 +1,33 @@
+.transformScale {
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+}
+$stageZero: 410px;
+$stageOneLower: 411px;
+$stageOneHigher: 767px;
+$stageTwoLower: 768px;
+$stageTwoHigher: 1199px;
+$stageThree: 1199px;
+
+@mixin stage00 {
+  @media (max-width: $stageZero) { @content; }
+}
+
+@mixin stage01 {
+  @media (min-width:$stageOneLower) and (max-width:$stageOneHigher)  { @content; }
+}
+
+@mixin stage02 {
+  @media (min-width:$stageTwoLower) and (max-width:$stageTwoHigher) { @content; }
+}
+
+@mixin stage03 {
+  @media (min-width: $stageThree) { @content; }
+}
+
 @for $i from 0 through 1 {
 
     .elementsContainer-#{$i} {
@@ -17,45 +47,117 @@
       	margin-right:auto;
       	margin-left:auto;
 
-        margin-top: 10px !important;
-        margin-bottom: 10px !important;
-        padding-top: 17.5px;
-        padding-bottom: 17.5px;
+        margin: 15px 0;
+
+        padding: 17.5px 10px;
 
     }
 
     .wrapperCol-#{$i} {
+      padding: 0 15px;
+      flex: 1;
+      float: left !important;
+      text-align: left;
+    }
 
-      @include stage00 {padding-left: 10px;}
-      @include stage01 {padding-left: 12px;}
-      @include stage02 {padding-left: 15px;}
-      @include stage03 {padding-left: 20px;}
+    .mainElementSection-#{$i} {
+
+    @include stage00 {padding: 15px 0;}
+    @include stage01 {padding: 20px 0;}
+    @include stage02 {padding: 25px 0;}
+    @include stage03 {padding: 30px 0;}
+
+    min-height: 60px;
+
+
+    }
+
+    .mainElementSection-#{$i} h2 {
+
+      color: $darkSand;
+      margin-top: -20px;
+
+
+      @include stage00 {font-size: 1.4rem;}
+      @include stage01 {font-size: 1.6rem;}
+      @include stage02 {font-size: 1.8rem;}
+      @include stage03 {font-size: 2rem;}
+
       @if $i % 2 == 0 {
+        float: right !important;
+        text-align: right;
+
+      }
+      @else {
+
          float: left !important;
          text-align: left;
       }
+
+    }
+
+    .elementsFlexContainer-#{$i} {
+
+      @if $i % 2 != 0 {
+          @include stage00 {flex-direction: column;}
+          @include stage01 {flex-direction: column;}
+      } @else {
+          @include stage00 {flex-direction: column-reverse;}
+          @include stage01 {flex-direction: column-reverse;}
+
+      }
+      @include stage02 {flex-direction: row;}
+      @include stage03 {flex-direction: row;}
+
+      display: flex;
+      //I want 100% width
+      flex-grow: 100;
+    }
+
+    .screenshotFlexContainer-#{$i} {
+      flex: 1;
+      padding: 0 15px;
+      // Okay screenshot to the right and mobile to screenshotFlexContainer
+      @include stage00 {align-self: center; padding: 15px 15px;}
+      @include stage01 {align-self: center; padding: 15px 15px;}
+
+      @if $i % 2 != 0 {
+
+          @include stage02 {align-self: center; padding: 0 15px; text-align: right;}
+          @include stage03 {align-self: center; padding: 0 15px; text-align: right;}
+
+      }
       @else {
-        float: right !important;
-        text-align: right;
+
+        @include stage02 {align-self: center; padding: 0 15px; text-align: left;}
+        @include stage03 {align-self: center; padding: 0 15px; text-align: left;}
+      }
+
       }
 
 
-      text-align: left;
-    }
 }
 
 
-.mainElementSection {
 
-  @include stage00 {padding: 10px 0;}
-  @include stage01 {padding: 12px 0;}
-  @include stage02 {padding: 15px 0;}
-  @include stage03 {padding: 20px 0;}
 
-}
+
+
+
+
+
 
 
 
 .screenshots {
-  padding: 15px 0;
+
+  @extend .transitionAllFast;
+
+  &:hover {
+
+      @extend .transformScale;
+      cursor: pointer;
+
+
+}
 }

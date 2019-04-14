@@ -6,6 +6,7 @@
 @import "extendingTools.scss";
 @import "colors.scss";
 @import "font.scss";
+@import "z-index.scss";
 
 
 .logoSkills:hover {
@@ -50,7 +51,7 @@
 
 .containerNav {
   padding-top: 10px;
-  z-index: 9998;
+  z-index: $z-indexContainerNav;
   float: center;
   text-align: center;
 }
@@ -62,7 +63,7 @@
 }
 
 .StickyNav {
-  z-index: 9999;
+  z-index: $z-indexStickyNav;
   background: white;
   transition:top 0.5s ease-in;
   position: fixed;
@@ -78,7 +79,7 @@
 .logoSkills {
   @extend .transitionAllFast;
   @include stage00 {margin: 10px 0; padding: 0 10px; max-height: 25px !important;}
-  @include stage01 {padding: 0 10px; max-height: 25px !important;}
+  @include stage01 {margin: 10px 0; padding: 0 10px; max-height: 30px !important;}
   @include stage02 {padding: 0 10px; max-height: 30px !important;}
   @include stage03 {padding: 0 10px; max-height: 40px !important;}
 
@@ -108,7 +109,7 @@
 
 .TabletTopNavigation {
 
-  z-index: 9999;
+  z-index: $z-indexTabletNavigation;
 
   justify-content: space-evenly;
 
@@ -130,7 +131,7 @@
 
 .MobileTopNavigation {
 
-  z-index: 9999;
+  z-index: $z-indexMobileNavigation;
 
   position: fixed;
 
@@ -144,14 +145,14 @@
   justify-content: space-between;
 
   @include stage00 {display: flex; padding: 10px 10px;}
-  @include stage01 {display: none !important;}
+  @include stage01 {display: flex; padding: 10px 10px;}
   @include stage02 {display: none !important;}
   @include stage03 {display: none !important;}
 
 }
 
 .slider{
-  @extend .onlyMobile;
+  @extend .onlyTabletAndMobile;
 
   width:50vw;
   height:100vh;
@@ -161,26 +162,26 @@
 }
 
 #display{
-  @extend .onlyMobile;
+  @extend .onlyTabletAndMobile;
 
   right:0;
   background-color:$darkSand;
   transition:right 0.5s ease;
-  z-index:9996
+  z-index: $z-indexMobileNavSliderFirst;
 }
 #secondDisplay{
 
-  @extend .onlyMobile;
+  @extend .onlyTabletAndMobile;
 
   right:50vw;
-  background-color: $brightSand;
+  background-color: #ABA8A0;
   transition:right 1.5s ease;
-  z-index:9995
+  z-index: $z-indexMobileNavSliderSecond;
 
 }
 #display.hide,#secondDisplay.hide{
 
-  @extend .onlyMobile;
+  @extend .onlyTabletAndMobile;
 
   right:-50vw;
   transition:right 0.5s ease;
