@@ -6,16 +6,12 @@ Skillset:
         Skill:
             -
                 title: Dead Link Checker
-                description: There are a lot of tools to find dead links, but knowing grep, find etc. can customize a first level test on local machines.
+                description: There are a lot of tools to find dead links, but knowing grep, find etc. can customize a first level test. In this case the script should search for all dead links within another repository.
                 screenshot: assets/images/linkChecker.png
-                code: |
-                 this is a test
             -
                 title: Advanced Search
                 description: Another example of basic bash usage.
                 screenshot: assets/images/search.png
-                code: |
-                 this is a test
     -
         title: Examples of few JS/jQuery Code Snippets
         anchor: jQuery
@@ -23,10 +19,8 @@ Skillset:
         Skill:
             -
                 title: Get a nice tosrus API for embedded youtube
-                description: The main task here was to provide a nice wrapper with a z-index that overlaid the whole page except the navigation. As well some recommandations by youtube were switched off and after the video was finished a nice opacity transition took place.
+                description: The main task here was to provide a nice wrapper with a z-index that overlaid the whole page. Showing the recommandations by youtube were switched off and after the video was finished a nice opacity transition took place.
                 screenshot: assets/images/tosrus.png
-                code: |
-                 this is a test
     -
         title: Python Test Driven Development & Tool Snippets
         anchor: Python
@@ -34,11 +28,11 @@ Skillset:
         Skill:
             -
                 title: Fileserver HTML tag handler
-                description: In some cases a team wants to deploy different kind of documentation. The Work Flow should stay the same. Using mutliple tools to visualize text documents may need some coding to be able to use the full power of several tools.
+                description: In some cases a team wants to deploy different kinds of documentation. The Work Flow should stay the same. In this case for the technical writers the documentation was deployed via mkdocs and gitbook and therefor I created a markdown to yml parser.
                 screenshot: assets/images/htmlParser.png
             -
                 title: Youtrack API Communiation
-                description: The following Code Snippet was used to read the latest Release Version and to implement it on a webpage. It was also a preparation for a version controlled documentation.
+                description: The following Code Snippet was used to read the latest Release Version from a Youtrack project and implement it on a webpage. It was also a preparation for a version controlled documentation.
                 screenshot: assets/images/youtrack.png
 
     -
@@ -48,7 +42,7 @@ Skillset:
         Skill:
             -
                 title: Generating a 3 column automated responsive and alligned Newspaper Front End
-                description: In Jekyll there are several ways to align an element in a parent's column. In this particular example the goal was to insert an element in the first column if its modulo was 0, second if its modulo was 1 and third if its modulo was 2.
+                description: In Jekyll there are several ways to align an element in a parent's column. In this particular example the goal was to insert an element in the first column if its modulo was 0, second if its modulo was 1 and so on. This gave the page a more "Newspaper" style feeling.
                 screenshot: assets/images/newsroomJekyll.png
     -
         title: Git of your feet
@@ -57,7 +51,7 @@ Skillset:
         Skill:
             -
                 title: Resolve Mergeconflict the best way
-                description: A good way to solve quick&dirty merge conflicts with git is via the command rebase. Unfortunately, this will overwrite the history. This is not how git is supposed to be used. The Screenshot shows a more consistent way by overwriting the branch and therefor not erasing the history.
+                description: A good way to solve quick&dirty merge conflicts with git is via the command rebase. Unfortunately, this will overwrite the history. This is not how git is supposed to be used. The Screenshot shows a more consistent way by overwriting the branch and is part of my Personal Note File.
                 screenshot: assets/images/git.png
     -
         title: CSS/SCSS
@@ -66,9 +60,9 @@ Skillset:
         Skill:
             -
                 title: Responsive mixin functions & Loopig in SCSS
-                description: Just a nice example how I like to use scss to create dynamic layouts.
+                description: Just a nice example how I like to use scss to create dynamic layouts. Also this webpage could contain thousands of chapters (saved in just one yml file) and will build itself up dynamically.
                 screenshot: assets/images/scss.png
             -
                 title: Preventing FOC
-                description: A very small code snippet which made a fast flash on the landing page to prevent FOC on index only.
+                description: A very small scss code snippet which made a fast flash on the landing page to prevent FOC on index only when triggered by jQuery.
                 screenshot: assets/images/foc.png
